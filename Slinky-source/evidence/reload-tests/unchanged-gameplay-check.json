@@ -1,0 +1,15 @@
+{
+  "changed_existing_classes": [
+    "dev/slinky/SlinkyMod",
+    "dev/slinky/client/ClientEventBridge",
+    "dev/slinky/client/ClientEventBridge$2",
+    "dev/slinky/client/hook/GameHooks",
+    "dev/slinky/client/hook/RenderHooks",
+    "dev/slinky/inject/Bootstrap",
+    "dev/slinky/inject/Platform",
+    "dev/slinky/inject/Platform$1",
+    "dev/slinky/module/ModuleManager"
+  ],
+  "intentional_new_class": "dev/slinky/inject/ReloadState",
+  "all_other_original_payload_classes_unchanged": true
+}

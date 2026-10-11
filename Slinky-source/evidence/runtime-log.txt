@@ -1,0 +1,10 @@
+﻿[2026-10-10 05:25:09.799] SlinkyNative loaded into PID 27960
+[2026-10-10 05:25:09.811] detected Minecraft 1.8.9 with named names
+[2026-10-10 05:25:09.812] payload named written to C:\Users\GIGAZE~1\AppData\Local\Temp\SlinkyInjected\slinky-named-27960.jar (1778243 bytes)
+[2026-10-10 05:25:09.816] payload added to the game class loader (addURL)
+[2026-10-10 05:25:09.837] [java] Runtime: Lunar+OptiFine (named names), 0 mappings, payload C:\Users\GIGAZE~1\AppData\Local\Temp\SlinkyInjected\slinky-named-27960.jar
+[2026-10-10 05:25:10.038] [java] Slinky Semantic 0.5.0-settings initialized with 66 modules
+[2026-10-10 05:25:10.894] [java] WARN net/minecraft/client/renderer/entity/RenderManager: 10 injection points (expected 6) for playerViewX/playerViewY writes (2 pitch, 4 yaw)
+[2026-10-10 05:25:10.987] [java] WARN net/minecraft/client/Minecraft: 6 injection points (expected 2) for Keyboard.next/Mouse.next event-loop redirects (runTick, or OptiFine runInputTick)
+[2026-10-10 05:25:11.765] [java] Patched 14 classes (0 failed, 2 warnings)
+[2026-10-10 05:25:11.766] Slinky is running

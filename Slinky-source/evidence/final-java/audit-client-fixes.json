@@ -1,0 +1,124 @@
+{
+  "fresh_dump": "C:\\Users\\GigaZelensky\\Documents\\Codex\\2026-10-10\\conmt\\outputs\\Slinky-source\\build\\java-audit\\rebuilt-101.json",
+  "arithmetic_fixes": [
+    {
+      "class": "dev/slinky/client/hook/TargetCombatStatus",
+      "method": "boxDistance(Lnet/minecraft/util/Vec3;Lnet/minecraft/entity/Entity;)D",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/hook/TargetCombatStatus",
+      "method": "squared(DDDLnet/minecraft/util/Vec3;)D",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/numeric/DoubleNumeric",
+      "method": "floor(D)D",
+      "exact_body": false,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/packet/TimingAccess",
+      "method": "squared(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)D",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/placement/PlacementGeometry",
+      "method": "squared(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)D",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/render/CanvasPath",
+      "method": "roundCap(Ljava/util/List;Ldev/slinky/client/render/CanvasPath$Point;FFFIFFZ)V",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/render/RecoveredGui$Layout",
+      "method": "next(F)Ldev/slinky/client/render/RenderMath$Rect;",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/render/RecoveredGuiScreen",
+      "method": "buildFramePlan(IIFFFD)Ldev/slinky/client/render/DrawPlan;",
+      "exact_body": false,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": {
+        "established_assignment": 537,
+        "live_until": 568,
+        "changed_load_indices": [
+          539,
+          547,
+          550,
+          561,
+          565
+        ],
+        "rule": "ALOAD23->ALOAD12 while23=12 and neither alias reassigned",
+        "body_exact_after_alias_substitution": true
+      }
+    },
+    {
+      "class": "dev/slinky/client/render/RenderMath",
+      "method": "distanceSquared([D[D)D",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/render/RenderMath",
+      "method": "model([FIFFF)F",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/render/RenderMath",
+      "method": "project([D[F[FFF)Ldev/slinky/client/render/RenderMath$Projection;",
+      "exact_body": false,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/render/RenderMath",
+      "method": "row([FIFFFF)F",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/render/TrajectoryPrediction",
+      "method": "charge(I)F",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    },
+    {
+      "class": "dev/slinky/client/rotation/RotationMath",
+      "method": "distance(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)D",
+      "exact_body": true,
+      "full_flow_equivalent": true,
+      "justified_alias_normalization": null
+    }
+  ],
+  "remaining_strictfp_constructor_mismatches": [],
+  "RenderAccess_evaluation_order_validation": {
+    "class": "dev/slinky/client/render/RenderAccess",
+    "method": "execute(Ldev/slinky/client/render/DrawPlan;)V",
+    "supported_body_operation_order_restored": true,
+    "principal_exception_handlers_exact_after_offset_shift": true,
+    "evidence": "Original main region instructions4..830 equals rebuilt2..828 after removal of older compiler primary-Throwable initialization and every live main local>=3 shifted-1. All branch targets shift-2; first8 nested try/finally handler ranges/targets shift-2 and match exactly. Therefore text and item getter/cast sequences and all main operations/normal exception cleanup are restored. Remaining outer resource-close template differs only by documented older/newer javac suppression layout.",
+    "ordinary_supported_behavior_reconciled": true
+  }
+}

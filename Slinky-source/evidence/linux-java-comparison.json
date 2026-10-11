@@ -1,0 +1,29 @@
+[
+  {
+    "variant": 101,
+    "classes": 510,
+    "methods": 3821,
+    "normalized_class_data_equal_windows": true,
+    "assets_mappings_equal_windows": true,
+    "manifest_verified": true,
+    "linux_payload_sha256": "f82f1095ff56149755687c8ebd49e38b444235ac9c81ecad1e3984b3c4b47cbd"
+  },
+  {
+    "variant": 102,
+    "classes": 510,
+    "methods": 3821,
+    "normalized_class_data_equal_windows": true,
+    "assets_mappings_equal_windows": true,
+    "manifest_verified": true,
+    "linux_payload_sha256": "708b79140cba9981b7c7ad32074099c648be86f735485f03230715a499d0dd2b"
+  },
+  {
+    "variant": 103,
+    "classes": 510,
+    "methods": 3821,
+    "normalized_class_data_equal_windows": true,
+    "assets_mappings_equal_windows": true,
+    "manifest_verified": true,
+    "linux_payload_sha256": "af0f1b12126d9c3236f5fc62b6a0fb757f69b085035640f3e5b36c8ad9d254a3"
+  }
+]

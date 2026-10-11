@@ -1,0 +1,322 @@
+[2026-10-10 06:20:29.441] SlinkyNative loaded into PID 27960
+
+[2026-10-10 06:20:29.453] detected Minecraft 1.8.9 with named names
+
+[2026-10-10 06:20:29.455] payload named written to C:\Users\GIGAZE~1\AppData\Local\Temp\slinky-31588\slinky-named-27960-42003921.jar (1781434 bytes)
+
+[2026-10-10 06:20:29.464] defined 0 new payload classes in the game class loader; 0 unresolved
+
+[2026-10-10 06:20:29.482] preserved existing ACC_STRICT constructor flag for dev/slinky/client/hook/TargetCombatStatus()V (0x0001)
+
+[2026-10-10 06:20:29.482] preserved existing ACC_STRICT constructor flag for dev/slinky/client/inventory/ConsumableDelay()V (0x0001)
+
+[2026-10-10 06:20:29.482] class dev/slinky/client/inventory/InvWalkControllerInputAdapter is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.482] class dev/slinky/client/inventory/InventorySelection$Action is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.482] class dev/slinky/client/inventory/InventorySelection$Stack is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.482] class dev/slinky/client/inventory/InventorySelection is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.483] class dev/slinky/client/inventory/RefillSelection$Gates is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.483] class dev/slinky/client/inventory/RefillSelection$Result is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.483] class dev/slinky/client/inventory/RefillSelection is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.483] class dev/slinky/client/numeric/DoubleNumeric is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.484] class dev/slinky/client/numeric/DoubleTrigonometry is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.484] class dev/slinky/client/numeric/LargeReduction is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.484] class dev/slinky/client/packet/NetworkSendAdapter$Invocation is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.484] class dev/slinky/client/packet/PacketAccess is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.484] class dev/slinky/client/packet/PacketKinds is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.484] class dev/slinky/client/packet/PacketPipeline$Entry is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.484] class dev/slinky/client/packet/PredictionGeometry is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.484] class dev/slinky/client/packet/RemoteBoxRenderer is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.484] class dev/slinky/client/packet/TimingAccess is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.485] class dev/slinky/client/placement/PlacementGeometry is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.485] class dev/slinky/client/render/BlockMesh$Position is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.485] class dev/slinky/client/render/BlockMesh$Region is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.485] class dev/slinky/client/render/BlockMesh is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.485] class dev/slinky/client/render/CanvasFonts$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.485] class dev/slinky/client/render/DrawPlan$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.485] class dev/slinky/client/render/FontAtlasService$DirtyUpload is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.485] class dev/slinky/client/render/FontAtlasService$ResizeNotification is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.485] class dev/slinky/client/render/FontAtlasService$VertexFlush is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.486] class dev/slinky/client/render/FontCff$Buffer is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.486] class dev/slinky/client/render/FontCff$Context is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.486] class dev/slinky/client/render/FontCff$Info is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.486] class dev/slinky/client/render/FontCff is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.486] class dev/slinky/client/render/FontGlyphCache$Source is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.486] class dev/slinky/client/render/FontRasterization$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.486] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/FontServices$Glyph()V (0x0001)
+
+[2026-10-10 06:20:29.486] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/FontServices$Quad()V (0x0001)
+
+[2026-10-10 06:20:29.486] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/FontServices$TextStats()V (0x0001)
+
+[2026-10-10 06:20:29.486] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/FontServices$Utf8()V (0x0001)
+
+[2026-10-10 06:20:29.487] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/FontServices()V (0x0001)
+
+[2026-10-10 06:20:29.487] class dev/slinky/client/render/GameFontProvider is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.487] class dev/slinky/client/render/GuiPresentation$Icon is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.487] class dev/slinky/client/render/GuiWidgets$ListData is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.487] class dev/slinky/client/render/InlineModuleSettings$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.487] class dev/slinky/client/render/LoadedChunkAccess is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.487] class dev/slinky/client/render/NotificationQueue$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.487] class dev/slinky/client/render/NotificationQueue$Message is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.488] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/NotificationQueue()V (0x0001)
+
+[2026-10-10 06:20:29.488] class dev/slinky/client/render/ProfileServices$Failure is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.488] class dev/slinky/client/render/ProfileServices is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.488] class dev/slinky/client/render/RecoveredGui$Filter is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.488] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/RecoveredGui$Runtime()V (0x0001)
+
+[2026-10-10 06:20:29.488] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/RecoveredGui$Slider()V (0x0001)
+
+[2026-10-10 06:20:29.488] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/RecoveredGui$Toggle()V (0x0001)
+
+[2026-10-10 06:20:29.488] preserved existing ACC_STRICT constructor flag for dev/slinky/client/render/RecoveredGui()V (0x0001)
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/RecoveredText is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/RenderAccess$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/RenderAccess$Frame is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/RenderMath$Projection is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/TrajectoryPrediction$BlockHit is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/TrajectoryPrediction$Candidate is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/TrajectoryPrediction$Launch is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/TrajectoryPrediction$Result is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/TrajectoryPrediction$World is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/render/TrajectoryPrediction is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.489] class dev/slinky/client/rotation/AimNoise is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.490] class dev/slinky/client/rotation/RotationService$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.490] class dev/slinky/config/ConfigurationFiles$Failure is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.490] class dev/slinky/config/ConfigurationFiles$Text is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.490] class dev/slinky/config/RecoveredConfiguration$ProfileBinding is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.490] class dev/slinky/config/RecoveredJsonParser$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.490] class dev/slinky/config/RecoveredJsonParser$ParseBuffer is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.490] class dev/slinky/config/RecoveredJsonParser$ParseEnd is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.490] class dev/slinky/config/RecoveredJsonParser$ParseResult is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.490] class dev/slinky/config/RecoveredJsonParser is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.491] class dev/slinky/config/RecoveredJsonRuntime$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.491] class dev/slinky/config/RecoveredJsonRuntime$ExternalInvoker is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.491] class dev/slinky/inject/Platform$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.491] class dev/slinky/inject/Reflect is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.491] class dev/slinky/inject/ReloadState is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/RecoveredUiLayout$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AimAssistModule$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AimAssistModule$Candidate is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AimAssistModule$Score is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AimAssistModule$ServerPosition is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AntiBotModule$History is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AutoClickerModule$Settings is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AutoPotModule$Delay is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AutoSoupModule$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AutoSoupModule$Policy is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AutoToolModule$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.492] class dev/slinky/module/impl/AutoToolModule$Access is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.494] class dev/slinky/module/impl/BridgeAssistModule$Settings is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.494] class dev/slinky/module/impl/ChestEspModule$Row is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.494] class dev/slinky/module/impl/ChestStealerModule is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.494] class dev/slinky/module/impl/ClutchModule$Face is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.494] class dev/slinky/module/impl/ClutchModule$Settings is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.494] class dev/slinky/module/impl/FastPlaceModule$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.494] class dev/slinky/module/impl/FastPlaceModule$Input is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.494] class dev/slinky/module/impl/HitSelectModule$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.495] class dev/slinky/module/impl/HitSelectModule$Input is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.495] class dev/slinky/module/impl/IndicatorsModule$Row is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.495] class dev/slinky/module/impl/ItemEspModule$Row is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.495] class dev/slinky/module/impl/ModOverlayModule$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.495] class dev/slinky/module/impl/ModOverlayModule$Row is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.495] class dev/slinky/module/impl/NameTagsModule$Equipment is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.495] class dev/slinky/module/impl/NameTagsModule$EquipmentHost is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.495] class dev/slinky/module/impl/NameTagsModule$Row is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/NullMoveModule$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/NullMoveModule$Keys is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/PlayerEspModule$Row is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/PointersModule$Row is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/RefillModule$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/RefillModule$Access is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/RefillModule$Policy is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/RefillModule$RandomPolicy is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/SpeedModule is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/WeaponsModule$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.496] class dev/slinky/module/impl/WeaponsModule$Classification is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.498] class dev/slinky/setting/NamedColorListSetting$Entry is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.498] class dev/slinky/shaded/asm/Attribute$Set is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.498] class dev/slinky/shaded/asm/ClassTooLargeException is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.498] class dev/slinky/shaded/asm/ConstantDynamic is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.498] class dev/slinky/shaded/asm/Constants is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.498] class dev/slinky/shaded/asm/CurrentFrame is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.498] class dev/slinky/shaded/asm/MethodTooLargeException is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.498] class dev/slinky/shaded/asm/ModuleVisitor is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.499] class dev/slinky/shaded/asm/ModuleWriter is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.499] class dev/slinky/shaded/asm/RecordComponentVisitor is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.499] class dev/slinky/shaded/asm/RecordComponentWriter is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.499] class dev/slinky/shaded/asm/SymbolTable$LabelEntry is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.499] class dev/slinky/shaded/asm/TypePath is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.499] class dev/slinky/shaded/asm/TypeReference is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.499] class dev/slinky/shaded/asm/signature/SignatureReader is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.499] class dev/slinky/shaded/asm/signature/SignatureVisitor is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.499] class dev/slinky/shaded/asm/signature/SignatureWriter is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.500] class dev/slinky/shaded/asm/tree/FrameNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.500] class dev/slinky/shaded/asm/tree/InsnList$InsnListIterator is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.500] class dev/slinky/shaded/asm/tree/LocalVariableAnnotationNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.500] class dev/slinky/shaded/asm/tree/MethodNode$1 is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.500] class dev/slinky/shaded/asm/tree/ModuleExportNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.500] class dev/slinky/shaded/asm/tree/ModuleNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.500] class dev/slinky/shaded/asm/tree/ModuleOpenNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.501] class dev/slinky/shaded/asm/tree/ModuleProvideNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.501] class dev/slinky/shaded/asm/tree/ModuleRequireNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.501] class dev/slinky/shaded/asm/tree/MultiANewArrayInsnNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.501] class dev/slinky/shaded/asm/tree/ParameterNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.501] class dev/slinky/shaded/asm/tree/RecordComponentNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.501] class dev/slinky/shaded/asm/tree/TypeAnnotationNode is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.501] class dev/slinky/shaded/asm/tree/UnsupportedClassVersionException is not prepared; retaining fresh modifiers for JVM batch validation
+
+[2026-10-10 06:20:29.501] constructor modifier compatibility: 12 ACC_STRICT flags preserved in memory
+
+[2026-10-10 06:20:29.680] replaced 510 payload classes atomically; Minecraft patches retained
+
+[2026-10-10 06:20:29.684] [java] Previous Slinky session was unloaded; starting a new session
+
+[2026-10-10 06:20:29.685] [java] Runtime: Lunar+OptiFine (named names), 0 mappings, payload C:\Users\GIGAZE~1\AppData\Local\Temp\slinky-31588\slinky-named-27960-42003921.jar
+
+[2026-10-10 06:20:29.697] [java] Reusing the installed Slinky game hooks
+
+[2026-10-10 06:20:29.698] [java] Slinky Semantic 0.5.0-settings initialized with 66 modules
+
+[2026-10-10 06:20:29.698] Slinky is running
+
+[2026-10-10 06:20:29.698] FINAL STATUS: RELOADED
+

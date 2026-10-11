@@ -1,0 +1,1439 @@
+{
+  "class_changes": [
+    {
+      "class": "dev/slinky/client/ClientEventBridge",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/ClientEventBridge$1\",null,null,8]",
+            "[\"dev/slinky/client/ClientEventBridge$2\",null,null,0]"
+          ],
+          [
+            "[\"dev/slinky/client/ClientEventBridge$1\",null,null,0]",
+            "[\"dev/slinky/client/ClientEventBridge$2\",null,null,0]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/ClientEventBridge$1",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/ClientEventBridge$1\",null,null,8]"
+          ],
+          [
+            "[\"dev/slinky/client/ClientEventBridge$1\",null,null,0]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/ItemPolicyService",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/ItemPolicyService$1\",null,null,8]"
+          ],
+          [
+            "[\"dev/slinky/client/ItemPolicyService$1\",null,null,0]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/ItemPolicyService$1",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/ItemPolicyService$1\",null,null,8]"
+          ],
+          [
+            "[\"dev/slinky/client/ItemPolicyService$1\",null,null,0]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/action/ActionAccess",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/action/ActionAccess$1\",null,null,8]",
+            "[\"dev/slinky/client/action/ActionAccess$MouseHost\",\"dev/slinky/client/action/ActionAccess\",\"MouseHost\",1545]",
+            "[\"net/minecraft/util/MovingObjectPosition$MovingObjectType\",\"net/minecraft/util/MovingObjectPosition\",\"MovingObjectType\",16409]"
+          ],
+          [
+            "[\"dev/slinky/client/action/ActionAccess$1\",null,null,0]",
+            "[\"dev/slinky/client/action/ActionAccess$MouseHost\",\"dev/slinky/client/action/ActionAccess\",\"MouseHost\",1545]",
+            "[\"net/minecraft/util/MovingObjectPosition$MovingObjectType\",\"net/minecraft/util/MovingObjectPosition\",\"MovingObjectType\",16409]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/action/ActionAccess$1",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/action/ActionAccess$1\",null,null,8]",
+            "[\"dev/slinky/client/action/ActionAccess$MouseHost\",\"dev/slinky/client/action/ActionAccess\",\"MouseHost\",1545]"
+          ],
+          [
+            "[\"dev/slinky/client/action/ActionAccess$1\",null,null,0]",
+            "[\"dev/slinky/client/action/ActionAccess$MouseHost\",\"dev/slinky/client/action/ActionAccess\",\"MouseHost\",1545]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/hook/GlStateScope",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/hook/GlStateScope$1\",null,null,8]",
+            "[\"dev/slinky/client/hook/GlStateScope$Attributes\",\"dev/slinky/client/hook/GlStateScope\",\"Attributes\",1544]",
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          [
+            "[\"dev/slinky/client/hook/GlStateScope$1\",null,null,0]",
+            "[\"dev/slinky/client/hook/GlStateScope$Attributes\",\"dev/slinky/client/hook/GlStateScope\",\"Attributes\",1544]",
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/hook/GlStateScope$1",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/hook/GlStateScope$1\",null,null,8]",
+            "[\"dev/slinky/client/hook/GlStateScope$Attributes\",\"dev/slinky/client/hook/GlStateScope\",\"Attributes\",1544]"
+          ],
+          [
+            "[\"dev/slinky/client/hook/GlStateScope$1\",null,null,0]",
+            "[\"dev/slinky/client/hook/GlStateScope$Attributes\",\"dev/slinky/client/hook/GlStateScope\",\"Attributes\",1544]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/packet/PacketPipeline",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/packet/PacketPipeline$1\",null,null,0]",
+            "[\"dev/slinky/client/packet/PacketPipeline$2\",null,null,0]",
+            "[\"dev/slinky/client/packet/PacketPipeline$3\",null,null,8]",
+            "[\"dev/slinky/client/packet/PacketPipeline$Clock\",\"dev/slinky/client/packet/PacketPipeline\",\"Clock\",1545]",
+            "[\"dev/slinky/client/packet/PacketPipeline$Dispatch\",\"dev/slinky/client/packet/PacketPipeline\",\"Dispatch\",1545]",
+            "[\"dev/slinky/client/packet/PacketPipeline$Entry\",\"dev/slinky/client/packet/PacketPipeline\",\"Entry\",26]"
+          ],
+          [
+            "[\"dev/slinky/client/packet/PacketPipeline$1\",null,null,0]",
+            "[\"dev/slinky/client/packet/PacketPipeline$2\",null,null,0]",
+            "[\"dev/slinky/client/packet/PacketPipeline$3\",null,null,0]",
+            "[\"dev/slinky/client/packet/PacketPipeline$Clock\",\"dev/slinky/client/packet/PacketPipeline\",\"Clock\",1545]",
+            "[\"dev/slinky/client/packet/PacketPipeline$Dispatch\",\"dev/slinky/client/packet/PacketPipeline\",\"Dispatch\",1545]",
+            "[\"dev/slinky/client/packet/PacketPipeline$Entry\",\"dev/slinky/client/packet/PacketPipeline\",\"Entry\",26]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/packet/PacketPipeline$3",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/packet/PacketPipeline$3\",null,null,8]"
+          ],
+          [
+            "[\"dev/slinky/client/packet/PacketPipeline$3\",null,null,0]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/placement/PlacementSelection",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/placement/PlacementSelection$1\",null,null,8]",
+            "[\"dev/slinky/client/placement/PlacementSelection$Inventory\",\"dev/slinky/client/placement/PlacementSelection\",\"Inventory\",1545]",
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          [
+            "[\"dev/slinky/client/placement/PlacementSelection$1\",null,null,0]",
+            "[\"dev/slinky/client/placement/PlacementSelection$Inventory\",\"dev/slinky/client/placement/PlacementSelection\",\"Inventory\",1545]",
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/placement/PlacementSelection$1",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/placement/PlacementSelection$1\",null,null,8]",
+            "[\"dev/slinky/client/placement/PlacementSelection$Inventory\",\"dev/slinky/client/placement/PlacementSelection\",\"Inventory\",1545]"
+          ],
+          [
+            "[\"dev/slinky/client/placement/PlacementSelection$1\",null,null,0]",
+            "[\"dev/slinky/client/placement/PlacementSelection$Inventory\",\"dev/slinky/client/placement/PlacementSelection\",\"Inventory\",1545]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/render/CanvasFonts$Batch\",\"dev/slinky/client/render/CanvasFonts\",\"Batch\",25]",
+            "[\"dev/slinky/client/render/CanvasFonts$Engine\",\"dev/slinky/client/render/CanvasFonts\",\"Engine\",25]",
+            "[\"dev/slinky/client/render/CanvasFonts$Engine$1\",null,null,0]",
+            "[\"dev/slinky/client/render/CanvasFonts$Engine$2\",null,null,0]",
+            "[\"dev/slinky/client/render/CanvasFonts$Text\",\"dev/slinky/client/render/CanvasFonts\",\"Text\",25]",
+            "[\"dev/slinky/client/render/FontAtlasService$Allocation\",\"dev/slinky/client/render/FontAtlasService\",\"Allocation\",1545]",
+            "[\"dev/slinky/client/render/FontAtlasService$Canvas\",\"dev/slinky/client/render/FontAtlasService\",\"Canvas\",25]",
+            "[\"dev/slinky/client/render/FontAtlasService$Driver\",\"dev/slinky/client/render/FontAtlasService\",\"Driver\",1545]",
+            "[\"dev/slinky/client/render/FontAtlasService$Stash\",\"dev/slinky/client/render/FontAtlasService\",\"Stash\",25]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Font\",\"dev/slinky/client/render/FontGlyphCache\",\"Font\",25]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Source\",\"dev/slinky/client/render/FontGlyphCache\",\"Source\",1545]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Stash\",\"dev/slinky/client/render/FontGlyphCache\",\"Stash\",25]",
+            "[\"dev/slinky/client/render/FontServices$Atlas\",\"dev/slinky/client/render/FontServices\",\"Atlas\",25]",
+            "[\"dev/slinky/client/render/FontServices$Face\",\"dev/slinky/client/render/FontServices\",\"Face\",1545]",
+            "[\"dev/slinky/client/render/FontServices$Iterator\",\"dev/slinky/client/render/FontServices\",\"Iterator\",25]",
+            "[\"dev/slinky/client/render/FontServices$TextBackend\",\"dev/slinky/client/render/FontServices\",\"TextBackend\",1545]",
+            "[\"dev/slinky/client/render/FontServices$TextStats\",\"dev/slinky/client/render/FontServices\",\"TextStats\",25]",
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          [
+            "[\"dev/slinky/client/render/CanvasFonts$Engine\",\"dev/slinky/client/render/CanvasFonts\",\"Engine\",25]",
+            "[\"dev/slinky/client/render/CanvasFonts$Engine$1\",null,null,0]",
+            "[\"dev/slinky/client/render/CanvasFonts$Engine$2\",null,null,0]",
+            "[\"dev/slinky/client/render/CanvasFonts$Text\",\"dev/slinky/client/render/CanvasFonts\",\"Text\",25]",
+            "[\"dev/slinky/client/render/FontAtlasService$Allocation\",\"dev/slinky/client/render/FontAtlasService\",\"Allocation\",1545]",
+            "[\"dev/slinky/client/render/FontAtlasService$Canvas\",\"dev/slinky/client/render/FontAtlasService\",\"Canvas\",25]",
+            "[\"dev/slinky/client/render/FontAtlasService$Driver\",\"dev/slinky/client/render/FontAtlasService\",\"Driver\",1545]",
+            "[\"dev/slinky/client/render/FontAtlasService$Stash\",\"dev/slinky/client/render/FontAtlasService\",\"Stash\",25]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Font\",\"dev/slinky/client/render/FontGlyphCache\",\"Font\",25]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Source\",\"dev/slinky/client/render/FontGlyphCache\",\"Source\",1545]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Stash\",\"dev/slinky/client/render/FontGlyphCache\",\"Stash\",25]",
+            "[\"dev/slinky/client/render/FontServices$Atlas\",\"dev/slinky/client/render/FontServices\",\"Atlas\",25]",
+            "[\"dev/slinky/client/render/FontServices$Face\",\"dev/slinky/client/render/FontServices\",\"Face\",1545]",
+            "[\"dev/slinky/client/render/FontServices$Iterator\",\"dev/slinky/client/render/FontServices\",\"Iterator\",25]",
+            "[\"dev/slinky/client/render/FontServices$TextBackend\",\"dev/slinky/client/render/FontServices\",\"TextBackend\",1545]",
+            "[\"dev/slinky/client/render/FontServices$TextStats\",\"dev/slinky/client/render/FontServices\",\"TextStats\",25]",
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/render/FontGlyphCache",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/render/FontGlyphCache$Font\",\"dev/slinky/client/render/FontGlyphCache\",\"Font\",25]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Row\",\"dev/slinky/client/render/FontGlyphCache\",\"Row\",25]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Source\",\"dev/slinky/client/render/FontGlyphCache\",\"Source\",1545]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Stash\",\"dev/slinky/client/render/FontGlyphCache\",\"Stash\",25]",
+            "[\"dev/slinky/client/render/FontRasterization$Scratch\",\"dev/slinky/client/render/FontRasterization\",\"Scratch\",25]",
+            "[\"dev/slinky/client/render/FontRasterization$Vertex\",\"dev/slinky/client/render/FontRasterization\",\"Vertex\",25]",
+            "[\"dev/slinky/client/render/FontServices$Atlas\",\"dev/slinky/client/render/FontServices\",\"Atlas\",25]",
+            "[\"dev/slinky/client/render/FontServices$Face\",\"dev/slinky/client/render/FontServices\",\"Face\",1545]",
+            "[\"dev/slinky/client/render/FontServices$Glyph\",\"dev/slinky/client/render/FontServices\",\"Glyph\",25]",
+            "[\"dev/slinky/client/render/FontTables$Font\",\"dev/slinky/client/render/FontTables\",\"Font\",25]"
+          ],
+          [
+            "[\"dev/slinky/client/render/FontGlyphCache$Font\",\"dev/slinky/client/render/FontGlyphCache\",\"Font\",25]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Row\",\"dev/slinky/client/render/FontGlyphCache\",\"Row\",25]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Source\",\"dev/slinky/client/render/FontGlyphCache\",\"Source\",1545]",
+            "[\"dev/slinky/client/render/FontGlyphCache$Stash\",\"dev/slinky/client/render/FontGlyphCache\",\"Stash\",25]",
+            "[\"dev/slinky/client/render/FontRasterization$Scratch\",\"dev/slinky/client/render/FontRasterization\",\"Scratch\",25]",
+            "[\"dev/slinky/client/render/FontServices$Atlas\",\"dev/slinky/client/render/FontServices\",\"Atlas\",25]",
+            "[\"dev/slinky/client/render/FontServices$Face\",\"dev/slinky/client/render/FontServices\",\"Face\",1545]",
+            "[\"dev/slinky/client/render/FontServices$Glyph\",\"dev/slinky/client/render/FontServices\",\"Glyph\",25]",
+            "[\"dev/slinky/client/render/FontTables$Font\",\"dev/slinky/client/render/FontTables\",\"Font\",25]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/render/GlCanvasBackend",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/render/CanvasPath$Path\",\"dev/slinky/client/render/CanvasPath\",\"Path\",25]",
+            "[\"dev/slinky/client/render/GlCanvasBackend$1\",null,null,8]",
+            "[\"dev/slinky/client/render/GlCanvasBackend$Driver\",\"dev/slinky/client/render/GlCanvasBackend\",\"Driver\",1545]",
+            "[\"dev/slinky/client/render/GuiCanvasState$Backend\",\"dev/slinky/client/render/GuiCanvasState\",\"Backend\",1545]",
+            "[\"dev/slinky/client/render/GuiCanvasState$Paint\",\"dev/slinky/client/render/GuiCanvasState\",\"Paint\",25]"
+          ],
+          [
+            "[\"dev/slinky/client/render/CanvasPath$Path\",\"dev/slinky/client/render/CanvasPath\",\"Path\",25]",
+            "[\"dev/slinky/client/render/GlCanvasBackend$1\",null,null,0]",
+            "[\"dev/slinky/client/render/GlCanvasBackend$Driver\",\"dev/slinky/client/render/GlCanvasBackend\",\"Driver\",1545]",
+            "[\"dev/slinky/client/render/GuiCanvasState$Backend\",\"dev/slinky/client/render/GuiCanvasState\",\"Backend\",1545]",
+            "[\"dev/slinky/client/render/GuiCanvasState$Paint\",\"dev/slinky/client/render/GuiCanvasState\",\"Paint\",25]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/render/GlCanvasBackend$1",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/render/GlCanvasBackend$1\",null,null,8]",
+            "[\"dev/slinky/client/render/GlCanvasBackend$Driver\",\"dev/slinky/client/render/GlCanvasBackend\",\"Driver\",1545]"
+          ],
+          [
+            "[\"dev/slinky/client/render/GlCanvasBackend$1\",null,null,0]",
+            "[\"dev/slinky/client/render/GlCanvasBackend$Driver\",\"dev/slinky/client/render/GlCanvasBackend\",\"Driver\",1545]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/inject/Bootstrap",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/inject/Bootstrap$1\",null,null,8]",
+            "[\"dev/slinky/inject/Platform$Namespace\",\"dev/slinky/inject/Platform\",\"Namespace\",16409]"
+          ],
+          [
+            "[\"dev/slinky/inject/Bootstrap$1\",null,null,0]",
+            "[\"dev/slinky/inject/Platform$Namespace\",\"dev/slinky/inject/Platform\",\"Namespace\",16409]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/inject/Bootstrap$1",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/inject/Bootstrap$1\",null,null,8]"
+          ],
+          [
+            "[\"dev/slinky/inject/Bootstrap$1\",null,null,0]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/inject/Platform",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/inject/Platform$1\",null,null,8]",
+            "[\"dev/slinky/inject/Platform$Namespace\",\"dev/slinky/inject/Platform\",\"Namespace\",16409]"
+          ],
+          [
+            "[\"dev/slinky/inject/Platform$1\",null,null,0]",
+            "[\"dev/slinky/inject/Platform$Namespace\",\"dev/slinky/inject/Platform\",\"Namespace\",16409]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/inject/Platform$1",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/inject/Platform$1\",null,null,8]"
+          ],
+          [
+            "[\"dev/slinky/inject/Platform$1\",null,null,0]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/BlockEspModule",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/client/render/BlockMesh$Position\",\"dev/slinky/client/render/BlockMesh\",\"Position\",25]",
+            "[\"dev/slinky/client/render/BlockMesh$Region\",\"dev/slinky/client/render/BlockMesh\",\"Region\",25]",
+            "[\"dev/slinky/setting/ColorSetting$Value\",\"dev/slinky/setting/ColorSetting\",\"Value\",25]",
+            "[\"dev/slinky/setting/NamedColorListSetting$Entry\",\"dev/slinky/setting/NamedColorListSetting\",\"Entry\",25]",
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          [
+            "[\"dev/slinky/client/render/BlockMesh$Region\",\"dev/slinky/client/render/BlockMesh\",\"Region\",25]",
+            "[\"dev/slinky/setting/ColorSetting$Value\",\"dev/slinky/setting/ColorSetting\",\"Value\",25]",
+            "[\"dev/slinky/setting/NamedColorListSetting$Entry\",\"dev/slinky/setting/NamedColorListSetting\",\"Entry\",25]",
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/ChamsModule",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/module/impl/ChamsModule$1\",null,null,8]",
+            "[\"dev/slinky/module/impl/ChamsModule$Graphics\",\"dev/slinky/module/impl/ChamsModule\",\"Graphics\",1545]"
+          ],
+          [
+            "[\"dev/slinky/module/impl/ChamsModule$1\",null,null,0]",
+            "[\"dev/slinky/module/impl/ChamsModule$Graphics\",\"dev/slinky/module/impl/ChamsModule\",\"Graphics\",1545]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/ChamsModule$1",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/module/impl/ChamsModule$1\",null,null,8]",
+            "[\"dev/slinky/module/impl/ChamsModule$Graphics\",\"dev/slinky/module/impl/ChamsModule\",\"Graphics\",1545]"
+          ],
+          [
+            "[\"dev/slinky/module/impl/ChamsModule$1\",null,null,0]",
+            "[\"dev/slinky/module/impl/ChamsModule$Graphics\",\"dev/slinky/module/impl/ChamsModule\",\"Graphics\",1545]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassTooLargeException",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassVisitor",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ConstantDynamic",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Constants",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/FieldVisitor",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Handle",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodTooLargeException",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ModuleVisitor",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"dev/slinky/shaded/asm/SymbolTable$Entry\",\"dev/slinky/shaded/asm/SymbolTable\",\"Entry\",26]",
+            "[\"dev/slinky/shaded/asm/SymbolTable$LabelEntry\",\"dev/slinky/shaded/asm/SymbolTable\",\"LabelEntry\",26]",
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          [
+            "[\"dev/slinky/shaded/asm/SymbolTable$Entry\",\"dev/slinky/shaded/asm/SymbolTable\",\"Entry\",26]",
+            "[\"dev/slinky/shaded/asm/SymbolTable$LabelEntry\",\"dev/slinky/shaded/asm/SymbolTable\",\"LabelEntry\",26]"
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureVisitor",
+      "changes": {
+        "innerClasses": [
+          [
+            "[\"java/lang/invoke/MethodHandles$Lookup\",\"java/lang/invoke/MethodHandles\",\"Lookup\",25]"
+          ],
+          []
+        ]
+      }
+    }
+  ],
+  "method_changes": [
+    {
+      "class": "dev/slinky/SlinkyMod$1",
+      "method": "<init>(Ldev/slinky/SlinkyMod;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/SlinkyMod$2",
+      "method": "<init>(Ldev/slinky/SlinkyMod;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/ClientEventBridge$2",
+      "method": "<init>(Ldev/slinky/client/ClientEventBridge;Lio/netty/channel/Channel;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/ItemPolicyService$1",
+      "method": "compare(Ljava/lang/Object;Ljava/lang/Object;)I",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ],
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/render/CanvasFonts$Engine$1",
+      "method": "<init>(Ldev/slinky/client/render/CanvasFonts$Engine;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/render/CanvasFonts$Engine$2",
+      "method": "<init>(Ldev/slinky/client/render/CanvasFonts$Engine;Ldev/slinky/client/render/FontServices$Iterator;Ljava/util/List;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/client/render/InlineModuleSettings$1",
+      "method": "<init>(Ldev/slinky/client/render/InlineModuleSettings;Ldev/slinky/setting/Setting;Ldev/slinky/module/Module;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/config/RecoveredConfiguration$Scope",
+      "method": "<init>(Ljava/lang/String;I)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ],
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/config/RecoveredConfiguration$Scope",
+      "method": "valueOf(Ljava/lang/String;)Ldev/slinky/config/RecoveredConfiguration$Scope;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32768
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/inject/Platform$Namespace",
+      "method": "<init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ],
+            [
+              null,
+              4096
+            ],
+            [
+              null,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/inject/Platform$Namespace",
+      "method": "valueOf(Ljava/lang/String;)Ldev/slinky/inject/Platform$Namespace;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32768
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleCategory",
+      "method": "<init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ],
+            [
+              null,
+              4096
+            ],
+            [
+              null,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleCategory",
+      "method": "valueOf(Ljava/lang/String;)Ldev/slinky/module/ModuleCategory;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32768
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager$1",
+      "method": "<init>(Ldev/slinky/module/ModuleManager;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager$1",
+      "method": "cancelDisable(Ljava/lang/Object;)Z",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager$1",
+      "method": "enabled(Ljava/lang/Object;)Z",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager$1",
+      "method": "mark(Ljava/lang/Object;Z)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ],
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager$1",
+      "method": "notifyChange(Ljava/lang/Object;Z)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ],
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager$2",
+      "method": "<init>(Ldev/slinky/module/ModuleManager;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager$3",
+      "method": "<init>(Ldev/slinky/module/ModuleManager;I)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager$3",
+      "method": "compare(Ljava/lang/Object;Ljava/lang/Object;)I",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ],
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoClickerModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/AutoClickerModule;Ldev/slinky/client/ClientContext;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoSoupModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/AutoSoupModule;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoToolModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/AutoToolModule;Lnet/minecraft/entity/player/InventoryPlayer;Ldev/slinky/client/ClientContext;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/BridgeAssistModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/BridgeAssistModule;Ldev/slinky/client/ClientContext;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/FastPlaceModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/FastPlaceModule;Ldev/slinky/client/ClientContext;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/HitSelectModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/HitSelectModule;Ldev/slinky/client/ClientContext;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/InvWalkModule$Live",
+      "method": "<init>(Ldev/slinky/module/impl/InvWalkModule;Ldev/slinky/client/ClientContext;Lnet/minecraft/network/NetworkManager;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4112
+            ],
+            [
+              null,
+              0
+            ],
+            [
+              null,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/NullMoveModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/NullMoveModule;[Lnet/minecraft/client/settings/KeyBinding;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/RefillModule;Ldev/slinky/client/ClientContext;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$Policy",
+      "method": "<init>(Ldev/slinky/module/impl/RefillModule;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/SprintResetModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/SprintResetModule;Ldev/slinky/client/ClientContext;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/module/impl/WeaponsModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/WeaponsModule;Lnet/minecraft/entity/player/EntityPlayer;)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              4112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/BooleanSetting",
+      "method": "parse(Ljava/lang/String;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/ChoiceSetting",
+      "method": "parse(Ljava/lang/String;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/ChoiceSetting",
+      "method": "requireValid(Ljava/lang/Object;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/ColorSetting",
+      "method": "parse(Ljava/lang/String;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/ColorSetting",
+      "method": "requireValid(Ljava/lang/Object;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/NamedColorListSetting",
+      "method": "parse(Ljava/lang/String;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/NamedColorListSetting",
+      "method": "requireValid(Ljava/lang/Object;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/NumberSetting",
+      "method": "parse(Ljava/lang/String;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/NumberSetting",
+      "method": "requireValid(Ljava/lang/Object;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/RangeSetting",
+      "method": "parse(Ljava/lang/String;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/RangeSetting",
+      "method": "requireValid(Ljava/lang/Object;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/StringListSetting",
+      "method": "parse(Ljava/lang/String;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/setting/StringListSetting",
+      "method": "requireValid(Ljava/lang/Object;)Ljava/lang/Object;",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4096
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnList$InsnListIterator",
+      "method": "<init>(Ldev/slinky/shaded/asm/tree/InsnList;I)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              4112
+            ],
+            [
+              null,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodNode$1",
+      "method": "<init>(Ldev/slinky/shaded/asm/tree/MethodNode;I)V",
+      "changes": {
+        "parameters": [
+          [],
+          [
+            [
+              null,
+              32784
+            ],
+            [
+              null,
+              0
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "field_changes": []
+}

@@ -1,0 +1,28 @@
+Verified 34 pinned dependency files.
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+3 warnings
+Statically transformed 2507 class files into deps\minecraft-1.8.9-named.jar
+Compiling recovered Java source (Java 8 class format).
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 warnings
+Compiling the static mapping tool and producing SRG/official payloads.
+Statically transformed 510 class files into build\payload-102.jar
+Statically transformed 510 class files into build\payload-103.jar
+Compiling the native bridge and launcher, embedding the freshly built payloads.
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/outputs/Slinky-source/build/native
+MSBuild version 18.0.5+e22287bf1 for .NET Framework
+
+  payload.cpp
+  SlinkyNative.vcxproj -> C:\Users\GigaZelensky\Documents\Codex\2026-10-10\conmt\outputs\Slinky-source\build\native\Release\SlinkyNative.dll
+  launcher.cpp
+  Slinky.vcxproj -> C:\Users\GigaZelensky\Documents\Codex\2026-10-10\conmt\outputs\Slinky-source\build\native\Release\Slinky.exe
+Build completed. No launcher, native DLL, or payload class was executed.

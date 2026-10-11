@@ -1,0 +1,78 @@
+{
+  "method": "Static class-file constant-pool and inheritance metadata parsing; no payload classes loaded or executed.",
+  "jdk_api_scope": "Explicit Java 8 metadata for Enum.ordinal and Throwable.getMessage, including Exception inheritance.",
+  "variants": {
+    "101": {
+      "original": {
+        "class_count": 509,
+        "unique_game_references": 341,
+        "resolved_game_references": 305,
+        "unresolved_game_references": []
+      },
+      "rebuilt": {
+        "class_count": 509,
+        "unique_game_references": 342,
+        "resolved_game_references": 306,
+        "unresolved_game_references": []
+      },
+      "added_resolved_references": [
+        [
+          "method",
+          "net/minecraft/command/CommandBase",
+          "compareTo",
+          "(Lnet/minecraft/command/ICommand;)I"
+        ]
+      ],
+      "removed_resolved_references": [],
+      "new_unresolved_references": []
+    },
+    "102": {
+      "original": {
+        "class_count": 509,
+        "unique_game_references": 341,
+        "resolved_game_references": 305,
+        "unresolved_game_references": []
+      },
+      "rebuilt": {
+        "class_count": 509,
+        "unique_game_references": 342,
+        "resolved_game_references": 306,
+        "unresolved_game_references": []
+      },
+      "added_resolved_references": [
+        [
+          "method",
+          "net/minecraft/command/CommandBase",
+          "compareTo",
+          "(Lnet/minecraft/command/ICommand;)I"
+        ]
+      ],
+      "removed_resolved_references": [],
+      "new_unresolved_references": []
+    },
+    "103": {
+      "original": {
+        "class_count": 509,
+        "unique_game_references": 341,
+        "resolved_game_references": 305,
+        "unresolved_game_references": []
+      },
+      "rebuilt": {
+        "class_count": 509,
+        "unique_game_references": 342,
+        "resolved_game_references": 306,
+        "unresolved_game_references": []
+      },
+      "added_resolved_references": [
+        [
+          "method",
+          "i",
+          "a",
+          "(Lk;)I"
+        ]
+      ],
+      "removed_resolved_references": [],
+      "new_unresolved_references": []
+    }
+  }
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "class": "dev/slinky/client/render/CanvasPath",
+    "method": "flatten()V",
+    "explicit_scope_slot_rules": [
+      [
+        170,
+        456,
+        {
+          "2": 3,
+          "3": 4,
+          "4": 5,
+          "5": 6,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 10,
+          "10": 11,
+          "11": 12,
+          "12": 13,
+          "13": 14,
+          "14": 15,
+          "15": 16,
+          "16": 17
+        }
+      ]
+    ],
+    "conservative_flow_equivalent_after_rules": true
+  },
+  {
+    "class": "dev/slinky/client/inventory/InventorySelection",
+    "method": "category(ILdev/slinky/client/inventory/InventorySelection$Stack;)I",
+    "explicit_scope_slot_rules": [
+      [
+        95,
+        154,
+        {
+          "4": 5,
+          "5": 4
+        }
+      ],
+      [
+        216,
+        326,
+        {
+          "6": 4,
+          "8": 6,
+          "9": 7,
+          "10": 8,
+          "11": 9
+        }
+      ]
+    ],
+    "conservative_flow_equivalent_after_rules": true
+  },
+  {
+    "class": "dev/slinky/client/render/FontTables",
+    "method": "shape(Ldev/slinky/client/render/FontTables$Font;I)Ljava/util/List;",
+    "explicit_scope_slot_rules": [
+      [
+        473,
+        804,
+        {
+          "7": 9,
+          "8": 7,
+          "9": 8
+        }
+      ]
+    ],
+    "conservative_flow_equivalent_after_rules": true
+  },
+  {
+    "class": "dev/slinky/client/render/FontTables",
+    "method": "map(Ldev/slinky/client/render/FontTables$Font;I)I",
+    "alias_rules": "original indices118 and125 local10->local9; local10=local9 at114/115, no intervening reassignment",
+    "conservative_flow_equivalent_after_rules": true
+  }
+]

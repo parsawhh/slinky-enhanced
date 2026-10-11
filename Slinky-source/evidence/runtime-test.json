@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-10-10T04:25:09.7788042Z",
+  "rebuilt_launcher": "C:\\Users\\GigaZelensky\\Documents\\Codex\\2026-10-10\\usa-x20\\outputs\\Slinky-source\\build\\native\\Release\\Slinky.exe",
+  "launcher_sha256": "5DC061DAC527092E2DDE4C52D16B43058F7B008C3CBB6D6CFE351D4CF6685D74",
+  "launcher_pid": 32828,
+  "game_pid": 27960,
+  "game_title": "Lunar Client 1.8.9 (7c5e05c/dev)",
+  "log_path": "C:\\Users\\GIGAZE~1\\AppData\\Local\\Temp\\slinky-32828\\slinky-native.log",
+  "authorization": "User requested testing rebuilt version against their running Lunar Client",
+  "original_sample_executed": false,
+  "observed_result": "Initialized 66 modules; patched 14 classes; zero failed, two warning-count mismatches; Slinky is running",
+  "game_still_running_after_test": true,
+  "runtime_scope": "Authorized single launch against user-running Lunar; initialization and class hooks observed. Gameplay behavior and full equivalence not established.",
+  "user_confirmed_menu_and_input": true
+}

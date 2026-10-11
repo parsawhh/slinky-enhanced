@@ -1,0 +1,1473 @@
+{
+  "scope": [
+    "dev/slinky/module/",
+    "dev/slinky/setting/"
+  ],
+  "baseline": "work/original-101.json versus work/rebuilt-101.json, prior to parent fixes",
+  "comparison_records": 206,
+  "body_difference_records": 181,
+  "counts": {
+    "flow_equivalent": 143,
+    "manual_no_bug": 20,
+    "compiler_helper_set_change": 15,
+    "metadata_only": 10,
+    "stack_flow_equivalent": 12,
+    "confirmed_mismatch": 3,
+    "renamed_helper_exact": 3
+  },
+  "audited_records": 206,
+  "unaudited_records": 0,
+  "mechanically_not_proven_body_records": 23,
+  "class_metadata": [
+    {
+      "class": "dev/slinky/module/impl/ChamsModule$1",
+      "change": "ACC_FINAL removed:48->32",
+      "assessment": "Anonymous class visibility/body unchanged; reflective modifiers differ. No game logic effect identified."
+    }
+  ],
+  "limitations": "Static comparison to original classfiles; no execution/loading of sample or game integration test. Manual assessments for pure reads assume normal API-valid game-thread use, do not claim universal proof under reflection or simultaneous external mutation. Compiler metadata and internal array type differ as documented. Parent performs fixes/rebuild verification separately.",
+  "methods": [
+    {
+      "class": "dev/slinky/module/CoreModules",
+      "method": "register(Ldev/slinky/module/ModuleManager;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/CoreModules",
+      "method": "sourceOnlyIntervals()Ljava/util/List;",
+      "category": "manual_no_bug",
+      "note": "Array component changes Module to EvidenceModule. Both elements are EvidenceModule subclasses; returned list is unmodifiable. Current public contents and operations preserved; reflective/serialization internal representation can differ.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/EvidenceCatalog",
+      "method": "observation(Lcom/google/gson/JsonObject;Ljava/lang/String;D)D",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/EvidenceCatalog",
+      "method": "read()Ljava/util/Map;",
+      "category": "manual_no_bug",
+      "note": "Equivalent javac try-with-resources expansion. InputStreamReader construction yields a non-null resource; parsing/map insertion order unchanged. Normal and exceptional close/suppression paths reviewed.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/EvidenceCatalog",
+      "method": "readDescriptors()Ljava/util/Map;",
+      "category": "manual_no_bug",
+      "note": "Equivalent javac try-with-resources expansion. Resource created by InputStreamReader constructor is non-null; map parsing/put order unchanged; close and suppressed exception behavior retained.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/EvidenceCatalog",
+      "method": "settings(Ljava/lang/String;)Ljava/util/List;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/EvidenceCatalog",
+      "method": "text(Lcom/google/gson/JsonObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/Module",
+      "method": "setEnabledInternal(ZLdev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/ModuleCategory",
+      "method": "$values()[Ldev/slinky/module/ModuleCategory;",
+      "category": "compiler_helper_set_change",
+      "note": "Added enum helper contains original inline values-array construction; manually reviewed enum order.",
+      "normalized_status": null
+    },
+    {
+      "class": "dev/slinky/module/ModuleCategory",
+      "method": "<clinit>()V",
+      "category": "manual_no_bug",
+      "note": "Enum values-array construction is moved into the generated $values helper. Inline array and helper have the same six constants in the same order.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager",
+      "method": "persist()V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager",
+      "method": "setEnabled(Ldev/slinky/module/Module;ZZ)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager",
+      "method": "shutdown()V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/ModuleManager$3",
+      "method": "<init>(Ldev/slinky/module/ModuleManager;I)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/RecoveredUiLayout",
+      "method": "controls(Ldev/slinky/module/Module;)Ljava/util/List;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/RecoveredUiLayout",
+      "method": "read()Ljava/util/Map;",
+      "category": "manual_no_bug",
+      "note": "Equivalent javac try-with-resources expansion with non-null newly constructed Reader. Parsing/map creation preserved; normal and exceptional closing reviewed.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/AimAssistModule",
+      "method": "consider(Ldev/slinky/client/ClientContext;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/Vec3;FZLdev/slinky/module/impl/AimAssistModule$Score;Ldev/slinky/module/impl/AimAssistModule$Candidate;)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AimAssistModule",
+      "method": "rotate(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AimAssistModule",
+      "method": "settingVisible(Ljava/lang/String;)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AimAssistModule",
+      "method": "updateTarget(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AntiBotModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AntiBotModule",
+      "method": "reject(Ldev/slinky/client/ClientContext;Lnet/minecraft/entity/player/EntityPlayer;Ldev/slinky/module/impl/AntiBotModule$History;)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AntiBotModule$History",
+      "method": "movement(DDDD)V",
+      "category": "manual_no_bug",
+      "note": "Original (dxSquared+dzSquared)+travelledSquared; rebuilt travelledSquared+(dxSquared+dzSquared). Addition operands commute without reassociation; finite numeric result preserved. NaN raw payload selection is outside this behavioral assessment.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/AntiDebuffModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoBlockModule",
+      "method": "onClientTickStart(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoBlockModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoBlockModule",
+      "method": "onRenderTickStart(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoBlockModule",
+      "method": "resetState(Ldev/slinky/client/ClientContext;Z)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoBlockModule",
+      "method": "setItemInUse(Ldev/slinky/client/ClientContext;Z)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoBlockModule",
+      "method": "shouldStartLag()Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoBlockModule",
+      "method": "startBlocking(Ldev/slinky/client/ClientContext;I)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoBlockModule",
+      "method": "startLag(I)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoBlockModule",
+      "method": "stopBlocking(Ldev/slinky/client/ClientContext;Z)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoClickerModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoClickerModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/AutoClickerModule;Ldev/slinky/client/ClientContext;)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoClickerModule$State",
+      "method": "advance(Ldev/slinky/module/impl/AutoClickerModule$Input;Ldev/slinky/module/impl/AutoClickerModule$Settings;FDLdev/slinky/client/rotation/RecoveredRandom;D)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoClickerModule$State",
+      "method": "menu(Ldev/slinky/module/impl/AutoClickerModule$Input;Ldev/slinky/module/impl/AutoClickerModule$Settings;IILdev/slinky/client/rotation/RecoveredRandom;D)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoPotModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoPotModule$State",
+      "method": "cancelDisable()Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoPotModule$State",
+      "method": "enable(Ldev/slinky/client/inventory/ConsumableAccess;ZZ)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoPotModule$State",
+      "method": "tick(Ldev/slinky/client/inventory/ConsumableAccess;Ldev/slinky/module/impl/AutoPotModule$Delay;Z)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoRodModule",
+      "method": "choose([IZ)I",
+      "category": "manual_no_bug",
+      "note": "Original return local2 vs rebuilt local3. Immediately preceding instruction assigns local2=local3, with no intervening mutation, so return value identical.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoRodModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoSoupModule",
+      "method": "afterSettingControl(Ljava/lang/String;Ldev/slinky/client/ClientContext;)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoSoupModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoSoupModule$State",
+      "method": "after(Ldev/slinky/module/impl/AutoSoupModule$Policy;F)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoSoupModule$State",
+      "method": "cancelDisable()Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoSoupModule$State",
+      "method": "tick(Ldev/slinky/client/inventory/ConsumableAccess;Ldev/slinky/module/impl/AutoSoupModule$Policy;FFFFFZ)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoToolModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoToolModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/AutoToolModule;Lnet/minecraft/entity/player/InventoryPlayer;Ldev/slinky/client/ClientContext;)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoToolModule$1",
+      "method": "acquireBlock()Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoToolModule$State",
+      "method": "update(ZFZZZLdev/slinky/module/impl/AutoToolModule$Access;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/AutoWeaponModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BacktrackModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BacktrackModule",
+      "method": "packet(Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BacktrackModule",
+      "method": "publish(Ldev/slinky/client/SemanticEvent;Z)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BacktrackModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BlinkModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BlockEspModule",
+      "method": "plan(Ldev/slinky/client/SemanticEvent;)Ldev/slinky/client/render/DrawPlan;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BlockEspModule",
+      "method": "regionChanged(Lnet/minecraft/world/World;IIIII)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BlockEspModule",
+      "method": "scan(Lnet/minecraft/world/chunk/Chunk;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BlockInModule$State",
+      "method": "update(Ldev/slinky/client/placement/PlacementFrame;FZLdev/slinky/client/rotation/RecoveredRandom;D)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BridgeAssistModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/BridgeAssistModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/BridgeAssistModule;Ldev/slinky/client/ClientContext;)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/BridgeAssistModule$State",
+      "method": "footprintAir(Ldev/slinky/module/impl/BridgeAssistModule$Input;Ldev/slinky/module/impl/BridgeAssistModule$Settings;Ldev/slinky/client/rotation/RecoveredRandom;D)Z",
+      "category": "confirmed_mismatch",
+      "note": "Original x/z evaluate base+(velocity+generated), whereas source compiled to (base+velocity)+generated. This changes double rounding before cell bounds/floor tests. base=1, velocity=2^-53, generated=-2^-53 gives 1 vs 0.9999999999999999. Source lines277/279 require parentheses.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/BridgeAssistModule$State",
+      "method": "update(Ldev/slinky/module/impl/BridgeAssistModule$Input;Ldev/slinky/module/impl/BridgeAssistModule$Settings;Ldev/slinky/client/rotation/RecoveredRandom;D)V",
+      "category": "manual_no_bug",
+      "note": "Guarded branches reordered in layout; decrement/clear/release logic reviewed. Original contribution+countdown vs rebuilt countdown+=contribution is operand commutation; random calls, addition grouping and gates preserved.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/ChestEspModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ChestStealerModule",
+      "method": "compareTitle(Ljava/lang/String;Ljava/lang/String;)I",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ClutchModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ClutchModule$State",
+      "method": "face(Lnet/minecraft/util/Vec3;FFLnet/minecraft/util/Vec3;IIIIIILdev/slinky/module/impl/ClutchModule$Settings;Ldev/slinky/client/rotation/RecoveredRandom;D)Ldev/slinky/module/impl/ClutchModule$Face;",
+      "category": "manual_no_bug",
+      "note": "Array compound assignment uses DUP2 (array,index) vs reloading identical locals. Old element + offset*weight grouping and all raw-double bitwise paths retained.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/ClutchModule$State",
+      "method": "placementTick(Ldev/slinky/client/placement/PlacementFrame;F)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/ClutchModule$State",
+      "method": "search(Ldev/slinky/client/placement/PlacementFrame;Ldev/slinky/module/impl/ClutchModule$Settings;Lnet/minecraft/util/Vec3;Lnet/minecraft/util/AxisAlignedBB;FFLdev/slinky/client/rotation/RecoveredRandom;D)Z",
+      "category": "manual_no_bug",
+      "note": "Postincrement old-count temporary: original load count/store old/increment versus rebuilt load count/increment/store old. Stored value remains preincrement; decrements, loop test and block calls preserved.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/ClutchModule$State",
+      "method": "update(Ldev/slinky/client/placement/PlacementFrame;Ldev/slinky/module/impl/ClutchModule$Settings;Ldev/slinky/client/rotation/RecoveredRandom;D)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/CriticalsModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "confirmed_mismatch",
+      "note": "Original coefficient*(elapsedSeconds*20), source compiled to (coefficient*elapsedSeconds)*20. Example speed float0.17092782258987427, elapsed0.0855062050090371 -> 1.41781631137838 versus1.4178163113783797. Source line67 needs elapsed*20 parentheses. Other partial-tick += whole change only commutes addition operands.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/CriticalsModule$State",
+      "method": "packet(Ldev/slinky/client/SemanticEvent;ZDZ)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/DebugModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FakeLagModule$State",
+      "method": "packet(Ldev/slinky/client/SemanticEvent;Z)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/FakeLagModule$State",
+      "method": "update(IFFZZZZZZZI)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FastAccelModule",
+      "method": "limit(FFFZ)D",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FastAccelModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FastMineModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FastPlaceModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FastPlaceModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FastPlaceModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/FastPlaceModule;Ldev/slinky/client/ClientContext;)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/FastPlaceModule$State",
+      "method": "update(Ldev/slinky/module/impl/FastPlaceModule$Input;FFLdev/slinky/client/rotation/RecoveredRandom;D)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/FreeLookModule",
+      "method": "onEnable(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FreeLookModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FreeLookModule",
+      "method": "restore(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FriendsModule",
+      "method": "load()V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FriendsModule",
+      "method": "middleClickAction(Ldev/slinky/client/ClientContext;Ldev/slinky/module/ModuleManager;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/FriendsModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/GhostHandModule",
+      "method": "canInteractThrough(Ldev/slinky/client/ClientContext;Lnet/minecraft/entity/Entity;)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/GhostHandModule",
+      "method": "itemGate(I)Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/GuiModule",
+      "method": "dispatchInput(IIZI[BIIF)J",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/HitSelectModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/HitSelectModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/HitSelectModule;Ldev/slinky/client/ClientContext;)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/HitSelectModule$State",
+      "method": "filter(Ldev/slinky/module/impl/HitSelectModule$Input;ZIZZFFFFZZZFZLdev/slinky/client/rotation/RecoveredRandom;)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/HitSelectModule$State",
+      "method": "history(Ldev/slinky/module/impl/HitSelectModule$Input;Z)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/HitSelectModule$State",
+      "method": "rounded(FLdev/slinky/client/rotation/RecoveredRandom;)I",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/HitboxesModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/IndicatorsModule",
+      "method": "update(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/InstantStopModule",
+      "method": "choose(DDDD)I",
+      "category": "confirmed_mismatch",
+      "note": "Original saves previous first minimum before computing the new minimum, then compares previousMinimum>third. Rebuilt compares newMinimum>third, normally impossible. Inputs(2,3,1,4) -> original0 versus rebuilt-1. Needs prior-minimum temporary.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/InstantStopModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/InvManagerModule",
+      "method": "delay(FF)V",
+      "category": "manual_no_bug",
+      "note": "Original sampledDelay+timer versus timer+=sampledDelay. Delay computation and random call order retained; addition commutes without reassociation.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/InvManagerModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/InvWalkModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/InvWalkModule$State",
+      "method": "finish(Ldev/slinky/module/impl/InvWalkModule$Access;)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/InvWalkModule$State",
+      "method": "packet(Ldev/slinky/module/impl/InvWalkModule$Access;Ljava/lang/Object;III)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/InvWalkModule$State",
+      "method": "update(Ldev/slinky/module/impl/InvWalkModule$Access;IIII)V",
+      "category": "manual_no_bug",
+      "note": "Temporary slots reused/split: original overwrites local8 with computed gates; rebuilt assigns locals11/12 and later writes local8 at same semantic point. Gate values, send/open ordering and state writes reviewed.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/ItemEspModule",
+      "method": "mergeCounts(Ljava/util/List;D)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ItemEspModule",
+      "method": "plan(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)Ldev/slinky/client/render/DrawPlan;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ItemEspModule",
+      "method": "update(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ItemUseFixModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/KeepSprintModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/KeepSprintModule$State",
+      "method": "sample(ZZDDD)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/KeepSprintModule$State",
+      "method": "scale(F)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/KnockbackDelayModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/KnockbackDelayModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/KnockbackDelayModule$State",
+      "method": "packet(Ldev/slinky/client/SemanticEvent;ZZ)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/KnockbackDisplaceModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/KnockbackDisplaceModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/LagRangeModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/LagRangeModule",
+      "method": "packet(Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/LagRangeModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ModOverlayModule",
+      "method": "collect(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ModOverlayModule",
+      "method": "control(Ldev/slinky/module/Module;Z)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ModOverlayModule",
+      "method": "plan(FF)Ldev/slinky/client/render/DrawPlan;",
+      "category": "manual_no_bug",
+      "note": "Equivalent try-with-resources version. Both implementations check nullable GuiFaceScope before close; body failures retain primary throwable and add close failure as suppressed; normal close failure propagates.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/ModOverlayModule",
+      "method": "planWithFace(FF)Ldev/slinky/client/render/DrawPlan;",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/ModOverlayModule",
+      "method": "redrawFlags(I)I",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ModOverlayModule",
+      "method": "refresh()V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NameTagsModule",
+      "method": "enchants(Lnet/minecraft/item/ItemStack;Ljava/util/List;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NameTagsModule",
+      "method": "label(Ljava/lang/String;Ljava/lang/String;IZFFD)Ljava/lang/String;",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/NameTagsModule",
+      "method": "plan(Ldev/slinky/client/render/RenderAccess$Frame;FFFLdev/slinky/module/impl/NameTagsModule$EquipmentHost;)Ldev/slinky/client/render/DrawPlan;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NameTagsModule",
+      "method": "update(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NoHitDelayModule",
+      "method": "decide(IZIIZ)I",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NoHitDelayModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NoHurtCamModule",
+      "method": "applyPreRender(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NoItemReleaseModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NoItemReleaseModule$State",
+      "method": "use(ILjava/lang/Integer;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NoSlowModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NoUseDelayModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NoUseDelayModule$State",
+      "method": "suppress(ZIZ)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NotificationsModule",
+      "method": "configAction(ILjava/lang/String;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NotificationsModule",
+      "method": "stateChanged(Ldev/slinky/module/Module;Z)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NullMoveModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/NullMoveModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/NullMoveModule;[Lnet/minecraft/client/settings/KeyBinding;)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/PiercingModule",
+      "method": "rank(Ldev/slinky/client/ClientContext;Lnet/minecraft/entity/Entity;Lnet/minecraft/entity/Entity;Z)I",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/PlayerEspModule",
+      "method": "hurt(Ldev/slinky/module/impl/PlayerEspModule$Row;FZ)Ldev/slinky/setting/ColorSetting$Value;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/PlayerEspModule",
+      "method": "screenPlan(Ldev/slinky/client/render/RenderAccess$Frame;F)Ldev/slinky/client/render/DrawPlan;",
+      "category": "manual_no_bug",
+      "note": "Original DUP for projection.x/y assignment to paired bounds; rebuilt stores first then rereads same projection.x/y. Projection fields are local calculation results; no mutation/calls occur between reads. Same bounds for normal single-thread use.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/PlayerEspModule",
+      "method": "update(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/PointersModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/ReachModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$000(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "compiler_helper_set_change",
+      "note": "Original helper maps to rebuilt access$200(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth; by unique exact code/handler body and descriptor match.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$000(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/module/ModuleManager;",
+      "category": "compiler_helper_set_change",
+      "note": "Rebuilt synthetic accessor added under a different number; matching original helper body/descriptor reviewed via normalize_cfg.pairs.",
+      "normalized_status": null
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$100(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "compiler_helper_set_change",
+      "note": "Original helper maps to rebuilt access$300(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth; by unique exact code/handler body and descriptor match.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$1000(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "compiler_helper_set_change",
+      "note": "Rebuilt synthetic accessor added under a different number; matching original helper body/descriptor reviewed via normalize_cfg.pairs.",
+      "normalized_status": null
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$200(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "renamed_helper_exact",
+      "note": "Exact helper body under verified compiler-generated accessor mapping.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$300(FF)D",
+      "category": "compiler_helper_set_change",
+      "note": "Original helper maps to rebuilt access$500(FF)D by unique exact code/handler body and descriptor match.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$300(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "compiler_helper_set_change",
+      "note": "Rebuilt synthetic accessor added under a different number; matching original helper body/descriptor reviewed via normalize_cfg.pairs.",
+      "normalized_status": null
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$400(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "renamed_helper_exact",
+      "note": "Exact helper body under verified compiler-generated accessor mapping.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$500(FF)D",
+      "category": "compiler_helper_set_change",
+      "note": "Rebuilt synthetic accessor added under a different number; matching original helper body/descriptor reviewed via normalize_cfg.pairs.",
+      "normalized_status": null
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$500(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "compiler_helper_set_change",
+      "note": "Original helper maps to rebuilt access$700(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth; by unique exact code/handler body and descriptor match.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$600(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Gaussian;",
+      "category": "compiler_helper_set_change",
+      "note": "Original helper maps to rebuilt access$800(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Gaussian; by unique exact code/handler body and descriptor match.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$600(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "compiler_helper_set_change",
+      "note": "Rebuilt synthetic accessor added under a different number; matching original helper body/descriptor reviewed via normalize_cfg.pairs.",
+      "normalized_status": null
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$700(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "renamed_helper_exact",
+      "note": "Exact helper body under verified compiler-generated accessor mapping.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$800(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Gaussian;",
+      "category": "compiler_helper_set_change",
+      "note": "Rebuilt synthetic accessor added under a different number; matching original helper body/descriptor reviewed via normalize_cfg.pairs.",
+      "normalized_status": null
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$800(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "compiler_helper_set_change",
+      "note": "Original helper maps to rebuilt access$1000(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth; by unique exact code/handler body and descriptor match.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$900(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/client/rotation/RecoveredRandom$Smooth;",
+      "category": "compiler_helper_set_change",
+      "note": "Rebuilt synthetic accessor added under a different number; matching original helper body/descriptor reviewed via normalize_cfg.pairs.",
+      "normalized_status": null
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "access$900(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/module/ModuleManager;",
+      "category": "compiler_helper_set_change",
+      "note": "Original helper maps to rebuilt access$000(Ldev/slinky/module/impl/RefillModule;)Ldev/slinky/module/ModuleManager; by unique exact code/handler body and descriptor match.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/RefillModule;Ldev/slinky/client/ClientContext;)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$1",
+      "method": "finish()V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$Policy",
+      "method": "alternate()Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$Policy",
+      "method": "chooseEmpty()Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$Policy",
+      "method": "chooseSecond()Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$Policy",
+      "method": "closeDelay(F)D",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$Policy",
+      "method": "multiplier(F)F",
+      "category": "manual_no_bug",
+      "note": "Synthetic accessor body mapping checked. Same random sample order and a*(1+d). Rebuilt uses DUP2 to assign d inside multiplication expression; temporary storage changes only.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$Policy",
+      "method": "openDelay(F)D",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/RefillModule$State",
+      "method": "tick(Ldev/slinky/module/impl/RefillModule$Access;Ldev/slinky/module/impl/RefillModule$RandomPolicy;ZZZFFFZI)Z",
+      "category": "manual_no_bug",
+      "note": "Original copies parameter10 to local18 then tests local18; rebuilt tests unchanged parameter10. Both later update local18 identically. Timer contribution+timer vs timer+=contribution only commutes addition; phase, alternate and click state reviewed.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/SafeWalkModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "manual_no_bug",
+      "note": "Compound motion multiplication duplicates same player reference instead of calling context.player twice. ClientContext.player is a field read. Same normal single-thread game behavior; a simultaneous external player replacement would alter observation timing.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/SprintResetModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/SprintResetModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/SprintResetModule;Ldev/slinky/client/ClientContext;)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/SprintResetModule$State",
+      "method": "update(ZDZIFFZZZLdev/slinky/client/rotation/RecoveredRandom;Ldev/slinky/module/impl/SprintResetModule$Action;)V",
+      "category": "manual_no_bug",
+      "note": "Timer+=sampledDelay uses DUP receiver rather than delay+timer operand order. Random sampling, reset/decrement and callback order unchanged; addition grouping preserved.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/StrafeModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "manual_no_bug",
+      "note": "Computes jump&&!sampledSprint boolean before player-motion field reads instead of as final call argument. Reads are pure and used on game thread, redirect receives identical values. Concurrent external mutation could change observation timing; no single-thread discrepancy found.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/TeamsModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/TimerModule",
+      "method": "select(FZZZZDZZI)F",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/TimerModule",
+      "method": "statusText()Ljava/lang/String;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/TimerRangeModule",
+      "method": "beginFreeze(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/TimerRangeModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "stack_flow_equivalent",
+      "note": "Same structural comparison after expanding DUP of directly loaded local or eliminating char cast of fixed ASCII constants; dynamic one-to-one local mapping pins all argument slots. Branch targets inspected; NameTags cast targets receive only ASCII97/101.",
+      "normalized_status": "unresolved"
+    },
+    {
+      "class": "dev/slinky/module/impl/TimerRangeModule",
+      "method": "tick(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/TrajectoriesModule",
+      "method": "update(Ldev/slinky/client/ClientContext;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/VelocityModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/WeaponsModule",
+      "method": "enchantmentGroup(I)I",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/WeaponsModule",
+      "method": "selectedSetting(I)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/WeaponsModule$1",
+      "method": "<init>(Ldev/slinky/module/impl/WeaponsModule;Lnet/minecraft/entity/player/EntityPlayer;)V",
+      "category": "metadata_only",
+      "note": "Captured anonymous constructor Signature changed absent->()V. Runtime descriptor and body preserved; generic reflection metadata is different.",
+      "normalized_status": "exact_body"
+    },
+    {
+      "class": "dev/slinky/module/impl/WeaponsModule$1",
+      "method": "allowed(I)Z",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/module/impl/WeaponsModule$Cache",
+      "method": "update(ILdev/slinky/module/impl/WeaponsModule$Classification;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/setting/BooleanSetting",
+      "method": "parse(Ljava/lang/String;)Ljava/lang/Boolean;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/setting/ChoiceSetting",
+      "method": "<init>(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/setting/ChoiceSetting",
+      "method": "requireValid(Ljava/lang/Integer;)Ljava/lang/Integer;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/setting/NamedColorListSetting",
+      "method": "decodeRows(Lcom/google/gson/JsonArray;)Ljava/util/List;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/setting/NumberSetting",
+      "method": "<init>(Ljava/lang/String;Ljava/lang/String;DDDD)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/setting/NumberSetting",
+      "method": "loadNumber(D)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/setting/RangeSetting",
+      "method": "requireValid(Ldev/slinky/setting/RangeSetting$Value;)Ldev/slinky/setting/RangeSetting$Value;",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/setting/Setting",
+      "method": "<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V",
+      "category": "flow_equivalent",
+      "note": "Instruction-flow bisimulation with argument slots fixed, temporary slot renaming, goto threading, inverse branches and verified helper references. Exception edges retained.",
+      "normalized_status": "flow_equivalent"
+    },
+    {
+      "class": "dev/slinky/setting/StringListSetting",
+      "method": "normalizeWith(Ljava/util/function/UnaryOperator;)V",
+      "category": "manual_no_bug",
+      "note": "Adds CHECKCAST List before generic set. Constructor/requireValid/bridge already guarantee stored value is List; cast redundant for normal API-valid states. Reflection/raw field corruption excluded.",
+      "normalized_status": "unresolved"
+    }
+  ]
+}

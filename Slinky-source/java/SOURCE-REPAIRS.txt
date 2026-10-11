@@ -1,0 +1,96 @@
+dev\slinky\shaded\asm\AnnotationVisitor.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\ClassReader.java: restored 2 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\ClassReader.java: renamed lookupswitch local to avoid decompiler scope collision.
+dev\slinky\shaded\asm\ClassTooLargeException.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\ClassVisitor.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\ConstantDynamic.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\Constants.java: restored 3 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\FieldVisitor.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\Frame.java: restored 3 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\Handle.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\Label.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\MethodTooLargeException.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\MethodVisitor.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\ModuleVisitor.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\RecordComponentVisitor.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\SymbolTable.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\Type.java: restored 2 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\shaded\asm\signature\SignatureVisitor.java: restored 1 synthetic concat helper(s) omitted by Vineflower.
+dev\slinky\client\RecoveredMath.java: moved illegal constructor strictfp modifier to class declaration(s) RecoveredMath
+dev\slinky\config\RecoveredJsonRuntime.java: moved illegal constructor strictfp modifier to class declaration(s) Context,FormattedNumber,ParsedNumber,PrintBuffer,PrintSlice,RecoveredJsonRuntime,ScannedNumber
+dev\slinky\module\impl\AimAssistModule.java: moved illegal constructor strictfp modifier to class declaration(s) AimAssistModule,Candidate,Score
+dev\slinky\module\impl\AutoClickerModule.java: moved illegal constructor strictfp modifier to class declaration(s) AutoClickerModule
+dev\slinky\module\impl\AutoPotModule.java: moved illegal constructor strictfp modifier to class declaration(s) AutoPotModule
+dev\slinky\module\impl\AutoRodModule.java: moved illegal constructor strictfp modifier to class declaration(s) AutoRodModule
+dev\slinky\module\impl\AutoSoupModule.java: moved illegal constructor strictfp modifier to class declaration(s) AutoSoupModule
+dev\slinky\module\impl\BacktrackModule.java: moved illegal constructor strictfp modifier to class declaration(s) BacktrackModule
+dev\slinky\module\impl\BlockEspModule.java: moved illegal constructor strictfp modifier to class declaration(s) BlockEspModule
+dev\slinky\module\impl\BlockInModule.java: moved illegal constructor strictfp modifier to class declaration(s) BlockInModule
+dev\slinky\module\impl\BridgeAssistModule.java: moved illegal constructor strictfp modifier to class declaration(s) BridgeAssistModule
+dev\slinky\module\impl\ChestEspModule.java: moved illegal constructor strictfp modifier to class declaration(s) ChestEspModule,Row
+dev\slinky\module\impl\ChestStealerModule.java: moved illegal constructor strictfp modifier to class declaration(s) ChestStealerModule
+dev\slinky\module\impl\ClutchModule.java: moved illegal constructor strictfp modifier to class declaration(s) ClutchModule,Face
+dev\slinky\module\impl\CriticalsModule.java: moved illegal constructor strictfp modifier to class declaration(s) CriticalsModule
+dev\slinky\module\impl\FakeLagModule.java: moved illegal constructor strictfp modifier to class declaration(s) FakeLagModule
+dev\slinky\module\impl\FastAccelModule.java: moved illegal constructor strictfp modifier to class declaration(s) FastAccelModule
+dev\slinky\module\impl\FastMineModule.java: moved illegal constructor strictfp modifier to class declaration(s) FastMineModule
+dev\slinky\module\impl\FastPlaceModule.java: moved illegal constructor strictfp modifier to class declaration(s) FastPlaceModule
+dev\slinky\module\impl\HitSelectModule.java: moved illegal constructor strictfp modifier to class declaration(s) HitSelectModule
+dev\slinky\module\impl\IndicatorsModule.java: moved illegal constructor strictfp modifier to class declaration(s) IndicatorsModule,Row
+dev\slinky\module\impl\InstantStopModule.java: moved illegal constructor strictfp modifier to class declaration(s) InstantStopModule
+dev\slinky\module\impl\InvManagerModule.java: moved illegal constructor strictfp modifier to class declaration(s) InvManagerModule
+dev\slinky\module\impl\ItemEspModule.java: moved illegal constructor strictfp modifier to class declaration(s) ItemEspModule,Row
+dev\slinky\module\impl\KeepSprintModule.java: moved illegal constructor strictfp modifier to class declaration(s) KeepSprintModule
+dev\slinky\module\impl\KnockbackDelayModule.java: moved illegal constructor strictfp modifier to class declaration(s) KnockbackDelayModule
+dev\slinky\module\impl\KnockbackDisplaceModule.java: moved illegal constructor strictfp modifier to class declaration(s) KnockbackDisplaceModule
+dev\slinky\module\impl\LagRangeModule.java: moved illegal constructor strictfp modifier to class declaration(s) LagRangeModule
+dev\slinky\module\impl\ModOverlayModule.java: moved illegal constructor strictfp modifier to class declaration(s) ModOverlayModule,Row
+dev\slinky\module\impl\NameTagsModule.java: moved illegal constructor strictfp modifier to class declaration(s) NameTagsModule,Row
+dev\slinky\module\impl\NotificationsModule.java: moved illegal constructor strictfp modifier to class declaration(s) NotificationsModule
+dev\slinky\module\impl\PlayerEspModule.java: moved illegal constructor strictfp modifier to class declaration(s) PlayerEspModule,Row
+dev\slinky\module\impl\PointersModule.java: moved illegal constructor strictfp modifier to class declaration(s) PointersModule,Row
+dev\slinky\module\impl\RefillModule.java: moved illegal constructor strictfp modifier to class declaration(s) Policy,RefillModule
+dev\slinky\module\impl\SprintResetModule.java: moved illegal constructor strictfp modifier to class declaration(s) SprintResetModule
+dev\slinky\module\impl\StrafeModule.java: moved illegal constructor strictfp modifier to class declaration(s) StrafeModule
+dev\slinky\module\impl\TimerModule.java: moved illegal constructor strictfp modifier to class declaration(s) TimerModule
+dev\slinky\module\impl\TimerRangeModule.java: moved illegal constructor strictfp modifier to class declaration(s) TimerRangeModule
+dev\slinky\module\impl\TrajectoriesModule.java: moved illegal constructor strictfp modifier to class declaration(s) TrajectoriesModule
+dev\slinky\module\impl\VelocityModule.java: moved illegal constructor strictfp modifier to class declaration(s) VelocityModule
+dev\slinky\client\hook\RayQueryAdapter.java: moved illegal constructor strictfp modifier to class declaration(s) RayQueryAdapter
+dev\slinky\client\hook\RenderHooks.java: moved illegal constructor strictfp modifier to class declaration(s) RenderHooks
+dev\slinky\client\hook\UiFrameDriver.java: moved illegal constructor strictfp modifier to class declaration(s) UiFrameDriver
+dev\slinky\client\inventory\InventorySelection.java: moved illegal constructor strictfp modifier to class declaration(s) Action,InventorySelection,Stack
+dev\slinky\client\inventory\RefillSelection.java: moved illegal constructor strictfp modifier to class declaration(s) RefillSelection,Result
+dev\slinky\client\numeric\DoubleNumeric.java: moved illegal constructor strictfp modifier to class declaration(s) DoubleNumeric
+dev\slinky\client\numeric\DoubleTrigonometry.java: moved illegal constructor strictfp modifier to class declaration(s) DoubleTrigonometry
+dev\slinky\client\numeric\FloatNumeric.java: moved illegal constructor strictfp modifier to class declaration(s) FloatNumeric
+dev\slinky\client\numeric\FloatTrigonometry.java: moved illegal constructor strictfp modifier to class declaration(s) FloatTrigonometry
+dev\slinky\client\numeric\LargeReduction.java: moved illegal constructor strictfp modifier to class declaration(s) LargeReduction
+dev\slinky\client\packet\PredictionGeometry.java: moved illegal constructor strictfp modifier to class declaration(s) PredictionGeometry
+dev\slinky\client\packet\TimingAccess.java: moved illegal constructor strictfp modifier to class declaration(s) TimingAccess
+dev\slinky\client\placement\PlacementGeometry.java: moved illegal constructor strictfp modifier to class declaration(s) PlacementGeometry
+dev\slinky\client\render\BlockMesh.java: moved illegal constructor strictfp modifier to class declaration(s) BlockMesh,Position,Region
+dev\slinky\client\render\CanvasFonts.java: moved illegal constructor strictfp modifier to class declaration(s) Batch,CanvasFonts,Engine,GuiFaceScope,Text
+dev\slinky\client\render\CanvasPath.java: moved illegal constructor strictfp modifier to class declaration(s) CanvasPath,Point
+dev\slinky\client\render\FontAtlasService.java: moved illegal constructor strictfp modifier to class declaration(s) Canvas,FontAtlasService,Stash
+dev\slinky\client\render\FontCff.java: moved illegal constructor strictfp modifier to class declaration(s) Buffer,Context,FontCff,Info
+dev\slinky\client\render\FontGeometry.java: moved illegal constructor strictfp modifier to class declaration(s) Edge,FontGeometry
+dev\slinky\client\render\FontGlyphCache.java: moved illegal constructor strictfp modifier to class declaration(s) Font,FontGlyphCache,Stash
+dev\slinky\client\render\FontRasterization.java: moved illegal constructor strictfp modifier to class declaration(s) Active,FontRasterization,Pool,Scratch,Vertex
+dev\slinky\client\render\FontServices.java: moved illegal constructor strictfp modifier to class declaration(s) Atlas,Cursor,Iterator,Node
+dev\slinky\client\render\FontTables.java: moved illegal constructor strictfp modifier to class declaration(s) Font,FontTables
+dev\slinky\client\render\GuiCanvasState.java: moved illegal constructor strictfp modifier to class declaration(s) GuiCanvasState
+dev\slinky\client\render\GuiPresentation.java: moved illegal constructor strictfp modifier to class declaration(s) Binding,GuiPresentation,Icon
+dev\slinky\client\render\GuiWidgets.java: moved illegal constructor strictfp modifier to class declaration(s) GuiWidgets
+dev\slinky\client\render\NotificationQueue.java: moved illegal constructor strictfp modifier to class declaration(s) Message
+dev\slinky\client\render\RecoveredGui.java: moved illegal constructor strictfp modifier to class declaration(s) Layout
+dev\slinky\client\render\RenderMath.java: moved illegal constructor strictfp modifier to class declaration(s) Projection,Rect,RenderMath
+dev\slinky\client\render\TrajectoryPrediction.java: moved illegal constructor strictfp modifier to class declaration(s) BlockHit,Candidate,Launch,Result,TrajectoryPrediction
+dev\slinky\client\rotation\AimNoise.java: moved illegal constructor strictfp modifier to class declaration(s) AimNoise
+dev\slinky\client\rotation\RecoveredRandom.java: moved illegal constructor strictfp modifier to class declaration(s) RecoveredRandom
+dev\slinky\client\rotation\RotationMath.java: moved illegal constructor strictfp modifier to class declaration(s) RotationMath
+dev\slinky\client\rotation\RotationService.java: moved illegal constructor strictfp modifier to class declaration(s) RotationService,RotationSnapshot
+
+Final bytecode review, 10 October 2026:
+Restored original arithmetic grouping in 16 methods; fixed InstantStop lost previous minimum; restored RenderAccess argument evaluation order and CoreModules Module[] type; restored 12 default constructor strict flags through class declarations.
+See evidence/final-java-review.txt and evidence/final-java/source-corrections.diff for complete edits and verification scope.

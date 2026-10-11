@@ -1,0 +1,19 @@
+{
+  "original_executed": false,
+  "launcher_pid": 31588,
+  "log_path": "C:\\Users\\GIGAZE~1\\AppData\\Local\\Temp\\slinky-31588\\slinky-native.log",
+  "test": "live compatible update retry; existing Lunar PID 27960",
+  "launcher_sha256": "08631A217D894E0448D6EB037D321D77E080E43FC17C9B66E17CBA6351045C32",
+  "game_pid": 27960,
+  "game_restart_required": false,
+  "user_confirmed_menu": true,
+  "classes_replaced": 510,
+  "modules_initialized": 66,
+  "game_patches_reused": true,
+  "preserved_constructor_flags": 12,
+  "active_instance_skip_test": "Passed final launcher; exit code 2",
+  "runtime_scope": "Live migration/startup/menu and active-instance skip; gameplay modules not exhaustively retested.",
+  "final_deliverable_launcher_sha256": "6f31aa732705463221470095dc696bfdb4fbc8fbddff4690e2e0b5dd32f96eb5",
+  "tested_dll_sha256": "33efda937f9ffb7e4488b76dc8acb975d91da8ebb04b7c7e1f27cd74630cebf9",
+  "launcher_difference": "Console formatting/--no-pause support added after live migration; final launcher self-test and actual active-instance branch tested; embedded DLL unchanged."
+}

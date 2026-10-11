@@ -1,0 +1,1033 @@
+{
+  "method": "dev/slinky/client/render/FontCff.run(Ldev/slinky/client/render/FontCff$Info;ILdev/slinky/client/render/FontCff$Context;)Z",
+  "comparison": "static abstract instruction transfer, no helper/sample execution",
+  "cases": [
+    {
+      "opcode": 0,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 1,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 2,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 3,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 4,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 5,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 6,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 7,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 8,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 9,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 10,
+      "abstract_states": 294
+    },
+    {
+      "opcode": 11,
+      "abstract_states": 294
+    },
+    {
+      "opcode": 12,
+      "abstract_states": 37632
+    },
+    {
+      "opcode": 13,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 14,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 15,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 16,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 17,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 18,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 19,
+      "abstract_states": 196
+    },
+    {
+      "opcode": 20,
+      "abstract_states": 196
+    },
+    {
+      "opcode": 21,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 22,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 23,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 24,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 25,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 26,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 27,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 28,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 29,
+      "abstract_states": 294
+    },
+    {
+      "opcode": 30,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 31,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 32,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 33,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 34,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 35,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 36,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 37,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 38,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 39,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 40,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 41,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 42,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 43,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 44,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 45,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 46,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 47,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 48,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 49,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 50,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 51,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 52,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 53,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 54,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 55,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 56,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 57,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 58,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 59,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 60,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 61,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 62,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 63,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 64,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 65,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 66,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 67,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 68,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 69,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 70,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 71,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 72,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 73,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 74,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 75,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 76,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 77,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 78,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 79,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 80,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 81,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 82,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 83,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 84,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 85,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 86,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 87,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 88,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 89,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 90,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 91,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 92,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 93,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 94,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 95,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 96,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 97,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 98,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 99,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 100,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 101,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 102,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 103,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 104,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 105,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 106,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 107,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 108,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 109,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 110,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 111,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 112,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 113,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 114,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 115,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 116,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 117,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 118,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 119,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 120,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 121,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 122,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 123,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 124,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 125,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 126,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 127,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 128,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 129,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 130,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 131,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 132,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 133,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 134,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 135,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 136,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 137,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 138,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 139,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 140,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 141,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 142,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 143,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 144,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 145,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 146,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 147,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 148,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 149,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 150,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 151,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 152,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 153,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 154,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 155,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 156,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 157,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 158,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 159,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 160,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 161,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 162,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 163,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 164,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 165,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 166,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 167,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 168,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 169,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 170,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 171,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 172,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 173,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 174,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 175,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 176,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 177,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 178,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 179,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 180,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 181,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 182,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 183,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 184,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 185,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 186,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 187,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 188,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 189,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 190,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 191,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 192,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 193,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 194,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 195,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 196,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 197,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 198,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 199,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 200,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 201,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 202,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 203,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 204,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 205,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 206,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 207,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 208,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 209,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 210,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 211,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 212,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 213,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 214,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 215,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 216,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 217,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 218,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 219,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 220,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 221,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 222,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 223,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 224,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 225,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 226,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 227,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 228,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 229,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 230,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 231,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 232,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 233,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 234,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 235,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 236,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 237,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 238,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 239,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 240,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 241,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 242,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 243,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 244,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 245,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 246,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 247,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 248,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 249,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 250,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 251,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 252,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 253,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 254,
+      "abstract_states": 98
+    },
+    {
+      "opcode": 255,
+      "abstract_states": 98
+    }
+  ],
+  "total_abstract_states": 63406,
+  "mismatches": 0,
+  "mismatch_examples": []
+}

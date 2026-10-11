@@ -1,0 +1,21 @@
+{
+  "exe_sha256": "501d7c83e2010937350fee800e37631e1499ec9b2693a32493db71e5f40b0272",
+  "dll_sha256": "863a709c0c8ed82dbcfc98f118d64cfeb40c738efcee1d8f4b0bfd6f857f0d6f",
+  "payloads": {
+    "101": {
+      "sha256": "072eba82b1bf38f6148271f3ad40d3949e6241ca372d2c68a0331a79103417fb",
+      "size": 1873594,
+      "matches_prior_extraction": true
+    },
+    "102": {
+      "sha256": "f47cbbb2fa34638e1d3b4c50c44bbadc533a44d9345682dd1c9b2f6f5782b93c",
+      "size": 2211768,
+      "matches_prior_extraction": true
+    },
+    "103": {
+      "sha256": "eb779d6393988757433adc8da465737c16883e07d6172877c1e7e0fb56238031",
+      "size": 2150011,
+      "matches_prior_extraction": true
+    }
+  }
+}

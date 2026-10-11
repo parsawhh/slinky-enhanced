@@ -1,0 +1,3865 @@
+{
+  "original_exe_sha256": "501d7c83e2010937350fee800e37631e1499ec9b2693a32493db71e5f40b0272",
+  "original_dll_sha256": "863a709c0c8ed82dbcfc98f118d64cfeb40c738efcee1d8f4b0bfd6f857f0d6f",
+  "execution": "Static only: inspected native binaries and Java classes are not loaded or executed.",
+  "variants": {
+    "101": {
+      "original_jar_sha256": "072eba82b1bf38f6148271f3ad40d3949e6241ca372d2c68a0331a79103417fb",
+      "rebuilt_jar_sha256": "6e4f4f3b36fe0f2af505fd32f31aaa4b25acc7dff395c343028912df3ab3d6ce",
+      "original_classes": 509,
+      "rebuilt_classes": 510,
+      "intentional_new_classes": [
+        "dev/slinky/inject/ReloadState"
+      ],
+      "intentional_lifecycle_changes": [
+        "Bootstrap",
+        "ModuleManager.shutdown",
+        "ClientEventBridge.install/attachPipeline",
+        "SlinkyMod.initialize",
+        "Platform.openResource",
+        "RenderHooks.install"
+      ],
+      "original_methods": 3815,
+      "rebuilt_methods": 3821,
+      "flow_summary": {
+        "exact_body": 3124,
+        "unresolved": 182,
+        "flow_equivalent": 509
+      },
+      "class_metadata_changes": [
+        {
+          "class": "dev/slinky/client/ClientEventBridge$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/ItemPolicyService$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/action/ActionAccess$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/hook/GlStateScope$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/packet/PacketPipeline$3",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/placement/PlacementSelection$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/render/GlCanvasBackend$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/inject/Bootstrap$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/inject/Platform$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/ChamsModule$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/AnnotationWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Attribute",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Attribute$Set",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ByteVector",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassReader",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassTooLargeException",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ConstantDynamic",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Context",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/CurrentFrame",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Edge",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/FieldVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/FieldWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Handle",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Handler",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Label",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodTooLargeException",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ModuleVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ModuleWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Opcodes",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/RecordComponentWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Symbol",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable$Entry",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable$LabelEntry",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Type",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/TypePath",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/TypeReference",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureReader",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/AbstractInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/AnnotationNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ClassNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/FieldInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/FieldNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/FrameNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/IincInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InnerClassNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InsnList",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InsnList$InsnListIterator",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/IntInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InvokeDynamicInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/JumpInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LabelNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LdcInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LineNumberNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LocalVariableAnnotationNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LocalVariableNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LookupSwitchInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MethodInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MethodNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MethodNode$1",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleExportNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleOpenNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleProvideNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleRequireNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MultiANewArrayInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ParameterNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/RecordComponentNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TableSwitchInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TryCatchBlockNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TypeAnnotationNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TypeInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/UnsupportedClassVersionException",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/Util",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/VarInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        }
+      ],
+      "method_metadata_changes": [
+        {
+          "class": "dev/slinky/client/ClientEventBridge$1",
+          "method": "<init>(Ldev/slinky/client/ClientEventBridge;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/ClientEventBridge;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/ClientEventBridge$2",
+          "method": "<init>(Ldev/slinky/client/ClientEventBridge;Lio/netty/channel/Channel;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/ClientEventBridge;Lio/netty/channel/Channel;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/packet/PacketPipeline$2",
+          "method": "<init>(Ldev/slinky/module/ModuleManager;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/ModuleManager;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/packet/PacketPipeline$3",
+          "method": "<init>(ZLio/netty/channel/ChannelHandlerContext;Ldev/slinky/client/packet/PacketPipeline;)V",
+          "rebuilt_method": "<init>(ZLio/netty/channel/ChannelHandlerContext;Ldev/slinky/client/packet/PacketPipeline;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/placement/PlacementSelection$1",
+          "method": "<init>(Lnet/minecraft/entity/player/InventoryPlayer;)V",
+          "rebuilt_method": "<init>(Lnet/minecraft/entity/player/InventoryPlayer;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/render/CanvasFonts$Engine$2",
+          "method": "<init>(Ldev/slinky/client/render/CanvasFonts$Engine;Ldev/slinky/client/render/FontServices$Iterator;Ljava/util/List;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/render/CanvasFonts$Engine;Ldev/slinky/client/render/FontServices$Iterator;Ljava/util/List;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/render/InlineModuleSettings$1",
+          "method": "<init>(Ldev/slinky/client/render/InlineModuleSettings;Ldev/slinky/setting/Setting;Ldev/slinky/module/Module;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/render/InlineModuleSettings;Ldev/slinky/setting/Setting;Ldev/slinky/module/Module;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/ModuleManager$3",
+          "method": "<init>(Ldev/slinky/module/ModuleManager;I)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/ModuleManager;I)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/AutoClickerModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/AutoClickerModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/AutoClickerModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/AutoToolModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/AutoToolModule;Lnet/minecraft/entity/player/InventoryPlayer;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/AutoToolModule;Lnet/minecraft/entity/player/InventoryPlayer;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/BridgeAssistModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/BridgeAssistModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/BridgeAssistModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/FastPlaceModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/FastPlaceModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/FastPlaceModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/HitSelectModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/HitSelectModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/HitSelectModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/NullMoveModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/NullMoveModule;[Lnet/minecraft/client/settings/KeyBinding;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/NullMoveModule;[Lnet/minecraft/client/settings/KeyBinding;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/RefillModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/RefillModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/RefillModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/SprintResetModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/SprintResetModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/SprintResetModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/WeaponsModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/WeaponsModule;Lnet/minecraft/entity/player/EntityPlayer;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/WeaponsModule;Lnet/minecraft/entity/player/EntityPlayer;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassReader",
+          "method": "stringConcat$0(S)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(S)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassReader",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassTooLargeException",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ConstantDynamic",
+          "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/FieldVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Handle",
+          "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Label",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodTooLargeException",
+          "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ModuleVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable",
+          "method": "stringConcat$0(Ljava/lang/Object;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/Object;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Type",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Type",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        }
+      ],
+      "unpaired_added_methods": [
+        [
+          "dev/slinky/client/SlinkyCommand",
+          "compareTo(Ljava/lang/Object;)I"
+        ],
+        [
+          "dev/slinky/config/RecoveredConfiguration$Scope",
+          "$values()[Ldev/slinky/config/RecoveredConfiguration$Scope;"
+        ],
+        [
+          "dev/slinky/inject/Platform$Namespace",
+          "$values()[Ldev/slinky/inject/Platform$Namespace;"
+        ],
+        [
+          "dev/slinky/inject/ReloadState",
+          "<init>()V"
+        ],
+        [
+          "dev/slinky/inject/ReloadState",
+          "replaceHook(Ljava/lang/Thread;)V"
+        ],
+        [
+          "dev/slinky/module/ModuleCategory",
+          "$values()[Ldev/slinky/module/ModuleCategory;"
+        ]
+      ],
+      "unpaired_missing_methods": [],
+      "semantic_method_flags_equal": true,
+      "original_field_metadata_equal": true,
+      "nonclass_resources_equal": true,
+      "resource_count": 22,
+      "manifest_values": {
+        "original": {
+          "Manifest-Version": "1.0",
+          "Implementation-Title": "Slinky injectable payload",
+          "Implementation-Version": "0.5.0-settings"
+        },
+        "rebuilt": {
+          "Manifest-Version": "1.0",
+          "Implementation-Title": "Slinky injectable payload",
+          "Implementation-Version": "0.5.0-settings",
+          "Created-By": "21.0.9 (Eclipse Adoptium)"
+        }
+      }
+    },
+    "102": {
+      "original_jar_sha256": "f47cbbb2fa34638e1d3b4c50c44bbadc533a44d9345682dd1c9b2f6f5782b93c",
+      "rebuilt_jar_sha256": "dbfaeac21020c6c14419722ad49f03e8207838e8f903f2b0dfc8f1d31050738e",
+      "original_classes": 509,
+      "rebuilt_classes": 510,
+      "intentional_new_classes": [
+        "dev/slinky/inject/ReloadState"
+      ],
+      "intentional_lifecycle_changes": [
+        "Bootstrap",
+        "ModuleManager.shutdown",
+        "ClientEventBridge.install/attachPipeline",
+        "SlinkyMod.initialize",
+        "Platform.openResource",
+        "RenderHooks.install"
+      ],
+      "original_methods": 3815,
+      "rebuilt_methods": 3821,
+      "flow_summary": {
+        "exact_body": 3124,
+        "unresolved": 182,
+        "flow_equivalent": 509
+      },
+      "class_metadata_changes": [
+        {
+          "class": "dev/slinky/client/ClientEventBridge$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/ItemPolicyService$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/action/ActionAccess$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/hook/GlStateScope$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/packet/PacketPipeline$3",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/placement/PlacementSelection$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/render/GlCanvasBackend$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/inject/Bootstrap$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/inject/Platform$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/ChamsModule$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/AnnotationWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Attribute",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Attribute$Set",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ByteVector",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassReader",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassTooLargeException",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ConstantDynamic",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Context",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/CurrentFrame",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Edge",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/FieldVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/FieldWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Handle",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Handler",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Label",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodTooLargeException",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ModuleVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ModuleWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Opcodes",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/RecordComponentWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Symbol",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable$Entry",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable$LabelEntry",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Type",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/TypePath",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/TypeReference",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureReader",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/AbstractInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/AnnotationNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ClassNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/FieldInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/FieldNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/FrameNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/IincInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InnerClassNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InsnList",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InsnList$InsnListIterator",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/IntInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InvokeDynamicInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/JumpInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LabelNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LdcInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LineNumberNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LocalVariableAnnotationNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LocalVariableNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LookupSwitchInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MethodInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MethodNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MethodNode$1",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleExportNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleOpenNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleProvideNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleRequireNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MultiANewArrayInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ParameterNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/RecordComponentNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TableSwitchInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TryCatchBlockNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TypeAnnotationNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TypeInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/UnsupportedClassVersionException",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/Util",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/VarInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        }
+      ],
+      "method_metadata_changes": [
+        {
+          "class": "dev/slinky/client/ClientEventBridge$1",
+          "method": "<init>(Ldev/slinky/client/ClientEventBridge;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/ClientEventBridge;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/ClientEventBridge$2",
+          "method": "<init>(Ldev/slinky/client/ClientEventBridge;Lio/netty/channel/Channel;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/ClientEventBridge;Lio/netty/channel/Channel;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/packet/PacketPipeline$2",
+          "method": "<init>(Ldev/slinky/module/ModuleManager;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/ModuleManager;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/packet/PacketPipeline$3",
+          "method": "<init>(ZLio/netty/channel/ChannelHandlerContext;Ldev/slinky/client/packet/PacketPipeline;)V",
+          "rebuilt_method": "<init>(ZLio/netty/channel/ChannelHandlerContext;Ldev/slinky/client/packet/PacketPipeline;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/placement/PlacementSelection$1",
+          "method": "<init>(Lnet/minecraft/entity/player/InventoryPlayer;)V",
+          "rebuilt_method": "<init>(Lnet/minecraft/entity/player/InventoryPlayer;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/render/CanvasFonts$Engine$2",
+          "method": "<init>(Ldev/slinky/client/render/CanvasFonts$Engine;Ldev/slinky/client/render/FontServices$Iterator;Ljava/util/List;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/render/CanvasFonts$Engine;Ldev/slinky/client/render/FontServices$Iterator;Ljava/util/List;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/render/InlineModuleSettings$1",
+          "method": "<init>(Ldev/slinky/client/render/InlineModuleSettings;Ldev/slinky/setting/Setting;Ldev/slinky/module/Module;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/render/InlineModuleSettings;Ldev/slinky/setting/Setting;Ldev/slinky/module/Module;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/ModuleManager$3",
+          "method": "<init>(Ldev/slinky/module/ModuleManager;I)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/ModuleManager;I)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/AutoClickerModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/AutoClickerModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/AutoClickerModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/AutoToolModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/AutoToolModule;Lnet/minecraft/entity/player/InventoryPlayer;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/AutoToolModule;Lnet/minecraft/entity/player/InventoryPlayer;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/BridgeAssistModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/BridgeAssistModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/BridgeAssistModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/FastPlaceModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/FastPlaceModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/FastPlaceModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/HitSelectModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/HitSelectModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/HitSelectModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/NullMoveModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/NullMoveModule;[Lnet/minecraft/client/settings/KeyBinding;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/NullMoveModule;[Lnet/minecraft/client/settings/KeyBinding;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/RefillModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/RefillModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/RefillModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/SprintResetModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/SprintResetModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/SprintResetModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/WeaponsModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/WeaponsModule;Lnet/minecraft/entity/player/EntityPlayer;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/WeaponsModule;Lnet/minecraft/entity/player/EntityPlayer;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassReader",
+          "method": "stringConcat$0(S)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(S)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassReader",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassTooLargeException",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ConstantDynamic",
+          "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/FieldVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Handle",
+          "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Label",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodTooLargeException",
+          "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ModuleVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable",
+          "method": "stringConcat$0(Ljava/lang/Object;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/Object;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Type",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Type",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        }
+      ],
+      "unpaired_added_methods": [
+        [
+          "dev/slinky/client/SlinkyCommand",
+          "compareTo(Ljava/lang/Object;)I"
+        ],
+        [
+          "dev/slinky/config/RecoveredConfiguration$Scope",
+          "$values()[Ldev/slinky/config/RecoveredConfiguration$Scope;"
+        ],
+        [
+          "dev/slinky/inject/Platform$Namespace",
+          "$values()[Ldev/slinky/inject/Platform$Namespace;"
+        ],
+        [
+          "dev/slinky/inject/ReloadState",
+          "<init>()V"
+        ],
+        [
+          "dev/slinky/inject/ReloadState",
+          "replaceHook(Ljava/lang/Thread;)V"
+        ],
+        [
+          "dev/slinky/module/ModuleCategory",
+          "$values()[Ldev/slinky/module/ModuleCategory;"
+        ]
+      ],
+      "unpaired_missing_methods": [],
+      "semantic_method_flags_equal": true,
+      "original_field_metadata_equal": true,
+      "nonclass_resources_equal": true,
+      "resource_count": 23,
+      "manifest_values": {
+        "original": {
+          "Manifest-Version": "1.0",
+          "Implementation-Title": "Slinky injectable payload",
+          "Implementation-Version": "0.5.0-settings"
+        },
+        "rebuilt": {
+          "Manifest-Version": "1.0",
+          "Implementation-Title": "Slinky injectable payload",
+          "Implementation-Version": "0.5.0-settings",
+          "Created-By": "21.0.9 (Eclipse Adoptium)"
+        }
+      }
+    },
+    "103": {
+      "original_jar_sha256": "eb779d6393988757433adc8da465737c16883e07d6172877c1e7e0fb56238031",
+      "rebuilt_jar_sha256": "06805bdc83455038337055249f4bdcb198cfd8eefb3b587d5abd30ca042e4708",
+      "original_classes": 509,
+      "rebuilt_classes": 510,
+      "intentional_new_classes": [
+        "dev/slinky/inject/ReloadState"
+      ],
+      "intentional_lifecycle_changes": [
+        "Bootstrap",
+        "ModuleManager.shutdown",
+        "ClientEventBridge.install/attachPipeline",
+        "SlinkyMod.initialize",
+        "Platform.openResource",
+        "RenderHooks.install"
+      ],
+      "original_methods": 3815,
+      "rebuilt_methods": 3821,
+      "flow_summary": {
+        "exact_body": 3124,
+        "unresolved": 182,
+        "flow_equivalent": 509
+      },
+      "class_metadata_changes": [
+        {
+          "class": "dev/slinky/client/ClientEventBridge$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/ItemPolicyService$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/action/ActionAccess$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/hook/GlStateScope$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/packet/PacketPipeline$3",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/placement/PlacementSelection$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/render/GlCanvasBackend$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/inject/Bootstrap$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/inject/Platform$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/ChamsModule$1",
+          "changes": {
+            "access": [
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/AnnotationWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Attribute",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Attribute$Set",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ByteVector",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassReader",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassTooLargeException",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ConstantDynamic",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Context",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/CurrentFrame",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Edge",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/FieldVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/FieldWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Handle",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Handler",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Label",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodTooLargeException",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ModuleVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ModuleWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Opcodes",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/RecordComponentWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Symbol",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable$Entry",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable$LabelEntry",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Type",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/TypePath",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/TypeReference",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureReader",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureVisitor",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureWriter",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/AbstractInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/AnnotationNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ClassNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/FieldInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/FieldNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/FrameNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/IincInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InnerClassNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InsnList",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InsnList$InsnListIterator",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/IntInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/InvokeDynamicInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/JumpInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LabelNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LdcInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LineNumberNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LocalVariableAnnotationNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LocalVariableNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/LookupSwitchInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MethodInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MethodNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MethodNode$1",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleExportNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleOpenNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleProvideNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ModuleRequireNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/MultiANewArrayInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/ParameterNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/RecordComponentNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TableSwitchInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TryCatchBlockNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TypeAnnotationNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/TypeInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/UnsupportedClassVersionException",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/Util",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/tree/VarInsnNode",
+          "changes": {
+            "version": [
+              49,
+              52
+            ]
+          }
+        }
+      ],
+      "method_metadata_changes": [
+        {
+          "class": "dev/slinky/client/ClientEventBridge$1",
+          "method": "<init>(Ldev/slinky/client/ClientEventBridge;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/ClientEventBridge;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/ClientEventBridge$2",
+          "method": "<init>(Ldev/slinky/client/ClientEventBridge;Lio/netty/channel/Channel;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/ClientEventBridge;Lio/netty/channel/Channel;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/packet/PacketPipeline$2",
+          "method": "<init>(Ldev/slinky/module/ModuleManager;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/ModuleManager;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/packet/PacketPipeline$3",
+          "method": "<init>(ZLio/netty/channel/ChannelHandlerContext;Ldev/slinky/client/packet/PacketPipeline;)V",
+          "rebuilt_method": "<init>(ZLio/netty/channel/ChannelHandlerContext;Ldev/slinky/client/packet/PacketPipeline;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/placement/PlacementSelection$1",
+          "method": "<init>(Lwm;)V",
+          "rebuilt_method": "<init>(Lwm;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/render/CanvasFonts$Engine$2",
+          "method": "<init>(Ldev/slinky/client/render/CanvasFonts$Engine;Ldev/slinky/client/render/FontServices$Iterator;Ljava/util/List;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/render/CanvasFonts$Engine;Ldev/slinky/client/render/FontServices$Iterator;Ljava/util/List;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/client/render/InlineModuleSettings$1",
+          "method": "<init>(Ldev/slinky/client/render/InlineModuleSettings;Ldev/slinky/setting/Setting;Ldev/slinky/module/Module;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/client/render/InlineModuleSettings;Ldev/slinky/setting/Setting;Ldev/slinky/module/Module;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/ModuleManager$3",
+          "method": "<init>(Ldev/slinky/module/ModuleManager;I)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/ModuleManager;I)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/AutoClickerModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/AutoClickerModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/AutoClickerModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/AutoToolModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/AutoToolModule;Lwm;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/AutoToolModule;Lwm;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/BridgeAssistModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/BridgeAssistModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/BridgeAssistModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/FastPlaceModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/FastPlaceModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/FastPlaceModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/HitSelectModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/HitSelectModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/HitSelectModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/NullMoveModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/NullMoveModule;[Lavb;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/NullMoveModule;[Lavb;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/RefillModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/RefillModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/RefillModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/SprintResetModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/SprintResetModule;Ldev/slinky/client/ClientContext;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/SprintResetModule;Ldev/slinky/client/ClientContext;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/module/impl/WeaponsModule$1",
+          "method": "<init>(Ldev/slinky/module/impl/WeaponsModule;Lwn;)V",
+          "rebuilt_method": "<init>(Ldev/slinky/module/impl/WeaponsModule;Lwn;)V",
+          "changes": {
+            "signature": [
+              null,
+              "()V"
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassReader",
+          "method": "stringConcat$0(S)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(S)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassReader",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassTooLargeException",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ClassVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ConstantDynamic",
+          "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Constants",
+          "method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/FieldVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Frame",
+          "method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Handle",
+          "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Label",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodTooLargeException",
+          "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/MethodVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/ModuleVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/SymbolTable",
+          "method": "stringConcat$0(Ljava/lang/Object;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/Object;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Type",
+          "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/Type",
+          "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        },
+        {
+          "class": "dev/slinky/shaded/asm/signature/SignatureVisitor",
+          "method": "stringConcat$0(I)Ljava/lang/String;",
+          "rebuilt_method": "stringConcat$0(I)Ljava/lang/String;",
+          "changes": {
+            "access": [
+              4106,
+              10
+            ]
+          }
+        }
+      ],
+      "unpaired_added_methods": [
+        [
+          "dev/slinky/client/SlinkyCommand",
+          "compareTo(Ljava/lang/Object;)I"
+        ],
+        [
+          "dev/slinky/config/RecoveredConfiguration$Scope",
+          "$values()[Ldev/slinky/config/RecoveredConfiguration$Scope;"
+        ],
+        [
+          "dev/slinky/inject/Platform$Namespace",
+          "$values()[Ldev/slinky/inject/Platform$Namespace;"
+        ],
+        [
+          "dev/slinky/inject/ReloadState",
+          "<init>()V"
+        ],
+        [
+          "dev/slinky/inject/ReloadState",
+          "replaceHook(Ljava/lang/Thread;)V"
+        ],
+        [
+          "dev/slinky/module/ModuleCategory",
+          "$values()[Ldev/slinky/module/ModuleCategory;"
+        ]
+      ],
+      "unpaired_missing_methods": [],
+      "semantic_method_flags_equal": true,
+      "original_field_metadata_equal": true,
+      "nonclass_resources_equal": true,
+      "resource_count": 23,
+      "manifest_values": {
+        "original": {
+          "Manifest-Version": "1.0",
+          "Implementation-Title": "Slinky injectable payload",
+          "Implementation-Version": "0.5.0-settings"
+        },
+        "rebuilt": {
+          "Manifest-Version": "1.0",
+          "Implementation-Title": "Slinky injectable payload",
+          "Implementation-Version": "0.5.0-settings",
+          "Created-By": "21.0.9 (Eclipse Adoptium)"
+        }
+      }
+    }
+  }
+}

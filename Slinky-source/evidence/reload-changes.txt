@@ -1,0 +1,58 @@
+CONSOLE AND RELOAD RELEASE — 10 OCTOBER 2026
+
+Fixed the stale startup marker left by menu Unload. The loader now checks the
+actual manager's shutdown state instead of trusting that marker. After unloading,
+launching again replaces compatible payload class bodies and initializes a fresh
+manager in the same running Lunar process. Installed game patches are reused.
+
+Cleanup now detaches gameplay/input references, removes the old packet handler,
+blocks queued attachments from the old session, clears the marker after errors,
+releases shared services even if a callback fails, and rebuilds old menu surfaces
+with the new manager. ReloadState replaces the configuration-save shutdown hook
+without changing the structure of existing classes. Resource reads prefer the
+fresh JAR, whose unique path avoids overwriting a JAR open in the game.
+
+The launcher opens a visible console, streams startup progress/error messages,
+reports running/reloaded/skipped/failed states, and waits for Enter. It does not
+call a successful DLL load proof of successful Java startup. Explicit final
+statuses override legacy messages. A stale legacy 'already running' or failure
+message cannot be overwritten by a later generic 'running' message.
+
+Testing
+
+- Full Java 8 and native builds passed; resource-chain/dependency checks passed.
+- All preexisting class fields/method signatures are preserved. One new companion
+  class is explicitly allowed: dev/slinky/inject/ReloadState (510 classes total).
+- Five isolated lifecycle test programs passed, covering real manager cleanup
+  on normal unload/save failure/callback failure, real Netty handler detachment
+  and stale queued callbacks, Bootstrap active/unloaded migration and failures,
+  shutdown-hook/resource behavior, and UI surface replacement with no-GL stubs.
+- Console self-test passed nine messages and six ordered status sequences.
+- Native classfile modifier adapter tests passed on 1,530 variant classfiles,
+  with 567 allowed constructor adaptations, 4,524 rejected incompatible changes,
+  and 5,844 rejected truncated inputs.
+- Live migration in existing Lunar PID 27960 replaced 510 payload classes in one
+  atomic JVMTI batch, reused game patches, and initialized 66 modules. The user
+  confirmed Right Shift opens the menu. Lunar stayed running; no restart used.
+- Launching the final console build while that instance was active correctly
+  skipped replacement/rebinding and returned exit code 2.
+
+The first migration attempt was rejected because the old build's twelve empty/
+non-floating-point constructors had different strict flags. The adapter now
+preserves those old constructor flags in temporary in-memory replacement bytes;
+the disk JAR remains unchanged. Every other modifier/schema difference is rejected.
+The atomic replacement succeeded after that adjustment.
+
+Scope
+
+This release intentionally changes the original startup/unload behavior. The
+earlier exhaustive reconstruction audit and arithmetic fixes are retained as
+historical evidence; they do not certify the new lifecycle methods identical to
+the original. All original field metadata and assets still match. Current class
+and method comparison data and hashes are in java-verification.json.
+
+Live replacement supports compatible existing class schemas. Java classes in the
+game's main classloader remain defined; their implementation and active module
+state are replaced. Runtime evidence covers the observed migration/startup/menu
+and active-instance check, not every gameplay module or every client version.
+The original specimen was not executed.

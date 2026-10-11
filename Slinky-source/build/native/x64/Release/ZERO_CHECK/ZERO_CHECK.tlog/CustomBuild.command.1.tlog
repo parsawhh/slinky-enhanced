@@ -1,0 +1,10 @@
+^C:\USERS\MOHAMED\DESKTOP\SLINKY-CROSS-PLATFORM-SOURCE\SLINKY-SOURCE\BUILD\NATIVE\CMAKEFILES\4C35F5795AF3325EA242CCAE371FA56C\GENERATE.STAMP.RULE
+setlocal
+C:\Users\Mohamed\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\cmake.exe -SC:/Users/Mohamed/Desktop/Slinky-cross-platform-source/Slinky-source/native -BC:/Users/Mohamed/Desktop/Slinky-cross-platform-source/Slinky-source/build/native --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Mohamed/Desktop/Slinky-cross-platform-source/Slinky-source/build/native/SlinkyNativeReconstruction.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

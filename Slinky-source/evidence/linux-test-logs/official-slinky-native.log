@@ -1,0 +1,57 @@
+[2026-10-10 07:24:25] SlinkyNative loaded into PID 828
+[2026-10-10 07:24:25] detected Minecraft 1.8.9 with official names
+[2026-10-10 07:24:25] payload official copied to /mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/official/slinky-official-bj5FZH.jar
+[2026-10-10 07:24:25] system classpath copy: /tmp/slinky-classpath-F3Cpop/payload.jar
+[2026-10-10 07:24:25] payload appended to the system class loader search
+[2026-10-10 07:24:25] [java] fixture unicode: Привет Linux 🐧; payload=/mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/official/slinky-official-bj5FZH.jar
+[2026-10-10 07:24:25] [java] fixture started 1; value=42
+[2026-10-10 07:24:25] Slinky is running
+[2026-10-10 07:24:25] FINAL STATUS: RUNNING
+[2026-10-10 07:24:25] SlinkyNative loaded into PID 828
+[2026-10-10 07:24:25] detected Minecraft 1.8.9 with official names
+[2026-10-10 07:24:25] Slinky is already active; no classes or native methods were replaced
+[2026-10-10 07:24:25] FINAL STATUS: ALREADY_RUNNING
+[2026-10-10 07:24:25] RetransformClasses(apply) failed: jvmti=60 (JVMTI_ERROR_INVALID_CLASS_FORMAT), target=Lfixture/Target;
+[2026-10-10 07:24:25] SlinkyNative loaded into PID 828
+[2026-10-10 07:24:25] detected Minecraft 1.8.9 with official names
+[2026-10-10 07:24:25] payload official copied to /mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/official/slinky-official-PtuQwZ.jar
+[2026-10-10 07:24:25] defined 13 new payload classes in the game class loader; 0 unresolved
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/Attribute$Set is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/ClassTooLargeException is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/ConstantDynamic is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/Constants is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/CurrentFrame is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/Edge is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/FieldVisitor is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/FieldWriter is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/Frame is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/Handle is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/MethodTooLargeException is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/ModuleVisitor is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/ModuleWriter is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/Opcodes is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/RecordComponentVisitor is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/RecordComponentWriter is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/SymbolTable$LabelEntry is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/Type is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/TypePath is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/TypeReference is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/signature/SignatureReader is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/signature/SignatureVisitor is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] class dev/slinky/shaded/asm/signature/SignatureWriter is not prepared; retaining fresh modifiers for JVM batch validation
+[2026-10-10 07:24:25] constructor modifier compatibility: 0 ACC_STRICT flags preserved in memory
+[2026-10-10 07:24:25] replaced 43 payload classes atomically; Minecraft patches retained
+[2026-10-10 07:24:25] [java] fixture unicode: Привет Linux 🐧; payload=/mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/official/slinky-official-PtuQwZ.jar
+[2026-10-10 07:24:25] [java] fixture started 2; value=84
+[2026-10-10 07:24:25] Slinky is running
+[2026-10-10 07:24:25] FINAL STATUS: RELOADED
+[2026-10-10 07:24:25] SlinkyNative loaded into PID 828
+[2026-10-10 07:24:25] detected Minecraft 1.8.9 with official names
+[2026-10-10 07:24:25] payload official copied to /mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/official/slinky-official-6toiBq.jar
+[2026-10-10 07:24:25] defined 0 new payload classes in the game class loader; 0 unresolved
+[2026-10-10 07:24:25] constructor modifier compatibility: 0 ACC_STRICT flags preserved in memory
+[2026-10-10 07:24:25] replaced 43 payload classes atomically; Minecraft patches retained
+[2026-10-10 07:24:25] [java] fixture unicode: Привет Linux 🐧; payload=/mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/official/slinky-official-6toiBq.jar
+[2026-10-10 07:24:25] [java] fixture started 3; value=84
+[2026-10-10 07:24:25] Slinky is running
+[2026-10-10 07:24:25] FINAL STATUS: RELOADED

@@ -1,0 +1,15 @@
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+3 warnings
+{'exact_body': 3132, 'flow_equivalent': 511, 'unresolved': 172}
+helper renames 31
+unresolved packages Counter({'client': 73, 'shaded': 47, 'module': 32, 'config': 15, 'inject': 4, 'setting': 1})
+{'exact_body': 3132, 'flow_equivalent': 511, 'unresolved': 172}
+helper renames 31
+unresolved packages Counter({'client': 73, 'shaded': 47, 'module': 32, 'config': 15, 'inject': 4, 'setting': 1})
+{'exact_body': 3132, 'flow_equivalent': 511, 'unresolved': 172}
+helper renames 31
+unresolved packages Counter({'client': 73, 'shaded': 47, 'module': 32, 'config': 15, 'inject': 4, 'setting': 1})
+Verified original specimen identity, all class names/fields/resources, and compared every method in all three variants.
+Unresolved graph matches require the recorded human-style static review; this script is not an equivalence theorem.

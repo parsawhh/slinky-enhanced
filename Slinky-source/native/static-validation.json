@@ -1,0 +1,24 @@
+{
+  "dll_machine": "0x8664",
+  "exe_machine": "0x8664",
+  "dll_resources": {
+    "101": {
+      "size": 1778243,
+      "sha256": "af2a5defada8ba462ae69a075f96a097035b8f9a2b79a8935e3e9ce2d0fc3497",
+      "matches_rebuilt_jar": true
+    },
+    "102": {
+      "size": 2039123,
+      "sha256": "a8780a3976edae975d12ec8588a6ea8745584bada8e8162b032f2f22e9497b17",
+      "matches_rebuilt_jar": true
+    },
+    "103": {
+      "size": 1977793,
+      "sha256": "d0679d49b7bbed978b1809041e5833502d0ec5131a4175c434c8d1624134b916",
+      "matches_rebuilt_jar": true
+    }
+  },
+  "launcher_resource200_matches_rebuilt_dll": true,
+  "launcher_sha256": "b1e5e09a045e0229505b5b13666611846700b9eb427059a0d55b40e8702f0ed6",
+  "dll_sha256": "02a112bedd2df39e5e322c623a7f1cc013b5f5c16f15d8a91597eddf2f24a321"
+}

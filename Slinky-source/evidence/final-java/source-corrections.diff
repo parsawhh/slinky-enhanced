@@ -1,0 +1,335 @@
+--- before/java/src/main/java/dev/slinky/client/hook/TargetCombatStatus.java
++++ after/java/src/main/java/dev/slinky/client/hook/TargetCombatStatus.java
+@@ -15,7 +15,7 @@
+ import net.minecraft.util.Vec3;
+ import net.minecraft.util.MovingObjectPosition.MovingObjectType;
+ 
+-public final class TargetCombatStatus {
++public final strictfp class TargetCombatStatus {
+    private boolean valid;
+    private boolean reducing;
+    private EntityPlayer target;
+@@ -88,7 +88,7 @@
+       double x = RotationMath.clamp(box.minX, box.maxX, eye.xCoord) - eye.xCoord;
+       double y = RotationMath.clamp(box.minY, box.maxY, eye.yCoord) - eye.yCoord;
+       double z = RotationMath.clamp(box.minZ, box.maxZ, eye.zCoord) - eye.zCoord;
+-      return z * z + x * x + y * y;
++      return z * z + (x * x + y * y);
+    }
+ 
+    public strictfp void clear() {
+@@ -147,7 +147,7 @@
+       x -= hit.xCoord;
+       y -= hit.yCoord;
+       z -= hit.zCoord;
+-      return z * z + x * x + y * y;
++      return z * z + (x * x + y * y);
+    }
+ 
+    public strictfp SemanticEvent event(int type, boolean use) {
+--- before/java/src/main/java/dev/slinky/client/inventory/ConsumableDelay.java
++++ after/java/src/main/java/dev/slinky/client/inventory/ConsumableDelay.java
+@@ -3,7 +3,7 @@
+ import dev.slinky.client.rotation.RecoveredRandom;
+ import dev.slinky.client.rotation.RotationMath;
+ 
+-public final class ConsumableDelay {
++public final strictfp class ConsumableDelay {
+    private final RecoveredRandom.Smooth first = new RecoveredRandom.Smooth();
+    private final RecoveredRandom.Smooth gate = new RecoveredRandom.Smooth();
+ 
+--- before/java/src/main/java/dev/slinky/client/numeric/DoubleNumeric.java
++++ after/java/src/main/java/dev/slinky/client/numeric/DoubleNumeric.java
+@@ -127,7 +127,7 @@
+          double negative = d(2868896);
+          double minusOne = d(2868904);
+          boolean below = bits < 0L;
+-         double correction = below ? positive + negative + value - value : positive + value + negative - value;
++         double correction = below ? positive + (negative + value) - value : positive + value + negative - value;
+          if (exponent <= 1022L) {
+             return below ? minusOne : 0.0;
+          } else {
+--- before/java/src/main/java/dev/slinky/client/packet/TimingAccess.java
++++ after/java/src/main/java/dev/slinky/client/packet/TimingAccess.java
+@@ -78,6 +78,6 @@
+       double x = a.xCoord - b.xCoord;
+       double y = a.yCoord - b.yCoord;
+       double z = a.zCoord - b.zCoord;
+-      return z * z + x * x + y * y;
++      return z * z + (x * x + y * y);
+    }
+ }
+--- before/java/src/main/java/dev/slinky/client/placement/PlacementGeometry.java
++++ after/java/src/main/java/dev/slinky/client/placement/PlacementGeometry.java
+@@ -63,7 +63,7 @@
+       double x = a.xCoord - b.xCoord;
+       double y = a.yCoord - b.yCoord;
+       double z = a.zCoord - b.zCoord;
+-      return z * z + x * x + y * y;
++      return z * z + (x * x + y * y);
+    }
+ 
+    public static strictfp int magnitude(int value) {
+--- before/java/src/main/java/dev/slinky/client/render/CanvasPath.java
++++ after/java/src/main/java/dev/slinky/client/render/CanvasPath.java
+@@ -584,8 +584,8 @@
+          float angle = (float)i / denominator * c(2840096);
+          float ax = FloatTrigonometry.cosine(angle) * width;
+          float ay = FloatTrigonometry.sine(angle) * width;
+-         float x = (end ? dx : neg(dx)) * ay + neg(dy) * ax + p.x;
+-         float y = (end ? dy : neg(dy)) * ay + dx * ax + p.y;
++         float x = (end ? dx : neg(dx)) * ay + (neg(dy) * ax + p.x);
++         float y = (end ? dy : neg(dy)) * ay + (dx * ax + p.y);
+          if (end) {
+             vertex(out, p.x, p.y, 0.5F);
+          }
+--- before/java/src/main/java/dev/slinky/client/render/FontServices.java
++++ after/java/src/main/java/dev/slinky/client/render/FontServices.java
+@@ -5,7 +5,7 @@
+ import java.util.Collections;
+ import java.util.List;
+ 
+-public final class FontServices {
++public final strictfp class FontServices {
+    private static strictfp float c(int at) {
+       return RenderConstants.f(at);
+    }
+@@ -497,7 +497,7 @@
+       int unitsPerEm();
+    }
+ 
+-   public static final class Glyph {
++   public static final strictfp class Glyph {
+       public int index;
+       public short x0;
+       public short y0;
+@@ -603,7 +603,7 @@
+       }
+    }
+ 
+-   public static final class Quad {
++   public static final strictfp class Quad {
+       public float x0;
+       public float y0;
+       public float x1;
+@@ -624,12 +624,12 @@
+       void uploadDirtyTexture();
+    }
+ 
+-   public static final class TextStats {
++   public static final strictfp class TextStats {
+       public int drawCalls;
+       public int triangles;
+    }
+ 
+-   public static final class Utf8 {
++   public static final strictfp class Utf8 {
+       public int state;
+       public int codepoint;
+ 
+--- before/java/src/main/java/dev/slinky/client/render/NotificationQueue.java
++++ after/java/src/main/java/dev/slinky/client/render/NotificationQueue.java
+@@ -5,7 +5,7 @@
+ import java.util.Collections;
+ import java.util.List;
+ 
+-public final class NotificationQueue {
++public final strictfp class NotificationQueue {
+    private final NotificationQueue.Message[] records = new NotificationQueue.Message[10];
+    private long start;
+    private int count;
+--- before/java/src/main/java/dev/slinky/client/render/RecoveredGui.java
++++ after/java/src/main/java/dev/slinky/client/render/RecoveredGui.java
+@@ -12,7 +12,7 @@
+ import java.util.function.Consumer;
+ import java.util.function.IntConsumer;
+ 
+-public final class RecoveredGui {
++public final strictfp class RecoveredGui {
+    private static strictfp float c(int at) {
+       return RenderConstants.f(at);
+    }
+@@ -338,7 +338,7 @@
+             RenderMath.Rect left = this.cache[current - 1 & 3];
+             nx = left.x + left.width + this.spacing;
+             w = left.width;
+-            ny = current >= this.columns ? this.spacing + previous.y + previous.height : this.y;
++            ny = current >= this.columns ? this.spacing + (previous.y + previous.height) : this.y;
+          } else {
+             nx = this.x;
+             if (current < this.columns) {
+@@ -361,7 +361,7 @@
+       }
+    }
+ 
+-   public static final class Runtime {
++   public static final strictfp class Runtime {
+       public int mode;
+       public int modal;
+       public int selected;
+@@ -804,7 +804,7 @@
+       }
+    }
+ 
+-   public static final class Slider {
++   public static final strictfp class Slider {
+       public boolean active;
+       public float animation;
+       public double stamp;
+@@ -880,7 +880,7 @@
+       }
+    }
+ 
+-   public static final class Toggle {
++   public static final strictfp class Toggle {
+       public float progress;
+       public double stamp;
+ 
+--- before/java/src/main/java/dev/slinky/client/render/RecoveredGuiScreen.java
++++ after/java/src/main/java/dev/slinky/client/render/RecoveredGuiScreen.java
+@@ -181,7 +181,7 @@
+             alpha = 0.0F;
+          }
+ 
+-         this.drawOffsetX = (float)((double)difference * (double)w * d(1313040));
++         this.drawOffsetX = (float)((double)difference * ((double)w * d(1313040)));
+          plan.opacity(alpha).translate(this.drawOffsetX, 0.0F, 0.0F);
+       }
+ 
+--- before/java/src/main/java/dev/slinky/client/render/RenderAccess.java
++++ after/java/src/main/java/dev/slinky/client/render/RenderAccess.java
+@@ -256,8 +256,7 @@
+                      GL11.glScalef(factor, factor, 1.0F);
+                      int color = Float.floatToRawIntBits(v[2]);
+                      int opacity = (int)((float)(color >>> 24) * alpha);
+-                     String var10001 = (String)op.value;
+-                     Minecraft.getMinecraft().fontRendererObj.drawString(var10001, 0.0F, 0.0F, opacity << 24 | color & 16777215, v[3] != 0.0F);
++                     Minecraft.getMinecraft().fontRendererObj.drawString((String)op.value, 0.0F, 0.0F, opacity << 24 | color & 16777215, v[3] != 0.0F);
+                   } finally {
+                      GL11.glPopMatrix();
+                      GlStateManager.disableTexture2D();
+@@ -268,9 +267,7 @@
+ 
+                   try {
+                      Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI((ItemStack)op.value, (int)v[0], (int)v[1]);
+-                     RenderItem var67 = Minecraft.getMinecraft().getRenderItem();
+-                     ItemStack var10002 = (ItemStack)op.value;
+-                     var67.renderItemOverlays(Minecraft.getMinecraft().fontRendererObj, var10002, (int)v[0], (int)v[1]);
++                     Minecraft.getMinecraft().getRenderItem().renderItemOverlays(Minecraft.getMinecraft().fontRendererObj, (ItemStack)op.value, (int)v[0], (int)v[1]);
+                   } finally {
+                      RenderHelper.disableStandardItemLighting();
+                      GlStateManager.disableTexture2D();
+--- before/java/src/main/java/dev/slinky/client/render/RenderMath.java
++++ after/java/src/main/java/dev/slinky/client/render/RenderMath.java
+@@ -7,11 +7,11 @@
+    }
+ 
+    private static strictfp float model(float[] m, int i, float x, float y, float z) {
+-      return m[i + 8] * z + m[i] * x + m[i + 4] * y + m[i + 12];
++      return m[i + 8] * z + (m[i] * x + m[i + 4] * y) + m[i + 12];
+    }
+ 
+    private static strictfp float row(float[] m, int i, float x, float y, float z, float w) {
+-      return m[i + 12] * w + m[i + 8] * z + m[i] * x + m[i + 4] * y;
++      return m[i + 12] * w + (m[i + 8] * z + (m[i] * x + m[i + 4] * y));
+    }
+ 
+    public static strictfp RenderMath.Projection project(double[] p, float[] model, float[] projection, float width, float height) {
+@@ -21,7 +21,7 @@
+       float mx = model(model, 0, x, y, z);
+       float my = model(model, 1, x, y, z);
+       float mz = model(model, 2, x, y, z);
+-      float mw = z * model[11] + x * model[3] + y * model[7] + model[15];
++      float mw = z * model[11] + (x * model[3] + y * model[7]) + model[15];
+       float w = row(projection, 3, mx, my, mz, mw);
+       if (w == 0.0F) {
+          return null;
+@@ -32,7 +32,7 @@
+          float depth = row(projection, 2, mx, my, mz, mw) * reciprocal + half;
+          if (!(0.0F >= depth) && !(depth >= one)) {
+             float py = row(projection, 1, mx, my, mz, mw) * reciprocal + half;
+-            float px = (mw * projection[12] + mz * projection[8] + mx * projection[0] + my * projection[4]) * reciprocal + half;
++            float px = (mw * projection[12] + (mz * projection[8] + (mx * projection[0] + my * projection[4]))) * reciprocal + half;
+             return new RenderMath.Projection(px * width, height - py * height, reciprocal);
+          } else {
+             return null;
+@@ -64,7 +64,7 @@
+       double x = a[0] - b[0];
+       double y = a[1] - b[1];
+       double z = a[2] - b[2];
+-      return z * z + x * x + y * y;
++      return z * z + (x * x + y * y);
+    }
+ 
+    public static strictfp float min(float a, float b) {
+--- before/java/src/main/java/dev/slinky/client/render/TrajectoryPrediction.java
++++ after/java/src/main/java/dev/slinky/client/render/TrajectoryPrediction.java
+@@ -10,7 +10,7 @@
+ 
+    public static strictfp float charge(int ticks) {
+       float t = (float)ticks / RenderConstants.f(1396232);
+-      return (t * t + t + t) / RenderConstants.f(1396236);
++      return (t * t + (t + t)) / RenderConstants.f(1396236);
+    }
+ 
+    public static strictfp float speed(float strength) {
+--- before/java/src/main/java/dev/slinky/client/rotation/RotationMath.java
++++ after/java/src/main/java/dev/slinky/client/rotation/RotationMath.java
+@@ -91,7 +91,7 @@
+       double x = a.xCoord - b.xCoord;
+       double y = a.yCoord - b.yCoord;
+       double z = a.zCoord - b.zCoord;
+-      return Math.sqrt(z * z + x * x + y * y);
++      return Math.sqrt(z * z + (x * x + y * y));
+    }
+ 
+    public static strictfp double[] movement(float yaw, float forward, float sideways, float speed) {
+--- before/java/src/main/java/dev/slinky/module/CoreModules.java
++++ after/java/src/main/java/dev/slinky/module/CoreModules.java
+@@ -173,6 +173,6 @@
+    }
+ 
+    public static List<Module> sourceOnlyIntervals() {
+-      return Collections.unmodifiableList(Arrays.asList(new ChestStealerModule(), new SpeedModule()));
++      return Collections.unmodifiableList(Arrays.asList(new Module[]{new ChestStealerModule(), new SpeedModule()}));
+    }
+ }
+--- before/java/src/main/java/dev/slinky/module/impl/BridgeAssistModule.java
++++ after/java/src/main/java/dev/slinky/module/impl/BridgeAssistModule.java
+@@ -274,9 +274,9 @@
+ 
+          double[] generated = RotationMath.movement(i.yaw(), forward, sideways, i.speed());
+          double[] velocity = i.velocity();
+-         double x = baseX + velocity[0] + generated[0];
++         double x = baseX + (velocity[0] + generated[0]);
+          double y = baseY + velocity[1] + 0.0;
+-         double z = baseZ + velocity[2] + generated[1];
++         double z = baseZ + (velocity[2] + generated[1]);
+          int lowX = RecoveredMath.truncateInt(DoubleNumeric.floor(x - radius));
+          int lowZ = RecoveredMath.truncateInt(DoubleNumeric.floor(z - radius));
+          int iy = RecoveredMath.truncateInt(DoubleNumeric.floor(y));
+--- before/java/src/main/java/dev/slinky/module/impl/CriticalsModule.java
++++ after/java/src/main/java/dev/slinky/module/impl/CriticalsModule.java
+@@ -64,7 +64,7 @@
+          if (this.state.active) {
+             timer.timerSpeed = this.number("timer_speed");
+             this.state.restore = true;
+-            this.state.accumulated = (double)(1.0F - this.number("timer_speed")) * e.elapsedSeconds * 20.0 + this.state.accumulated;
++            this.state.accumulated = (double)(1.0F - this.number("timer_speed")) * (e.elapsedSeconds * 20.0) + this.state.accumulated;
+             if (this.state.accumulated > (double)this.number("boost")) {
+                this.state.accumulated = (double)this.number("boost");
+             }
+--- before/java/src/main/java/dev/slinky/module/impl/InstantStopModule.java
++++ after/java/src/main/java/dev/slinky/module/impl/InstantStopModule.java
+@@ -23,8 +23,9 @@
+    public static strictfp int choose(double origin, double right, double straight, double left) {
+       double minimum = RotationMath.min(right, origin);
+       int index = origin > right ? -1 : 999;
+-      minimum = RotationMath.min(straight, minimum);
+-      if (minimum > straight) {
++      double previousMinimum = minimum;
++      minimum = RotationMath.min(straight, previousMinimum);
++      if (previousMinimum > straight) {
+          index = 0;
+       }
+ 

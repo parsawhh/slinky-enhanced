@@ -1,0 +1,135 @@
+Native source recovery and validation
+=====================================
+
+These C++ files are a behavioral reconstruction from the application-specific
+native machine code. They are not the author's original source and will not
+produce byte-identical original PE files. Compilation was performed without
+executing Slinky.exe, loading SlinkyNative.dll, or starting any Java payload class.
+
+Source and evidence correspondence
+----------------------------------
+
+launcher.cpp:
+  WinMain / resource extraction      original 0x140001000
+  injectSelected                    original 0x140001400
+  enumerateCandidates / windowTitle original 0x140001490 / 0x140001690
+  inject                            original 0x140001780
+  moduleBase                        original 0x1400019F0
+  refreshList                       original 0x140001AB0
+  launcherProcedure                 original 0x140001CD0
+
+payload.cpp:
+  DllMain                           original 0x180001000
+  addJarToLoader                    original 0x1800010F0
+  bootstrapWorker                   original 0x180001450
+  defineJarClasses                  original 0x180001AB0
+  loadedClass                       original 0x180002110
+  singletonReady                    original 0x180002240
+  loadPayloadClass                  original 0x1800022E0
+  extractPayload                    original 0x1800023B0
+  readStream                        original 0x180002600
+  log / exceptionLog                original 0x180002830 / 0x180002A00
+  classNameMatches                  original 0x180002BF0
+  classFileLoadHook                 original 0x180002F90
+  toolingError                      original 0x180003190
+  getClassBytes                     original 0x180003290
+  javaLog                           original 0x180003450
+  retransformClass                  original 0x180003550
+  initializeTooling                 original 0x180003730
+  registerBridge                    original 0x1800038D0
+
+Scope reproduced
+----------------
+
+The launcher embeds resource 200 containing its freshly compiled native DLL.
+It extracts the DLL to %TEMP%\slinky-<launcher PID>\SlinkyNative.dll, identifies
+up to 64 java.exe/javaw.exe processes with visible nonempty top-level windows,
+automatically injects a single candidate, otherwise displays the original-style
+picker with its 750 ms refresh and zero-to-one automatic selection behavior.
+
+The injection function preserves OpenProcess access 0x43A, a read/write remote
+UTF-16 path allocation, WriteProcessMemory, target kernel32 module enumeration,
+the original local LoadLibraryW-to-remote RVA calculation, remote-thread launch,
+30 second wait, and module-path checks over up to 5 seconds. A present DLL is
+success; this does not prove that Java bootstrap completed. No elevation or
+target-process spawning is added.
+
+The DLL starts a worker thread, waits for jvm.dll and a created Java VM, attaches
+as a daemon JNI thread, obtains JVMTI 1.2, requests class retransformation,
+and waits up to two minutes for initialized Minecraft. Namespace selection is:
+  101 named:    net.minecraft.client.Minecraft.theMinecraft
+  102 srg:      net.minecraft.client.Minecraft.field_71432_P
+  103 official: ave.S
+
+It writes the selected resource JAR under
+%TEMP%\SlinkyInjected\slinky-<namespace>-<target PID>.jar and loads it into the
+class loader that defined Minecraft. The loader strategies are addURL, JVMTI
+AddToSystemClassLoaderSearch when the loader is the system loader, and repeated
+DefineClass from JarFile entries with missing-dependency retries.
+
+It sets its JNI thread's context class loader, registers the three NativeBridge
+methods, pins the DLL, and calls Bootstrap.start(namespace, extractedJarPath).
+The bridge captures class bytes through ClassFileLoadHook plus RetransformClasses,
+and applies Java-provided replacement class bytes through the same hook. The
+class identity check parses the classfile constant pool and this_class against
+the JVMTI class signature. Operations are serialized by an SRW lock. Native and
+Java log messages go to OutputDebugStringW and a UTF-8 slinky-native.log beside
+the loaded DLL.
+
+Decompiler corrections
+----------------------
+
+The launcher path argument missing from decompiled moduleBase calls is present
+in the original RDX register at both call sites, as established by the previous
+raw-disassembly audit. The reconstruction supplies it explicitly. Decompiler
+casts that truncate pointers to int are type-recovery failures, not reproduced.
+
+The ClassFileLoadHook pseudocode misleadingly nests capture under a non-null
+replacement target. Raw machine code confirms 0x180002FBF branches to
+0x180003097 when replacement target is null; capture begins at 0x1800030A9.
+Both capture-only and replacement operations are therefore implemented.
+
+Deliberate reconstruction differences and limits
+------------------------------------------------
+
+- std::vector/std::wstring and explicit JNI/JVMTI types replace inferred C arrays,
+  anonymous globals, CRT helpers, and manually indexed interface vtables.
+- Local/global JNI references are released explicitly; lookup/allocation failures
+  receive additional null checks. Log output is serialized.
+- On bootstrap failure before bridge registration the reconstruction removes
+  JVMTI callbacks and disposes its tooling environment before unloading the DLL.
+  This cleanup is absent from the inspected original worker's failure path.
+- Jar fallback clears a pending DefineClass exception before testing whether it
+  is NoClassDefFoundError. Non-dependency definition errors are removed from the
+  retry queue as in the recovered original control flow, so this fallback's
+  success counter is not a guarantee all class definitions succeeded.
+- Launcher icon uses the Windows application icon, matching the inspected
+  launcher code. Original native CRT/compiler/PE layout and incidental resource
+  metadata are not reconstructed. The launcher asInvoker manifest is explicit.
+- The original remote LoadLibraryW RVA assumption and its timed allocation
+  cleanup remain. Their behavior on a live target was not tested.
+- No game injection, rendering, packet interception, or JNI/JVMTI execution test
+  was performed. Recovered behavior is established by static evidence and a
+  successful build, not by runtime-equivalence verification.
+
+Build validation
+----------------
+
+CMake 4.2.3, Visual Studio 18 2026 generator, MSVC 19.50.35722.0, Windows SDK
+10.0.26100.0, and JDK 21.0.9 JNI/JVMTI headers compiled both Release/x64 targets
+with /W4, /permissive-, /utf-8 and no compiler warnings. The installed VS 17 2022
+Build Tools instance is incomplete, so VS 18 2026 was selected. A JDK header
+version does not impose Java 21 on the reconstructed payload: JNI calls target
+Java 8-era interfaces and payload Java sources are separately built for Java 8.
+
+Outputs:
+  build/native/Release/SlinkyNative.dll
+  build/native/Release/Slinky.exe
+
+A static PE resource check verified:
+  both rebuilt files are x64 (machine 0x8664);
+  DLL RCDATA 101/102/103 exactly equal freshly rebuilt project payload JARs;
+  EXE RCDATA 200 exactly equals the freshly rebuilt SlinkyNative.dll.
+
+native/static-validation.json records one post-build hash snapshot. Rebuilding
+Java/native code may change its hashes; rerun project validation for a new build.

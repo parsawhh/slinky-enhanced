@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Mohamed\Desktop\Slinky-cross-platform-source\Slinky-source\native\payload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Mohamed\Desktop\Slinky-cross-platform-source\Slinky-source\native\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Mohamed\Desktop\Slinky-cross-platform-source\Slinky-source\build\native\payloads.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D3145A73-5DED-34FB-A657-03D576F7F0DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,71 @@
+{
+  "platform": "Linux x86_64",
+  "java": "openjdk version \"21.0.11\" 2026-04-21\nOpenJDK Runtime Environment (build 21.0.11+10-1-24.04.2-Ubuntu)\nOpenJDK 64-Bit Server VM (build 21.0.11+10-1-24.04.2-Ubuntu, mixed mode, sharing)",
+  "library": "/mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/outputs/Slinky-source/dist/linux-x86_64/libSlinkyNative.so",
+  "test_scope": "isolated Linux JVM fixtures, not real Linux Lunar",
+  "results": [
+    {
+      "case": "named",
+      "result": "PASS",
+      "native_log": "/mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/named/slinky-native.log",
+      "checks": [
+        "UTF8 paths and logs",
+        "capture/ASM/retransform",
+        "active skip preserves native bridge",
+        "invalid bytes rejected",
+        "atomic changed-payload reload",
+        "null-manager reload"
+      ]
+    },
+    {
+      "case": "srg",
+      "result": "PASS",
+      "native_log": "/mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/srg/slinky-native.log",
+      "checks": [
+        "UTF8 paths and logs",
+        "capture/ASM/retransform",
+        "active skip preserves native bridge",
+        "invalid bytes rejected",
+        "atomic changed-payload reload",
+        "null-manager reload"
+      ]
+    },
+    {
+      "case": "official",
+      "result": "PASS",
+      "native_log": "/mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/official/slinky-native.log",
+      "checks": [
+        "UTF8 paths and logs",
+        "capture/ASM/retransform",
+        "active skip preserves native bridge",
+        "invalid bytes rejected",
+        "atomic changed-payload reload",
+        "null-manager reload"
+      ]
+    },
+    {
+      "case": "unsupported runtime and failed-attach retry",
+      "result": "PASS"
+    },
+    {
+      "case": "concurrent attach guard",
+      "result": "PASS"
+    },
+    {
+      "case": "incompatible schema rejected atomically then compatible retry",
+      "result": "PASS"
+    },
+    {
+      "case": "separate game URLClassLoader fresh/reload",
+      "result": "PASS"
+    },
+    {
+      "case": "user console launcher fresh/active/reload",
+      "result": "PASS",
+      "transcript": "/mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧/launcher/launcher-transcript.txt"
+    }
+  ],
+  "session": "/mnt/c/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/work/linux-tests/runs/1791613463074222438-Привет-🐧",
+  "delivered_library_sha256": "593571262e2d77cdd364ea80ef933cc8d1cf23ea733cb08eb5933d320eaf59fd",
+  "actual_linux_lunar_tested": false
+}

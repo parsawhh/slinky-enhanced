@@ -1,0 +1,2222 @@
+[
+  {
+    "path": "build-linux.sh",
+    "size": 169,
+    "sha256": "e28d2db1d1c42295946efb993d94ffb9a9ce7875dc2c8168c58a725356dcec5a"
+  },
+  {
+    "path": "build.ps1",
+    "size": 5865,
+    "sha256": "1aeff663245465eac1a0f1afda304d1eec4198bc94350d6c3dc068e3bdd8a4b1"
+  },
+  {
+    "path": "deps/download-manifest.json",
+    "size": 10687,
+    "sha256": "3989e9ad6e792043daeac79be11488b4ac690381711311c81d2dc9237ac5997a"
+  },
+  {
+    "path": "deps/libraries/authlib-1.5.21.jar",
+    "size": 64412,
+    "sha256": "ce7a9c86ebebf30b89929026f4a0a3c58ce0f4d47937d6dc086ae4fd0c77544a"
+  },
+  {
+    "path": "deps/libraries/codecjorbis-20101023.jar",
+    "size": 103871,
+    "sha256": "6c4b4e50e608763564afa1bde2d25ece9dd715e7c9129540faa1faded4896506"
+  },
+  {
+    "path": "deps/libraries/codecwav-20101023.jar",
+    "size": 5618,
+    "sha256": "bb7d17b340afe6abdfbfdaa03683bce4aef39a64887dbab0636eaff3cf2d59ba"
+  },
+  {
+    "path": "deps/libraries/commons-codec-1.9.jar",
+    "size": 263965,
+    "sha256": "ad19d2601c3abf0b946b5c3a4113e226a8c1e3305e395b90013b78dd94a723ce"
+  },
+  {
+    "path": "deps/libraries/commons-compress-1.8.1.jar",
+    "size": 365552,
+    "sha256": "5fca136503f86ecc6cb61fbd17b137d59e56b45c7a5494e6b8fd3cabd4697fbd"
+  },
+  {
+    "path": "deps/libraries/commons-io-2.4.jar",
+    "size": 185140,
+    "sha256": "cc6a41dc3eaacc9e440a6bd0d2890b20d36b4ee408fe2d67122f328bb6e01581"
+  },
+  {
+    "path": "deps/libraries/commons-lang3-3.3.2.jar",
+    "size": 412739,
+    "sha256": "6b81d10754dadf184d386011486e6509c2cc0c3d33565ced4fb4402b9413d47d"
+  },
+  {
+    "path": "deps/libraries/commons-logging-1.1.3.jar",
+    "size": 62050,
+    "sha256": "70903f6fc82e9908c8da9f20443f61d90f0870a312642991fe8462a0b9391784"
+  },
+  {
+    "path": "deps/libraries/gson-2.2.4.jar",
+    "size": 190432,
+    "sha256": "c0328cd07ca9e363a5acd00c1cf4afe8cf554bd6d373834981ba05cebec687fb"
+  },
+  {
+    "path": "deps/libraries/guava-17.0.jar",
+    "size": 2243036,
+    "sha256": "8c36a80ea613d0b6b8040a17cf837c5bbe3677bc1b06a058a6c174fdb787ebbc"
+  },
+  {
+    "path": "deps/libraries/httpclient-4.3.3.jar",
+    "size": 589512,
+    "sha256": "9844cc9b5440d65a88d28bcba9d771374d2dfdab898848cda164611091633013"
+  },
+  {
+    "path": "deps/libraries/httpcore-4.3.2.jar",
+    "size": 282269,
+    "sha256": "abd02320e2356f89d054dae4cf02306bef20a9cf7865b3ac94ec7552b4f1528b"
+  },
+  {
+    "path": "deps/libraries/icu4j-core-mojang-51.2.jar",
+    "size": 1634692,
+    "sha256": "147592c5eb8e11fc8394125954f877acf25918bae13aa210c2825aefc3030ed8"
+  },
+  {
+    "path": "deps/libraries/jinput-2.0.5.jar",
+    "size": 208338,
+    "sha256": "79b5a4f5829e1a49a415711f7fb8eb5b9ad22defa72929fda2da96ec30d3f018"
+  },
+  {
+    "path": "deps/libraries/jna-3.4.0.jar",
+    "size": 1008730,
+    "sha256": "3bff6a1489b8e54cf130344bc5e8744db331045ad2fc736612576e1d80eb1f48"
+  },
+  {
+    "path": "deps/libraries/jopt-simple-4.6.jar",
+    "size": 62477,
+    "sha256": "3fcfbe3203c2ea521bf7640484fd35d6303186ea2e08e72f032d640ca067ffda"
+  },
+  {
+    "path": "deps/libraries/jutils-1.0.0.jar",
+    "size": 7508,
+    "sha256": "c3334ff39cf0ab3b54925619101054c90098b7c733b1e7834c7b75e4c41e84a5"
+  },
+  {
+    "path": "deps/libraries/libraryjavasound-20101123.jar",
+    "size": 21679,
+    "sha256": "333bbefeff5eb1722dc9b8d2e26c38bc69c1efa07d0ca870480f29d8858aa336"
+  },
+  {
+    "path": "deps/libraries/librarylwjglopenal-20100824.jar",
+    "size": 18981,
+    "sha256": "107d11509f6af59b8c2ba23df828bc5d3c4e067b58f3d858c7deb90ca5308f84"
+  },
+  {
+    "path": "deps/libraries/log4j-api-2.0-beta9.jar",
+    "size": 108161,
+    "sha256": "eb0ca9bdd938f80711152a758d6bc331a8b0d769199d457294dc67ed03f73498"
+  },
+  {
+    "path": "deps/libraries/log4j-core-2.0-beta9.jar",
+    "size": 681134,
+    "sha256": "dcde6033b205433d6e9855c93740f798951fa3a3f252035a768d9f356fde806d"
+  },
+  {
+    "path": "deps/libraries/lwjgl-2.9.4-nightly-20150209.jar",
+    "size": 1047168,
+    "sha256": "833e721817f70d1445eec13d8ce5a86e12af70efac5014356302e2bbc68b3fe2"
+  },
+  {
+    "path": "deps/libraries/lwjgl_util-2.9.4-nightly-20150209.jar",
+    "size": 173887,
+    "sha256": "034456b132a336b72757325bb7aaf99e075681ee5650d2bea21717bd485de42f"
+  },
+  {
+    "path": "deps/libraries/netty-1.8.8.jar",
+    "size": 15966,
+    "sha256": "cae3de169e7695ef30079349c5ea81790bd10c04c4037196fd4fdc07b6d43934"
+  },
+  {
+    "path": "deps/libraries/netty-all-4.0.23.Final.jar",
+    "size": 1779991,
+    "sha256": "50510e9c9874b539b98ef931fe7eeeb002f6b5b1976ea37669b9493426294561"
+  },
+  {
+    "path": "deps/libraries/oshi-core-1.1.jar",
+    "size": 30973,
+    "sha256": "27901e5d4d60d3502571d5e6358fc89e3fcf874138b69d495d139bcc3e169404"
+  },
+  {
+    "path": "deps/libraries/platform-3.4.0.jar",
+    "size": 913436,
+    "sha256": "ea89d5090c8303ba4e9a0056e6d8a20429f3e021411e950bfd9eba3b6e6cf15c"
+  },
+  {
+    "path": "deps/libraries/realms-1.7.59.jar",
+    "size": 1198123,
+    "sha256": "4a6a90ed956609d6cd3a7f84622fcac87d22e9a5d4858c6d1e965af860d07a63"
+  },
+  {
+    "path": "deps/libraries/soundsystem-20120107.jar",
+    "size": 65020,
+    "sha256": "2882d64550240dd0c026724da664d9f97ef205c91d6a85273d10790d88608f34"
+  },
+  {
+    "path": "deps/libraries/twitch-6.5.jar",
+    "size": 55977,
+    "sha256": "3b90f9f7ad968b9588482e3a09b6e7d0d81c6cf7c214c5cecd8120e3ee509ae9"
+  },
+  {
+    "path": "deps/minecraft-1.8.9-official.jar",
+    "size": 8461484,
+    "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298"
+  },
+  {
+    "path": "deps/README.txt",
+    "size": 3184,
+    "sha256": "b725d452056f4ad5f3ae15a9e0a9ec56cfe468f02c7f0c70dc5b567568177eb0"
+  },
+  {
+    "path": "deps/tooling/asm-9.6.jar",
+    "size": 123598,
+    "sha256": "3c6fac2424db3d4a853b669f4e3d1d9c3c552235e19a319673f887083c2303a1"
+  },
+  {
+    "path": "deps/tooling/asm-commons-9.6.jar",
+    "size": 72194,
+    "sha256": "7aefd0d5c0901701c69f7513feda765fb6be33af2ce7aa17c5781fc87657c511"
+  },
+  {
+    "path": "deps/tooling/asm-tree-9.6.jar",
+    "size": 51935,
+    "sha256": "c43ecf17b539c777e15da7b5b86553b377e2d39a683de6285567d5283888e7ef"
+  },
+  {
+    "path": "dist/linux-x86_64/libSlinkyNative.so",
+    "size": 119904,
+    "sha256": "593571262e2d77cdd364ea80ef933cc8d1cf23ea733cb08eb5933d320eaf59fd"
+  },
+  {
+    "path": "dist/linux-x86_64/manifest.json",
+    "size": 1023,
+    "sha256": "be7afb29c803e9083c325a9fc54b6a33e2071d3155361c3b2bbc5ef729649dce"
+  },
+  {
+    "path": "dist/linux-x86_64/payload-101.jar",
+    "size": 1781428,
+    "sha256": "f82f1095ff56149755687c8ebd49e38b444235ac9c81ecad1e3984b3c4b47cbd"
+  },
+  {
+    "path": "dist/linux-x86_64/payload-102.jar",
+    "size": 2042293,
+    "sha256": "708b79140cba9981b7c7ad32074099c648be86f735485f03230715a499d0dd2b"
+  },
+  {
+    "path": "dist/linux-x86_64/payload-103.jar",
+    "size": 1980973,
+    "sha256": "af0f1b12126d9c3236f5fc62b6a0fb757f69b085035640f3e5b36c8ad9d254a3"
+  },
+  {
+    "path": "dist/linux-x86_64/README-linux.txt",
+    "size": 2137,
+    "sha256": "2d322d77ce7e371e34c386b93587dad38222830f7cd241b291e921c92b58aaae"
+  },
+  {
+    "path": "dist/linux-x86_64/slinky",
+    "size": 1526,
+    "sha256": "1c00220af74f492b530e72873f2405b2ff68d58a6924a45f1037d749b122bb38"
+  },
+  {
+    "path": "dist/linux-x86_64/slinky-launcher.jar",
+    "size": 7750,
+    "sha256": "116ca68131efc99b3b171c3c11bc84c9c4035d4d4b613901e31fafb7121ce38a"
+  },
+  {
+    "path": "dist/payload-101.jar",
+    "size": 1781434,
+    "sha256": "6e4f4f3b36fe0f2af505fd32f31aaa4b25acc7dff395c343028912df3ab3d6ce"
+  },
+  {
+    "path": "dist/payload-102.jar",
+    "size": 2042299,
+    "sha256": "dbfaeac21020c6c14419722ad49f03e8207838e8f903f2b0dfc8f1d31050738e"
+  },
+  {
+    "path": "dist/payload-103.jar",
+    "size": 1980979,
+    "sha256": "06805bdc83455038337055249f4bdcb198cfd8eefb3b587d5abd30ca042e4708"
+  },
+  {
+    "path": "dist/Slinky.exe",
+    "size": 6249984,
+    "sha256": "94298bed85272a93dfd3af972aed5f9c2c52aa184146a46e40b51bbf99d37d14"
+  },
+  {
+    "path": "dist/SlinkyNative.dll",
+    "size": 6029824,
+    "sha256": "3dbb4fb7642594855cf698413e3d2a217c366d957b4ab362890a1f2f5a06dfcb"
+  },
+  {
+    "path": "evidence/build-verification.json",
+    "size": 4759,
+    "sha256": "4166aa3069a618fdaa3dcc914fb26271d90c978fbfb95bd90305a88c0599225d"
+  },
+  {
+    "path": "evidence/final-java/attribute-differences-101.json",
+    "size": 43926,
+    "sha256": "d52844b5c0002abe19f2a0c2532ac97d62a226fea31cb3024aa9ac00e8c07613"
+  },
+  {
+    "path": "evidence/final-java/attributes-original-101.json",
+    "size": 1630352,
+    "sha256": "4225279a1ab80985572c43b896547aab24bf6665a0ca157de77117d162178dc4"
+  },
+  {
+    "path": "evidence/final-java/attributes-rebuilt-101.json",
+    "size": 1630419,
+    "sha256": "df04492bd85278c11de1445868d8c378fe12d4e83046dd6f6b55b5320e1e8ecd"
+  },
+  {
+    "path": "evidence/final-java/audit-client-fixes.json",
+    "size": 4874,
+    "sha256": "385ab695093b0b95b44a5bbcb8ac81567f172873db3d8880ede0c37e9ab88f3a"
+  },
+  {
+    "path": "evidence/final-java/audit-client.json",
+    "size": 131985,
+    "sha256": "48a060f3bd6154d77963fe39fe0f70231c4dda24d33e86df37ee383c00e892e9"
+  },
+  {
+    "path": "evidence/final-java/audit-fontcff-symbolic.json",
+    "size": 17122,
+    "sha256": "3b8b7f144b714d8f834ab20cbfd011e27b2df59e91d7e2a94d6d619027931c69"
+  },
+  {
+    "path": "evidence/final-java/audit-fonts.json",
+    "size": 6509,
+    "sha256": "3b07d1e9b8e242320cf19d045018e1bdac8f7238847c42e7381e677872a9d13e"
+  },
+  {
+    "path": "evidence/final-java/audit-fonts.txt",
+    "size": 5219,
+    "sha256": "6f2a311f86d5efe15be9ac53ae6271355c050e337705066ed5c26e5dd3e2515b"
+  },
+  {
+    "path": "evidence/final-java/audit-frame-cases.json",
+    "size": 21858,
+    "sha256": "8737c9a334566f7ddecc662112ae2414c8754a3ba99195308c9bd35abe135186"
+  },
+  {
+    "path": "evidence/final-java/audit-libraries.json",
+    "size": 141363,
+    "sha256": "082089a0f3a96f5080f1c8ae12c5c31b49c911a82b49aea8cd008bf3720f1051"
+  },
+  {
+    "path": "evidence/final-java/audit-libraries.txt",
+    "size": 97178,
+    "sha256": "012ba152b83443ca3d85d90b48f865ee1a3094178b32e24c111d790892c222fa"
+  },
+  {
+    "path": "evidence/final-java/audit-module-fixes.json",
+    "size": 8842,
+    "sha256": "958ca1f84833102241f215c7d8447790bea494bfa5ee34104744933608b192e6"
+  },
+  {
+    "path": "evidence/final-java/audit-modules.json",
+    "size": 90769,
+    "sha256": "70c45b0c86137f4816a83b17db1e6769da3ac4f5fd146f830aaa57084a22821f"
+  },
+  {
+    "path": "evidence/final-java/audit-modules.txt",
+    "size": 63317,
+    "sha256": "84170b2ed9425055e817f0d8cda89dcf0989ce4150cce1c681f2488078882b6b"
+  },
+  {
+    "path": "evidence/final-java/audit-readcode-cases.json",
+    "size": 55864,
+    "sha256": "9d5e709de93491a6567cbdeab9f1b57f8bb901d329117511b029b6369a1fb17c"
+  },
+  {
+    "path": "evidence/final-java/audit-readcode-regions.json",
+    "size": 884,
+    "sha256": "eaba2f701914e564408601cd7c497eb0a7fe05b8a0bb7a3f600702d48dd60f9d"
+  },
+  {
+    "path": "evidence/final-java/before-reload-build-verification.json",
+    "size": 4759,
+    "sha256": "6d2c3a14b0b50a20ce6baf33cc8231fe2789de639f9c0444ef55a1e1da526c37"
+  },
+  {
+    "path": "evidence/final-java/before-reload-java-flow-101.json",
+    "size": 904020,
+    "sha256": "c84978eeec500f097b97ccfc9de3b2831854c017c823dbd9909eebb57cb0a27e"
+  },
+  {
+    "path": "evidence/final-java/before-reload-java-flow-102.json",
+    "size": 903976,
+    "sha256": "ba1bf382b7f376038b0280bd6833c5cafcba680b02c00379885caa4d24f578bd"
+  },
+  {
+    "path": "evidence/final-java/before-reload-java-flow-103.json",
+    "size": 889174,
+    "sha256": "10f0b8c289abaeeace972826a23fdd0893ded0d533373cb175a81827891eb92b"
+  },
+  {
+    "path": "evidence/final-java/before-reload-java-verification.json",
+    "size": 103582,
+    "sha256": "3c3a8d1152615e262546b52f162da7e997b8a8f6f81801dde7b018a09ca2dd6a"
+  },
+  {
+    "path": "evidence/final-java/before-reload-remap-validation.json",
+    "size": 2249,
+    "sha256": "8ce5dac3f51423fe25ec0b5c49d27ee5a4fe5723f27ba3c46d5166348731263a"
+  },
+  {
+    "path": "evidence/final-java/client-manual-map-results.json",
+    "size": 1766,
+    "sha256": "9212eb9c198b8ddc85e7fd9f6654052b8b0359dae3bf23eaa63e8c428cf61e82"
+  },
+  {
+    "path": "evidence/final-java/final-build.log",
+    "size": 1775,
+    "sha256": "802f11579b19271b4c89c0c09918d2af1f2c67168dcf96852ede8a7f8af166a7"
+  },
+  {
+    "path": "evidence/final-java/final-java-verification.log",
+    "size": 1104,
+    "sha256": "744835e29db7fd4ef7ca0d0b8318df6af5d07a9da95b1ba66e5f27058a198c7a"
+  },
+  {
+    "path": "evidence/final-java/final-method-coverage.json",
+    "size": 968384,
+    "sha256": "3d733c0ed1a219c3a79dbc04be5dc69a8de7bcf3677e8e651a9e9ad7388f2460"
+  },
+  {
+    "path": "evidence/final-java/original-101.json",
+    "size": 4623804,
+    "sha256": "e71f5d4da5a5259099b86da919b1b470011716553c32a25e50374d21f6fd4d01"
+  },
+  {
+    "path": "evidence/final-java/original-102.json",
+    "size": 4627828,
+    "sha256": "784248208e3d211284e8cb9b38d6f4d18c1075d11f7d28c4d198142d4975a28b"
+  },
+  {
+    "path": "evidence/final-java/original-103.json",
+    "size": 4476733,
+    "sha256": "99362e18fb975cadd98c817a1ed1cad277e2dc34301433f0f1bc84cfb1cb36f6"
+  },
+  {
+    "path": "evidence/final-java/original-provenance.json",
+    "size": 710,
+    "sha256": "b326dbba41fb086c5db8c97662e50c506902f6e4e8c08932a8fa27ba19ac25d3"
+  },
+  {
+    "path": "evidence/final-java/rebuilt-101.json",
+    "size": 4611014,
+    "sha256": "6a2ba2520fd38a0cb68a7765c40db97b2d56e1677cc5b03a1c6568a9bfd11595"
+  },
+  {
+    "path": "evidence/final-java/rebuilt-102.json",
+    "size": 4615038,
+    "sha256": "ed5a436e3cce2152b5030679ffe06da1f67e42cf2db70c00702852cbf89c386a"
+  },
+  {
+    "path": "evidence/final-java/rebuilt-103.json",
+    "size": 4463884,
+    "sha256": "4715045e24abf95cce8704ee91804994abddef777b75d9342fb2e44febd783ac"
+  },
+  {
+    "path": "evidence/final-java/source-corrections.diff",
+    "size": 14856,
+    "sha256": "fa8bd0fae9e8075b8df45febb394d0bbdae2833d04c8c782232ca1c86d67e04e"
+  },
+  {
+    "path": "evidence/final-java-review.txt",
+    "size": 5777,
+    "sha256": "11e3ce7a10f1de98ea8c86898822364b8c2df059e5849ac2fc5d9b75c512234f"
+  },
+  {
+    "path": "evidence/java-flow-101.json",
+    "size": 904010,
+    "sha256": "a9543d3b825b803f8244ca3a199352dc73409ac3a84736afff51a2019157923d"
+  },
+  {
+    "path": "evidence/java-flow-102.json",
+    "size": 903966,
+    "sha256": "a8066aa96d5c2dacc3c347a911b78430f67160a8e21e44559bc36d43edb40727"
+  },
+  {
+    "path": "evidence/java-flow-103.json",
+    "size": 889164,
+    "sha256": "a348523c12d0c9c5627c6b993a138a7a611ba937ac14d75ee3657c7caa861def"
+  },
+  {
+    "path": "evidence/java-security-audit.txt",
+    "size": 8105,
+    "sha256": "7abc1aad6fe2d13813e0bcdb15351c85e8619d69c8050e521c6fa995972287e5"
+  },
+  {
+    "path": "evidence/java-verification.json",
+    "size": 105379,
+    "sha256": "234643ff0363b72e29594d694e49d5e1490a22b993bdb69149027061e5b33f68"
+  },
+  {
+    "path": "evidence/launcher-audit.txt",
+    "size": 6481,
+    "sha256": "cae5dc7b8617470e9f3a02947d5abb06a8f32477bf9e1ba3eb17ab5fd8e64cf0"
+  },
+  {
+    "path": "evidence/linux-integration-results.json",
+    "size": 2863,
+    "sha256": "53c32320cd6f9091d29ca2842e6faf331d8f12108daa4dadb5a3c4bc512920de"
+  },
+  {
+    "path": "evidence/linux-java-comparison.json",
+    "size": 896,
+    "sha256": "3db9bdd317b378b5df4b9634c96a72cc83a0f23f34868856b9a2b2078801d244"
+  },
+  {
+    "path": "evidence/linux-test-logs/named-slinky-native.log",
+    "size": 6219,
+    "sha256": "35c8ff1012a9c96e2e3a794868cafd016b5bec6c6e2f3e552bf1c79de1d3f203"
+  },
+  {
+    "path": "evidence/linux-test-logs/official-slinky-native.log",
+    "size": 6276,
+    "sha256": "5f6d5c578e356eb906c543f72b585e1c97b913d20bdb3ecf720bda2a2cd1634a"
+  },
+  {
+    "path": "evidence/linux-test-logs/srg-slinky-native.log",
+    "size": 6181,
+    "sha256": "96c2e0531f504d8e111d09b4fc633104a1bce8f260df47200c31ca143a540c7b"
+  },
+  {
+    "path": "evidence/linux-test-logs/user-console-launcher-fresh-active-reload-launcher-transcript.txt",
+    "size": 2170,
+    "sha256": "bd53b53a3d130302110400f5a564bcc2ea0e3924e35f59362b202f15e0ff7027"
+  },
+  {
+    "path": "evidence/linux-test-logs/windows-console-selftest.log",
+    "size": 102,
+    "sha256": "1a29b363b2b3e55f2907e021a8c30e55e85c88a681c3015dd732516c5a1ab1da"
+  },
+  {
+    "path": "evidence/linux-test-logs/windows-native-build.log",
+    "size": 1033,
+    "sha256": "b70a73d004398bab1310aeff6b7a6ae6238d75356631e2bdcca640266ec83352"
+  },
+  {
+    "path": "evidence/original-class-api.json",
+    "size": 656071,
+    "sha256": "8de11259c3f584b216b3094839529286e1d59b2a3805bb9fc916131e70d6c8f3"
+  },
+  {
+    "path": "evidence/payload-pe-triage.json",
+    "size": 4851,
+    "sha256": "532dd0ef53619a1842457897e1a6d3712355af88e6be04091682b521562f1d22"
+  },
+  {
+    "path": "evidence/payload-resources.json",
+    "size": 227945,
+    "sha256": "03ca3a2cc79d9346e6a46f64c2bb56100800bd429eefe517f10e25f48154a32b"
+  },
+  {
+    "path": "evidence/pe-triage.json",
+    "size": 5476,
+    "sha256": "f3b812ce596f480763e35dc8db810f20979c8bbf3a5076a1a53e72e7167e3b40"
+  },
+  {
+    "path": "evidence/rea-artifact.json",
+    "size": 10915,
+    "sha256": "e3eadf0895b0c363534bd2e6916aa0599c0ccb16c2087520ee51f0aae528b69b"
+  },
+  {
+    "path": "evidence/rea-connection-notes.txt",
+    "size": 2450,
+    "sha256": "33a415ae559451bf5b4bef043211850a37ff2ae11bdfc9c4b94014cf656ead46"
+  },
+  {
+    "path": "evidence/rea-native.json",
+    "size": 93140,
+    "sha256": "012eacef5d1b24867f80e99966e266c0346bf8f569d2ef33b5bc2bf9ac7d0d46"
+  },
+  {
+    "path": "evidence/recovered-resource-manifest.json",
+    "size": 5473,
+    "sha256": "244b4643680d929e521c680d7df5491bc2bd2e2c75e6c99d80b2343f9281fe04"
+  },
+  {
+    "path": "evidence/reload-changes.txt",
+    "size": 3571,
+    "sha256": "fc3c6afd6d374cd33635dc482627ffbd7b436b11052d700ae6bb4b326581b05e"
+  },
+  {
+    "path": "evidence/reload-runtime.json",
+    "size": 1108,
+    "sha256": "7e84d3fbf12f0aadfd2ccaf523c56bc03d20a89c8bcd9a0214bea9e9585002a8"
+  },
+  {
+    "path": "evidence/reload-runtime.log",
+    "size": 22921,
+    "sha256": "3a82f5a3e3563d907d24002deed97b792d86a78eb771efe05f28da9adc75fe45"
+  },
+  {
+    "path": "evidence/reload-tests/active-instance-console.log",
+    "size": 976,
+    "sha256": "15819074b841e8203fc80c87a1bad8e4e856d8825d245ec8171d8202386bf169"
+  },
+  {
+    "path": "evidence/reload-tests/native-modifier-adapter-test.json",
+    "size": 158,
+    "sha256": "1647765ae480a9c83b829a545400f5ade9cd21a18fbc3e497325e3b11f57d763"
+  },
+  {
+    "path": "evidence/reload-tests/reload-build.log",
+    "size": 1806,
+    "sha256": "c65b0cbe6403c3932048951659cd5dda616661c3482f8e6983d5704def3420d5"
+  },
+  {
+    "path": "evidence/reload-tests/reload-java-verification.log",
+    "size": 1152,
+    "sha256": "8da41cdd75195668569b2ab185f279c482222b7b9310d67939d5a3916616fab5"
+  },
+  {
+    "path": "evidence/reload-tests/reload-native-build.log",
+    "size": 343,
+    "sha256": "7e43fb32fa1f5074f1bbe02224e7337bd83f635dcaafcbf705b59037bddb610b"
+  },
+  {
+    "path": "evidence/reload-tests/ReloadBootstrapLifecycleTest.java",
+    "size": 3823,
+    "sha256": "0d2989d80d59eab2fca017328a50fac5fe1f207ac97be5f93933fdb24ac35495"
+  },
+  {
+    "path": "evidence/reload-tests/ReloadManagerLifecycleTest.java",
+    "size": 2741,
+    "sha256": "37d4072744342f84c6356170277336a9a13c5af32f84440171bc0a3e8f6e5c45"
+  },
+  {
+    "path": "evidence/reload-tests/ReloadPacketLifecycleTest.java",
+    "size": 2856,
+    "sha256": "6dda9edee2a6340ac4e2b34cea408627b6704e62ab6ebecad563ebe7bbd5f35b"
+  },
+  {
+    "path": "evidence/reload-tests/ReloadRenderLifecycleTest.java",
+    "size": 2524,
+    "sha256": "52ec9f9823be3c4048fa6a61bbe2ca6463f9336e49a5a20099610c80f1120655"
+  },
+  {
+    "path": "evidence/reload-tests/ReloadResourceAndHookTest.java",
+    "size": 3474,
+    "sha256": "e26979be9dbfbd2dd0be69c896322122b8308d5f55c6c84452fec063551a5fd7"
+  },
+  {
+    "path": "evidence/reload-tests/unchanged-gameplay-check.json",
+    "size": 512,
+    "sha256": "46da7a5f138cd2f9d69d9d0e921ba6267884ad0d3869f5cc017d5b1354bf3bb9"
+  },
+  {
+    "path": "evidence/remap-validation.json",
+    "size": 2249,
+    "sha256": "8ce5dac3f51423fe25ec0b5c49d27ee5a4fe5723f27ba3c46d5166348731263a"
+  },
+  {
+    "path": "evidence/resources.json",
+    "size": 614,
+    "sha256": "13d9e6862f889b11a37abcaace377cbb4de3ffa726155105bd354400b77643bb"
+  },
+  {
+    "path": "evidence/runtime-log.txt",
+    "size": 1109,
+    "sha256": "f5564c6a0e3e56cb607214f97f8920d11e9a94fa8b46428dca0e60e2cc332120"
+  },
+  {
+    "path": "evidence/runtime-test.json",
+    "size": 1010,
+    "sha256": "6da640b6e99d54e73cd90c26530cfb045f1c9deb95291656062d1bdc2785b619"
+  },
+  {
+    "path": "java/mappings/official.txt",
+    "size": 1607323,
+    "sha256": "7097e14fed09990dc46883c5e3b0be3bcb86b81bc91577496b6da9436cf54aa2"
+  },
+  {
+    "path": "java/mappings/srg.txt",
+    "size": 1915756,
+    "sha256": "b8c37c1df39732e507a69e752a6de48a009556f64f72ecc10a6a9bfb0dddb9cd"
+  },
+  {
+    "path": "java/SOURCE-REPAIRS.txt",
+    "size": 12266,
+    "sha256": "ed050d5447834fed7ae7a4cd4c9c2560c45153bc6b5e7efa412ec1f67f14777f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/action/ActionAccess.java",
+    "size": 4986,
+    "sha256": "1539327feea83b63e28ad2a4d65a0bb05287895981b9eae5a1d27e5e396b1107"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/action/ActionConstants.java",
+    "size": 2079,
+    "sha256": "f0bd07eb9007d6222ca8120568692a9aaffed8e532aa05af32e463eb857e5844"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/AttackInput.java",
+    "size": 400,
+    "sha256": "3e0bb9d62e2f9f98255b2006658e734532cfc0852f58191aa442552b32dc9f5f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/BindingInput.java",
+    "size": 2300,
+    "sha256": "4c79e492105026a2cf66951e4197cf4e9d316de410a90c3e038b3bc6c8747b87"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/ClientContext.java",
+    "size": 1024,
+    "sha256": "d2056cfc8caba2bc7f3e1fde63f5ca3c41589f6e56e4450e5d9d9972cad3ba1b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/ClientEventBridge.java",
+    "size": 9433,
+    "sha256": "67a11fe4bd9da5547358e334f3dd240bed04e9997cfc54190fbeeb663d1b5c1a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/FixedWidth.java",
+    "size": 720,
+    "sha256": "f7041c9f4078fc1a9f96667adc8091139e547795d8588cd55641da26a26fd781"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/ForgeInputAdapter.java",
+    "size": 1307,
+    "sha256": "24bd49085535ebc43067fe101726eceb65b4203d0b3181cb6c1b4367486154c8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/GuiMenuCommand.java",
+    "size": 1276,
+    "sha256": "e77972b1fa017c7cc441a2df613c6ebdb3312e58d566e802d5d168b8c5e9d995"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/GuiModuleList.java",
+    "size": 3212,
+    "sha256": "4193473abbccaa6722e8da55f83776f6b205a65e599cb89c13194b75cdcdf985"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/GuiModuleSettings.java",
+    "size": 5086,
+    "sha256": "62c1acb1834e1d2bc1f774901eae3db0258fc75c7eda7f492021e3e501baff8c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/hook/ForgeUiSurface.java",
+    "size": 9889,
+    "sha256": "8491b73e24b74a854cd3b92f592041514b849d0ff671a4824c26e6ea43ececf0"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/hook/GameHooks.java",
+    "size": 10901,
+    "sha256": "4919a51cadcce0cbfb17c6776c17bae67fad2100004b671ce6469071df96414b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/hook/GlCacheResync.java",
+    "size": 2972,
+    "sha256": "862f7baae3ed70328ca56eece1991355d6cdef45d9d2266d556d9ebba27e38b1"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/hook/GlStateCacheSnapshot.java",
+    "size": 4413,
+    "sha256": "c5dc58b2f669b3ea7fa482722f35db9e76ffcb1b73451f122b3c847f55336f25"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/hook/GlStateScope.java",
+    "size": 2999,
+    "sha256": "befd88f1f4313148a48b27d4480518055250a18574e8df995e26d2441d8ae14e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/hook/RayQueryAdapter.java",
+    "size": 5972,
+    "sha256": "6fffd52c71398e58c947d3f9802ba23adac237fb17e105289565acbbacf58798"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/hook/RenderHooks.java",
+    "size": 7862,
+    "sha256": "8fb9a3ed687a2925963b9a2fba416d39479b5966bf98e74c6c350fbc6d786d28"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/hook/TargetCombatStatus.java",
+    "size": 6294,
+    "sha256": "1a35dace18a99d9c2152ec3fdac6bdcd0a0c117112a937fbb0ce3bce2c4aca11"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/hook/UiFrameDriver.java",
+    "size": 2339,
+    "sha256": "02e87c0f7d72204cd77b090b4684aee3cb3892cd8b917e042126d712cdeb84b5"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/InputQuery.java",
+    "size": 2010,
+    "sha256": "7ec42f3fa0d098ea570c10c187c0435db1833afd8dedde37deb9addab7390fa2"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/InputRouter.java",
+    "size": 4825,
+    "sha256": "45857f76f84792abef40a230a1c430b31029f3406e39358cc081399e5a43b702"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/inventory/ConsumableAccess.java",
+    "size": 3430,
+    "sha256": "10cb4b89d32a122ff570c71d4351470b1be6808244bfb7533835ca4428672939"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/inventory/ConsumableDelay.java",
+    "size": 1103,
+    "sha256": "2001fc2a8a2f0d371607122f4a0173e1b8ec36342bfc9905547e1e51f703365d"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/inventory/InventoryActions.java",
+    "size": 3762,
+    "sha256": "e02dbde4916da474f78b32bc77c55bd20091269546b587a40f923b6762e2080f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/inventory/InventorySelection.java",
+    "size": 14404,
+    "sha256": "5dacb8dbf39c16ff4179e5e59c0090d5a210d16289d6ce8939c22875e10be548"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/inventory/InvWalkControllerInputAdapter.java",
+    "size": 338,
+    "sha256": "24563cfc6d465d791fb0b7469df10773014f6783e066a6a5dfa5b128b4f09922"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/inventory/RefillSelection.java",
+    "size": 3356,
+    "sha256": "9934ec92cc97d3ab8149f588bb85f66260af8956a8fa7709c6f87bb303217512"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/ItemPolicyService.java",
+    "size": 2545,
+    "sha256": "914880c5f2a08daa7d88eca96d6baa556faceb44c83b520b4fd8f89a72cb408d"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/KeyState.java",
+    "size": 2141,
+    "sha256": "74640bb584f7fa393e25084943c0e30da6d7f8365f98183137b17db97ea10459"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/MinecraftFields.java",
+    "size": 4150,
+    "sha256": "3d9bfb6309346f17523c92f4ab9f460d91e0e99c4a080c179359641064817811"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/ModuleActionService.java",
+    "size": 772,
+    "sha256": "e143e22c2d124fe93d5f2d00b0747ce1bfcd7dfcefe43ce6cec5bc653625d440"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/NativeKeyMap.java",
+    "size": 2876,
+    "sha256": "f90d6747a1206bd0ae96250c57b71426119003ea7505db66548c214fd08ce482"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/numeric/DoubleNumeric.java",
+    "size": 8384,
+    "sha256": "736d23e1bbe954ad48c40d7118c859af8bcd9baf0b2a3bd8bb6707b8b2b97e1a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/numeric/DoubleTrigonometry.java",
+    "size": 7656,
+    "sha256": "a31352b2aaf02fc58fc51b022c680b83ede0bb51f1e2b7d6604fa66b051a0033"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/numeric/FloatNumeric.java",
+    "size": 11019,
+    "sha256": "dc699f1f35ffb3eb0e7da9c8834e08d7a919a31eaac493f659f0a1a3ad61547b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/numeric/FloatTrigonometry.java",
+    "size": 6681,
+    "sha256": "160bf396e9973bbefc8e8bad843bdff5c7f9696686a9a490afdb77f7616527b5"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/numeric/LargeReduction.java",
+    "size": 6878,
+    "sha256": "c452e1cad0d3c9171fd548bb5c25563c09beb15577c7f6d5a19447eadbf74c13"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/numeric/NumericConstants.java",
+    "size": 2145,
+    "sha256": "3f05eb808b3be6b6aaccf44ae21e28eda7288a5b3a1f8bdfe7193c035330d591"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/numeric/NumericServices.java",
+    "size": 3657,
+    "sha256": "284aae62fd6506d09d918425ec97b7bb85bd52c8ce2d3bd0ab34fe1e6b1529e6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/packet/NetworkSendAdapter.java",
+    "size": 1619,
+    "sha256": "2b9a0042692149b2ba816d8c7478a1743ff68cb3935d7316dce6cf4f0c2c092d"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/packet/PacketAccess.java",
+    "size": 991,
+    "sha256": "139444b1452ec06717b8ddc590e2b2a86847de4c81326da9fd4401a2c12fcc69"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/packet/PacketKinds.java",
+    "size": 704,
+    "sha256": "31553cdf2d7a286ec3e45760ecca1c39dfc9758273490ad5eb38ae7aafb4446b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/packet/PacketPipeline.java",
+    "size": 7936,
+    "sha256": "02961327a77c76882fb7c9d2e7220c3df5c312f707e417c903e13ca105a659d6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/packet/PredictionGeometry.java",
+    "size": 2572,
+    "sha256": "babb0578ea088f8a128f739900a51250cd203047c4f89823e6c007e4a6116f5d"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/packet/RemoteBoxRenderer.java",
+    "size": 2105,
+    "sha256": "ca7a17031f9845211bcfc1398dcf9fd6497ed1adfd9c33044a9d8c6f354a8dc6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/packet/TimingAccess.java",
+    "size": 3008,
+    "sha256": "c6739f074b33cb98ab981e7b9dbc1fdb784b29e22f4d71f7a427cf1059410f68"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/placement/PlacementFrame.java",
+    "size": 5568,
+    "sha256": "3fe8df2fb608b1f23c4a6e72687d9691da36f86bbcff6144bd990e4011c418c4"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/placement/PlacementGeometry.java",
+    "size": 3209,
+    "sha256": "4551bc02fd0bce117baebe66a6b4915ba82803882f5e8b7376fc8040632ef36b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/placement/PlacementSelection.java",
+    "size": 7983,
+    "sha256": "db51cf0eb292cfd3d407fded214560078c25dcca43ad59a26268e64d81323fff"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/RecoveredMath.java",
+    "size": 1993,
+    "sha256": "a4a07c31a983428b8392351ca7faa197c78f6c0437d488b3abb0fd82b551f54a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/RelationshipService.java",
+    "size": 1036,
+    "sha256": "555b98a0763d2ae442bfd2cace969e2c94ca8ef9687ca1b0c24bf89bca81801a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/BlockMesh.java",
+    "size": 5408,
+    "sha256": "f704599e2f4059a10bbe5495505f5e0f44a35b1f42c7b36e224a17a41880cbe1"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/BundledGuiFonts.java",
+    "size": 3643,
+    "sha256": "3057c4d1a59cb0358c4c794a1e42c47696a5d49b044a46409d51d20a83ab74f6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/CanvasFonts.java",
+    "size": 16355,
+    "sha256": "94c6a344d4be5bde3f82f5fa37e008f3e8bb2499e6bfc3d71b8e13eccd77e5a9"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/CanvasPath.java",
+    "size": 26015,
+    "sha256": "6d25c320a332dc1497c3bae923cb92adab71e57a8023130f968c4065b8dee893"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/CanvasShader.java",
+    "size": 6754,
+    "sha256": "5ff9c77cc4f80db2b9564482e13451fc024e6e91c8d679ff021d106a4814361a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/DrawPlan.java",
+    "size": 9073,
+    "sha256": "f56c36f58f1b95efc63209e834b3e2af21c5c3e2349956e1b4ea2ade46dcb9bd"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/FontAtlasService.java",
+    "size": 7196,
+    "sha256": "fbad4109ae7013c13a71073fbde596a04597f53733839ab6640ed9df02b92b42"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/FontCff.java",
+    "size": 17524,
+    "sha256": "e43f2e07b773cbfa6fe01b554bdc75b8ffb005d0dfeb16f09c9d5c949518d627"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/FontGeometry.java",
+    "size": 5593,
+    "sha256": "d23168be55bb09c083a3944fdbf394e2a29a10b75cd25b95bbc677c750b844e0"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/FontGlyphCache.java",
+    "size": 11392,
+    "sha256": "245c710a0449f7a08a855e0c76321d6be05d3bd5aa635dce08796fd9945cb0c8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/FontRasterization.java",
+    "size": 15843,
+    "sha256": "30f413222f2e38d9dea2e82edf8ecaedeafe52b493933401d416255243a30380"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/FontServices.java",
+    "size": 21628,
+    "sha256": "e12724a117a85e346df84f5e33e7e68e5a908156f81c0054ccc9a1c78c9d6a4c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/FontTables.java",
+    "size": 19826,
+    "sha256": "6154afde355d36c23cf2caf5466c01edef4d1dbd44c09874fe2f7331cc40788d"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/GameFontProvider.java",
+    "size": 6499,
+    "sha256": "ba1c6776455f306187481f729002674f9f3e6b45d4fc5bc26c49ed783808c641"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/GlCanvasBackend.java",
+    "size": 8772,
+    "sha256": "9b245c9eefd545561e4ed9b53d9ff388d361d9b39b06887c4f0c607e8899e153"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/GuiAppearance.java",
+    "size": 2593,
+    "sha256": "a05787db2e4d0d5e457560002f0d79d4989f3768756fc55dd65329a9f32d1939"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/GuiCanvasState.java",
+    "size": 11504,
+    "sha256": "bc264a5524ffb6106477988042eab8056b0f00db7d246fcfd6868fed0f984e09"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/GuiPresentation.java",
+    "size": 11356,
+    "sha256": "12c61b33ab7f4c292d8e6b3ea6cbc148f7e624327fe5d4b1810c8b288bd15711"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/GuiWidgets.java",
+    "size": 20560,
+    "sha256": "399c46fcbf8d1a2bcdc00fb2df66244b030c16c0d91c996585a53eebc815f797"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/HoldActivation.java",
+    "size": 1711,
+    "sha256": "4c0ab6f9c901c7c148c3909c3acb7f6dbc73110168deb44bed7e02d8bb884d1c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/InlineModuleSettings.java",
+    "size": 20143,
+    "sha256": "01cba289affb6b401c19daffab45da8690d0185d37bf7ff77394394b13250262"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/LoadedChunkAccess.java",
+    "size": 1214,
+    "sha256": "8274414812d0da88a587cd941afecaff2c31c46b0a3464c23eceb21dd32a590e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/NotificationQueue.java",
+    "size": 4298,
+    "sha256": "9734c45e59f455fd998f6382f640b1b67416f99c85351f9b4b77135007a4a6dc"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/ProfileIcons.java",
+    "size": 2113,
+    "sha256": "8f5b04284f62af7b25b18ad68bafb6838c83f245915cb0e2d663f85816946e58"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/ProfileMath.java",
+    "size": 4403,
+    "sha256": "eafa2a91970a9dad17b821e9bd710fff431624a57a72c039dc629fd9ad3236f8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/ProfileServices.java",
+    "size": 12437,
+    "sha256": "9e14f2ae68bf9e94bd4e22ad9a5d7a4038a34dab9409b2cd3c00089eeb63d37c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/RecoveredGui.java",
+    "size": 30824,
+    "sha256": "cd8d440398323c7fb399a690247769d2292bf3be818b900b79cc0d391b23bfe2"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/RecoveredGuiScreen.java",
+    "size": 33546,
+    "sha256": "9aa864f91df08774082d6cd038b8b9e00e6b4d1e6bb5eaf02d3e8c45b978ad43"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/RecoveredText.java",
+    "size": 1684,
+    "sha256": "2ed9d2036a1174d2ad250474d07164aac6d0e06947c4356a7a8dd670bfa43b07"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/RenderAccess.java",
+    "size": 18221,
+    "sha256": "7d45eaadef1fd4f28ccf4d53b9d467a6245081298ecb5736ce25bad14b36b7e6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/RenderConstants.java",
+    "size": 3769,
+    "sha256": "fd990d1a54945572448556ed83fc4b4b60ffdfd14a953399a857e1a128515425"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/RenderEventPayload.java",
+    "size": 1090,
+    "sha256": "872e0e71a817f2f15c24fb863c93c54d511fe22d0682ed462eb0061f9d91be9e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/RenderMath.java",
+    "size": 4989,
+    "sha256": "f3895b6fe0982fa7f7ee7d27b477557f29610e9b751fa75cfdca0ecd1d03cc86"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/RenderModuleAccess.java",
+    "size": 1274,
+    "sha256": "da94d356e2f23b2ad2dc2467c28ddc398a597e5f6999b6a7d155acd24e1e2579"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/render/TrajectoryPrediction.java",
+    "size": 6948,
+    "sha256": "cd3c2d81ad80ecdd2b9201355e0c5f2665a745fa410014d0e18960cd6f411d66"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/rotation/AimNoise.java",
+    "size": 3985,
+    "sha256": "236ad4c2c4340ee9c22f6105bf0976c99aef109cd9a118810d162d6afc63d5aa"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/rotation/RecoveredRandom.java",
+    "size": 5936,
+    "sha256": "b7c48136a016aa56f04b8f6cacc9105fe8a5f152b7fb5587263e57a8782ebbc4"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/rotation/RotationMath.java",
+    "size": 4201,
+    "sha256": "4c39edf04b42c370f07263dfe96c0e62e34b57ecac9e8449fa5fc0a92f6731f7"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/rotation/RotationService.java",
+    "size": 14688,
+    "sha256": "caf5d5acc62445f7394b24ee571db3940cf4656c30e43317d7b23eed90d741d8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/SemanticEvent.java",
+    "size": 1240,
+    "sha256": "4d3e43973ad06b6c9c6fd36a99ad119d7b42dc8aad3298d5a7abef4951e46594"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/SlinkyCommand.java",
+    "size": 7493,
+    "sha256": "f11c1b307c69299649fdd549d3e2d5863ea3a2176e57401d9cc3e40a10ac8cac"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/client/StatusText.java",
+    "size": 2933,
+    "sha256": "eb776d552ac85ebfceba95760a558a62ca9823c82e25ea63075911db53d5bd4a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/ConfigStore.java",
+    "size": 8334,
+    "sha256": "0cec0b2f9776ce681938b5a84ca1d05dd2ede40c4fe3edcb8cf26c7102840e44"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/ConfigurationFiles.java",
+    "size": 12715,
+    "sha256": "6435573a95e9a1424547c2338ece6a0cfad673880002eead642c578fc3c1730b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/ConfigurationJson.java",
+    "size": 6291,
+    "sha256": "44f3665777c33010e8e6671c85cc133ca295faf26102931936d17cbbe2d6ec5f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/ConfigurationSession.java",
+    "size": 494,
+    "sha256": "f328fa400aa8a18edfc088ea1ea066bfc70ec2e5f70c1bc3538c1c6480a28060"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/InitialSettings.java",
+    "size": 2143,
+    "sha256": "3c1b021a1bcec18663649903e0c746d16b4f759c8ee6e4035d850c9eee7f6f26"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/RecoveredConfiguration.java",
+    "size": 6303,
+    "sha256": "05b22652b9ec70a321bc2e85013a2e39bcfaf79c2f0938de65ec2a141c34305a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/RecoveredJsonJvmServices.java",
+    "size": 6602,
+    "sha256": "835f88464a0927a0aa47bd097e367cbd671d4feef1d5edff7798813e57a6c08f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/RecoveredJsonParser.java",
+    "size": 19344,
+    "sha256": "eb576ca1f5e72d1ec22d80312328d2dbc23a84b76dc10ded96d13a577a4e8c9d"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/RecoveredJsonRuntime.java",
+    "size": 32821,
+    "sha256": "1f01dee0f9ede416f78ef4331c1617cf657b9e9fa0f11b1d20505c390f674f58"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/config/SettingCodec.java",
+    "size": 5480,
+    "sha256": "82d2fdcf8f5d85f96f8361a38f59f556315fbac371452cff6c43529d986bd01a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/inject/Bootstrap.java",
+    "size": 4279,
+    "sha256": "6e6267bc04fbfd963819df82535050d4529f2d9f0def3447f599b46442852d0f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/inject/Mappings.java",
+    "size": 8928,
+    "sha256": "26a664953ac5a453c3d9546efff5f425c5dafa9978080d86b87b8fa74b0cdb39"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/inject/NativeBridge.java",
+    "size": 294,
+    "sha256": "10fbe6ffdb61c4054a6595ad5bc80bf042119ab77520e1016997253ee0780339"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/inject/Platform.java",
+    "size": 5195,
+    "sha256": "be2c3b8e994f9ba7eebf3ee144c23b7b1003750bc186f019e708d89df9f24403"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/inject/Reflect.java",
+    "size": 1286,
+    "sha256": "9aa6ed5fb5df99fcae5df2f02d139f30be21cc0513e0c9b781122c2f7748dc98"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/inject/ReflectionHelper.java",
+    "size": 2654,
+    "sha256": "070be7acf4b380d8f7eb4778aa83ebf3006ff6da0bca6966b48d7203f20c98cc"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/inject/ReloadState.java",
+    "size": 840,
+    "sha256": "bfe097d92b36dd02eb38781a89eb211ab272e293637b50984994ad3ba948216c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/inject/transform/SlinkyPatches.java",
+    "size": 30658,
+    "sha256": "843ed02709359c38643e300995d233a895282fe3e979d2658bfa74cef588b1da"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/inject/transform/TransformerEngine.java",
+    "size": 4620,
+    "sha256": "3a4dae256d6e34a6f42e7484f7a252631c0f3c8b0f2936bbd4d2d63cfeb655a8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/CoreModules.java",
+    "size": 7907,
+    "sha256": "30f48c50a7425dc9cbcf5bc448eeb1e4ac2d8839e51ffe8e7f224638e6f45046"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/EvidenceCatalog.java",
+    "size": 7001,
+    "sha256": "2099f74b714f248e3b072df1ccac1c0defa56a40a8d1df8e901e0f35cc6eca55"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/EvidenceModule.java",
+    "size": 1604,
+    "sha256": "a89ffdc464904cca5de78a2da8c3307c2e8f5647980efebdc60e2448e9bc939e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AimAssistModule.java",
+    "size": 21463,
+    "sha256": "63c8cde1b6a6a120ad5edde673cbc7827faf6a2aa3a56aedf4f1ccaee5ebac8d"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AntiBotModule.java",
+    "size": 4991,
+    "sha256": "b8c527d3588c601117ab3ee9d5f81902b932d85f643b529bd19f0425e28994b3"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AntiDebuffModule.java",
+    "size": 1127,
+    "sha256": "b95ab5e9f30beb273f730006f2811863454e7756d513ccfd2a7d0f61ae0111d4"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AutoBlockModule.java",
+    "size": 9573,
+    "sha256": "4e6889a1057d36636b3343c922c13bd1eba2199db40006ada4407ad78dca543f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AutoClickerModule.java",
+    "size": 16058,
+    "sha256": "49f233a59f3ea834691aa7ee1b42ecbbdafc62614dca7c7e33d501e51b82b812"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AutoPotModule.java",
+    "size": 6104,
+    "sha256": "3986b2c5d72ea4884571a2a437cd8e82decfe7d07b6d63d6b94b74ebedbcc66e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AutoRodModule.java",
+    "size": 13328,
+    "sha256": "5ad4410ddd0b4e1bfa04004dae079cf55ed9c865481a1d4bc1d96221d5b01591"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AutoSoupModule.java",
+    "size": 9198,
+    "sha256": "393b4747a2d237bb9365a384cd7a86eb1b69abd27fd1a52ba25bbeab1f4192a3"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AutoToolModule.java",
+    "size": 8600,
+    "sha256": "49ae21722cd38051b9570c3311fa506371e8020ea41307c2caf3d44656fafae2"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/AutoWeaponModule.java",
+    "size": 2962,
+    "sha256": "eb00bfce78852f40ada5cae53929b94499e930d61bba9f58976029ecc123cc17"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/BacktrackModule.java",
+    "size": 10757,
+    "sha256": "283f7818f0283d6f05697032392d72c8a0947256449470e892c289f3703bbd91"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/BlinkModule.java",
+    "size": 2684,
+    "sha256": "14b1d5bc4b505bcf332c968363bedf54523cb361a46d0d1f09cb90733d9a4895"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/BlockEspModule.java",
+    "size": 8710,
+    "sha256": "f8fc665c5542727b7fc086eeef46ef69a751e88edfe2f8355ff3dcc90d11dac5"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/BlockInModule.java",
+    "size": 12802,
+    "sha256": "a09665343c5b7563e9680f90f1ae654237f29b02315ab17ba8fff970387d1816"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/BridgeAssistModule.java",
+    "size": 15108,
+    "sha256": "b503c9b964c3daca4e50b107dae8fdbbc2bc92d3ba5e910f5d6c071033bcd9f6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/ChamsModule.java",
+    "size": 1968,
+    "sha256": "7dcfe62d7656df3be455914be247990795f652faa8477df591cb108761279531"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/ChestEspModule.java",
+    "size": 3491,
+    "sha256": "aee1d14f1cfa1d2f16b1f6e80276a95cc719052fd5edf4e54c078fb17f47de43"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/ChestStealerModule.java",
+    "size": 2013,
+    "sha256": "384c37a68e83dc870c96cdab82a45966b2dfa1b699cc5b0b5f8eb8a971c9a9bc"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/ClutchModule.java",
+    "size": 23155,
+    "sha256": "18298c5d3ce4ea769eb189cfc5640ebf8ced74d03e4dc25efd2c44e7b4b72eed"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/CriticalsModule.java",
+    "size": 6196,
+    "sha256": "6b1a41e845de4b8f249572d39c0aeca4f42729797f40706967a6c376da027a10"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/DebugModule.java",
+    "size": 3692,
+    "sha256": "ea06de7ebde3e6534f6fb6f72a2c3a43df0b4094e968c6dc6a598933c4f6c4a2"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/FakeLagModule.java",
+    "size": 4871,
+    "sha256": "6abaec0e5d9f8716fb39c6de5142d30a4e7cfb6784128fbed194181a1dc91c07"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/FastAccelModule.java",
+    "size": 2447,
+    "sha256": "65160545b20ca46c53bb868bda367a88e93cdc1b460e512d4291f5725f97c4fd"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/FastMineModule.java",
+    "size": 3437,
+    "sha256": "3d6b139a6481bf15593395dfe1e850f14c8200e5fae36e703d4ba279058eaa26"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/FastPlaceModule.java",
+    "size": 6101,
+    "sha256": "1086dbce52a7a94694ad2733875c3a58fb0121c97cca453a11b3c1c53def27f6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/FreeLookModule.java",
+    "size": 2031,
+    "sha256": "70fc83d48a05cf662d95aef63466bdc9f6278decd83140dfdcaaf875c9bfe053"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/FriendsModule.java",
+    "size": 9227,
+    "sha256": "0e01104ad3924cac6b19886112894fed48492c189897ffcabdc36be985d7b781"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/GhostHandModule.java",
+    "size": 3330,
+    "sha256": "56e7c8b5382b95f85b7a3c3cdc561b40352c6f2d3deacedca74092a5c87a106c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/GuiModule.java",
+    "size": 5547,
+    "sha256": "febb4a23831f1023ad2f167758d4d9b14b5c2a832ab7fc00151a825cddc7d12f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/HitboxesModule.java",
+    "size": 848,
+    "sha256": "fab481f1fe35d0ac120062416f99d6089f5c079a4ba2f858c0a2ea9edaddb27b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/HitSelectModule.java",
+    "size": 11029,
+    "sha256": "bb20eda410e4838aa5d5f7420d2a1f5f6c619cd0a62d459ee4a9f80eb0fc1cab"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/IndicatorsModule.java",
+    "size": 6342,
+    "sha256": "b4681cd89ca69d1e981b9ce04e52f54f21f76929f53af92bd3d4f2c2b1ddd864"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/InstantStopModule.java",
+    "size": 3487,
+    "sha256": "92a2305062303109296e86e4fa4422e6252cf49a43a0cbb45b6002cfbe3eb4f3"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/InvManagerModule.java",
+    "size": 6760,
+    "sha256": "d8571361487077efaf809ff356b4ad020a8bff86ca69d7cd9f8f1c123f6d669b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/InvWalkModule.java",
+    "size": 12797,
+    "sha256": "4d00a1b53e2050789dc0278e38d78caf1601a686712273f7857448c3605e5e95"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/ItemEspModule.java",
+    "size": 7647,
+    "sha256": "ed428c48d514d3ca43aa43baaeb9cc6a8f8e81f87450118f123878318b1b652e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/ItemUseFixModule.java",
+    "size": 1660,
+    "sha256": "33ca2e1b02e8c19aa79b5b5a283310f27189f5ea75c0050f66021906d291c30f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/KeepSprintModule.java",
+    "size": 3932,
+    "sha256": "2c60a6dfb2b697e0e3c09c68b7d6e079f7f13a6bc170265ae12c4e62496baf87"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/KnockbackDelayModule.java",
+    "size": 4321,
+    "sha256": "32e21ffaadd012068daeb11c841af149b75d6ee9dd9aefe22c652e1007a18cf1"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/KnockbackDisplaceModule.java",
+    "size": 7430,
+    "sha256": "7c47c8fc3f0444bf9dc934ffe40df131be994a3c4fe9d3df7433215f7e76100e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/LagRangeModule.java",
+    "size": 6874,
+    "sha256": "6996492bb20ae735a52669c03fea615154cb74ed963b502bdaca08843050e675"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/ModOverlayModule.java",
+    "size": 11257,
+    "sha256": "2d8130b1c3584d9acac2dac5a7497989f6829740a8f53e5748f66e2d57eb0da3"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/NameTagsModule.java",
+    "size": 13831,
+    "sha256": "aad308fb190ce9e0e3479017066138ced580f6be4b422ffd907954edee73aabc"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/NoHitDelayModule.java",
+    "size": 1928,
+    "sha256": "ff8937d43781ce96969fa99ee6f55e42df9ea491e2693142b63dc09ff0c004f9"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/NoHurtCamModule.java",
+    "size": 1782,
+    "sha256": "2352e337d4056de577fb7af5adc940e24a54a7f837b8fed6ab6e3b3cede07e64"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/NoItemReleaseModule.java",
+    "size": 2897,
+    "sha256": "c2a9d49cb4c98faca1b1d9135d03708246f8579f2807d91a76453ef79ead3ef7"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/NoJumpDelayModule.java",
+    "size": 706,
+    "sha256": "c56629457a5c646916ab63739d3407d057b4ba05a50e8113f4dd39c85e359155"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/NoSlowModule.java",
+    "size": 1359,
+    "sha256": "e712519b5af507d4f35949fa1294501035c997fe8e0d3099d0458aa0b7b8be95"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/NotificationsModule.java",
+    "size": 7223,
+    "sha256": "fe05f689c9514f37583de64f782eed2f4bf78994a301fe756ae6a00da3fa5e8a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/NoUseDelayModule.java",
+    "size": 2654,
+    "sha256": "e778831ad7d368c9ea2bc1bbaa4017e5d7a93d26684fbcf30400d7b635cabc56"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/NullMoveModule.java",
+    "size": 3286,
+    "sha256": "42e8322a41c5f7d45c5b579095e630212038896b3d9907d0a09cc7f4f621be9c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/PiercingModule.java",
+    "size": 3528,
+    "sha256": "799267d2aebe1c07ef06aed470672540020fbace4b6331276753d74d9bf722b5"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/PingFixModule.java",
+    "size": 995,
+    "sha256": "27c083329ca8c1d6705fe8edf14105b51820e921c28d9a60b04dbdc0473e50b3"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/PlayerEspModule.java",
+    "size": 9730,
+    "sha256": "603a98c58ad4933f519fee362dd1b1a65d8bf381f2b34610950f3d9326f12e2f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/PointersModule.java",
+    "size": 6891,
+    "sha256": "25f98306d702d9ae0366933ac63f291254f6d3022a675b41fab30cf5349c0267"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/ReachModule.java",
+    "size": 2302,
+    "sha256": "1670fd4c7d13227eddd78e970b87c56ca71a67d493126514eb1d4a4e72b637ee"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/RefillModule.java",
+    "size": 12206,
+    "sha256": "b1196e789ecf97f585312ee1ef4553fb446aba7f90f4a624eac0da7d15ec60ad"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/SafeWalkModule.java",
+    "size": 1719,
+    "sha256": "42fea388bb89480b7f6d683c7fad5b8a2720056c6f8758c645008d0c5f6fa3ef"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/SpeedModule.java",
+    "size": 341,
+    "sha256": "bc6f36d0fdc76be36b114600fc1734bdf1744bd133d2ded874caf86f629b651c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/SprintModule.java",
+    "size": 2365,
+    "sha256": "3d602c8d12b370374cbcba310b8c0ce3e6cd8edbe70c11afff0a6f878ba6b4ce"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/SprintResetModule.java",
+    "size": 6666,
+    "sha256": "3776ca5cc4b39a664cbd1e7ed40bd55cd11f0cd8848f58a226e7e5ff0f8df3dc"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/StrafeModule.java",
+    "size": 3064,
+    "sha256": "0a52dc9954a4b86d397b7e070899f67c71695074d85b7d5fe4142be5ffb8f6bd"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/TeamsModule.java",
+    "size": 4408,
+    "sha256": "5f7c4fd36327e8de251d36e92a350f32f88626205e35ab30c61ac1761962ec09"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/TimerModule.java",
+    "size": 2412,
+    "sha256": "e26a5146c4e1d6891716ac553c58a36f6d1d60421a5e66a56ed299b59ff780e0"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/TimerRangeModule.java",
+    "size": 10914,
+    "sha256": "bbf5849cf15736d6fd2f4594297804837ff20f60c388cc1572066b2bd5ac1690"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/TrajectoriesModule.java",
+    "size": 7782,
+    "sha256": "252a3b109dfc1bc6adfb258e9d5154c03a629573f53dbfc11e3090164282ee21"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/VelocityModule.java",
+    "size": 9265,
+    "sha256": "7cb622bbab89dae2284ff3b3a4a42e30523acb684cc24d96ab0f8cbd4c364837"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/impl/WeaponsModule.java",
+    "size": 7416,
+    "sha256": "d3b8e218386d9a3d1c4a8aa4aeee569f599d451e5f5ebfcb23a804f0685ec115"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/Module.java",
+    "size": 5029,
+    "sha256": "c030cf8dd57d2841dc1b5064a9ec9229e6ce4ab482b75d61c43143a0be2d9a9e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/ModuleCategory.java",
+    "size": 412,
+    "sha256": "a834b3e77b2e0bc37680c82220ad8c9cb82c480351b360aadb61eae309f1b23d"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/ModuleManager.java",
+    "size": 11198,
+    "sha256": "db566027103ec1d66a53d1f644619da6ba3402b0e30633a298449a9edbab8cd8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/ModuleStateQueue.java",
+    "size": 1856,
+    "sha256": "a725e8478edfdb07fdcdd4f696c737b547f03cba76b8b6fba4d802e6a24a7ab8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/module/RecoveredUiLayout.java",
+    "size": 4514,
+    "sha256": "fcbebbf59fce6aec7ee2567b421bc06e3c2d237bc909cc60a629cb8a8e5314d3"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/setting/BooleanSetting.java",
+    "size": 790,
+    "sha256": "be034579c783e49b669c42842fb27c90bf6e60251132545aa9c34d5ab0d553fc"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/setting/ChoiceSetting.java",
+    "size": 1752,
+    "sha256": "e4e53f7b4e256bfb2a6b0ce147f9b6d1a93a482d97b4f542b0c1de099d427835"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/setting/ColorSetting.java",
+    "size": 1613,
+    "sha256": "472c77c146ca315f38e078d2810c94b79771c0cf3511aacddbffb8f0f1d33648"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/setting/NamedColorListSetting.java",
+    "size": 3981,
+    "sha256": "0dc4945e0c999cdaa08a9427cf1d34e08ccb0a779962d4ec2cf086200fc4eca2"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/setting/NumberSetting.java",
+    "size": 2344,
+    "sha256": "96f0961d396a3ec694238220ab3d0373bb16ceb5e2241b05a73ea925e8a59064"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/setting/RangeSetting.java",
+    "size": 1845,
+    "sha256": "267d4b5ad8247537eaeb99075e6eb8eb7537b7ffc6de36067f70472e0ed83b05"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/setting/Setting.java",
+    "size": 1941,
+    "sha256": "7e35ba31bc92d5a03ee109cc11cbc70e8c13e3f3c24952be5b45457104785785"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/setting/StringListSetting.java",
+    "size": 2081,
+    "sha256": "b342fc716c7e358447559407812142bf3a776c33bebd7dddcd9fb9bbe7367ca0"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/AnnotationVisitor.java",
+    "size": 1650,
+    "sha256": "7420f8b7b94471bf769628fd933dc14bdbd422d01a5cf0267b0e550561d1b5ed"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/AnnotationWriter.java",
+    "size": 12214,
+    "sha256": "3822c9ae8c7b61a505fa60e2d5c51f3433e7c3a15b8aced477837049b507d41f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Attribute.java",
+    "size": 6257,
+    "sha256": "d9c763612272b447a6cedba8e9ca801aa83f215fe2783afa377444d7d479efad"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/ByteVector.java",
+    "size": 8205,
+    "sha256": "a44f36245f791bd9624d024b9b35dae93417d995c2b7e37eae879fd006bed4b6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/ClassReader.java",
+    "size": 118146,
+    "sha256": "29bbe91656d4e79991b5dd753651e224e75f5a2ccd9c0d53b4bf1db3f7cec7a2"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/ClassTooLargeException.java",
+    "size": 813,
+    "sha256": "7ca520dc72b275acef092e982480f40e3cbfb35fddfded6b11d9fc7c19226592"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/ClassVisitor.java",
+    "size": 4689,
+    "sha256": "7a84337f28d36abd9ede5d0cb4d8dd5c92a3c14157ba3b5675ff9e98854b4208"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/ClassWriter.java",
+    "size": 23273,
+    "sha256": "b78bdbeed662e411b4a445e895bddf9d5fefbcecd6a0c602e5526e4ee8cd2c44"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/ConstantDynamic.java",
+    "size": 2635,
+    "sha256": "474b46ee5795c362af4e8fc076d96ab78ba6e03876c0f50a306781a148cca0f6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Constants.java",
+    "size": 7083,
+    "sha256": "84038ee37a25e3b0d1408057b708a14ff1ff4ef2573e94679438a1fb56d0354c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Context.java",
+    "size": 751,
+    "sha256": "bde39c758c10f4465be8be2e89023940316f373e43bd70911bd484964af8814b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/CurrentFrame.java",
+    "size": 423,
+    "sha256": "4838a49e44a8b04d198ddcede248c13765bdfb9b14cd0953084611690ab2befe"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Edge.java",
+    "size": 360,
+    "sha256": "0e74d565b23accbb04d789439597bf88f4e8beaf6f58d3add169fb8dca0c3252"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/FieldVisitor.java",
+    "size": 1700,
+    "sha256": "9b70dcfc13affb307e8e39ad60e459a5df52d63b9ef97884f4733df0d0d4dd08"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/FieldWriter.java",
+    "size": 5188,
+    "sha256": "f46067e0a352909fadb7a6bb17104967f196753a1496d8237e01461cc98fcc34"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Frame.java",
+    "size": 37959,
+    "sha256": "5fa37112ea9413402eb3aa8ad0c138cdb1e1cef84b884cdbc2f42e16b77b3fba"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Handle.java",
+    "size": 2084,
+    "sha256": "ab72ab4b724bdddffb66e08290287f39f6d7a2e405e6570b65167c06fee808b0"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Handler.java",
+    "size": 2678,
+    "sha256": "d91685fa3c296ffb35ce996a9c75c49358cef002856b6d9b39e0d6bc3fd4e5dd"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Label.java",
+    "size": 9084,
+    "sha256": "2bf8fde12bdc04327dcd2b9993506afdd602d7d22f2706a414485e3137ee1913"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/MethodTooLargeException.java",
+    "size": 1187,
+    "sha256": "5d926dfedf50aca9e2c75a363f9e1f0ccfe1194758ea0d6677ef859c74258883"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/MethodVisitor.java",
+    "size": 8638,
+    "sha256": "4114630326541050a4231918731bb85d3019a6b42a40f0fbd070d49d587e22cf"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/MethodWriter.java",
+    "size": 64333,
+    "sha256": "77dbdae29c5c132565ebe63946abd71b2803cba907b882145b38ff61ce5e7ac0"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/ModuleVisitor.java",
+    "size": 2118,
+    "sha256": "95bccf3958717329defcc9a69bb97ba241a85b0a0106b0ef1ac45101dc7368a0"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/ModuleWriter.java",
+    "size": 5582,
+    "sha256": "381a0f8d0aad1c20f66c0dd7084abd3a67e6a3a4b6a5d4fd62efedb6fdcf3ad0"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Opcodes.java",
+    "size": 5571,
+    "sha256": "504fa80a42536d80580983937f1a552c7021f9fe5d7a64945d3186b1134932b2"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/RecordComponentVisitor.java",
+    "size": 1705,
+    "sha256": "b654f7b889e127e5986266e7ffd7023bfeb5acd8b179559fb3652403b8eca661"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/RecordComponentWriter.java",
+    "size": 4181,
+    "sha256": "ceaa312cd88b9b7c08e8a20372fce1f7b2edf7a56f23afadc1da64f223a43929"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/signature/SignatureReader.java",
+    "size": 5395,
+    "sha256": "0dbd970e936596c0408f61bb7d083c551d6f0353860edfd3a293082ec2377f9f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/signature/SignatureVisitor.java",
+    "size": 1797,
+    "sha256": "8ede516b5208cc472efdd849414e1e66f2617419f126ba8545a0649ec8f7cd39"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/signature/SignatureWriter.java",
+    "size": 3790,
+    "sha256": "3d41d3fc8145f58d9ba86ba66b4d0cc1e4cf3b1dee3f63e7ae987eabf1b8bd52"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Symbol.java",
+    "size": 1706,
+    "sha256": "d7a1d27a072222c5d6f07d98dc97094d433dd082cb1a9bc80ec7c603958dde86"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/SymbolTable.java",
+    "size": 31988,
+    "sha256": "5d550c0e4bdac8aae473a5e87311646e80d6340603bab95b2af1b11f4abbee26"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/AbstractInsnNode.java",
+    "size": 4300,
+    "sha256": "f1a84a2e95b43dd812d4b5fe8a352490c9a0d012b686d5ffee66e8feda73715f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/AnnotationNode.java",
+    "size": 4675,
+    "sha256": "e40dec656717489dcfe846b23c13a7b1a62d60ead2ccdaee00c7e9e88fd750fb"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/ClassNode.java",
+    "size": 11489,
+    "sha256": "9563f6e4c759670e58218e6be61c9b6bad38ea22ac48ba93194dea86586db64e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/FieldInsnNode.java",
+    "size": 988,
+    "sha256": "a7a50bc8fed7160a27a1d80f9c632f3f61687a44b1d3d7e556ffa76935f07ea6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/FieldNode.java",
+    "size": 4814,
+    "sha256": "92bb27a21731cf7cf905c4a1d06e08c43e0b483206939f6c7c0d05c581c4f8b4"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/FrameNode.java",
+    "size": 3382,
+    "sha256": "fa9d1e06b42ba6b6a07ff64c6108585e528ded4a3d96ff915fbf0ae163e92851"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/IincInsnNode.java",
+    "size": 757,
+    "sha256": "d956cbbc35e2e742ce88b2e2886748d371f71de82d78532d903d8cfb869bbb8c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/InnerClassNode.java",
+    "size": 598,
+    "sha256": "0046ae4cd96cab9bfcde242fc7832c8cd6eb5f92c832b7234ad9bfd5f93fdfae"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/InsnList.java",
+    "size": 13306,
+    "sha256": "a6d300945d8b8ae2d75c2822df91e0bb4ddc4fad7b105e2d935056ccdd60be7c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/InsnNode.java",
+    "size": 619,
+    "sha256": "7a39ae8abc144292cc96a83b9d041d606647b495194b20ae9d25dd45ee831542"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/IntInsnNode.java",
+    "size": 806,
+    "sha256": "004c0e3d9313ec9b03fdaf93f666015238eb7c218df8db32c77e0b49e160df61"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/InvokeDynamicInsnNode.java",
+    "size": 1105,
+    "sha256": "518f232afefd9a7fbdcefd1b73d8347f6e9cef0ed6947fca7ca0d8506fdaabc2"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/JumpInsnNode.java",
+    "size": 842,
+    "sha256": "61190eb12551188d3261661f17f2e684b57521be8e91ef03a9a2962be166d3e8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/LabelNode.java",
+    "size": 902,
+    "sha256": "ba9a0a51be6f1c04b87c203d14aa2ed52797dfd3023bac84c90e5e8228127e84"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/LdcInsnNode.java",
+    "size": 673,
+    "sha256": "f1113d35b226519e90b6943d5ac6010dfb0ca30af1d3843781d288bc6394732b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/LineNumberNode.java",
+    "size": 741,
+    "sha256": "54b8bba825b6ffb047b928805fb695d63a21c987b466e5943ef0873547ea887a"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/LocalVariableAnnotationNode.java",
+    "size": 1545,
+    "sha256": "a6553a719d364c0d4d4cafdcec6fe55b24548e275b096759b7b6962e34ddb20f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/LocalVariableNode.java",
+    "size": 773,
+    "sha256": "83ba8a64cfd4537458c3a91a2950a65f2d0786050a870b420840a07e0d4eab6f"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/LookupSwitchInsnNode.java",
+    "size": 1530,
+    "sha256": "b7173648660b14a1fc8b027a92a2275a5f7c0a349c1312ceff42c5aaef97b6d6"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/MethodInsnNode.java",
+    "size": 1243,
+    "sha256": "7ff262bf839fdb4a30cc72b8a6ac2b9f9d595bc144998b2817a55c8883e71849"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/MethodNode.java",
+    "size": 21342,
+    "sha256": "da56eac0904b442291e374f8dd262d3810c97cc82ba54a8dd6c78cc3d5e55202"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/ModuleExportNode.java",
+    "size": 598,
+    "sha256": "8bcbfa31a390797d10c34e1eb97bc7cb423957c67d1867e880b58565f9dc7732"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/ModuleNode.java",
+    "size": 4653,
+    "sha256": "86baf78168075d3dc10f679be4683b50340314215c50f76d52d8c316a7b8b5b4"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/ModuleOpenNode.java",
+    "size": 592,
+    "sha256": "7f11c6e36f6b50682683be5e419afef770e8c91703cb160ad262c450fdc66953"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/ModuleProvideNode.java",
+    "size": 504,
+    "sha256": "c8de48d6a4f26a07768d92d5a65b53579d213d5bfe04ffe72351c60a69a704e8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/ModuleRequireNode.java",
+    "size": 507,
+    "sha256": "cb5740b60cf15a9331a87ecef985e8a5738dcfc9370bc4d186129d994f278022"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/MultiANewArrayInsnNode.java",
+    "size": 829,
+    "sha256": "9d103e4551a475965f0327a2fe8700d3d1b9a1c8ddf13c2add4a6a3153791368"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/ParameterNode.java",
+    "size": 403,
+    "sha256": "c050c9c32ab6dff4932d8f140e018c957a50d5a048679a17dcd4fa506f5884c8"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/RecordComponentNode.java",
+    "size": 4513,
+    "sha256": "c59fbd4c24e55b9f48032ab18d21939a50406e2acfe122dae8e951f5cfe70318"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/TableSwitchInsnNode.java",
+    "size": 1305,
+    "sha256": "ec13054c34358473d0a4d498680f0763cba6f62b07864f1f1cfb38f09fcaa31c"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/TryCatchBlockNode.java",
+    "size": 2194,
+    "sha256": "5225b1c51940613ff8a88a7ce0e06ede643a35191a4e966037f3aafbfd9ec3c1"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/TypeAnnotationNode.java",
+    "size": 646,
+    "sha256": "264b615079209f30efe22164bca143fd50e4dfb965b866f30a07b3788bf5e2bd"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/TypeInsnNode.java",
+    "size": 798,
+    "sha256": "adff037416ab28e86968c9cec8eef7c0ec6cc9b67aba310b33261200af1b287b"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/UnsupportedClassVersionException.java",
+    "size": 188,
+    "sha256": "93f3a9715e3da3c2f409bba12f08d986a723ffdf1c43682050919078236d2d14"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/Util.java",
+    "size": 3842,
+    "sha256": "bf76a054f16d1ee04ba79129b3bd3b27584e595045dad4693a5a6403bb1b29fc"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/tree/VarInsnNode.java",
+    "size": 792,
+    "sha256": "8e78919bfc0b9187b5bcdee25366468b30fb020c7a342fd9fe621868ad2fe4d0"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/Type.java",
+    "size": 18084,
+    "sha256": "89cac893ced15f875117bf7e36e3ffb18f3d7b18484649e651726c3895235b4e"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/TypePath.java",
+    "size": 3503,
+    "sha256": "404e8927c0be98ba9f96ed3679602b3a7708a218772f8a7facd6226bd587c98d"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/shaded/asm/TypeReference.java",
+    "size": 5418,
+    "sha256": "6967cd14b2edb9bdc7ffd1c07f683631b09fc111d15b4e0e823feb06af1ba632"
+  },
+  {
+    "path": "java/src/main/java/dev/slinky/SlinkyMod.java",
+    "size": 3333,
+    "sha256": "5b78a482137ed8e8b3edc9b885f3a639d9cb9b6f1ebd64354b14bf9266dbd888"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/ActionConstants.json",
+    "size": 5872,
+    "sha256": "fa85465605474df49be1ff19201945901efae6b8d69aad3881b5cac8b1d86d73"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/Inter-Medium.ttf",
+    "size": 694512,
+    "sha256": "6df88fcb83ac96582350f801355c6eff55f15710093e9627fb431caa40521151"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/Inter-OFL.txt",
+    "size": 4377,
+    "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/Inter_18pt-Regular.ttf",
+    "size": 341452,
+    "sha256": "b9fadaa44b71c03fa371a12b7eccbcd416886f31e197314112b8d0c75ed17bdc"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/InterSemiBold.ttf",
+    "size": 343828,
+    "sha256": "a8b276e25bb13dfa39cface35cc92aff9a7d5f1b96143f0df8c66351ccfed2a4"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/OpenSans-Medium.ttf",
+    "size": 130628,
+    "sha256": "ef1308969da24484c567ec16bfc6df011370cb01ecd1d46bb3140af07dea2786"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/OpenSans-OFL.txt",
+    "size": 4216,
+    "sha256": "01cd5ffb3a528c219a86e49a814c6c53bd8a69b9a3c305dd237074ba1c811af7"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/OpenSans-Regular.ttf",
+    "size": 147528,
+    "sha256": "c53aceea2dcf5b4098099c0c4d0a061d17e178a049317b42a422b1a9f7f8eb59"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/OpenSans-SemiBold.ttf",
+    "size": 150592,
+    "sha256": "4a413711684a9dd564ef0f1c10cb62b5d9f7eb6df2cff962f5341a6ecd5f64ae"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/InitialSettings.json",
+    "size": 109545,
+    "sha256": "5f518a273a7e05ec9df18aefa91ec8c745e3ddfe8bfdc74821a236f3a66a05a9"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/ItemCatalog.json",
+    "size": 20753,
+    "sha256": "096a710b1d409ac294b4f17a0fded143d82f91c311f07e36e0c3006a4fd04105"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/KeyNames.json",
+    "size": 1098,
+    "sha256": "d89647e84753f3199705c588f1896ae5861bb46208ab48191a9ef6fa37bfba3d"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/MetadataCatalog.json",
+    "size": 354669,
+    "sha256": "e94b4af1633cc1b07c3a191c50830e24cae8623b8db7164a837ac375a35c15d4"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/ModuleDescriptors.json",
+    "size": 10643,
+    "sha256": "62808cbf7f5ff96a7e3e5382ed7171431e1d75b8f78dc089d730680de9698b74"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/ModuleUi.json",
+    "size": 124290,
+    "sha256": "6464ee9f9c2e39ed40e6fcbddd4bbdd21dd9d5797de0577a86d1376541d02b77"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/NumericConstants.json",
+    "size": 4948,
+    "sha256": "46e15fe8880b0d4110dc46842c65f4ae219961c8b700cafb3d17d83ba1f30b86"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/profile-icon-coverage.bin",
+    "size": 6400,
+    "sha256": "fb1556f05fe31d3dced3ef82e1655cb24ee6e5f81abd0a36a7ffd24a4a9c00ef"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/ProfileLabels.json",
+    "size": 407,
+    "sha256": "9ac40fd365ec38c2bbd58a9a4f3377646f4879b2a24db1831fd699131aa10858"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/RenderConstants.json",
+    "size": 27195,
+    "sha256": "3e6a7dba6433f6416ef73ae3193e04a09dd2e9275b0b4890f6432f743f71301e"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/RenderDescriptorObservations.json",
+    "size": 8339,
+    "sha256": "de866c9f4e9b226051bd16a42ff05bed49ccdc6d8bf4530fc826b7b92b147269"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/StatusMetadata.json",
+    "size": 18737,
+    "sha256": "22bcffefeac1cf44cc1628a2e8aa0da715728d864877424449b148a532e4f861"
+  },
+  {
+    "path": "java/src/main/resources/assets/slinkysemantic/WidgetMetadata.json",
+    "size": 47316,
+    "sha256": "5eee04c2794b924af33d2cdb9944c523752b115023c73ca72cced424e1d86799"
+  },
+  {
+    "path": "java/STRUCTURAL-COMPARISON.json",
+    "size": 161,
+    "sha256": "f7d4bebb137969e7ffd9e536216a46b91ca482bf0379b5f2fa0bb100e78a2fa5"
+  },
+  {
+    "path": "linux/slinky",
+    "size": 1526,
+    "sha256": "1c00220af74f492b530e72873f2405b2ff68d58a6924a45f1037d749b122bb38"
+  },
+  {
+    "path": "linux/SlinkyLauncher.java",
+    "size": 10465,
+    "sha256": "623e116f8f90b3f4e4ccd440571705fa1fac9e89a4d9f68b1474e1fb67e3ed5c"
+  },
+  {
+    "path": "mappings/named-to-official.txt",
+    "size": 1607323,
+    "sha256": "7097e14fed09990dc46883c5e3b0be3bcb86b81bc91577496b6da9436cf54aa2"
+  },
+  {
+    "path": "mappings/named-to-srg.txt",
+    "size": 1915756,
+    "sha256": "b8c37c1df39732e507a69e752a6de48a009556f64f72ecc10a6a9bfb0dddb9cd"
+  },
+  {
+    "path": "native/CMakeLists.txt",
+    "size": 2983,
+    "sha256": "30acb0d2a3f7857ff30ff9b2a6526b6bb93c7ae9fcd6852e09da40a0e910343c"
+  },
+  {
+    "path": "native/INDEPENDENT-STATIC-REVIEW.txt",
+    "size": 2165,
+    "sha256": "3c034deeb1e98ece788f406fb11bbfdacf8d894d6bd4ad32febb2f8b89b0b276"
+  },
+  {
+    "path": "native/launcher.cpp",
+    "size": 28105,
+    "sha256": "3dd32e5ddc42e81079c320a872b8f84cabe6944dd1964cbc26fec7c46a6a1818"
+  },
+  {
+    "path": "native/launcher.manifest",
+    "size": 342,
+    "sha256": "0e3c66bd7ab43382c0a68cfff06bf0ca7397f8022e928e83b783fa2bdb2dbfe9"
+  },
+  {
+    "path": "native/NATIVE-RECOVERY.txt",
+    "size": 7289,
+    "sha256": "7ac39f2c9089a7a37e40aa3bcabf81ddf5c96437339f2a0224098535949e6d01"
+  },
+  {
+    "path": "native/payload.cpp",
+    "size": 55090,
+    "sha256": "8e54071d31aa39b57eef0134ca58246188f56e02e178df3ea8a5c4a7141810fc"
+  },
+  {
+    "path": "native/payloads.rc.in",
+    "size": 159,
+    "sha256": "6b9db880c9f6faa7e486040a4c45f128470c2a6e92e915f446666a3aaa1dbebe"
+  },
+  {
+    "path": "native/static-validation.json",
+    "size": 814,
+    "sha256": "a2c38f7d9a99fa78ab56d7b3474979cada16611a3aebb6359b000ea4838675c9"
+  },
+  {
+    "path": "README.md",
+    "size": 13781,
+    "sha256": "284c11e2e32d3c3e35a0b54527a1fb26ae1d59faac0228beea53bc016ec47598"
+  },
+  {
+    "path": "tools/build-linux.py",
+    "size": 7210,
+    "sha256": "d6b1bc31f040fb048dbfdaa926e61eef15bc138ada597e6ff73eb751c7d6cce0"
+  },
+  {
+    "path": "tools/BytecodeDump.java",
+    "size": 5235,
+    "sha256": "ee27d3df2e4f021dbf92a687179b35d8a30f6875c0a81bc9a71b684597b64d35"
+  },
+  {
+    "path": "tools/compare-bytecode.py",
+    "size": 5751,
+    "sha256": "98a39d3a2b4ffa35f2739112023c3042b83ee9006a2c898a3592a17fa856d7ec"
+  },
+  {
+    "path": "tools/download-deps.ps1",
+    "size": 1312,
+    "sha256": "a34e39abe9234dcba9c39981a904cf7e11e90b2c207d3cc99f6c481ed67a5080"
+  },
+  {
+    "path": "tools/pe_resources.py",
+    "size": 2037,
+    "sha256": "8fc40ff5934d5b27903f66be0e2ae8c95fe6067727fc6472c0d727d4182a04d6"
+  },
+  {
+    "path": "tools/RemapJar.java",
+    "size": 10529,
+    "sha256": "764585a8135fb6ac69332471a19a7babccd0ee5d7f14e3ff85617a10552f00e8"
+  },
+  {
+    "path": "tools/static-reference-check.py",
+    "size": 5626,
+    "sha256": "d58832291be77c252166b83d3ef45012c74088517bbb911db02b7a285170f3a9"
+  },
+  {
+    "path": "tools/verify-build.py",
+    "size": 4391,
+    "sha256": "eaa33a524fd288336ea2137d91ae06473bec6f5752f6dc3a2e187b3e03a76375"
+  },
+  {
+    "path": "tools/verify-java.py",
+    "size": 5390,
+    "sha256": "5ba23543517b104c5fefe711d8772c048755ee0b5f9a9682c210221aa75874f0"
+  }
+]

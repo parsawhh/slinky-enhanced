@@ -1,0 +1,44 @@
+[
+  {
+    "region": "try_catch_table",
+    "original_start": 221,
+    "rebuilt_start": 222,
+    "flow_equal": true
+  },
+  {
+    "region": "attribute_headers",
+    "original_start": 274,
+    "rebuilt_start": 275,
+    "flow_equal": true
+  },
+  {
+    "region": "attribute_loop",
+    "original_start": 295,
+    "rebuilt_start": 296,
+    "flow_equal": false
+  },
+  {
+    "region": "frame_setup",
+    "original_start": 485,
+    "rebuilt_start": 488,
+    "flow_equal": true
+  },
+  {
+    "region": "visitor_loop_header",
+    "original_start": 604,
+    "rebuilt_start": 607,
+    "flow_equal": false
+  },
+  {
+    "region": "visitor_footer",
+    "original_start": 1271,
+    "rebuilt_start": 1274,
+    "flow_equal": true
+  },
+  {
+    "region": "final_local_variables",
+    "original_start": 1364,
+    "rebuilt_start": 1367,
+    "flow_equal": false
+  }
+]

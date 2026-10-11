@@ -1,0 +1,35 @@
+Independent static review of native reconstruction
+
+Reviewed native/payload.cpp and native/launcher.cpp against the original IDA
+pseudocode exports, the recovered Java NativeBridge and Bootstrap declarations,
+and the native investigator's raw-disassembly clarification. No sample or
+reconstructed target code was executed during this review.
+
+No material reconstruction errors were identified in the reviewed JNI method
+descriptors, callback argument types, JVMTI retransformation capability request,
+reference lifetime, runtime namespace selection, or class-loader fallback.
+NativeBridge's three registered descriptors and Bootstrap.start's descriptor
+match both the original native evidence and the source-recompiled Java classes.
+
+The launcher preserves target process selection, remote UTF-16 path allocation,
+LoadLibraryW RVA relocation, 30-second wait, and post-load module checks. The DLL
+preserves named/SRG/official resource selection, game-loader discovery, addURL,
+system-loader-search and dependency-ordered DefineClass fallbacks, DLL pinning,
+class capture/replacement hooks, and client-thread Java bootstrap scheduling.
+
+An apparent Hex-Rays callback contradiction was escalated and resolved against
+machine code: the null replacement-target branch at 0x180002FBF targets
+0x180003097, which checks JNI environment/class and enters capture at
+0x1800030A9. The reconstruction's capture-only path agrees with this code; the
+misleading outer condition in the pseudocode is a decompiler artifact.
+
+Source-versus-evidence differences are deliberate defensive null/error checking,
+explicit JNI reference cleanup, serialized logging, and disposal of JVMTI
+callbacks/environment before failure unload. They are documented in
+native/NATIVE-RECOVERY.txt. The original timed remote-allocation cleanup and
+LoadLibraryW RVA assumption remain limitations. DefineClass non-dependency
+failures leave the retry queue just as in the original; its success counter
+does not guarantee every class definition succeeded.
+
+This review supports source/evidence agreement. Runtime equivalence remains
+unverified because executing or injecting the target was expressly excluded.

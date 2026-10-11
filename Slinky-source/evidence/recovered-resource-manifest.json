@@ -1,0 +1,146 @@
+[
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/ActionConstants.json",
+    "sha256": "fa85465605474df49be1ff19201945901efae6b8d69aad3881b5cac8b1d86d73",
+    "size": 5872
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/Inter-Medium.ttf",
+    "sha256": "6df88fcb83ac96582350f801355c6eff55f15710093e9627fb431caa40521151",
+    "size": 694512
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/Inter-OFL.txt",
+    "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "size": 4377
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/InterSemiBold.ttf",
+    "sha256": "a8b276e25bb13dfa39cface35cc92aff9a7d5f1b96143f0df8c66351ccfed2a4",
+    "size": 343828
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/Inter_18pt-Regular.ttf",
+    "sha256": "b9fadaa44b71c03fa371a12b7eccbcd416886f31e197314112b8d0c75ed17bdc",
+    "size": 341452
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/OpenSans-Medium.ttf",
+    "sha256": "ef1308969da24484c567ec16bfc6df011370cb01ecd1d46bb3140af07dea2786",
+    "size": 130628
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/OpenSans-OFL.txt",
+    "sha256": "01cd5ffb3a528c219a86e49a814c6c53bd8a69b9a3c305dd237074ba1c811af7",
+    "size": 4216
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/OpenSans-Regular.ttf",
+    "sha256": "c53aceea2dcf5b4098099c0c4d0a061d17e178a049317b42a422b1a9f7f8eb59",
+    "size": 147528
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/fonts/OpenSans-SemiBold.ttf",
+    "sha256": "4a413711684a9dd564ef0f1c10cb62b5d9f7eb6df2cff962f5341a6ecd5f64ae",
+    "size": 150592
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/InitialSettings.json",
+    "sha256": "5f518a273a7e05ec9df18aefa91ec8c745e3ddfe8bfdc74821a236f3a66a05a9",
+    "size": 109545
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/ItemCatalog.json",
+    "sha256": "096a710b1d409ac294b4f17a0fded143d82f91c311f07e36e0c3006a4fd04105",
+    "size": 20753
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/KeyNames.json",
+    "sha256": "d89647e84753f3199705c588f1896ae5861bb46208ab48191a9ef6fa37bfba3d",
+    "size": 1098
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/MetadataCatalog.json",
+    "sha256": "e94b4af1633cc1b07c3a191c50830e24cae8623b8db7164a837ac375a35c15d4",
+    "size": 354669
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/ModuleDescriptors.json",
+    "sha256": "62808cbf7f5ff96a7e3e5382ed7171431e1d75b8f78dc089d730680de9698b74",
+    "size": 10643
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/ModuleUi.json",
+    "sha256": "6464ee9f9c2e39ed40e6fcbddd4bbdd21dd9d5797de0577a86d1376541d02b77",
+    "size": 124290
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/NumericConstants.json",
+    "sha256": "46e15fe8880b0d4110dc46842c65f4ae219961c8b700cafb3d17d83ba1f30b86",
+    "size": 4948
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/profile-icon-coverage.bin",
+    "sha256": "fb1556f05fe31d3dced3ef82e1655cb24ee6e5f81abd0a36a7ffd24a4a9c00ef",
+    "size": 6400
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/ProfileLabels.json",
+    "sha256": "9ac40fd365ec38c2bbd58a9a4f3377646f4879b2a24db1831fd699131aa10858",
+    "size": 407
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/RenderConstants.json",
+    "sha256": "3e6a7dba6433f6416ef73ae3193e04a09dd2e9275b0b4890f6432f743f71301e",
+    "size": 27195
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/RenderDescriptorObservations.json",
+    "sha256": "de866c9f4e9b226051bd16a42ff05bed49ccdc6d8bf4530fc826b7b92b147269",
+    "size": 8339
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/StatusMetadata.json",
+    "sha256": "22bcffefeac1cf44cc1628a2e8aa0da715728d864877424449b148a532e4f861",
+    "size": 18737
+  },
+  {
+    "source": "JAR resource101",
+    "path": "java/src/main/resources/assets/slinkysemantic/WidgetMetadata.json",
+    "sha256": "5eee04c2794b924af33d2cdb9944c523752b115023c73ca72cced424e1d86799",
+    "size": 47316
+  },
+  {
+    "source": "JAR resource102",
+    "path": "java/mappings/srg.txt",
+    "sha256": "b8c37c1df39732e507a69e752a6de48a009556f64f72ecc10a6a9bfb0dddb9cd",
+    "size": 1915756
+  },
+  {
+    "source": "JAR resource103",
+    "path": "java/mappings/official.txt",
+    "sha256": "7097e14fed09990dc46883c5e3b0be3bcb86b81bc91577496b6da9436cf54aa2",
+    "size": 1607323
+  }
+]

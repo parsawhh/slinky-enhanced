@@ -1,0 +1,2679 @@
+{
+  "evidence_id": "ev_ca88bfc6883fcd95aa7e97c6d5468783b2bc855b142bdb5c038dda8bc4cbf63e",
+  "subject": {
+    "name": "C:\\Users\\GigaZelensky\\Downloads\\slinkyinspect\\Slinky.exe",
+    "digest": {
+      "sha256": "501d7c83e2010937350fee800e37631e1499ec9b2693a32493db71e5f40b0272"
+    },
+    "format": "pe",
+    "architecture": "x86_64",
+    "local_path": "C:\\Users\\GigaZelensky\\Downloads\\slinkyinspect\\Slinky.exe"
+  },
+  "provider": {
+    "id": "ida",
+    "name": "IDA Pro MCP adapter",
+    "version": "1"
+  },
+  "analysis_profile": {
+    "provider": {
+      "id": "ida",
+      "name": "IDA Pro MCP adapter",
+      "version": "1"
+    },
+    "parameters": {
+      "version_scope": "rea-ida-adapter",
+      "engine_version": null,
+      "upstream_distribution_version": null,
+      "mode": "headless",
+      "compatibility_profile": "database-supervisor",
+      "database_revision": null,
+      "cache_policy": "live",
+      "registration_digest": "b4ce0821c66a4dd77640dfd044deaa4d9ded777f1f43608cd23747aef7a39067"
+    },
+    "digest": "03e60da89301b5f3e25aaebe6eee5fa59a20fda0c9394582ef49bdf58511f37b"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "analyze_function",
+  "parameters": {
+    "procedure": "WinMain"
+  },
+  "raw_result": {
+    "upstream": {
+      "name": "ida-pro-mcp",
+      "version": "1.0.0"
+    },
+    "metadata_before": {
+      "status": "ok",
+      "uptime_sec": 1.997,
+      "idb_path": "C:\\Users\\GigaZelensky\\Documents\\Codex\\2026-10-10\\usa-x20\\work\\rea-ida-ae3e0f12a3271c506461938ef0c5955f\\Slinky.exe.i64",
+      "module": "Slinky.exe",
+      "input_path": "C:\\Users\\GigaZelensky\\Documents\\Codex\\2026-10-10\\usa-x20\\work\\rea-ida-ae3e0f12a3271c506461938ef0c5955f\\Slinky.exe",
+      "imagebase": "0x140000000",
+      "auto_analysis_ready": true,
+      "hexrays_ready": true,
+      "strings_cache_ready": true,
+      "strings_cache_size": 729
+    },
+    "metadata_after": {
+      "status": "ok",
+      "uptime_sec": 2.261,
+      "idb_path": "C:\\Users\\GigaZelensky\\Documents\\Codex\\2026-10-10\\usa-x20\\work\\rea-ida-ae3e0f12a3271c506461938ef0c5955f\\Slinky.exe.i64",
+      "module": "Slinky.exe",
+      "input_path": "C:\\Users\\GigaZelensky\\Documents\\Codex\\2026-10-10\\usa-x20\\work\\rea-ida-ae3e0f12a3271c506461938ef0c5955f\\Slinky.exe",
+      "imagebase": "0x140000000",
+      "auto_analysis_ready": true,
+      "hexrays_ready": true,
+      "strings_cache_ready": true,
+      "strings_cache_size": 729
+    },
+    "observations": [
+      {
+        "tool": "lookup_funcs",
+        "arguments": {
+          "queries": [
+            "WinMain"
+          ],
+          "database": "rea-bf0820f9-56b6-4af8-9175-5286dfaf9b28"
+        },
+        "result": [
+          {
+            "query": "WinMain",
+            "fn": {
+              "addr": "0x140001000",
+              "name": "WinMain",
+              "size": "0x37a"
+            },
+            "error": null
+          }
+        ]
+      },
+      {
+        "tool": "disasm",
+        "arguments": {
+          "addr": "0x140001000",
+          "offset": 0,
+          "max_instructions": 100,
+          "database": "rea-bf0820f9-56b6-4af8-9175-5286dfaf9b28"
+        },
+        "result": {
+          "addr": "0x140001000",
+          "asm": {
+            "name": "WinMain",
+            "start_ea": "0x140001000",
+            "segment": ".text",
+            "lines": [
+              {
+                "addr": "140001000",
+                "instruction": "mov [rsp-8+arg_0], rbx",
+                "label": "WinMain",
+                "comments": [
+                  "; File Name   : C:\\Users\\GigaZelensky\\Documents\\Codex\\2026-10-10\\usa-x20\\work\\rea-ida-ae3e0f12a3271c506461938ef0c5955f\\Slinky.exe",
+                  "; Format      : Portable executable for AMD64 (PE)",
+                  "; Imagebase   : 140000000",
+                  "; Timestamp   : 6AC11DBB (Sat Oct 03 15:22:35 2026)",
+                  "; Section 1. (virtual address 00001000)",
+                  "; Virtual size                  : 00014F40 (  85824.)",
+                  "; Section size in file          : 00015000 (  86016.)",
+                  "; Offset to raw data for section: 00000400",
+                  "; Flags 60000020: Text Executable Readable",
+                  "; Alignment     : default",
+                  "; OS type         :  MS Windows",
+                  "; Application type:  Executable "
+                ]
+              },
+              {
+                "addr": "140001005",
+                "instruction": "mov [rsp-8+arg_8], rsi"
+              },
+              {
+                "addr": "14000100a",
+                "instruction": "mov [rsp-8+arg_10], rdi"
+              },
+              {
+                "addr": "14000100f",
+                "instruction": "mov [rsp-8+arg_18], r14"
+              },
+              {
+                "addr": "140001014",
+                "instruction": "push rbp"
+              },
+              {
+                "addr": "140001015",
+                "instruction": "lea rbp, [rsp-420h]"
+              },
+              {
+                "addr": "14000101d",
+                "instruction": "sub rsp, 520h"
+              },
+              {
+                "addr": "140001024",
+                "instruction": "mov rax, cs:__security_cookie",
+                "refs": [
+                  {
+                    "addr": "0x140022000",
+                    "name": "__security_cookie"
+                  }
+                ]
+              },
+              {
+                "addr": "14000102b",
+                "instruction": "xor rax, rsp"
+              },
+              {
+                "addr": "14000102e",
+                "instruction": "mov [rbp+420h+var_10], rax"
+              },
+              {
+                "addr": "140001035",
+                "instruction": "xor esi, esi"
+              },
+              {
+                "addr": "140001037",
+                "instruction": "mov edx, 0C8h; lpName",
+                "comments": [
+                  "lpName"
+                ]
+              },
+              {
+                "addr": "14000103c",
+                "instruction": "xor ecx, ecx; hModule",
+                "comments": [
+                  "hModule"
+                ]
+              },
+              {
+                "addr": "14000103e",
+                "instruction": "mov [rsp+520h+NumberOfBytesWritten], esi"
+              },
+              {
+                "addr": "140001042",
+                "instruction": "mov r8d, 0Ah; lpType",
+                "comments": [
+                  "lpType"
+                ]
+              },
+              {
+                "addr": "140001048",
+                "instruction": "call cs:FindResourceW",
+                "refs": [
+                  {
+                    "addr": "0x140016090",
+                    "name": "FindResourceW"
+                  }
+                ]
+              },
+              {
+                "addr": "14000104e",
+                "instruction": "mov rbx, rax"
+              },
+              {
+                "addr": "140001051",
+                "instruction": "test rax, rax"
+              },
+              {
+                "addr": "140001054",
+                "instruction": "jz loc_14000132D",
+                "refs": [
+                  {
+                    "addr": "0x14000132d",
+                    "name": "loc_14000132D"
+                  }
+                ]
+              },
+              {
+                "addr": "14000105a",
+                "instruction": "mov rdx, rax; hResInfo",
+                "comments": [
+                  "hResInfo"
+                ]
+              },
+              {
+                "addr": "14000105d",
+                "instruction": "xor ecx, ecx; hModule",
+                "comments": [
+                  "hModule"
+                ]
+              },
+              {
+                "addr": "14000105f",
+                "instruction": "call cs:SizeofResource",
+                "refs": [
+                  {
+                    "addr": "0x140016088",
+                    "name": "SizeofResource"
+                  }
+                ]
+              },
+              {
+                "addr": "140001065",
+                "instruction": "mov rdx, rbx; hResInfo",
+                "comments": [
+                  "hResInfo"
+                ]
+              },
+              {
+                "addr": "140001068",
+                "instruction": "xor ecx, ecx; hModule",
+                "comments": [
+                  "hModule"
+                ]
+              },
+              {
+                "addr": "14000106a",
+                "instruction": "mov edi, eax"
+              },
+              {
+                "addr": "14000106c",
+                "instruction": "call cs:LoadResource",
+                "refs": [
+                  {
+                    "addr": "0x140016078",
+                    "name": "LoadResource"
+                  }
+                ]
+              },
+              {
+                "addr": "140001072",
+                "instruction": "test rax, rax"
+              },
+              {
+                "addr": "140001075",
+                "instruction": "jz loc_14000132D",
+                "refs": [
+                  {
+                    "addr": "0x14000132d",
+                    "name": "loc_14000132D"
+                  }
+                ]
+              },
+              {
+                "addr": "14000107b",
+                "instruction": "mov rcx, rax; hResData",
+                "comments": [
+                  "hResData"
+                ]
+              },
+              {
+                "addr": "14000107e",
+                "instruction": "call cs:LockResource",
+                "refs": [
+                  {
+                    "addr": "0x140016080",
+                    "name": "LockResource"
+                  }
+                ]
+              },
+              {
+                "addr": "140001084",
+                "instruction": "mov r14, rax"
+              },
+              {
+                "addr": "140001087",
+                "instruction": "test rax, rax"
+              },
+              {
+                "addr": "14000108a",
+                "instruction": "jz loc_14000132D",
+                "refs": [
+                  {
+                    "addr": "0x14000132d",
+                    "name": "loc_14000132D"
+                  }
+                ]
+              },
+              {
+                "addr": "140001090",
+                "instruction": "test edi, edi"
+              },
+              {
+                "addr": "140001092",
+                "instruction": "jz loc_14000132D",
+                "refs": [
+                  {
+                    "addr": "0x14000132d",
+                    "name": "loc_14000132D"
+                  }
+                ]
+              },
+              {
+                "addr": "140001098",
+                "instruction": "lea rdx, [rbp+420h+Buffer]; lpBuffer",
+                "comments": [
+                  "lpBuffer"
+                ]
+              },
+              {
+                "addr": "14000109f",
+                "instruction": "mov ecx, 104h; nBufferLength",
+                "comments": [
+                  "nBufferLength"
+                ]
+              },
+              {
+                "addr": "1400010a4",
+                "instruction": "call cs:GetTempPathW",
+                "refs": [
+                  {
+                    "addr": "0x140016018",
+                    "name": "GetTempPathW"
+                  }
+                ]
+              },
+              {
+                "addr": "1400010aa",
+                "instruction": "call cs:GetCurrentProcessId",
+                "refs": [
+                  {
+                    "addr": "0x140016038",
+                    "name": "GetCurrentProcessId"
+                  }
+                ]
+              },
+              {
+                "addr": "1400010b0",
+                "instruction": "mov [rsp+520h+dwFlagsAndAttributes], eax"
+              },
+              {
+                "addr": "1400010b4",
+                "instruction": "lea r9, aLsslinkyLu; \"%lsslinky-%lu\"",
+                "refs": [
+                  {
+                    "addr": "0x1400164f0",
+                    "name": "aLsslinkyLu",
+                    "string": "氥獳楬歮⵹氥�"
+                  }
+                ]
+              },
+              {
+                "addr": "1400010bb",
+                "instruction": "lea rax, [rbp+420h+Buffer]"
+              },
+              {
+                "addr": "1400010c2",
+                "instruction": "mov edx, 104h"
+              },
+              {
+                "addr": "1400010c7",
+                "instruction": "mov r8, 0FFFFFFFFFFFFFFFFh"
+              },
+              {
+                "addr": "1400010ce",
+                "instruction": "mov qword ptr [rsp+520h+dwCreationDisposition], rax"
+              },
+              {
+                "addr": "1400010d3",
+                "instruction": "lea rcx, [rbp+420h+PathName]"
+              },
+              {
+                "addr": "1400010d7",
+                "instruction": "call sub_140001390",
+                "refs": [
+                  {
+                    "addr": "0x140001390",
+                    "name": "sub_140001390"
+                  }
+                ]
+              },
+              {
+                "addr": "1400010dc",
+                "instruction": "xor edx, edx; lpSecurityAttributes",
+                "comments": [
+                  "lpSecurityAttributes"
+                ]
+              },
+              {
+                "addr": "1400010de",
+                "instruction": "lea rcx, [rbp+420h+PathName]; lpPathName",
+                "comments": [
+                  "lpPathName"
+                ]
+              },
+              {
+                "addr": "1400010e2",
+                "instruction": "call cs:CreateDirectoryW",
+                "refs": [
+                  {
+                    "addr": "0x140016140",
+                    "name": "CreateDirectoryW"
+                  }
+                ]
+              },
+              {
+                "addr": "1400010e8",
+                "instruction": "lea rax, [rbp+420h+PathName]"
+              },
+              {
+                "addr": "1400010ec",
+                "instruction": "mov edx, 104h"
+              },
+              {
+                "addr": "1400010f1",
+                "instruction": "lea r9, aLsSlinkynative; \"%ls\\\\SlinkyNative.dll\"",
+                "refs": [
+                  {
+                    "addr": "0x140016510",
+                    "name": "aLsSlinkynative",
+                    "string": "氥屳汓湩祫慎楴敶搮汬"
+                  }
+                ]
+              },
+              {
+                "addr": "1400010f8",
+                "instruction": "mov qword ptr [rsp+520h+dwCreationDisposition], rax"
+              },
+              {
+                "addr": "1400010fd",
+                "instruction": "mov r8, 0FFFFFFFFFFFFFFFFh"
+              },
+              {
+                "addr": "140001104",
+                "instruction": "lea rcx, Buffer",
+                "refs": [
+                  {
+                    "addr": "0x140022aa0",
+                    "name": "Buffer"
+                  }
+                ]
+              },
+              {
+                "addr": "14000110b",
+                "instruction": "call sub_140001390",
+                "refs": [
+                  {
+                    "addr": "0x140001390",
+                    "name": "sub_140001390"
+                  }
+                ]
+              },
+              {
+                "addr": "140001110",
+                "instruction": "mov [rsp+520h+hTemplateFile], rsi; hTemplateFile",
+                "comments": [
+                  "hTemplateFile"
+                ]
+              },
+              {
+                "addr": "140001115",
+                "instruction": "lea rcx, Buffer; lpFileName",
+                "comments": [
+                  "lpFileName"
+                ],
+                "refs": [
+                  {
+                    "addr": "0x140022aa0",
+                    "name": "Buffer"
+                  }
+                ]
+              },
+              {
+                "addr": "14000111c",
+                "instruction": "mov [rsp+520h+dwFlagsAndAttributes], 80h; dwFlagsAndAttributes",
+                "comments": [
+                  "dwFlagsAndAttributes"
+                ]
+              },
+              {
+                "addr": "140001124",
+                "instruction": "xor r9d, r9d; lpSecurityAttributes",
+                "comments": [
+                  "lpSecurityAttributes"
+                ]
+              },
+              {
+                "addr": "140001127",
+                "instruction": "xor r8d, r8d; dwShareMode",
+                "comments": [
+                  "dwShareMode"
+                ]
+              },
+              {
+                "addr": "14000112a",
+                "instruction": "mov [rsp+520h+dwCreationDisposition], 2; dwCreationDisposition",
+                "comments": [
+                  "dwCreationDisposition"
+                ]
+              },
+              {
+                "addr": "140001132",
+                "instruction": "mov edx, 40000000h; dwDesiredAccess",
+                "comments": [
+                  "dwDesiredAccess"
+                ]
+              },
+              {
+                "addr": "140001137",
+                "instruction": "call cs:CreateFileW",
+                "refs": [
+                  {
+                    "addr": "0x1400160c8",
+                    "name": "CreateFileW"
+                  }
+                ]
+              },
+              {
+                "addr": "14000113d",
+                "instruction": "mov rbx, rax"
+              },
+              {
+                "addr": "140001140",
+                "instruction": "cmp rax, 0FFFFFFFFFFFFFFFFh"
+              },
+              {
+                "addr": "140001144",
+                "instruction": "jz loc_14000132D",
+                "refs": [
+                  {
+                    "addr": "0x14000132d",
+                    "name": "loc_14000132D"
+                  }
+                ]
+              },
+              {
+                "addr": "14000114a",
+                "instruction": "lea r9, [rsp+520h+NumberOfBytesWritten]; lpNumberOfBytesWritten",
+                "comments": [
+                  "lpNumberOfBytesWritten"
+                ]
+              },
+              {
+                "addr": "14000114f",
+                "instruction": "mov qword ptr [rsp+520h+dwCreationDisposition], rsi; lpOverlapped",
+                "comments": [
+                  "lpOverlapped"
+                ]
+              },
+              {
+                "addr": "140001154",
+                "instruction": "mov r8d, edi; nNumberOfBytesToWrite",
+                "comments": [
+                  "nNumberOfBytesToWrite"
+                ]
+              },
+              {
+                "addr": "140001157",
+                "instruction": "mov rdx, r14; lpBuffer",
+                "comments": [
+                  "lpBuffer"
+                ]
+              },
+              {
+                "addr": "14000115a",
+                "instruction": "mov rcx, rax; hFile",
+                "comments": [
+                  "hFile"
+                ]
+              },
+              {
+                "addr": "14000115d",
+                "instruction": "call cs:WriteFile",
+                "refs": [
+                  {
+                    "addr": "0x140016010",
+                    "name": "WriteFile"
+                  }
+                ]
+              },
+              {
+                "addr": "140001163",
+                "instruction": "mov rcx, rbx; hObject",
+                "comments": [
+                  "hObject"
+                ]
+              },
+              {
+                "addr": "140001166",
+                "instruction": "call cs:CloseHandle",
+                "refs": [
+                  {
+                    "addr": "0x140016020",
+                    "name": "CloseHandle"
+                  }
+                ]
+              },
+              {
+                "addr": "14000116c",
+                "instruction": "cmp [rsp+520h+NumberOfBytesWritten], edi"
+              },
+              {
+                "addr": "140001170",
+                "instruction": "mov eax, esi"
+              },
+              {
+                "addr": "140001172",
+                "instruction": "setz al"
+              },
+              {
+                "addr": "140001175",
+                "instruction": "test eax, eax"
+              },
+              {
+                "addr": "140001177",
+                "instruction": "jz loc_14000132D",
+                "refs": [
+                  {
+                    "addr": "0x14000132d",
+                    "name": "loc_14000132D"
+                  }
+                ]
+              },
+              {
+                "addr": "14000117d",
+                "instruction": "mov edx, 40h ; '@'"
+              },
+              {
+                "addr": "140001182",
+                "instruction": "lea rcx, th32ProcessID",
+                "refs": [
+                  {
+                    "addr": "0x140022cb0",
+                    "name": "th32ProcessID"
+                  }
+                ]
+              },
+              {
+                "addr": "140001189",
+                "instruction": "call sub_140001490",
+                "refs": [
+                  {
+                    "addr": "0x140001490",
+                    "name": "sub_140001490"
+                  }
+                ]
+              },
+              {
+                "addr": "14000118e",
+                "instruction": "mov cs:qword_140032FB0, rax",
+                "refs": [
+                  {
+                    "addr": "0x140032fb0",
+                    "name": "qword_140032FB0"
+                  }
+                ]
+              },
+              {
+                "addr": "140001195",
+                "instruction": "cmp rax, 1"
+              },
+              {
+                "addr": "140001199",
+                "instruction": "jnz short loc_1400011C4",
+                "refs": [
+                  {
+                    "addr": "0x1400011c4",
+                    "name": "loc_1400011C4"
+                  }
+                ]
+              },
+              {
+                "addr": "14000119b",
+                "instruction": "mov ecx, cs:th32ProcessID; th32ProcessID",
+                "comments": [
+                  "th32ProcessID"
+                ],
+                "refs": [
+                  {
+                    "addr": "0x140022cb0",
+                    "name": "th32ProcessID"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011a1",
+                "instruction": "lea rdx, Buffer; lpBuffer",
+                "comments": [
+                  "lpBuffer"
+                ],
+                "refs": [
+                  {
+                    "addr": "0x140022aa0",
+                    "name": "Buffer"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011a8",
+                "instruction": "call sub_140001780",
+                "refs": [
+                  {
+                    "addr": "0x140001780",
+                    "name": "sub_140001780"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011ad",
+                "instruction": "test eax, eax"
+              },
+              {
+                "addr": "1400011af",
+                "instruction": "jnz short loc_1400011BD",
+                "refs": [
+                  {
+                    "addr": "0x1400011bd",
+                    "name": "loc_1400011BD"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011b1",
+                "instruction": "lea rdx, aInjectionFaile; \"Injection failed.\\n\\nMake sure you are \"...",
+                "refs": [
+                  {
+                    "addr": "0x140016600",
+                    "name": "aInjectionFaile",
+                    "string": "湉敪瑣潩⁮慦汩摥ਮ䴊歡⁥畳敲礠畯愠敲爠湵楮杮愠⁳摁業楮瑳慲潴ੲ湡⁤桴瑡䴠湩捥慲瑦ㄠ㠮㤮椠⁳灯湥�"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011b8",
+                "instruction": "jmp loc_140001334",
+                "refs": [
+                  {
+                    "addr": "0x140001334",
+                    "name": "loc_140001334"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011bd",
+                "instruction": "xor eax, eax",
+                "label": "loc_1400011BD"
+              },
+              {
+                "addr": "1400011bf",
+                "instruction": "jmp loc_14000134E",
+                "refs": [
+                  {
+                    "addr": "0x14000134e",
+                    "name": "loc_14000134E"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011c4",
+                "instruction": "xor ecx, ecx; nIndex",
+                "label": "loc_1400011C4",
+                "comments": [
+                  "nIndex"
+                ]
+              },
+              {
+                "addr": "1400011c6",
+                "instruction": "call cs:GetSystemMetrics",
+                "refs": [
+                  {
+                    "addr": "0x140016338",
+                    "name": "GetSystemMetrics"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011cc",
+                "instruction": "mov ecx, 1; nIndex",
+                "comments": [
+                  "nIndex"
+                ]
+              },
+              {
+                "addr": "1400011d1",
+                "instruction": "mov edi, eax"
+              }
+            ],
+            "stack_frame": [
+              {
+                "name": "dwCreationDisposition",
+                "offset": "0x20",
+                "size": "0x8",
+                "type": "DWORD[2]"
+              },
+              {
+                "name": "dwFlagsAndAttributes",
+                "offset": "0x28",
+                "size": "0x4",
+                "type": "DWORD"
+              },
+              {
+                "name": "hTemplateFile",
+                "offset": "0x30",
+                "size": "0x8",
+                "type": "HANDLE"
+              },
+              {
+                "name": "nHeight",
+                "offset": "0x38",
+                "size": "0x4",
+                "type": "int"
+              },
+              {
+                "name": "hWndParent",
+                "offset": "0x40",
+                "size": "0x8",
+                "type": "HWND"
+              },
+              {
+                "name": "hMenu",
+                "offset": "0x48",
+                "size": "0x8",
+                "type": "HMENU"
+              },
+              {
+                "name": "hInstance",
+                "offset": "0x50",
+                "size": "0x8",
+                "type": "HINSTANCE"
+              },
+              {
+                "name": "lpParam",
+                "offset": "0x58",
+                "size": "0x8",
+                "type": "LPVOID"
+              },
+              {
+                "name": "NumberOfBytesWritten",
+                "offset": "0x60",
+                "size": "0x4",
+                "type": "DWORD"
+              },
+              {
+                "name": "var_4B0",
+                "offset": "0x70",
+                "size": "0x50",
+                "type": "WNDCLASSEXW"
+              },
+              {
+                "name": "Msg",
+                "offset": "0xc0",
+                "size": "0x30",
+                "type": "struct tagMSG"
+              },
+              {
+                "name": "PathName",
+                "offset": "0xf0",
+                "size": "0x2",
+                "type": "WCHAR"
+              },
+              {
+                "name": "Buffer",
+                "offset": "0x300",
+                "size": "0x2",
+                "type": "WCHAR"
+              },
+              {
+                "name": "var_10",
+                "offset": "0x510",
+                "size": "0x8",
+                "type": "_QWORD"
+              },
+              {
+                "name": "var_s0",
+                "offset": "0x520",
+                "size": "0x1",
+                "type": "_BYTE"
+              },
+              {
+                "name": "__return_address",
+                "offset": "0x528",
+                "size": "0x8",
+                "type": "_UNKNOWN *"
+              },
+              {
+                "name": "arg_0",
+                "offset": "0x530",
+                "size": "0x8",
+                "type": "_QWORD"
+              },
+              {
+                "name": "arg_8",
+                "offset": "0x538",
+                "size": "0x8",
+                "type": "_QWORD"
+              },
+              {
+                "name": "arg_10",
+                "offset": "0x540",
+                "size": "0x8",
+                "type": "_QWORD"
+              },
+              {
+                "name": "arg_18",
+                "offset": "0x548",
+                "size": "0x8",
+                "type": "_QWORD"
+              }
+            ],
+            "return_type": "int",
+            "arguments": [
+              {
+                "name": "hInstance",
+                "type": "HINSTANCE"
+              },
+              {
+                "name": "hPrevInstance",
+                "type": "HINSTANCE"
+              },
+              {
+                "name": "lpCmdLine",
+                "type": "LPSTR"
+              },
+              {
+                "name": "nShowCmd",
+                "type": "int"
+              }
+            ]
+          },
+          "instruction_count": 100,
+          "total_instructions": null,
+          "cursor": {
+            "next": 100
+          }
+        }
+      },
+      {
+        "tool": "disasm",
+        "arguments": {
+          "addr": "0x140001000",
+          "offset": 100,
+          "max_instructions": 100,
+          "database": "rea-bf0820f9-56b6-4af8-9175-5286dfaf9b28"
+        },
+        "result": {
+          "addr": "0x140001000",
+          "asm": {
+            "name": "WinMain",
+            "start_ea": "0x140001000",
+            "segment": ".text",
+            "lines": [
+              {
+                "addr": "1400011d3",
+                "instruction": "call cs:GetSystemMetrics",
+                "refs": [
+                  {
+                    "addr": "0x140016338",
+                    "name": "GetSystemMetrics"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011d9",
+                "instruction": "xorps xmm0, xmm0"
+              },
+              {
+                "addr": "1400011dc",
+                "instruction": "mov qword ptr [rsp+520h+var_4B0.cbSize], 50h ; 'P'"
+              },
+              {
+                "addr": "1400011e5",
+                "instruction": "xorps xmm1, xmm1"
+              },
+              {
+                "addr": "1400011e8",
+                "instruction": "movdqa xmmword ptr [rbp+420h+var_4B0.cbClsExtra], xmm0"
+              },
+              {
+                "addr": "1400011ed",
+                "instruction": "mov ebx, eax"
+              },
+              {
+                "addr": "1400011ef",
+                "instruction": "movdqa xmmword ptr [rbp+420h+var_4B0.hIcon], xmm1"
+              },
+              {
+                "addr": "1400011f4",
+                "instruction": "lea rax, sub_140001CD0",
+                "refs": [
+                  {
+                    "addr": "0x140001cd0",
+                    "name": "sub_140001CD0"
+                  }
+                ]
+              },
+              {
+                "addr": "1400011fb",
+                "instruction": "movdqa xmmword ptr [rbp+420h+var_4B0.hbrBackground], xmm0"
+              },
+              {
+                "addr": "140001200",
+                "instruction": "xor ecx, ecx; lpModuleName",
+                "comments": [
+                  "lpModuleName"
+                ]
+              },
+              {
+                "addr": "140001202",
+                "instruction": "mov [rsp+520h+var_4B0.lpfnWndProc], rax"
+              },
+              {
+                "addr": "140001207",
+                "instruction": "movdqa xmmword ptr [rbp+420h+var_4B0.lpszClassName], xmm1"
+              },
+              {
+                "addr": "14000120c",
+                "instruction": "call cs:GetModuleHandleW",
+                "refs": [
+                  {
+                    "addr": "0x140016068",
+                    "name": "GetModuleHandleW"
+                  }
+                ]
+              },
+              {
+                "addr": "140001212",
+                "instruction": "mov edx, 7F00h; lpIconName",
+                "comments": [
+                  "lpIconName"
+                ]
+              },
+              {
+                "addr": "140001217",
+                "instruction": "xor ecx, ecx; hInstance",
+                "comments": [
+                  "hInstance"
+                ]
+              },
+              {
+                "addr": "140001219",
+                "instruction": "mov [rbp+420h+var_4B0.hInstance], rax"
+              },
+              {
+                "addr": "14000121d",
+                "instruction": "call cs:LoadIconW",
+                "refs": [
+                  {
+                    "addr": "0x140016348",
+                    "name": "LoadIconW"
+                  }
+                ]
+              },
+              {
+                "addr": "140001223",
+                "instruction": "mov edx, 7F00h; lpCursorName",
+                "comments": [
+                  "lpCursorName"
+                ]
+              },
+              {
+                "addr": "140001228",
+                "instruction": "xor ecx, ecx; hInstance",
+                "comments": [
+                  "hInstance"
+                ]
+              },
+              {
+                "addr": "14000122a",
+                "instruction": "mov [rbp+420h+var_4B0.hIcon], rax"
+              },
+              {
+                "addr": "14000122e",
+                "instruction": "call cs:LoadCursorW",
+                "refs": [
+                  {
+                    "addr": "0x1400162f0",
+                    "name": "LoadCursorW"
+                  }
+                ]
+              },
+              {
+                "addr": "140001234",
+                "instruction": "lea r14, ClassName; \"SlinkyLauncher\"",
+                "refs": [
+                  {
+                    "addr": "0x140016710",
+                    "name": "ClassName",
+                    "string": "汓湩祫慌湵档牥"
+                  }
+                ]
+              },
+              {
+                "addr": "14000123b",
+                "instruction": "mov [rbp+420h+var_4B0.hbrBackground], 10h"
+              },
+              {
+                "addr": "140001243",
+                "instruction": "lea rcx, [rsp+520h+var_4B0]; WNDCLASSEXW *",
+                "comments": [
+                  "WNDCLASSEXW *"
+                ]
+              },
+              {
+                "addr": "140001248",
+                "instruction": "mov [rbp+420h+var_4B0.hCursor], rax"
+              },
+              {
+                "addr": "14000124c",
+                "instruction": "mov [rbp+420h+var_4B0.lpszClassName], r14"
+              },
+              {
+                "addr": "140001250",
+                "instruction": "call cs:RegisterClassExW",
+                "refs": [
+                  {
+                    "addr": "0x140016378",
+                    "name": "RegisterClassExW"
+                  }
+                ]
+              },
+              {
+                "addr": "140001256",
+                "instruction": "mov [rsp+520h+lpParam], rsi; lpParam",
+                "comments": [
+                  "lpParam"
+                ]
+              },
+              {
+                "addr": "14000125b",
+                "instruction": "lea eax, [rbx-136h]"
+              },
+              {
+                "addr": "140001261",
+                "instruction": "cdq"
+              },
+              {
+                "addr": "140001262",
+                "instruction": "mov r9d, 0CA0000h; dwStyle",
+                "comments": [
+                  "dwStyle"
+                ]
+              },
+              {
+                "addr": "140001268",
+                "instruction": "sub eax, edx"
+              },
+              {
+                "addr": "14000126a",
+                "instruction": "sar eax, 1"
+              },
+              {
+                "addr": "14000126c",
+                "instruction": "mov r8d, eax"
+              },
+              {
+                "addr": "14000126f",
+                "instruction": "lea eax, [rdi-1F4h]"
+              },
+              {
+                "addr": "140001275",
+                "instruction": "cdq"
+              },
+              {
+                "addr": "140001276",
+                "instruction": "sub eax, edx"
+              },
+              {
+                "addr": "140001278",
+                "instruction": "mov rdx, r14; lpClassName",
+                "comments": [
+                  "lpClassName"
+                ]
+              },
+              {
+                "addr": "14000127b",
+                "instruction": "sar eax, 1"
+              },
+              {
+                "addr": "14000127d",
+                "instruction": "mov ecx, eax"
+              },
+              {
+                "addr": "14000127f",
+                "instruction": "mov rax, [rbp+420h+var_4B0.hInstance]"
+              },
+              {
+                "addr": "140001283",
+                "instruction": "mov [rsp+520h+hInstance], rax; hInstance",
+                "comments": [
+                  "hInstance"
+                ]
+              },
+              {
+                "addr": "140001288",
+                "instruction": "mov [rsp+520h+hMenu], rsi; hMenu",
+                "comments": [
+                  "hMenu"
+                ]
+              },
+              {
+                "addr": "14000128d",
+                "instruction": "mov [rsp+520h+hWndParent], rsi; hWndParent",
+                "comments": [
+                  "hWndParent"
+                ]
+              },
+              {
+                "addr": "140001292",
+                "instruction": "mov [rsp+520h+nHeight], 136h; nHeight",
+                "comments": [
+                  "nHeight"
+                ]
+              },
+              {
+                "addr": "14000129a",
+                "instruction": "mov dword ptr [rsp+520h+hTemplateFile], 1F4h; nWidth",
+                "comments": [
+                  "nWidth"
+                ]
+              },
+              {
+                "addr": "1400012a2",
+                "instruction": "mov [rsp+520h+dwFlagsAndAttributes], r8d; Y",
+                "comments": [
+                  "Y"
+                ]
+              },
+              {
+                "addr": "1400012a7",
+                "instruction": "lea r8, WindowName; \"Slinky – Select Minecraft\"",
+                "refs": [
+                  {
+                    "addr": "0x140016730",
+                    "name": "WindowName",
+                    "string": "汓湩祫鎀匠汥捥⁴楍敮牣晡�"
+                  }
+                ]
+              },
+              {
+                "addr": "1400012ae",
+                "instruction": "mov [rsp+520h+dwCreationDisposition], ecx; X",
+                "comments": [
+                  "X"
+                ]
+              },
+              {
+                "addr": "1400012b2",
+                "instruction": "mov ecx, 40008h; dwExStyle",
+                "comments": [
+                  "dwExStyle"
+                ]
+              },
+              {
+                "addr": "1400012b7",
+                "instruction": "call cs:CreateWindowExW",
+                "refs": [
+                  {
+                    "addr": "0x140016370",
+                    "name": "CreateWindowExW"
+                  }
+                ]
+              },
+              {
+                "addr": "1400012bd",
+                "instruction": "mov rcx, rax; hWnd",
+                "comments": [
+                  "hWnd"
+                ]
+              },
+              {
+                "addr": "1400012c0",
+                "instruction": "mov cs:hWnd, rax",
+                "refs": [
+                  {
+                    "addr": "0x140032fb8",
+                    "name": "hWnd"
+                  }
+                ]
+              },
+              {
+                "addr": "1400012c7",
+                "instruction": "mov edx, 5; nCmdShow",
+                "comments": [
+                  "nCmdShow"
+                ]
+              },
+              {
+                "addr": "1400012cc",
+                "instruction": "call cs:ShowWindow",
+                "refs": [
+                  {
+                    "addr": "0x140016368",
+                    "name": "ShowWindow"
+                  }
+                ]
+              },
+              {
+                "addr": "1400012d2",
+                "instruction": "mov rcx, cs:hWnd; hWnd",
+                "comments": [
+                  "hWnd"
+                ],
+                "refs": [
+                  {
+                    "addr": "0x140032fb8",
+                    "name": "hWnd"
+                  }
+                ]
+              },
+              {
+                "addr": "1400012d9",
+                "instruction": "call cs:UpdateWindow",
+                "refs": [
+                  {
+                    "addr": "0x140016330",
+                    "name": "UpdateWindow"
+                  }
+                ]
+              },
+              {
+                "addr": "1400012df",
+                "instruction": "xor r9d, r9d; wMsgFilterMax",
+                "comments": [
+                  "wMsgFilterMax"
+                ]
+              },
+              {
+                "addr": "1400012e2",
+                "instruction": "lea rcx, [rbp+420h+Msg]; lpMsg",
+                "comments": [
+                  "lpMsg"
+                ]
+              },
+              {
+                "addr": "1400012e6",
+                "instruction": "xor r8d, r8d; wMsgFilterMin",
+                "comments": [
+                  "wMsgFilterMin"
+                ]
+              },
+              {
+                "addr": "1400012e9",
+                "instruction": "xor edx, edx; hWnd",
+                "comments": [
+                  "hWnd"
+                ]
+              },
+              {
+                "addr": "1400012eb",
+                "instruction": "call cs:GetMessageW",
+                "refs": [
+                  {
+                    "addr": "0x1400163a8",
+                    "name": "GetMessageW"
+                  }
+                ]
+              },
+              {
+                "addr": "1400012f1",
+                "instruction": "test eax, eax"
+              },
+              {
+                "addr": "1400012f3",
+                "instruction": "jle short loc_14000131F",
+                "refs": [
+                  {
+                    "addr": "0x14000131f",
+                    "name": "loc_14000131F"
+                  }
+                ]
+              },
+              {
+                "addr": "1400012f5",
+                "instruction": "lea rcx, [rbp+420h+Msg]; lpMsg",
+                "label": "loc_1400012F5",
+                "comments": [
+                  "lpMsg"
+                ]
+              },
+              {
+                "addr": "1400012f9",
+                "instruction": "call cs:TranslateMessage",
+                "refs": [
+                  {
+                    "addr": "0x1400163a0",
+                    "name": "TranslateMessage"
+                  }
+                ]
+              },
+              {
+                "addr": "1400012ff",
+                "instruction": "lea rcx, [rbp+420h+Msg]; lpMsg",
+                "comments": [
+                  "lpMsg"
+                ]
+              },
+              {
+                "addr": "140001303",
+                "instruction": "call cs:DispatchMessageW",
+                "refs": [
+                  {
+                    "addr": "0x140016398",
+                    "name": "DispatchMessageW"
+                  }
+                ]
+              },
+              {
+                "addr": "140001309",
+                "instruction": "xor r9d, r9d; wMsgFilterMax",
+                "comments": [
+                  "wMsgFilterMax"
+                ]
+              },
+              {
+                "addr": "14000130c",
+                "instruction": "lea rcx, [rbp+420h+Msg]; lpMsg",
+                "comments": [
+                  "lpMsg"
+                ]
+              },
+              {
+                "addr": "140001310",
+                "instruction": "xor r8d, r8d; wMsgFilterMin",
+                "comments": [
+                  "wMsgFilterMin"
+                ]
+              },
+              {
+                "addr": "140001313",
+                "instruction": "xor edx, edx; hWnd",
+                "comments": [
+                  "hWnd"
+                ]
+              },
+              {
+                "addr": "140001315",
+                "instruction": "call cs:GetMessageW",
+                "refs": [
+                  {
+                    "addr": "0x1400163a8",
+                    "name": "GetMessageW"
+                  }
+                ]
+              },
+              {
+                "addr": "14000131b",
+                "instruction": "test eax, eax"
+              },
+              {
+                "addr": "14000131d",
+                "instruction": "jg short loc_1400012F5",
+                "refs": [
+                  {
+                    "addr": "0x1400012f5",
+                    "name": "loc_1400012F5"
+                  }
+                ]
+              },
+              {
+                "addr": "14000131f",
+                "instruction": "cmp cs:dword_140022CA8, esi",
+                "label": "loc_14000131F",
+                "refs": [
+                  {
+                    "addr": "0x140022ca8",
+                    "name": "dword_140022CA8"
+                  }
+                ]
+              },
+              {
+                "addr": "140001325",
+                "instruction": "setz sil"
+              },
+              {
+                "addr": "140001329",
+                "instruction": "mov eax, esi"
+              },
+              {
+                "addr": "14000132b",
+                "instruction": "jmp short loc_14000134E",
+                "refs": [
+                  {
+                    "addr": "0x14000134e",
+                    "name": "loc_14000134E"
+                  }
+                ]
+              },
+              {
+                "addr": "14000132d",
+                "instruction": "lea rdx, Text; \"Failed to extract SlinkyNative.dll.\\n\\n\"...",
+                "label": "loc_14000132D",
+                "refs": [
+                  {
+                    "addr": "0x140016770",
+                    "name": "Text",
+                    "string": "慆汩摥琠⁯硥牴捡⁴汓湩祫慎楴敶搮汬ਮ䌊敨正琠慨⁴吥䵅═椠⁳牷瑩扡敬�"
+                  }
+                ]
+              },
+              {
+                "addr": "140001334",
+                "instruction": "mov r9d, 10h; uType",
+                "label": "loc_140001334",
+                "comments": [
+                  "uType"
+                ]
+              },
+              {
+                "addr": "14000133a",
+                "instruction": "lea r8, Caption; \"Slinky\"",
+                "refs": [
+                  {
+                    "addr": "0x1400165f0",
+                    "name": "Caption",
+                    "string": "汓湩祫"
+                  }
+                ]
+              },
+              {
+                "addr": "140001341",
+                "instruction": "xor ecx, ecx; hWnd",
+                "comments": [
+                  "hWnd"
+                ]
+              },
+              {
+                "addr": "140001343",
+                "instruction": "call cs:MessageBoxW",
+                "refs": [
+                  {
+                    "addr": "0x140016308",
+                    "name": "MessageBoxW"
+                  }
+                ]
+              },
+              {
+                "addr": "140001349",
+                "instruction": "mov eax, 1"
+              },
+              {
+                "addr": "14000134e",
+                "instruction": "mov rcx, [rbp+420h+var_10]",
+                "label": "loc_14000134E"
+              },
+              {
+                "addr": "140001355",
+                "instruction": "xor rcx, rsp; StackCookie",
+                "comments": [
+                  "StackCookie"
+                ]
+              },
+              {
+                "addr": "140001358",
+                "instruction": "call __security_check_cookie",
+                "refs": [
+                  {
+                    "addr": "0x1400020e0",
+                    "name": "__security_check_cookie"
+                  }
+                ]
+              },
+              {
+                "addr": "14000135d",
+                "instruction": "lea r11, [rsp+520h+var_s0]"
+              },
+              {
+                "addr": "140001365",
+                "instruction": "mov rbx, [r11+10h]"
+              },
+              {
+                "addr": "140001369",
+                "instruction": "mov rsi, [r11+18h]"
+              },
+              {
+                "addr": "14000136d",
+                "instruction": "mov rdi, [r11+20h]"
+              },
+              {
+                "addr": "140001371",
+                "instruction": "mov r14, [r11+28h]"
+              },
+              {
+                "addr": "140001375",
+                "instruction": "mov rsp, r11"
+              },
+              {
+                "addr": "140001378",
+                "instruction": "pop rbp"
+              },
+              {
+                "addr": "140001379",
+                "instruction": "retn"
+              }
+            ],
+            "stack_frame": [
+              {
+                "name": "dwCreationDisposition",
+                "offset": "0x20",
+                "size": "0x8",
+                "type": "DWORD[2]"
+              },
+              {
+                "name": "dwFlagsAndAttributes",
+                "offset": "0x28",
+                "size": "0x4",
+                "type": "DWORD"
+              },
+              {
+                "name": "hTemplateFile",
+                "offset": "0x30",
+                "size": "0x8",
+                "type": "HANDLE"
+              },
+              {
+                "name": "nHeight",
+                "offset": "0x38",
+                "size": "0x4",
+                "type": "int"
+              },
+              {
+                "name": "hWndParent",
+                "offset": "0x40",
+                "size": "0x8",
+                "type": "HWND"
+              },
+              {
+                "name": "hMenu",
+                "offset": "0x48",
+                "size": "0x8",
+                "type": "HMENU"
+              },
+              {
+                "name": "hInstance",
+                "offset": "0x50",
+                "size": "0x8",
+                "type": "HINSTANCE"
+              },
+              {
+                "name": "lpParam",
+                "offset": "0x58",
+                "size": "0x8",
+                "type": "LPVOID"
+              },
+              {
+                "name": "NumberOfBytesWritten",
+                "offset": "0x60",
+                "size": "0x4",
+                "type": "DWORD"
+              },
+              {
+                "name": "var_4B0",
+                "offset": "0x70",
+                "size": "0x50",
+                "type": "WNDCLASSEXW"
+              },
+              {
+                "name": "Msg",
+                "offset": "0xc0",
+                "size": "0x30",
+                "type": "struct tagMSG"
+              },
+              {
+                "name": "PathName",
+                "offset": "0xf0",
+                "size": "0x2",
+                "type": "WCHAR"
+              },
+              {
+                "name": "Buffer",
+                "offset": "0x300",
+                "size": "0x2",
+                "type": "WCHAR"
+              },
+              {
+                "name": "var_10",
+                "offset": "0x510",
+                "size": "0x8",
+                "type": "_QWORD"
+              },
+              {
+                "name": "var_s0",
+                "offset": "0x520",
+                "size": "0x1",
+                "type": "_BYTE"
+              },
+              {
+                "name": "__return_address",
+                "offset": "0x528",
+                "size": "0x8",
+                "type": "_UNKNOWN *"
+              },
+              {
+                "name": "arg_0",
+                "offset": "0x530",
+                "size": "0x8",
+                "type": "_QWORD"
+              },
+              {
+                "name": "arg_8",
+                "offset": "0x538",
+                "size": "0x8",
+                "type": "_QWORD"
+              },
+              {
+                "name": "arg_10",
+                "offset": "0x540",
+                "size": "0x8",
+                "type": "_QWORD"
+              },
+              {
+                "name": "arg_18",
+                "offset": "0x548",
+                "size": "0x8",
+                "type": "_QWORD"
+              }
+            ],
+            "return_type": "int",
+            "arguments": [
+              {
+                "name": "hInstance",
+                "type": "HINSTANCE"
+              },
+              {
+                "name": "hPrevInstance",
+                "type": "HINSTANCE"
+              },
+              {
+                "name": "lpCmdLine",
+                "type": "LPSTR"
+              },
+              {
+                "name": "nShowCmd",
+                "type": "int"
+              }
+            ]
+          },
+          "instruction_count": 96,
+          "total_instructions": null,
+          "cursor": {
+            "done": true
+          }
+        }
+      },
+      {
+        "tool": "decompile",
+        "arguments": {
+          "addr": "0x140001000",
+          "offset": 0,
+          "max_lines": 100,
+          "database": "rea-bf0820f9-56b6-4af8-9175-5286dfaf9b28"
+        },
+        "result": {
+          "addr": "0x140001000",
+          "code": "int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)\n{\n  int v4; // esi\n  HRSRC ResourceW; // rax\n  HRSRC v6; // rbx\n  DWORD v7; // edi\n  HGLOBAL Resource; // rax\n  const void *v9; // r14\n  HANDLE FileW; // rax\n  void *v11; // rbx\n  const WCHAR *v12; // rdx\n  int SystemMetrics; // edi\n  int v15; // eax\n  int v16; // ebx\n  HCURSOR CursorW; // rax\n  DWORD dwFlagsAndAttributes; // [rsp+28h] [rbp-D8h]\n  DWORD NumberOfBytesWritten; // [rsp+60h] [rbp-A0h] BYREF\n  WNDCLASSEXW v20; // [rsp+70h] [rbp-90h] BYREF\n  struct tagMSG Msg; // [rsp+C0h] [rbp-40h] BYREF\n  WCHAR PathName[264]; // [rsp+F0h] [rbp-10h] BYREF\n  WCHAR Buffer[264]; // [rsp+300h] [rbp+200h] BYREF\n\n  v4 = 0; /*0x140001035*/\n  NumberOfBytesWritten = 0; /*0x14000103e*/\n  ResourceW = FindResourceW(0, (LPCWSTR)0xC8, (LPCWSTR)0xA); /*0x140001048*/\n  v6 = ResourceW; /*0x14000104e*/\n  if ( !ResourceW ) /*0x140001054*/\n    goto LABEL_14; /*0x140001054*/\n  v7 = SizeofResource(0, ResourceW); /*0x14000106a*/\n  Resource = LoadResource(0, v6); /*0x14000106c*/\n  if ( !Resource ) /*0x140001075*/\n    goto LABEL_14; /*0x140001075*/\n  v9 = LockResource(Resource); /*0x140001084*/\n  if ( !v9 ) /*0x14000108a*/\n    goto LABEL_14; /*0x14000108a*/\n  if ( !v7 ) /*0x140001092*/\n    goto LABEL_14; /*0x140001092*/\n  GetTempPathW(0x104u, Buffer); /*0x1400010a4*/\n  dwFlagsAndAttributes = GetCurrentProcessId(); /*0x1400010b0*/\n  sub_140001390((unsigned int)PathName, 260, -1, (unsigned int)L\"%lsslinky-%lu\", Buffer, dwFlagsAndAttributes); /*0x1400010d7*/\n  CreateDirectoryW(PathName, 0); /*0x1400010e2*/\n  sub_140001390((unsigned int)&::Buffer, 260, -1, (unsigned int)L\"%ls\\\\SlinkyNative.dll\", PathName); /*0x14000110b*/\n  FileW = CreateFileW(&::Buffer, 0x40000000u, 0, 0, 2u, 0x80u, 0); /*0x140001137*/\n  v11 = FileW; /*0x14000113d*/\n  if ( FileW == (HANDLE)-1LL /*0x140001177*/\n    || (WriteFile(FileW, v9, v7, &NumberOfBytesWritten, 0), CloseHandle(v11), NumberOfBytesWritten != v7) )\n  {\nLABEL_14:\n    v12 = L\"Failed to extract SlinkyNative.dll.\\n\\nCheck that %TEMP% is writable.\"; /*0x14000132d*/\nLABEL_15:\n    MessageBoxW(0, v12, L\"Slinky\", 0x10u); /*0x140001334*/\n    return 1; /*0x140001349*/\n  }\n  qword_140032FB0 = sub_140001490(&th32ProcessID, 64); /*0x14000118e*/\n  if ( qword_140032FB0 == 1 ) /*0x140001199*/\n  {\n    if ( (unsigned int)sub_140001780(th32ProcessID, &::Buffer) ) /*0x1400011a8*/\n      return 0; /*0x1400011bf*/\n    v12 = L\"Injection failed.\\n\\nMake sure you are running as Administrator\\nand that Minecraft 1.8.9 is open.\"; /*0x1400011b1*/\n    goto LABEL_15; /*0x1400011b8*/\n  }\n  SystemMetrics = GetSystemMetrics(0); /*0x1400011d1*/\n  v15 = GetSystemMetrics(1); /*0x1400011d3*/\n  *(_QWORD *)&v20.cbSize = 80; /*0x1400011dc*/\n  memset(&v20.cbClsExtra, 0, 64); /*0x1400011e8*/\n  v16 = v15; /*0x1400011ed*/\n  v20.lpfnWndProc = (WNDPROC)sub_140001CD0; /*0x140001202*/\n  v20.hInstance = GetModuleHandleW(0); /*0x140001219*/\n  v20.hIcon = LoadIconW(0, (LPCWSTR)0x7F00); /*0x14000122a*/\n  CursorW = LoadCursorW(0, (LPCWSTR)0x7F00); /*0x14000122e*/\n  v20.hbrBackground = (HBRUSH)16; /*0x14000123b*/\n  v20.hCursor = CursorW; /*0x140001248*/\n  v20.lpszClassName = L\"SlinkyLauncher\"; /*0x14000124c*/\n  RegisterClassExW(&v20); /*0x140001250*/\n  hWnd = CreateWindowExW( /*0x1400012c0*/\n           0x40008u,\n           L\"SlinkyLauncher\",\n           L\"Slinky – Select Minecraft\",\n           0xCA0000u,\n           (SystemMetrics - 500) / 2,\n           (v16 - 310) / 2,\n           500,\n           310,\n           0,\n           0,\n           v20.hInstance,\n           0);\n  ShowWindow(hWnd, 5); /*0x1400012cc*/\n  UpdateWindow(hWnd); /*0x1400012d9*/\n  while ( GetMessageW(&Msg, 0, 0, 0) > 0 ) /*0x1400012f3*/\n  {\n    TranslateMessage(&Msg); /*0x1400012f9*/\n    DispatchMessageW(&Msg); /*0x140001303*/\n  }\n  LOBYTE(v4) = dword_140022CA8 == 0; /*0x140001325*/\n  return v4; /*0x14000134e*/\n}",
+          "line_count": 97,
+          "total_lines": 97,
+          "truncated": false,
+          "cursor": {
+            "done": true
+          },
+          "refs": [
+            {
+              "addr": "0x140016090",
+              "name": "FindResourceW"
+            },
+            {
+              "addr": "0x140016088",
+              "name": "SizeofResource"
+            },
+            {
+              "addr": "0x140016078",
+              "name": "LoadResource"
+            },
+            {
+              "addr": "0x140016080",
+              "name": "LockResource"
+            },
+            {
+              "addr": "0x140016018",
+              "name": "GetTempPathW"
+            },
+            {
+              "addr": "0x140016038",
+              "name": "GetCurrentProcessId"
+            },
+            {
+              "addr": "0x140001390",
+              "name": "sub_140001390"
+            },
+            {
+              "addr": "0x1400164f0",
+              "name": "aLsslinkyLu",
+              "string": "氥獳楬歮⵹氥�"
+            },
+            {
+              "addr": "0x140016140",
+              "name": "CreateDirectoryW"
+            },
+            {
+              "addr": "0x140022aa0",
+              "name": "Buffer"
+            },
+            {
+              "addr": "0x140016510",
+              "name": "aLsSlinkynative",
+              "string": "氥屳汓湩祫慎楴敶搮汬"
+            },
+            {
+              "addr": "0x1400160c8",
+              "name": "CreateFileW"
+            },
+            {
+              "addr": "0x140016770",
+              "name": "Text",
+              "string": "慆汩摥琠⁯硥牴捡⁴汓湩祫慎楴敶搮汬ਮ䌊敨正琠慨⁴吥䵅═椠⁳牷瑩扡敬�"
+            },
+            {
+              "addr": "0x140016308",
+              "name": "MessageBoxW"
+            },
+            {
+              "addr": "0x1400165f0",
+              "name": "Caption",
+              "string": "汓湩祫"
+            },
+            {
+              "addr": "0x140016010",
+              "name": "WriteFile"
+            },
+            {
+              "addr": "0x140016020",
+              "name": "CloseHandle"
+            },
+            {
+              "addr": "0x140032fb0",
+              "name": "qword_140032FB0"
+            },
+            {
+              "addr": "0x140001490",
+              "name": "sub_140001490"
+            },
+            {
+              "addr": "0x140022cb0",
+              "name": "th32ProcessID"
+            },
+            {
+              "addr": "0x140001780",
+              "name": "sub_140001780"
+            },
+            {
+              "addr": "0x140016600",
+              "name": "aInjectionFaile",
+              "string": "湉敪瑣潩⁮慦汩摥ਮ䴊歡⁥畳敲礠畯愠敲爠湵楮杮愠⁳摁業楮瑳慲潴ੲ湡⁤桴瑡䴠湩捥慲瑦ㄠ㠮㤮椠⁳灯湥�"
+            },
+            {
+              "addr": "0x140016338",
+              "name": "GetSystemMetrics"
+            },
+            {
+              "addr": "0x140001cd0",
+              "name": "sub_140001CD0"
+            },
+            {
+              "addr": "0x140016068",
+              "name": "GetModuleHandleW"
+            },
+            {
+              "addr": "0x140016348",
+              "name": "LoadIconW"
+            },
+            {
+              "addr": "0x1400162f0",
+              "name": "LoadCursorW"
+            },
+            {
+              "addr": "0x140016710",
+              "name": "ClassName",
+              "string": "汓湩祫慌湵档牥"
+            },
+            {
+              "addr": "0x140016378",
+              "name": "RegisterClassExW"
+            },
+            {
+              "addr": "0x140032fb8",
+              "name": "hWnd"
+            },
+            {
+              "addr": "0x140016370",
+              "name": "CreateWindowExW"
+            },
+            {
+              "addr": "0x140016730",
+              "name": "WindowName",
+              "string": "汓湩祫鎀匠汥捥⁴楍敮牣晡�"
+            },
+            {
+              "addr": "0x140016368",
+              "name": "ShowWindow"
+            },
+            {
+              "addr": "0x140016330",
+              "name": "UpdateWindow"
+            },
+            {
+              "addr": "0x1400163a0",
+              "name": "TranslateMessage"
+            },
+            {
+              "addr": "0x140016398",
+              "name": "DispatchMessageW"
+            },
+            {
+              "addr": "0x1400163a8",
+              "name": "GetMessageW"
+            },
+            {
+              "addr": "0x140022ca8",
+              "name": "dword_140022CA8"
+            }
+          ]
+        }
+      },
+      {
+        "tool": "callees",
+        "arguments": {
+          "addrs": [
+            "0x140001000"
+          ],
+          "limit": 500,
+          "database": "rea-bf0820f9-56b6-4af8-9175-5286dfaf9b28"
+        },
+        "result": [
+          {
+            "addr": "0x140001000",
+            "callees": [
+              {
+                "addr": "0x140016090",
+                "name": "FindResourceW",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016088",
+                "name": "SizeofResource",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016078",
+                "name": "LoadResource",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016080",
+                "name": "LockResource",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016018",
+                "name": "GetTempPathW",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016038",
+                "name": "GetCurrentProcessId",
+                "type": "external"
+              },
+              {
+                "addr": "0x140001390",
+                "name": "sub_140001390",
+                "type": "internal"
+              },
+              {
+                "addr": "0x140016140",
+                "name": "CreateDirectoryW",
+                "type": "external"
+              },
+              {
+                "addr": "0x1400160c8",
+                "name": "CreateFileW",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016010",
+                "name": "WriteFile",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016020",
+                "name": "CloseHandle",
+                "type": "external"
+              },
+              {
+                "addr": "0x140001490",
+                "name": "sub_140001490",
+                "type": "internal"
+              },
+              {
+                "addr": "0x140001780",
+                "name": "sub_140001780",
+                "type": "internal"
+              },
+              {
+                "addr": "0x140016338",
+                "name": "GetSystemMetrics",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016068",
+                "name": "GetModuleHandleW",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016348",
+                "name": "LoadIconW",
+                "type": "external"
+              },
+              {
+                "addr": "0x1400162f0",
+                "name": "LoadCursorW",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016378",
+                "name": "RegisterClassExW",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016370",
+                "name": "CreateWindowExW",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016368",
+                "name": "ShowWindow",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016330",
+                "name": "UpdateWindow",
+                "type": "external"
+              },
+              {
+                "addr": "0x1400163a8",
+                "name": "GetMessageW",
+                "type": "external"
+              },
+              {
+                "addr": "0x1400163a0",
+                "name": "TranslateMessage",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016398",
+                "name": "DispatchMessageW",
+                "type": "external"
+              },
+              {
+                "addr": "0x140016308",
+                "name": "MessageBoxW",
+                "type": "external"
+              },
+              {
+                "addr": "0x1400020e0",
+                "name": "__security_check_cookie",
+                "type": "internal"
+              }
+            ],
+            "more": false
+          }
+        ]
+      },
+      {
+        "tool": "lookup_funcs",
+        "arguments": {
+          "queries": [
+            "0x140001390"
+          ],
+          "database": "rea-bf0820f9-56b6-4af8-9175-5286dfaf9b28"
+        },
+        "result": [
+          {
+            "query": "0x140001390",
+            "fn": {
+              "addr": "0x140001390",
+              "name": "sub_140001390",
+              "size": "0x61"
+            },
+            "error": null
+          }
+        ]
+      },
+      {
+        "tool": "lookup_funcs",
+        "arguments": {
+          "queries": [
+            "0x140001490"
+          ],
+          "database": "rea-bf0820f9-56b6-4af8-9175-5286dfaf9b28"
+        },
+        "result": [
+          {
+            "query": "0x140001490",
+            "fn": {
+              "addr": "0x140001490",
+              "name": "sub_140001490",
+              "size": "0x1f7"
+            },
+            "error": null
+          }
+        ]
+      },
+      {
+        "tool": "lookup_funcs",
+        "arguments": {
+          "queries": [
+            "0x140001780"
+          ],
+          "database": "rea-bf0820f9-56b6-4af8-9175-5286dfaf9b28"
+        },
+        "result": [
+          {
+            "query": "0x140001780",
+            "fn": {
+              "addr": "0x140001780",
+              "name": "sub_140001780",
+              "size": "0x261"
+            },
+            "error": null
+          }
+        ]
+      },
+      {
+        "tool": "lookup_funcs",
+        "arguments": {
+          "queries": [
+            "0x1400020e0"
+          ],
+          "database": "rea-bf0820f9-56b6-4af8-9175-5286dfaf9b28"
+        },
+        "result": [
+          {
+            "query": "0x1400020e0",
+            "fn": {
+              "addr": "0x1400020e0",
+              "name": "__security_check_cookie",
+              "size": "0x1e"
+            },
+            "error": null
+          }
+        ]
+      }
+    ]
+  },
+  "normalized_result": {
+    "procedure": {
+      "address": "0x140001000",
+      "name": "WinMain",
+      "classification": null,
+      "body": {
+        "available": false,
+        "reason": "IDA MCP does not report complete function body ranges."
+      },
+      "signature": "int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)",
+      "locals": []
+    },
+    "pseudocode": "int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)\n{\n  int v4; // esi\n  HRSRC ResourceW; // rax\n  HRSRC v6; // rbx\n  DWORD v7; // edi\n  HGLOBAL Resource; // rax\n  const void *v9; // r14\n  HANDLE FileW; // rax\n  void *v11; // rbx\n  const WCHAR *v12; // rdx\n  int SystemMetrics; // edi\n  int v15; // eax\n  int v16; // ebx\n  HCURSOR CursorW; // rax\n  DWORD dwFlagsAndAttributes; // [rsp+28h] [rbp-D8h]\n  DWORD NumberOfBytesWritten; // [rsp+60h] [rbp-A0h] BYREF\n  WNDCLASSEXW v20; // [rsp+70h] [rbp-90h] BYREF\n  struct tagMSG Msg; // [rsp+C0h] [rbp-40h] BYREF\n  WCHAR PathName[264]; // [rsp+F0h] [rbp-10h] BYREF\n  WCHAR Buffer[264]; // [rsp+300h] [rbp+200h] BYREF\n\n  v4 = 0; /*0x140001035*/\n  NumberOfBytesWritten = 0; /*0x14000103e*/\n  ResourceW = FindResourceW(0, (LPCWSTR)0xC8, (LPCWSTR)0xA); /*0x140001048*/\n  v6 = ResourceW; /*0x14000104e*/\n  if ( !ResourceW ) /*0x140001054*/\n    goto LABEL_14; /*0x140001054*/\n  v7 = SizeofResource(0, ResourceW); /*0x14000106a*/\n  Resource = LoadResource(0, v6); /*0x14000106c*/\n  if ( !Resource ) /*0x140001075*/\n    goto LABEL_14; /*0x140001075*/\n  v9 = LockResource(Resource); /*0x140001084*/\n  if ( !v9 ) /*0x14000108a*/\n    goto LABEL_14; /*0x14000108a*/\n  if ( !v7 ) /*0x140001092*/\n    goto LABEL_14; /*0x140001092*/\n  GetTempPathW(0x104u, Buffer); /*0x1400010a4*/\n  dwFlagsAndAttributes = GetCurrentProcessId(); /*0x1400010b0*/\n  sub_140001390((unsigned int)PathName, 260, -1, (unsigned int)L\"%lsslinky-%lu\", Buffer, dwFlagsAndAttributes); /*0x1400010d7*/\n  CreateDirectoryW(PathName, 0); /*0x1400010e2*/\n  sub_140001390((unsigned int)&::Buffer, 260, -1, (unsigned int)L\"%ls\\\\SlinkyNative.dll\", PathName); /*0x14000110b*/\n  FileW = CreateFileW(&::Buffer, 0x40000000u, 0, 0, 2u, 0x80u, 0); /*0x140001137*/\n  v11 = FileW; /*0x14000113d*/\n  if ( FileW == (HANDLE)-1LL /*0x140001177*/\n    || (WriteFile(FileW, v9, v7, &NumberOfBytesWritten, 0), CloseHandle(v11), NumberOfBytesWritten != v7) )\n  {\nLABEL_14:\n    v12 = L\"Failed to extract SlinkyNative.dll.\\n\\nCheck that %TEMP% is writable.\"; /*0x14000132d*/\nLABEL_15:\n    MessageBoxW(0, v12, L\"Slinky\", 0x10u); /*0x140001334*/\n    return 1; /*0x140001349*/\n  }\n  qword_140032FB0 = sub_140001490(&th32ProcessID, 64); /*0x14000118e*/\n  if ( qword_140032FB0 == 1 ) /*0x140001199*/\n  {\n    if ( (unsigned int)sub_140001780(th32ProcessID, &::Buffer) ) /*0x1400011a8*/\n      return 0; /*0x1400011bf*/\n    v12 = L\"Injection failed.\\n\\nMake sure you are running as Administrator\\nand that Minecraft 1.8.9 is open.\"; /*0x1400011b1*/\n    goto LABEL_15; /*0x1400011b8*/\n  }\n  SystemMetrics = GetSystemMetrics(0); /*0x1400011d1*/\n  v15 = GetSystemMetrics(1); /*0x1400011d3*/\n  *(_QWORD *)&v20.cbSize = 80; /*0x1400011dc*/\n  memset(&v20.cbClsExtra, 0, 64); /*0x1400011e8*/\n  v16 = v15; /*0x1400011ed*/\n  v20.lpfnWndProc = (WNDPROC)sub_140001CD0; /*0x140001202*/\n  v20.hInstance = GetModuleHandleW(0); /*0x140001219*/\n  v20.hIcon = LoadIconW(0, (LPCWSTR)0x7F00); /*0x14000122a*/\n  CursorW = LoadCursorW(0, (LPCWSTR)0x7F00); /*0x14000122e*/\n  v20.hbrBackground = (HBRUSH)16; /*0x14000123b*/\n  v20.hCursor = CursorW; /*0x140001248*/\n  v20.lpszClassName = L\"SlinkyLauncher\"; /*0x14000124c*/\n  RegisterClassExW(&v20); /*0x140001250*/\n  hWnd = CreateWindowExW( /*0x1400012c0*/\n           0x40008u,\n           L\"SlinkyLauncher\",\n           L\"Slinky – Select Minecraft\",\n           0xCA0000u,\n           (SystemMetrics - 500) / 2,\n           (v16 - 310) / 2,\n           500,\n           310,\n           0,\n           0,\n           v20.hInstance,\n           0);\n  ShowWindow(hWnd, 5); /*0x1400012cc*/\n  UpdateWindow(hWnd); /*0x1400012d9*/\n  while ( GetMessageW(&Msg, 0, 0, 0) > 0 ) /*0x1400012f3*/\n  {\n    TranslateMessage(&Msg); /*0x1400012f9*/\n    DispatchMessageW(&Msg); /*0x140001303*/\n  }\n  LOBYTE(v4) = dword_140022CA8 == 0; /*0x140001325*/\n  return v4; /*0x14000134e*/\n}",
+    "assembly": [
+      "0x140001000: mov [rsp-8+arg_0], rbx",
+      "0x140001005: mov [rsp-8+arg_8], rsi",
+      "0x14000100a: mov [rsp-8+arg_10], rdi",
+      "0x14000100f: mov [rsp-8+arg_18], r14",
+      "0x140001014: push rbp",
+      "0x140001015: lea rbp, [rsp-420h]",
+      "0x14000101d: sub rsp, 520h",
+      "0x140001024: mov rax, cs:__security_cookie",
+      "0x14000102b: xor rax, rsp",
+      "0x14000102e: mov [rbp+420h+var_10], rax",
+      "0x140001035: xor esi, esi",
+      "0x140001037: mov edx, 0C8h; lpName",
+      "0x14000103c: xor ecx, ecx; hModule",
+      "0x14000103e: mov [rsp+520h+NumberOfBytesWritten], esi",
+      "0x140001042: mov r8d, 0Ah; lpType",
+      "0x140001048: call cs:FindResourceW",
+      "0x14000104e: mov rbx, rax",
+      "0x140001051: test rax, rax",
+      "0x140001054: jz loc_14000132D",
+      "0x14000105a: mov rdx, rax; hResInfo",
+      "0x14000105d: xor ecx, ecx; hModule",
+      "0x14000105f: call cs:SizeofResource",
+      "0x140001065: mov rdx, rbx; hResInfo",
+      "0x140001068: xor ecx, ecx; hModule",
+      "0x14000106a: mov edi, eax",
+      "0x14000106c: call cs:LoadResource",
+      "0x140001072: test rax, rax",
+      "0x140001075: jz loc_14000132D",
+      "0x14000107b: mov rcx, rax; hResData",
+      "0x14000107e: call cs:LockResource",
+      "0x140001084: mov r14, rax",
+      "0x140001087: test rax, rax",
+      "0x14000108a: jz loc_14000132D",
+      "0x140001090: test edi, edi",
+      "0x140001092: jz loc_14000132D",
+      "0x140001098: lea rdx, [rbp+420h+Buffer]; lpBuffer",
+      "0x14000109f: mov ecx, 104h; nBufferLength",
+      "0x1400010a4: call cs:GetTempPathW",
+      "0x1400010aa: call cs:GetCurrentProcessId",
+      "0x1400010b0: mov [rsp+520h+dwFlagsAndAttributes], eax",
+      "0x1400010b4: lea r9, aLsslinkyLu; \"%lsslinky-%lu\"",
+      "0x1400010bb: lea rax, [rbp+420h+Buffer]",
+      "0x1400010c2: mov edx, 104h",
+      "0x1400010c7: mov r8, 0FFFFFFFFFFFFFFFFh",
+      "0x1400010ce: mov qword ptr [rsp+520h+dwCreationDisposition], rax",
+      "0x1400010d3: lea rcx, [rbp+420h+PathName]",
+      "0x1400010d7: call sub_140001390",
+      "0x1400010dc: xor edx, edx; lpSecurityAttributes",
+      "0x1400010de: lea rcx, [rbp+420h+PathName]; lpPathName",
+      "0x1400010e2: call cs:CreateDirectoryW",
+      "0x1400010e8: lea rax, [rbp+420h+PathName]",
+      "0x1400010ec: mov edx, 104h",
+      "0x1400010f1: lea r9, aLsSlinkynative; \"%ls\\\\SlinkyNative.dll\"",
+      "0x1400010f8: mov qword ptr [rsp+520h+dwCreationDisposition], rax",
+      "0x1400010fd: mov r8, 0FFFFFFFFFFFFFFFFh",
+      "0x140001104: lea rcx, Buffer",
+      "0x14000110b: call sub_140001390",
+      "0x140001110: mov [rsp+520h+hTemplateFile], rsi; hTemplateFile",
+      "0x140001115: lea rcx, Buffer; lpFileName",
+      "0x14000111c: mov [rsp+520h+dwFlagsAndAttributes], 80h; dwFlagsAndAttributes",
+      "0x140001124: xor r9d, r9d; lpSecurityAttributes",
+      "0x140001127: xor r8d, r8d; dwShareMode",
+      "0x14000112a: mov [rsp+520h+dwCreationDisposition], 2; dwCreationDisposition",
+      "0x140001132: mov edx, 40000000h; dwDesiredAccess",
+      "0x140001137: call cs:CreateFileW",
+      "0x14000113d: mov rbx, rax",
+      "0x140001140: cmp rax, 0FFFFFFFFFFFFFFFFh",
+      "0x140001144: jz loc_14000132D",
+      "0x14000114a: lea r9, [rsp+520h+NumberOfBytesWritten]; lpNumberOfBytesWritten",
+      "0x14000114f: mov qword ptr [rsp+520h+dwCreationDisposition], rsi; lpOverlapped",
+      "0x140001154: mov r8d, edi; nNumberOfBytesToWrite",
+      "0x140001157: mov rdx, r14; lpBuffer",
+      "0x14000115a: mov rcx, rax; hFile",
+      "0x14000115d: call cs:WriteFile",
+      "0x140001163: mov rcx, rbx; hObject",
+      "0x140001166: call cs:CloseHandle",
+      "0x14000116c: cmp [rsp+520h+NumberOfBytesWritten], edi",
+      "0x140001170: mov eax, esi",
+      "0x140001172: setz al",
+      "0x140001175: test eax, eax",
+      "0x140001177: jz loc_14000132D",
+      "0x14000117d: mov edx, 40h ; '@'",
+      "0x140001182: lea rcx, th32ProcessID",
+      "0x140001189: call sub_140001490",
+      "0x14000118e: mov cs:qword_140032FB0, rax",
+      "0x140001195: cmp rax, 1",
+      "0x140001199: jnz short loc_1400011C4",
+      "0x14000119b: mov ecx, cs:th32ProcessID; th32ProcessID",
+      "0x1400011a1: lea rdx, Buffer; lpBuffer",
+      "0x1400011a8: call sub_140001780",
+      "0x1400011ad: test eax, eax",
+      "0x1400011af: jnz short loc_1400011BD",
+      "0x1400011b1: lea rdx, aInjectionFaile; \"Injection failed.\\n\\nMake sure you are \"...",
+      "0x1400011b8: jmp loc_140001334",
+      "0x1400011bd: xor eax, eax",
+      "0x1400011bf: jmp loc_14000134E",
+      "0x1400011c4: xor ecx, ecx; nIndex",
+      "0x1400011c6: call cs:GetSystemMetrics",
+      "0x1400011cc: mov ecx, 1; nIndex",
+      "0x1400011d1: mov edi, eax",
+      "0x1400011d3: call cs:GetSystemMetrics",
+      "0x1400011d9: xorps xmm0, xmm0",
+      "0x1400011dc: mov qword ptr [rsp+520h+var_4B0.cbSize], 50h ; 'P'",
+      "0x1400011e5: xorps xmm1, xmm1",
+      "0x1400011e8: movdqa xmmword ptr [rbp+420h+var_4B0.cbClsExtra], xmm0",
+      "0x1400011ed: mov ebx, eax",
+      "0x1400011ef: movdqa xmmword ptr [rbp+420h+var_4B0.hIcon], xmm1",
+      "0x1400011f4: lea rax, sub_140001CD0",
+      "0x1400011fb: movdqa xmmword ptr [rbp+420h+var_4B0.hbrBackground], xmm0",
+      "0x140001200: xor ecx, ecx; lpModuleName",
+      "0x140001202: mov [rsp+520h+var_4B0.lpfnWndProc], rax",
+      "0x140001207: movdqa xmmword ptr [rbp+420h+var_4B0.lpszClassName], xmm1",
+      "0x14000120c: call cs:GetModuleHandleW",
+      "0x140001212: mov edx, 7F00h; lpIconName",
+      "0x140001217: xor ecx, ecx; hInstance",
+      "0x140001219: mov [rbp+420h+var_4B0.hInstance], rax",
+      "0x14000121d: call cs:LoadIconW",
+      "0x140001223: mov edx, 7F00h; lpCursorName",
+      "0x140001228: xor ecx, ecx; hInstance",
+      "0x14000122a: mov [rbp+420h+var_4B0.hIcon], rax",
+      "0x14000122e: call cs:LoadCursorW",
+      "0x140001234: lea r14, ClassName; \"SlinkyLauncher\"",
+      "0x14000123b: mov [rbp+420h+var_4B0.hbrBackground], 10h",
+      "0x140001243: lea rcx, [rsp+520h+var_4B0]; WNDCLASSEXW *",
+      "0x140001248: mov [rbp+420h+var_4B0.hCursor], rax",
+      "0x14000124c: mov [rbp+420h+var_4B0.lpszClassName], r14",
+      "0x140001250: call cs:RegisterClassExW",
+      "0x140001256: mov [rsp+520h+lpParam], rsi; lpParam",
+      "0x14000125b: lea eax, [rbx-136h]",
+      "0x140001261: cdq",
+      "0x140001262: mov r9d, 0CA0000h; dwStyle",
+      "0x140001268: sub eax, edx",
+      "0x14000126a: sar eax, 1",
+      "0x14000126c: mov r8d, eax",
+      "0x14000126f: lea eax, [rdi-1F4h]",
+      "0x140001275: cdq",
+      "0x140001276: sub eax, edx",
+      "0x140001278: mov rdx, r14; lpClassName",
+      "0x14000127b: sar eax, 1",
+      "0x14000127d: mov ecx, eax",
+      "0x14000127f: mov rax, [rbp+420h+var_4B0.hInstance]",
+      "0x140001283: mov [rsp+520h+hInstance], rax; hInstance",
+      "0x140001288: mov [rsp+520h+hMenu], rsi; hMenu",
+      "0x14000128d: mov [rsp+520h+hWndParent], rsi; hWndParent",
+      "0x140001292: mov [rsp+520h+nHeight], 136h; nHeight",
+      "0x14000129a: mov dword ptr [rsp+520h+hTemplateFile], 1F4h; nWidth",
+      "0x1400012a2: mov [rsp+520h+dwFlagsAndAttributes], r8d; Y",
+      "0x1400012a7: lea r8, WindowName; \"Slinky – Select Minecraft\"",
+      "0x1400012ae: mov [rsp+520h+dwCreationDisposition], ecx; X",
+      "0x1400012b2: mov ecx, 40008h; dwExStyle",
+      "0x1400012b7: call cs:CreateWindowExW",
+      "0x1400012bd: mov rcx, rax; hWnd",
+      "0x1400012c0: mov cs:hWnd, rax",
+      "0x1400012c7: mov edx, 5; nCmdShow",
+      "0x1400012cc: call cs:ShowWindow",
+      "0x1400012d2: mov rcx, cs:hWnd; hWnd",
+      "0x1400012d9: call cs:UpdateWindow",
+      "0x1400012df: xor r9d, r9d; wMsgFilterMax",
+      "0x1400012e2: lea rcx, [rbp+420h+Msg]; lpMsg",
+      "0x1400012e6: xor r8d, r8d; wMsgFilterMin",
+      "0x1400012e9: xor edx, edx; hWnd",
+      "0x1400012eb: call cs:GetMessageW",
+      "0x1400012f1: test eax, eax",
+      "0x1400012f3: jle short loc_14000131F",
+      "0x1400012f5: lea rcx, [rbp+420h+Msg]; lpMsg",
+      "0x1400012f9: call cs:TranslateMessage",
+      "0x1400012ff: lea rcx, [rbp+420h+Msg]; lpMsg",
+      "0x140001303: call cs:DispatchMessageW",
+      "0x140001309: xor r9d, r9d; wMsgFilterMax",
+      "0x14000130c: lea rcx, [rbp+420h+Msg]; lpMsg",
+      "0x140001310: xor r8d, r8d; wMsgFilterMin",
+      "0x140001313: xor edx, edx; hWnd",
+      "0x140001315: call cs:GetMessageW",
+      "0x14000131b: test eax, eax",
+      "0x14000131d: jg short loc_1400012F5",
+      "0x14000131f: cmp cs:dword_140022CA8, esi",
+      "0x140001325: setz sil",
+      "0x140001329: mov eax, esi",
+      "0x14000132b: jmp short loc_14000134E",
+      "0x14000132d: lea rdx, Text; \"Failed to extract SlinkyNative.dll.\\n\\n\"...",
+      "0x140001334: mov r9d, 10h; uType",
+      "0x14000133a: lea r8, Caption; \"Slinky\"",
+      "0x140001341: xor ecx, ecx; hWnd",
+      "0x140001343: call cs:MessageBoxW",
+      "0x140001349: mov eax, 1",
+      "0x14000134e: mov rcx, [rbp+420h+var_10]",
+      "0x140001355: xor rcx, rsp; StackCookie",
+      "0x140001358: call __security_check_cookie",
+      "0x14000135d: lea r11, [rsp+520h+var_s0]",
+      "0x140001365: mov rbx, [r11+10h]",
+      "0x140001369: mov rsi, [r11+18h]",
+      "0x14000136d: mov rdi, [r11+20h]",
+      "0x140001371: mov r14, [r11+28h]",
+      "0x140001375: mov rsp, r11",
+      "0x140001378: pop rbp",
+      "0x140001379: retn"
+    ],
+    "comments": [],
+    "callers": [],
+    "callees": [
+      {
+        "address": "0x140016090",
+        "name": "FindResourceW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016088",
+        "name": "SizeofResource",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016078",
+        "name": "LoadResource",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016080",
+        "name": "LockResource",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016018",
+        "name": "GetTempPathW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016038",
+        "name": "GetCurrentProcessId",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016140",
+        "name": "CreateDirectoryW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x1400160c8",
+        "name": "CreateFileW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016010",
+        "name": "WriteFile",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016020",
+        "name": "CloseHandle",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016338",
+        "name": "GetSystemMetrics",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016068",
+        "name": "GetModuleHandleW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016348",
+        "name": "LoadIconW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x1400162f0",
+        "name": "LoadCursorW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016378",
+        "name": "RegisterClassExW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016370",
+        "name": "CreateWindowExW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016368",
+        "name": "ShowWindow",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016330",
+        "name": "UpdateWindow",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x1400163a8",
+        "name": "GetMessageW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x1400163a0",
+        "name": "TranslateMessage",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016398",
+        "name": "DispatchMessageW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140016308",
+        "name": "MessageBoxW",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140001390",
+        "name": "sub_140001390",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140001490",
+        "name": "sub_140001490",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x140001780",
+        "name": "sub_140001780",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      },
+      {
+        "address": "0x1400020e0",
+        "name": "__security_check_cookie",
+        "classification": null,
+        "body": {
+          "available": false,
+          "reason": "IDA MCP does not report complete function body ranges."
+        }
+      }
+    ],
+    "incoming_references": [],
+    "outgoing_references": [],
+    "referenced_strings": [],
+    "referenced_names": [],
+    "basic_blocks": [],
+    "native_api": null,
+    "native_value_flow": null,
+    "limitations": [
+      "Provider version identifies the REA IDA adapter. IDA engine and upstream distribution versions are unknown unless separately observed; MCP serverInfo is reported independently.",
+      "Results describe the current IDA analysis database. Input identity does not prove an unmodified database; patches, annotations, analysis completeness, and database revision remain unknown.",
+      "Live results are never replayed from analysis snapshots. Target checks before and after a request do not provide an atomic lock against external GUI changes.",
+      "Caller cancellation drains the in-flight MCP request before cleanup; it does not prove that IDA engine work was interrupted.",
+      "Headless workers are released through the upstream database lifecycle. Abrupt termination of REA, its proxy, or the supervisor cannot prove worker cleanup; inspect upstream inventory after an interrupted process.",
+      "Complete function body ranges, typed references, unresolved indirect calls, referenced data, and basic blocks are unavailable in this adapter. Empty unsupported dossier facets are unknown, not observed absence.",
+      "Modern upstream xrefs classify references as code or data, without proving call edges. Direct callers are unavailable in this profile.",
+      "Stack frame records are not evidence of source locals. Rendered comments do not identify regular versus inline origin."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Provider version identifies the REA IDA adapter. IDA engine and upstream distribution versions are unknown unless separately observed; MCP serverInfo is reported independently.",
+    "Results describe the current IDA analysis database. Input identity does not prove an unmodified database; patches, annotations, analysis completeness, and database revision remain unknown.",
+    "Live results are never replayed from analysis snapshots. Target checks before and after a request do not provide an atomic lock against external GUI changes.",
+    "Caller cancellation drains the in-flight MCP request before cleanup; it does not prove that IDA engine work was interrupted.",
+    "Headless workers are released through the upstream database lifecycle. Abrupt termination of REA, its proxy, or the supervisor cannot prove worker cleanup; inspect upstream inventory after an interrupted process.",
+    "Complete function body ranges, typed references, unresolved indirect calls, referenced data, and basic blocks are unavailable in this adapter. Empty unsupported dossier facets are unknown, not observed absence.",
+    "Modern upstream xrefs classify references as code or data, without proving call edges. Direct callers are unavailable in this profile."
+  ],
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "C:\\Users\\GigaZelensky\\Downloads\\slinkyinspect\\Slinky.exe"
+    },
+    {
+      "kind": "address",
+      "address": "0x140001000"
+    }
+  ],
+  "evidence_links": []
+}

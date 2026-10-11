@@ -1,0 +1,2722 @@
+{
+  "scope": [
+    "dev/slinky/config",
+    "dev/slinky/inject",
+    "dev/slinky/shaded"
+  ],
+  "variant": 101,
+  "summary": {
+    "manual_reconciled": 64,
+    "normalized_flow_equal": 205,
+    "metadata_reconciled": 26,
+    "synthetic_helper_reconciled": 22,
+    "manual_and_case_flow_reconciled": 1,
+    "switch_case_flow_equal": 1
+  },
+  "confirmed_functional_discrepancies": [],
+  "unreviewed_residuals": 0,
+  "limitations": [
+    "Static-only audit; no sample classes loaded/executed.",
+    "Manual reconciliation is human reasoning, not a formal equivalence proof. Whole-program/runtime behavior is outside this limited package audit.",
+    "Shaded ASM class versions change 49 to 52, raising its standalone minimum JVM from Java 5 to Java 8; reflection sees helper synthetic flags/extra enum helpers.",
+    "102 changes only Bootstrap in this scope; 103 changes only Bootstrap/Platform. Original-to-variant and rebuilt-to-variant instruction deltas match exactly for the three changed methods. Config and shaded class data identical to 101."
+  ],
+  "methods": [
+    {
+      "class": "dev/slinky/config/ConfigStore",
+      "method": "ensure(Ljava/nio/file/Path;)V",
+      "status": "manual_reconciled",
+      "note": "Resource cleanup/exception control flow recompiled; success close, failure close, primary exception and suppression/discard behavior traced. Newly constructed resources are nonnull; Bootstrap nullable stream still guarded."
+    },
+    {
+      "class": "dev/slinky/config/ConfigStore",
+      "method": "importText(Ldev/slinky/module/ModuleManager;[B)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/config/ConfigStore",
+      "method": "load(Ldev/slinky/module/ModuleManager;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigStore",
+      "method": "read(Ljava/nio/file/Path;)Lcom/google/gson/JsonObject;",
+      "status": "manual_reconciled",
+      "note": "Resource cleanup/exception control flow recompiled; success close, failure close, primary exception and suppression/discard behavior traced. Newly constructed resources are nonnull; Bootstrap nullable stream still guarded."
+    },
+    {
+      "class": "dev/slinky/config/ConfigStore",
+      "method": "writeBytes(Ljava/nio/file/Path;[BZ)V",
+      "status": "manual_reconciled",
+      "note": "Resource cleanup/exception control flow recompiled; success close, failure close, primary exception and suppression/discard behavior traced. Newly constructed resources are nonnull; Bootstrap nullable stream still guarded."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles",
+      "method": "ensureDirectory(Ldev/slinky/config/ConfigurationFiles$WidePath;Ldev/slinky/config/ConfigurationFiles$Host;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles",
+      "method": "initializePath(Ldev/slinky/config/ConfigurationFiles$WidePath;Ldev/slinky/config/ConfigurationFiles$Host;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles",
+      "method": "readText(Ldev/slinky/config/ConfigurationFiles$WidePath;Ldev/slinky/config/ConfigurationFiles$Text;Ldev/slinky/config/ConfigurationFiles$Host;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles$NioHost",
+      "method": "allocateBytes(J)[B",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles$NioHost",
+      "method": "allocateWide(J)[C",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles$NioHost",
+      "method": "buffer([BJI)Ljava/nio/ByteBuffer;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles$NioHost",
+      "method": "createDirectory([C)I",
+      "status": "metadata_reconciled",
+      "note": "Catch alternatives reordered but share identical protected range and target, preserving catch behavior."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles$NioHost",
+      "method": "deleteFile([C)I",
+      "status": "metadata_reconciled",
+      "note": "Catch alternatives reordered but share identical protected range and target, preserving catch behavior."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles$NioHost",
+      "method": "formatPath([CJ[C[B)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationFiles$NioHost",
+      "method": "open([CIII)Ljava/lang/Object;",
+      "status": "metadata_reconciled",
+      "note": "Catch alternatives reordered but share identical protected range and target, preserving catch behavior."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationJson",
+      "method": "parseValue([B)Lcom/google/gson/JsonElement;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationJson",
+      "method": "print(Lcom/google/gson/JsonObject;)[B",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/ConfigurationJson",
+      "method": "value(Ldev/slinky/config/RecoveredJsonRuntime$Node;)Lcom/google/gson/JsonElement;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/InitialSettings",
+      "method": "applyMissing(Ldev/slinky/module/ModuleManager;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/InitialSettings",
+      "method": "read()Lcom/google/gson/JsonObject;",
+      "status": "manual_reconciled",
+      "note": "Resource cleanup/exception control flow recompiled; success close, failure close, primary exception and suppression/discard behavior traced. Newly constructed resources are nonnull; Bootstrap nullable stream still guarded."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredConfiguration",
+      "method": "apply(Ldev/slinky/module/ModuleManager;Lcom/google/gson/JsonObject;Ldev/slinky/config/RecoveredConfiguration$Scope;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredConfiguration",
+      "method": "binding(Lcom/google/gson/JsonElement;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredConfiguration",
+      "method": "profileBindings(Lcom/google/gson/JsonObject;)Ljava/util/List;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredConfiguration",
+      "method": "resetProfile(Ldev/slinky/module/ModuleManager;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredConfiguration",
+      "method": "serialize(Ldev/slinky/module/ModuleManager;Ldev/slinky/config/RecoveredConfiguration$Scope;Ljava/lang/Iterable;)Lcom/google/gson/JsonObject;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredConfiguration$Scope",
+      "method": "$values()[Ldev/slinky/config/RecoveredConfiguration$Scope;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Enum values array extracted into private $values helper"
+    },
+    {
+      "class": "dev/slinky/config/RecoveredConfiguration$Scope",
+      "method": "<clinit>()V",
+      "status": "manual_reconciled",
+      "note": "Enum values array creation is moved into private $values helper, preserving array order and field initialization."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonJvmServices",
+      "method": "<init>(IJ)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonJvmServices",
+      "method": "allocateBytes(J)[B",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonJvmServices",
+      "method": "format(Ljava/lang/String;J)Ldev/slinky/config/RecoveredJsonRuntime$FormattedNumber;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonJvmServices",
+      "method": "significant(DI)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonParser",
+      "method": "parseArray(Ldev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonParser$ParseBuffer;Ldev/slinky/config/RecoveredJsonRuntime$Context;)I",
+      "status": "manual_reconciled",
+      "note": "Loops/cleanup branches inverted; final tail local equals newly assigned element local at use, retaining linked-list previous/next wiring."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonParser",
+      "method": "parseHex_51310([BI)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonParser",
+      "method": "parseObject_51000(Ldev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonParser$ParseBuffer;Ldev/slinky/config/RecoveredJsonRuntime$Context;)I",
+      "status": "manual_reconciled",
+      "note": "Loops/cleanup branches inverted; final tail local equals newly assigned element local at use, retaining linked-list previous/next wiring."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonParser",
+      "method": "parseString_50b60(Ldev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonParser$ParseBuffer;Ldev/slinky/config/RecoveredJsonRuntime$Context;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonParser",
+      "method": "parseValue_4d600(Ldev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonParser$ParseBuffer;Ldev/slinky/config/RecoveredJsonRuntime$Context;)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonParser",
+      "method": "parse_4da70([BLdev/slinky/config/RecoveredJsonRuntime$Context;)Ldev/slinky/config/RecoveredJsonRuntime$Node;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonParser",
+      "method": "skipWhitespace_4da00(Ldev/slinky/config/RecoveredJsonParser$ParseBuffer;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonParser$ParseBuffer",
+      "method": "<init>([BJLdev/slinky/config/RecoveredJsonRuntime$Context;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "append_4e560(Ldev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonRuntime$Node;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "attachName_4e5b0(Ldev/slinky/config/RecoveredJsonRuntime$Node;[BLdev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonRuntime$Context;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "deleteTree_4d240(Ldev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonRuntime$Context;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "lookup_4e4d0(Ldev/slinky/config/RecoveredJsonRuntime$Node;[BLdev/slinky/config/RecoveredJsonRuntime$Context;)Ldev/slinky/config/RecoveredJsonRuntime$Node;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "printNumber(Ldev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonRuntime$PrintBuffer;Ldev/slinky/config/RecoveredJsonRuntime$Context;)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "printObject(Ldev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonRuntime$PrintBuffer;Ldev/slinky/config/RecoveredJsonRuntime$Context;)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "printString_514f0([BLdev/slinky/config/RecoveredJsonRuntime$PrintBuffer;Ldev/slinky/config/RecoveredJsonRuntime$Context;)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "printValue_4dc80(Ldev/slinky/config/RecoveredJsonRuntime$Node;Ldev/slinky/config/RecoveredJsonRuntime$PrintBuffer;Ldev/slinky/config/RecoveredJsonRuntime$Context;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "reserve_51400(Ldev/slinky/config/RecoveredJsonRuntime$PrintBuffer;JLdev/slinky/config/RecoveredJsonRuntime$Context;)Ldev/slinky/config/RecoveredJsonRuntime$PrintSlice;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "sseMaximum(DD)D",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime",
+      "method": "updateOffset(Ldev/slinky/config/RecoveredJsonRuntime$PrintBuffer;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime$Context",
+      "method": "<init>(Ldev/slinky/config/RecoveredJsonRuntime$Allocator;Ldev/slinky/config/RecoveredJsonRuntime$Resizer;Ldev/slinky/config/RecoveredJsonRuntime$NumberServices;Ldev/slinky/config/RecoveredJsonRuntime$ByteComparisons;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/RecoveredJsonRuntime$Context",
+      "method": "invoke(I[Ljava/lang/Object;)Ljava/lang/Object;",
+      "status": "manual_reconciled",
+      "note": "All 25 numeric switch keys have exactly identical case actions after removing redundant duplicate array CHECKCAST. Case order changes; fallback remains equivalent."
+    },
+    {
+      "class": "dev/slinky/config/SettingCodec",
+      "method": "decode(Ldev/slinky/setting/Setting;Lcom/google/gson/JsonElement;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/config/SettingCodec",
+      "method": "encode(Ldev/slinky/setting/Setting;)Lcom/google/gson/JsonElement;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/Bootstrap",
+      "method": "start(Ljava/lang/String;Ljava/lang/String;)V",
+      "status": "manual_reconciled",
+      "note": "Resource cleanup/exception control flow recompiled; success close, failure close, primary exception and suppression/discard behavior traced. Newly constructed resources are nonnull; Bootstrap nullable stream still guarded."
+    },
+    {
+      "class": "dev/slinky/inject/Mappings",
+      "method": "load(Ljava/io/InputStream;)V",
+      "status": "manual_reconciled",
+      "note": "Resource cleanup/exception control flow recompiled; success close, failure close, primary exception and suppression/discard behavior traced. Newly constructed resources are nonnull; Bootstrap nullable stream still guarded."
+    },
+    {
+      "class": "dev/slinky/inject/Mappings",
+      "method": "mapMethod(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/Mappings",
+      "method": "mapMethodByParameters(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/Mappings",
+      "method": "walkSupertypes(Ljava/lang/String;)Ljava/lang/Iterable;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/Platform",
+      "method": "openResource(Ljava/lang/String;)Ljava/io/InputStream;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/Platform$Namespace",
+      "method": "$values()[Ldev/slinky/inject/Platform$Namespace;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Enum values array extracted into private $values helper"
+    },
+    {
+      "class": "dev/slinky/inject/Platform$Namespace",
+      "method": "<clinit>()V",
+      "status": "manual_reconciled",
+      "note": "Enum values array creation is moved into private $values helper, preserving array order and field initialization."
+    },
+    {
+      "class": "dev/slinky/inject/Reflect",
+      "method": "descriptor(Ljava/lang/Class;)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/ReflectionHelper",
+      "method": "findField(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/reflect/Field;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/ReflectionHelper",
+      "method": "findMethod(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$0()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$1(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$10(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$12()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$13(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$14()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$15(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$17()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$18(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$19(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$24()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$25(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$30()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$31(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$34(I)Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$35(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "manual_reconciled",
+      "note": "Temporary saves old maxLocals value via DUP_X1 while incrementing instead of reading twice; later factory reference renamed to matched helper."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$4()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$5(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$7()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$8(Ldev/slinky/shaded/asm/tree/MethodNode;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$create$9()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$0()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$12()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$14()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$17()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$24()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$30()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$34(I)Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$4()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$7()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "lambda$null$9()Ldev/slinky/shaded/asm/tree/InsnList;",
+      "status": "synthetic_helper_reconciled",
+      "note": "Ten lambda$null$N to lambda$create$N pairs have exactly equal bodies and descriptors; matching bootstrap references change accordingly."
+    },
+    {
+      "class": "dev/slinky/inject/transform/SlinkyPatches",
+      "method": "redirectInputLoop(Ldev/slinky/shaded/asm/tree/MethodNode;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/TransformerEngine",
+      "method": "apply(Ldev/slinky/inject/transform/SlinkyPatches$ClassEdits;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/inject/transform/TransformerEngine$GameClassWriter",
+      "method": "getCommonSuperClass(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+      "method": "stringConcat$0(I)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+      "method": "visitAnnotation(Ljava/lang/String;Ljava/lang/String;)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+      "method": "visitArray(Ljava/lang/String;)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/AnnotationWriter",
+      "method": "putAnnotations(ILdev/slinky/shaded/asm/ByteVector;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/AnnotationWriter",
+      "method": "putParameterAnnotations(I[Ldev/slinky/shaded/asm/AnnotationWriter;ILdev/slinky/shaded/asm/ByteVector;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Attribute",
+      "method": "computeAttributesSize(Ldev/slinky/shaded/asm/SymbolTable;[BIII)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Attribute",
+      "method": "putAttributes(Ldev/slinky/shaded/asm/SymbolTable;[BIIILdev/slinky/shaded/asm/ByteVector;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Attribute",
+      "method": "write(Ldev/slinky/shaded/asm/Attribute;Ldev/slinky/shaded/asm/ClassWriter;[BIII)[B",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Attribute$Set",
+      "method": "addAttributes(Ldev/slinky/shaded/asm/Attribute;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "encodeUtf8(Ljava/lang/String;II)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "put11(II)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "put112(III)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "put12(II)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "put122(III)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "putByte(I)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "putByteArray([BII)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "putInt(I)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "putLong(J)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "putShort(I)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "method": "putUTF8(Ljava/lang/String;)Ldev/slinky/shaded/asm/ByteVector;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "<init>([BIZ)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "accept(Ldev/slinky/shaded/asm/ClassVisitor;[Ldev/slinky/shaded/asm/Attribute;I)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "computeBufferSize(Ljava/io/InputStream;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "computeImplicitFrame(Ldev/slinky/shaded/asm/Context;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "createDebugLabel(I[Ldev/slinky/shaded/asm/Label;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "createLabel(I[Ldev/slinky/shaded/asm/Label;)Ldev/slinky/shaded/asm/Label;",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "getTypeAnnotationBytecodeOffset([II)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readClass(I[C)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readCode(Ldev/slinky/shaded/asm/MethodVisitor;Ldev/slinky/shaded/asm/Context;I)V",
+      "status": "manual_and_case_flow_reconciled",
+      "note": "All 444 opcode/default cases (222 in each scan/emission switch) independently have equal reachable labeled CFGs, with cursor/buffer/chars/maxStack/maxLocals/length/labels input locals anchored to header values. Try-catch table, attribute headers, frame setup and visitor footer separately compare equal. Header reads and remaining attribute/visitor-header/final-local-variable differences manually traced: explicit cursor copy vs postincrement, complementary compressed/expanded condition, and decrement movement across a plain local reference load. Evidence audit-readcode-cases.json and audit-readcode-regions.json."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readConst(I[C)Ljava/lang/Object;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readElementValue(Ldev/slinky/shaded/asm/AnnotationVisitor;ILjava/lang/String;[C)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readElementValues(Ldev/slinky/shaded/asm/AnnotationVisitor;IZ[C)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readField(Ldev/slinky/shaded/asm/ClassVisitor;Ldev/slinky/shaded/asm/Context;I)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readMethod(Ldev/slinky/shaded/asm/ClassVisitor;Ldev/slinky/shaded/asm/Context;I)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readModule(I[C)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readModuleAttributes(Ldev/slinky/shaded/asm/ClassVisitor;Ldev/slinky/shaded/asm/Context;IILjava/lang/String;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readPackage(I[C)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readParameterAnnotations(Ldev/slinky/shaded/asm/MethodVisitor;Ldev/slinky/shaded/asm/Context;IZ)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readRecordComponent(Ldev/slinky/shaded/asm/ClassVisitor;Ldev/slinky/shaded/asm/Context;I)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readStackMapFrame(IZZLdev/slinky/shaded/asm/Context;)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readStream(Ljava/io/InputStream;Z)[B",
+      "status": "manual_reconciled",
+      "note": "Resource cleanup/exception control flow recompiled; success close, failure close, primary exception and suppression/discard behavior traced. Newly constructed resources are nonnull; Bootstrap nullable stream still guarded."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readTypeAnnotationTarget(Ldev/slinky/shaded/asm/Context;I)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readTypeAnnotations(Ldev/slinky/shaded/asm/MethodVisitor;Ldev/slinky/shaded/asm/Context;IZ)[I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readUTF8(I[C)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readUtf(II[C)Ljava/lang/String;",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readUtf(I[C)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "readVerificationTypeInfo(I[Ljava/lang/Object;I[C[Ldev/slinky/shaded/asm/Label;)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "stringConcat$0(S)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassTooLargeException",
+      "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassVisitor",
+      "method": "stringConcat$0(I)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassVisitor",
+      "method": "visitAnnotation(Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassVisitor",
+      "method": "visitField(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ldev/slinky/shaded/asm/FieldVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassVisitor",
+      "method": "visitMethod(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ldev/slinky/shaded/asm/MethodVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassVisitor",
+      "method": "visitModule(Ljava/lang/String;ILjava/lang/String;)Ldev/slinky/shaded/asm/ModuleVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassVisitor",
+      "method": "visitRecordComponent(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/slinky/shaded/asm/RecordComponentVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassVisitor",
+      "method": "visitTypeAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassWriter",
+      "method": "getAttributePrototypes()[Ldev/slinky/shaded/asm/Attribute;",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassWriter",
+      "method": "getCommonSuperClass(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassWriter",
+      "method": "replaceAsmInstructions([BZ)[B",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassWriter",
+      "method": "toByteArray()[B",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassWriter",
+      "method": "visitAnnotation(Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassWriter",
+      "method": "visitTypeAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ConstantDynamic",
+      "method": "getSize()I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ConstantDynamic",
+      "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Constants",
+      "method": "checkIsPreview(Ljava/io/InputStream;)V",
+      "status": "manual_reconciled",
+      "note": "Resource cleanup/exception control flow recompiled; success close, failure close, primary exception and suppression/discard behavior traced. Newly constructed resources are nonnull; Bootstrap nullable stream still guarded."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Constants",
+      "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Constants",
+      "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Constants",
+      "method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/FieldVisitor",
+      "method": "stringConcat$0(I)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/FieldVisitor",
+      "method": "visitAnnotation(Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/FieldVisitor",
+      "method": "visitTypeAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/FieldWriter",
+      "method": "visitAnnotation(Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/FieldWriter",
+      "method": "visitTypeAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "accept(Ldev/slinky/shaded/asm/MethodWriter;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "execute(IILdev/slinky/shaded/asm/Symbol;Ldev/slinky/shaded/asm/SymbolTable;)V",
+      "status": "switch_case_flow_equal",
+      "note": "All 200 opcode entries plus default independently have equal reachable labeled CFGs with fixed input parameter slots and case-local temporary renaming. Nested switch branches included. Evidence audit-frame-cases.json."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "getAbstractTypeFromApiFormat(Ldev/slinky/shaded/asm/SymbolTable;Ljava/lang/Object;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "getAbstractTypeFromDescriptor(Ldev/slinky/shaded/asm/SymbolTable;Ljava/lang/String;I)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "getConcreteOutputType(II)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "getLocal(I)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "merge(Ldev/slinky/shaded/asm/SymbolTable;I[II)Z",
+      "status": "manual_reconciled",
+      "note": "Branch blocks moved; input/output stack and type merge paths preserved. x + (-67108864) becomes x - 67108864, equivalent for Java wrapping integer arithmetic."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "merge(Ldev/slinky/shaded/asm/SymbolTable;Ldev/slinky/shaded/asm/Frame;I)Z",
+      "status": "manual_reconciled",
+      "note": "Branch blocks moved; input/output stack and type merge paths preserved. x + (-67108864) becomes x - 67108864, equivalent for Java wrapping integer arithmetic."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "pop()I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "pop(I)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "pop(Ljava/lang/String;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "push(Ldev/slinky/shaded/asm/SymbolTable;Ljava/lang/String;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "putAbstractType(Ldev/slinky/shaded/asm/SymbolTable;ILdev/slinky/shaded/asm/ByteVector;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "method": "stringConcat$2(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Handle",
+      "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Handler",
+      "method": "removeRange(Ldev/slinky/shaded/asm/Handler;Ldev/slinky/shaded/asm/Label;Ldev/slinky/shaded/asm/Label;)Ldev/slinky/shaded/asm/Handler;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "method": "addForwardReference(III)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "method": "addLineNumber(I)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "method": "addSubroutineRetSuccessors(Ldev/slinky/shaded/asm/Label;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "method": "markSubroutine(S)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "method": "put(Ldev/slinky/shaded/asm/ByteVector;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "method": "put(Ldev/slinky/shaded/asm/ByteVector;IZ)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "method": "resolve([BLdev/slinky/shaded/asm/ByteVector;I)Z",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "method": "stringConcat$0(I)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodTooLargeException",
+      "method": "stringConcat$0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "stringConcat$0(I)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "visitAnnotation(Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "visitAnnotationDefault()Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "visitInsnAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "visitLdcInsn(Ljava/lang/Object;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "visitLocalVariableAnnotation(ILdev/slinky/shaded/asm/TypePath;[Ldev/slinky/shaded/asm/Label;[Ldev/slinky/shaded/asm/Label;[ILjava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "visitMethodInsn(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "visitParameterAnnotation(ILjava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "visitTryCatchAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "method": "visitTypeAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "canCopyMethodAttributes(Ldev/slinky/shaded/asm/ClassReader;ZZIII)Z",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "computeAllFrames()V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "computeMaxStackAndLocal()V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "putFrame()V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "putMethodInfo(Ldev/slinky/shaded/asm/ByteVector;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitAnnotation(Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitFieldInsn(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitFrame(II[Ljava/lang/Object;I[Ljava/lang/Object;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitFrameEnd()V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitIincInsn(II)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitInsn(I)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitInsnAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitInvokeDynamicInsn(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;[Ljava/lang/Object;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitJumpInsn(ILdev/slinky/shaded/asm/Label;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitLabel(Ldev/slinky/shaded/asm/Label;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitLdcInsn(Ljava/lang/Object;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitLocalVariable(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Label;Ldev/slinky/shaded/asm/Label;I)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitLocalVariableAnnotation(ILdev/slinky/shaded/asm/TypePath;[Ldev/slinky/shaded/asm/Label;[Ldev/slinky/shaded/asm/Label;[ILjava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitLookupSwitchInsn(Ldev/slinky/shaded/asm/Label;[I[Ldev/slinky/shaded/asm/Label;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitMaxs(II)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitMethodInsn(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitMultiANewArrayInsn(Ljava/lang/String;I)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitSwitchInsn(Ldev/slinky/shaded/asm/Label;[Ldev/slinky/shaded/asm/Label;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitTableSwitchInsn(IILdev/slinky/shaded/asm/Label;[Ldev/slinky/shaded/asm/Label;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitTryCatchAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitTypeAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "method": "visitVarInsn(II)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ModuleVisitor",
+      "method": "stringConcat$0(I)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+      "method": "stringConcat$0(I)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+      "method": "visitAnnotation(Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+      "method": "visitTypeAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/RecordComponentWriter",
+      "method": "visitAnnotation(Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/RecordComponentWriter",
+      "method": "visitTypeAnnotation(ILdev/slinky/shaded/asm/TypePath;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "<init>(Ldev/slinky/shaded/asm/ClassWriter;Ldev/slinky/shaded/asm/ClassReader;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addBootstrapMethod(III)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addBootstrapMethod(Ldev/slinky/shaded/asm/Handle;[Ljava/lang/Object;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstant(Ljava/lang/Object;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantClass(Ljava/lang/String;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantDouble(D)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantDynamic(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;[Ljava/lang/Object;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantDynamicOrInvokeDynamicReference(IILjava/lang/String;Ljava/lang/String;I)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantDynamicOrInvokeDynamicReference(ILjava/lang/String;Ljava/lang/String;I)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantFieldref(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantFloat(F)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantInteger(I)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantIntegerOrFloat(II)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantIntegerOrFloat(III)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantInvokeDynamic(Ljava/lang/String;Ljava/lang/String;Ldev/slinky/shaded/asm/Handle;[Ljava/lang/Object;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantLong(J)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantLongOrDouble(IIJ)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantLongOrDouble(IJ)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantMemberReference(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantMemberReference(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/slinky/shaded/asm/SymbolTable$Entry;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantMethodHandle(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantMethodHandle(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantMethodType(Ljava/lang/String;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantMethodref(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantModule(Ljava/lang/String;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantNameAndType(ILjava/lang/String;Ljava/lang/String;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantNameAndType(Ljava/lang/String;Ljava/lang/String;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantPackage(Ljava/lang/String;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantString(Ljava/lang/String;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantUtf8(ILjava/lang/String;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantUtf8(Ljava/lang/String;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantUtf8Reference(IILjava/lang/String;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addConstantUtf8Reference(ILjava/lang/String;)Ldev/slinky/shaded/asm/Symbol;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addForwardUninitializedType(Ljava/lang/String;Ldev/slinky/shaded/asm/Label;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addMergedType(II)I",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addType(Ljava/lang/String;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addTypeInternal(Ldev/slinky/shaded/asm/SymbolTable$Entry;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "addUninitializedType(Ljava/lang/String;I)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "copyBootstrapMethods(Ldev/slinky/shaded/asm/ClassReader;[C)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "getConstantMethodHandleSymbolData(IZ)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "method": "stringConcat$0(Ljava/lang/Object;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "method": "appendDescriptor(Ljava/lang/Class;Ljava/lang/StringBuilder;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "method": "getArgumentsAndReturnSizes(Ljava/lang/String;)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "method": "getDescriptor()Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "method": "getMethodDescriptor(Ldev/slinky/shaded/asm/Type;[Ldev/slinky/shaded/asm/Type;)Ljava/lang/String;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "method": "getOpcode(I)I",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "method": "getTypeInternal(Ljava/lang/String;II)Ldev/slinky/shaded/asm/Type;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "method": "stringConcat$0(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "method": "stringConcat$1(Ljava/lang/String;)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/TypePath",
+      "method": "fromString(Ljava/lang/String;)Ldev/slinky/shaded/asm/TypePath;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/TypeReference",
+      "method": "putTarget(ILdev/slinky/shaded/asm/ByteVector;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureReader",
+      "method": "parseType(Ljava/lang/String;ILdev/slinky/shaded/asm/signature/SignatureVisitor;)I",
+      "status": "manual_reconciled",
+      "note": "Recovered SignatureReader scope changes checked: class names, inner-class and type-argument visitor calls, offset advance, array/type-variable/base cases, and exception case preserved."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureVisitor",
+      "method": "stringConcat$0(I)Ljava/lang/String;",
+      "status": "metadata_reconciled",
+      "note": "String-concat helper retains its body but loses ACC_SYNTHETIC (reflection-visible)"
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureWriter",
+      "method": "visitEnd()V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureWriter",
+      "method": "visitInnerClassType(Ljava/lang/String;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureWriter",
+      "method": "visitParameterType()Ldev/slinky/shaded/asm/signature/SignatureVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureWriter",
+      "method": "visitReturnType()Ldev/slinky/shaded/asm/signature/SignatureVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureWriter",
+      "method": "visitSuperclass()Ldev/slinky/shaded/asm/signature/SignatureVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/ClassNode",
+      "method": "check(I)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/FieldNode",
+      "method": "accept(Ldev/slinky/shaded/asm/ClassVisitor;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/FrameNode",
+      "method": "<init>(II[Ljava/lang/Object;I[Ljava/lang/Object;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnList",
+      "method": "add(Ldev/slinky/shaded/asm/tree/InsnList;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnList",
+      "method": "get(I)Ldev/slinky/shaded/asm/tree/AbstractInsnNode;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnList",
+      "method": "insert(Ldev/slinky/shaded/asm/tree/AbstractInsnNode;Ldev/slinky/shaded/asm/tree/InsnList;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnList",
+      "method": "insert(Ldev/slinky/shaded/asm/tree/InsnList;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnList",
+      "method": "insertBefore(Ldev/slinky/shaded/asm/tree/AbstractInsnNode;Ldev/slinky/shaded/asm/tree/InsnList;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnList$InsnListIterator",
+      "method": "<init>(Ldev/slinky/shaded/asm/tree/InsnList;I)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/LookupSwitchInsnNode",
+      "method": "accept(Ldev/slinky/shaded/asm/MethodVisitor;)V",
+      "status": "manual_reconciled",
+      "note": "Manually reconciled compiler temporary/local reuse, explicit cursor copies/increments, equivalent DUP versus local reload, switch case order, or common return placement. No changed calls, constants or arithmetic behavior found."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodNode",
+      "method": "accept(Ldev/slinky/shaded/asm/MethodVisitor;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodNode",
+      "method": "visitFrame(II[Ljava/lang/Object;I[Ljava/lang/Object;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodNode",
+      "method": "visitLocalVariableAnnotation(ILdev/slinky/shaded/asm/TypePath;[Ldev/slinky/shaded/asm/Label;[Ldev/slinky/shaded/asm/Label;[ILjava/lang/String;Z)Ldev/slinky/shaded/asm/AnnotationVisitor;",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodNode",
+      "method": "visitLookupSwitchInsn(Ldev/slinky/shaded/asm/Label;[I[Ldev/slinky/shaded/asm/Label;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodNode",
+      "method": "visitMethodInsn(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodNode",
+      "method": "visitTableSwitchInsn(IILdev/slinky/shaded/asm/Label;[Ldev/slinky/shaded/asm/Label;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/ModuleNode",
+      "method": "accept(Ldev/slinky/shaded/asm/ClassVisitor;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/RecordComponentNode",
+      "method": "accept(Ldev/slinky/shaded/asm/ClassVisitor;)V",
+      "status": "normalized_flow_equal",
+      "note": "Labeled instruction/control-flow graph equal after private invocation normalization, jump threading, negated branch layout and one-to-one local renaming; handler edges included."
+    }
+  ],
+  "class_metadata": [
+    {
+      "class": "dev/slinky/inject/Bootstrap$1",
+      "class_changes": {
+        "access": [
+          48,
+          32
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/inject/Platform$1",
+      "class_changes": {
+        "access": [
+          48,
+          32
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/AnnotationVisitor",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/AnnotationWriter",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Attribute",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Attribute$Set",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ByteVector",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassReader",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassTooLargeException",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassVisitor",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ClassWriter",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ConstantDynamic",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Constants",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Context",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/CurrentFrame",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Edge",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/FieldVisitor",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/FieldWriter",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Frame",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Handle",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Handler",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Label",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodTooLargeException",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodVisitor",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/MethodWriter",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ModuleVisitor",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/ModuleWriter",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Opcodes",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/RecordComponentVisitor",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/RecordComponentWriter",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Symbol",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable$Entry",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/SymbolTable$LabelEntry",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/Type",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/TypePath",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/TypeReference",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureReader",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureVisitor",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/signature/SignatureWriter",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/AbstractInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/AnnotationNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/ClassNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/FieldInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/FieldNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/FrameNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/IincInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InnerClassNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnList",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnList$InsnListIterator",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/IntInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/InvokeDynamicInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/JumpInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/LabelNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/LdcInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/LineNumberNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/LocalVariableAnnotationNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/LocalVariableNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/LookupSwitchInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MethodNode$1",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/ModuleExportNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/ModuleNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/ModuleOpenNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/ModuleProvideNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/ModuleRequireNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/MultiANewArrayInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/ParameterNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/RecordComponentNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/TableSwitchInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/TryCatchBlockNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/TypeAnnotationNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/TypeInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/UnsupportedClassVersionException",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/Util",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    },
+    {
+      "class": "dev/slinky/shaded/asm/tree/VarInsnNode",
+      "class_changes": {
+        "version": [
+          49,
+          52
+        ]
+      },
+      "field_changes": {}
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+#include <windows.h>
+200 RCDATA "C:/Users/Mohamed/Desktop/Slinky-cross-platform-source/Slinky-source/build/native/Debug/SlinkyNative.dll"
+1 RT_MANIFEST "C:/Users/Mohamed/Desktop/Slinky-cross-platform-source/Slinky-source/native/launcher.manifest"

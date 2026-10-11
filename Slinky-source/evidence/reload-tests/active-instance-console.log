@@ -1,0 +1,17 @@
+Slinky startup diagnostics
+
+Extracted DLL: C:\Users\GIGAZE~1\AppData\Local\Temp\slinky-32740\SlinkyNative.dll
+Found 1 visible Java game window(s).
+  PID 27960: Lunar Client 1.8.9 (7c5e05c/dev)
+Loading Slinky into PID 27960...
+Watching startup log: C:\Users\GIGAZE~1\AppData\Local\Temp\slinky-32740\slinky-native.log
+The DLL is loaded. Waiting for Slinky to finish starting (up to 250 seconds total).
+Ctrl+C stops waiting; it does not unload anything already loaded into the game.
+[2026-10-10 06:23:32.946] SlinkyNative loaded into PID 27960
+[2026-10-10 06:23:32.959] detected Minecraft 1.8.9 with named names
+[2026-10-10 06:23:32.959] Slinky is already active; no classes or native methods were replaced
+[2026-10-10 06:23:32.959] FINAL STATUS: ALREADY_RUNNING
+[2026-10-10 06:23:32.959] unused bootstrap unloading
+
+SKIPPED: Slinky has an active instance in this game; no reload was attempted.
+Unload it from the Slinky menu, then run this launcher again.

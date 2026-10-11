@@ -1,0 +1,367 @@
+{
+  "original": "C:\\Users\\GigaZelensky\\Documents\\Codex\\2026-10-10\\conmt\\work\\original-101.json",
+  "original_sha256": "e71f5d4da5a5259099b86da919b1b470011716553c32a25e50374d21f6fd4d01",
+  "rebuilt": "C:\\Users\\GigaZelensky\\Documents\\Codex\\2026-10-10\\conmt\\outputs\\Slinky-source\\build\\java-audit\\rebuilt-101.json",
+  "rebuilt_sha256": "6a2ba2520fd38a0cb68a7765c40db97b2d56e1677cc5b03a1c6568a9bfd11595",
+  "verified_methods": 4,
+  "failed_methods": 0,
+  "whole_body_exact_methods": 2,
+  "corrected_fragments_exact": 3,
+  "methods": [
+    {
+      "class": "dev/slinky/module/CoreModules",
+      "method": "sourceOnlyIntervals()Ljava/util/List;",
+      "verified": true,
+      "whole_body_exact": true,
+      "corrected_fragments": []
+    },
+    {
+      "class": "dev/slinky/module/impl/InstantStopModule",
+      "method": "choose(DDDD)I",
+      "verified": true,
+      "whole_body_exact": true,
+      "corrected_fragments": []
+    },
+    {
+      "class": "dev/slinky/module/impl/BridgeAssistModule$State",
+      "method": "footprintAir(Ldev/slinky/module/impl/BridgeAssistModule$Input;Ldev/slinky/module/impl/BridgeAssistModule$Settings;Ldev/slinky/client/rotation/RecoveredRandom;D)Z",
+      "verified": true,
+      "whole_body_exact": false,
+      "corrected_fragments": [
+        {
+          "start_instruction_zero_based": 97,
+          "end_instruction_exclusive": 107,
+          "meaning": "x=baseX+(velocity[0]+generated[0])",
+          "exact_instruction_match": true,
+          "original": [
+            [
+              24,
+              7
+            ],
+            [
+              25,
+              18
+            ],
+            [
+              3
+            ],
+            [
+              49
+            ],
+            [
+              25,
+              17
+            ],
+            [
+              3
+            ],
+            [
+              49
+            ],
+            [
+              99
+            ],
+            [
+              99
+            ],
+            [
+              57,
+              19
+            ]
+          ],
+          "rebuilt": [
+            [
+              24,
+              7
+            ],
+            [
+              25,
+              18
+            ],
+            [
+              3
+            ],
+            [
+              49
+            ],
+            [
+              25,
+              17
+            ],
+            [
+              3
+            ],
+            [
+              49
+            ],
+            [
+              99
+            ],
+            [
+              99
+            ],
+            [
+              57,
+              19
+            ]
+          ]
+        },
+        {
+          "start_instruction_zero_based": 115,
+          "end_instruction_exclusive": 125,
+          "meaning": "z=baseZ+(velocity[2]+generated[1])",
+          "exact_instruction_match": true,
+          "original": [
+            [
+              24,
+              11
+            ],
+            [
+              25,
+              18
+            ],
+            [
+              5
+            ],
+            [
+              49
+            ],
+            [
+              25,
+              17
+            ],
+            [
+              4
+            ],
+            [
+              49
+            ],
+            [
+              99
+            ],
+            [
+              99
+            ],
+            [
+              57,
+              23
+            ]
+          ],
+          "rebuilt": [
+            [
+              24,
+              11
+            ],
+            [
+              25,
+              18
+            ],
+            [
+              5
+            ],
+            [
+              49
+            ],
+            [
+              25,
+              17
+            ],
+            [
+              4
+            ],
+            [
+              49
+            ],
+            [
+              99
+            ],
+            [
+              99
+            ],
+            [
+              57,
+              23
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class": "dev/slinky/module/impl/CriticalsModule",
+      "method": "onEvent(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "verified": true,
+      "whole_body_exact": false,
+      "corrected_fragments": [
+        {
+          "start_instruction_zero_based": 146,
+          "end_instruction_exclusive": 164,
+          "meaning": "accumulated=double(float(1-speed))*(elapsedSeconds*20)+accumulated",
+          "exact_instruction_match": true,
+          "original": [
+            [
+              25,
+              0
+            ],
+            [
+              180,
+              "dev/slinky/module/impl/CriticalsModule",
+              "state",
+              "Ldev/slinky/module/impl/CriticalsModule$State;"
+            ],
+            [
+              12
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              18,
+              "String:timer_speed"
+            ],
+            [
+              182,
+              "dev/slinky/module/impl/CriticalsModule",
+              "number",
+              "(Ljava/lang/String;)F",
+              false
+            ],
+            [
+              102
+            ],
+            [
+              141
+            ],
+            [
+              25,
+              2
+            ],
+            [
+              180,
+              "dev/slinky/client/SemanticEvent",
+              "elapsedSeconds",
+              "D"
+            ],
+            [
+              18,
+              "Double:4034000000000000"
+            ],
+            [
+              107
+            ],
+            [
+              107
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              180,
+              "dev/slinky/module/impl/CriticalsModule",
+              "state",
+              "Ldev/slinky/module/impl/CriticalsModule$State;"
+            ],
+            [
+              180,
+              "dev/slinky/module/impl/CriticalsModule$State",
+              "accumulated",
+              "D"
+            ],
+            [
+              99
+            ],
+            [
+              181,
+              "dev/slinky/module/impl/CriticalsModule$State",
+              "accumulated",
+              "D"
+            ]
+          ],
+          "rebuilt": [
+            [
+              25,
+              0
+            ],
+            [
+              180,
+              "dev/slinky/module/impl/CriticalsModule",
+              "state",
+              "Ldev/slinky/module/impl/CriticalsModule$State;"
+            ],
+            [
+              12
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              18,
+              "String:timer_speed"
+            ],
+            [
+              182,
+              "dev/slinky/module/impl/CriticalsModule",
+              "number",
+              "(Ljava/lang/String;)F",
+              false
+            ],
+            [
+              102
+            ],
+            [
+              141
+            ],
+            [
+              25,
+              2
+            ],
+            [
+              180,
+              "dev/slinky/client/SemanticEvent",
+              "elapsedSeconds",
+              "D"
+            ],
+            [
+              18,
+              "Double:4034000000000000"
+            ],
+            [
+              107
+            ],
+            [
+              107
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              180,
+              "dev/slinky/module/impl/CriticalsModule",
+              "state",
+              "Ldev/slinky/module/impl/CriticalsModule$State;"
+            ],
+            [
+              180,
+              "dev/slinky/module/impl/CriticalsModule$State",
+              "accumulated",
+              "D"
+            ],
+            [
+              99
+            ],
+            [
+              181,
+              "dev/slinky/module/impl/CriticalsModule$State",
+              "accumulated",
+              "D"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": "Static exported instruction comparison on variant101. InstantStop and CoreModules match complete original bodies including handlers. BridgeAssist x/z and Criticals accumulation fixes match exact original instruction sequences, proving restored operand grouping at those sites; entire remaining methods are not claimed byte-for-byte equal. Other variants validated by parent separately. No classfile loading, game execution or build."
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "path": "slinky",
+    "size": 1526,
+    "sha256": "1c00220af74f492b530e72873f2405b2ff68d58a6924a45f1037d749b122bb38"
+  },
+  {
+    "path": "slinky-launcher.jar",
+    "size": 7750,
+    "sha256": "116ca68131efc99b3b171c3c11bc84c9c4035d4d4b613901e31fafb7121ce38a"
+  },
+  {
+    "path": "libSlinkyNative.so",
+    "size": 119904,
+    "sha256": "593571262e2d77cdd364ea80ef933cc8d1cf23ea733cb08eb5933d320eaf59fd"
+  },
+  {
+    "path": "payload-101.jar",
+    "size": 1781428,
+    "sha256": "f82f1095ff56149755687c8ebd49e38b444235ac9c81ecad1e3984b3c4b47cbd"
+  },
+  {
+    "path": "payload-102.jar",
+    "size": 2042293,
+    "sha256": "708b79140cba9981b7c7ad32074099c648be86f735485f03230715a499d0dd2b"
+  },
+  {
+    "path": "payload-103.jar",
+    "size": 1980973,
+    "sha256": "af0f1b12126d9c3236f5fc62b6a0fb757f69b085035640f3e5b36c8ad9d254a3"
+  },
+  {
+    "path": "README-linux.txt",
+    "size": 2137,
+    "sha256": "2d322d77ce7e371e34c386b93587dad38222830f7cd241b291e921c92b58aaae"
+  }
+]

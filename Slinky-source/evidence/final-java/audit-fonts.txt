@@ -1,0 +1,38 @@
+dev/slinky/client/render/FontCff run(Ldev/slinky/client/render/FontCff$Info;ILdev/slinky/client/render/FontCff$Context;)Z
+No discrepancy found in static case transfer comparison and source review.
+All byte opcodes0..255 and stack depths0..48, including malformed operand counts and stack overflow rejection.
+Stem opcodes1/3/18/23 accumulate sp/2; hint/counter masks19/20 add header stems only while header is set and skip(maskBits+7)/8.
+Move4/21/22 consume final operands, reset header and clear operand stack.
+Line5 and alternating lines6/7 preserve argument order, per-element orientation and loop stride.
+Curve8, rcurveline24, rlinecurve25 preserve operand guards, six/two-element loop strides and final operation.
+vv/hh curves26/27 retain optional first coordinate, axis placement and reset after first curve.
+hv/vh curves30/31 retain optional fifth coordinate, alternating axis and four-element loop strides.
+Local/global subroutines10/29 retain local-subr selection, stack pop, return buffer store, depth limit10, empty-subroutine failure and cursor reset; return11 rejects empty call stack.
+All256 escaped bytevalues for opcode12; flex34/35/36 preserve grouping/argument order, flex37 matches both abs-axis branches and their exact symbolic condition expressions.
+Default numeric parsing preserves op255 fixed-point multiply and integer-to-short conversion for other operands, 48-element stack limit and clear=false.
+Endchar14 closes context and returns true; buffer exhaustion returns false. Initialization0..39 and shared stack-reset/loop cleanup were separately inspected.
+Limits: Static abstract transfer only. Float operands remain expression trees; helpers are abstract calls and mutations are events. Selected call depths0/9/10 cover distinct depth guard paths; helper implementations and full-font integration are outside this method check.
+
+dev/slinky/client/render/FontRasterization fill([F[FLjava/util/List;FF)V
+No discrepancy found in static expression/effect comparisons and source review.
+Vertical edge branch dx==0: x>=width skipped, x>=0 clips current column and fill column+1, negative x fills column0.
+Nonzero slope: start/end clipping expressions and inside-width guard retain operand grouping.
+Same-column interior edge computes same triangle fraction, scan contribution and fill delta.
+Multi-column interior edge: negative slope flips both y endpoints, negates dy, swaps x endpoints, changes origin to unclip and recomputes first/last.
+Cross, initial area, first triangle, intermediate-column half-step/area accumulation, final partial area and fill delta preserve expression grouping.
+Out-of-bounds slow path preserves full crossing in either direction, left-only split, right-only split, or unsplit clipping calls, in the same order.
+Guide values cover widths0/1/3/8, positive/negative/zero slopes, edge start/end clipping, multiple spans, NaN/infinity/signed-zero x or slope. All original/rebuilt instructions were visited.
+RenderConstants operand bytes independently read as1.0,-0.5,0.5 at2837728/2837740/2837744.
+Limits: Own abstract model interprets JSON instructions; it never loads/executes Java classes, payloads or helper code. Helper clips are recorded effects. Float expressions permit operand commutation of addition while retaining grouping; raw NaN payload bits are not claimed. Finite guide enumeration is not a universal proof.
+
+dev/slinky/client/render/FontRasterization rasterize([BIIIIFLjava/util/List;FFFFIIZLdev/slinky/client/render/FontRasterization$Scratch;)V
+No substantive discrepancy found in manual bytecode/path and source review; no mechanical whole-method proof claimed.
+Empty vertex input returns before effects; contour count0 skips reserve; reserve checks contourCount*4,total*8,total*20+20 and width*8+4 are in identical order and use identical arithmetic.
+Tolerance flatness/min(scaleY,scaleX), squared tolerance and two contours calls retain exact operand order. invert negates scaleY after the second contours call.
+Contours select previous last point; horizontal edges skipped; invert decides traversal orientation. Edge constructor gets identical transformed endpoint coordinates and direction.
+Array conversion/sort, width>=65 reserve and height>0 guard preserve early-exit side effects and allocation ordering.
+Each row clears scan/fill, removes expired active edges and releases pool before adding newly visible sorted edges.
+Edge y0/y1 and allocation guards, dx,dy,x,direction,start/end construction, first-row end clamp and front insertion are identical. Temporary edge/active locals31/32 move to32/33 because javac preserves the iterator local separately.
+fill(scan,fill,active,top,bottom) occurs before coverage output. Prefix sum, abs mask, coverage*scale+half, recovered integer truncation, upper255 clamp and output index offset+stride*row+x are identical.
+Final active x update remains dx+x; row and y increment once each. No float reassociation was introduced in the inspected calculations.
+Limits: Manual static path audit to original code. Helper behavior assumed unchanged when called with identical inputs; concurrent list/state mutation, resource exceptions and a live renderer were not exercised.

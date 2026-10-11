@@ -1,0 +1,100 @@
+FINAL JAVA VERIFICATION — 10 OCTOBER 2026
+
+The first source reconstruction was not functionally identical to the Java inside
+the original executable. This review found and corrected real decompiler defects.
+The final source and rebuilt binaries in this package include those corrections.
+
+What changed
+
+17 methods contained arithmetic grouping or lost-temporary defects:
+- DoubleNumeric.floor: restored the negative-number rounding expression. The
+  former reconstruction could return -1.25 for floor(-1.25); the original returns -2.
+- InstantStopModule.choose: preserved the previous minimum before overwriting it,
+  so the original stopping-direction decision is retained.
+- BridgeAssistModule.State.footprintAir and CriticalsModule.onEvent: restored
+  original calculation grouping.
+- TargetCombatStatus.boxDistance/squared, TimingAccess.squared,
+  PlacementGeometry.squared, RenderMath.distanceSquared/model/row/project,
+  RotationMath.distance, CanvasPath.roundCap,
+  RecoveredGui.Layout.next, RecoveredGuiScreen.buildFramePlan and
+  TrajectoryPrediction.charge: restored original floating-point operation order.
+
+Two additional methods were brought closer to the original: RenderAccess.execute
+now evaluates rendering receivers and arguments in the original order, and
+CoreModules.sourceOnlyIntervals uses the original Module[] component type.
+Twelve default constructors regained their original strict floating-point flag.
+
+Fresh-build checks also found and fixed build-script defects: wildcard dependency
+paths inside compiler argument files, missing manifests after namespace remapping,
+and the absent dependency-preparation/toolchain-detection steps described by the
+previous README. A fresh full Java/native build now passes its artifact checks.
+
+Verification scope and results
+
+The original EXE was read again and its embedded DLL and all three JARs extracted
+as data. Their hashes matched the earlier extraction. Original EXE SHA-256:
+501d7c83e2010937350fee800e37631e1499ec9b2693a32493db71e5f40b0272
+
+For EACH of the three naming variants:
+- 509 original class names present, none missing or added.
+- Every one of the 3,815 original method definitions compared; 284 are abstract
+  or native declarations with no Java instruction body.
+- 3,132 method bodies/declarations match directly, including uniquely paired
+  compiler-generated helper bodies. Of these, 2,848 have executable instructions.
+- 511 more match under conservative instruction-flow comparison: jump layout,
+  inverse branch layout, one-to-one local-slot renaming and verified private-call
+  opcode differences. Parameters retain their identities; arithmetic grouping
+  and exception-handler destinations are not ignored.
+- The remaining 172 require the separate scope/alias-aware comparisons and
+  manual static review. The scripts retain them as unresolved graph matches;
+  manual review does not turn them into machine-proved equivalence.
+- Field declarations, values and metadata match.
+- Assets and mappings match byte for byte: 22 nonclass resources in named, 23
+  in each mapped variant, excluding the separately checked JAR manifest.
+- Manifest title/version match. Added build-tool metadata is recorded separately.
+- All rebuilt references to game members resolve in each naming variant.
+- All original methods have a matching original ID or uniquely matched generated
+  helper; the four extra methods are three enum array helpers and one command
+  comparison bridge. Their implementations were reviewed.
+- Semantic method access flags match, including synchronized/static/native/
+  abstract/strict. Some synthetic markers and generic signatures differ.
+
+All 810 initial difference records received a scoped review. The supporting
+reports distinguish direct/flow matches, manual reasoning, discovered defects,
+and compiler metadata differences. Large switches were checked by case, with
+their surrounding setup/cleanup traced separately.
+
+The complete rebuilt resource chain was checked: EXE resource 200 equals the
+built DLL, whose resources 101–103 equal the corrected built JARs. dist/ contains
+those verified fresh outputs. Build verification and hashes are saved in
+build-verification.json; method/resource verification in java-verification.json.
+
+What this establishes, and what it does not
+
+The check found material errors that the earlier compilation/signature/startup
+checks missed, and the corrected expressions/decision were checked against the
+original instructions after recompilation. No additional normal-use mismatch was
+identified by the completed static review.
+
+This is thorough static reconstruction verification, not a universal mathematical
+proof that every possible execution is identical. Some compiler-generated
+details, reflective metadata, malformed-input behavior and concurrent external
+mutation remain outside that claim. In particular, InnerClasses metadata differs
+in 40 classes and 48 methods gain MethodParameters metadata. Generated helper
+names, synthetic markers and generic signatures also differ. Classfiles and JARs
+are not byte-identical. Debug data, stack frames and reflection-visible details
+are not part of the instruction-flow equivalence claim.
+
+Neither the original specimen nor the corrected launcher/DLL/payloads were
+executed during this review. The retained Lunar startup/menu logs describe the
+earlier build and do not constitute a runtime test of these corrected binaries.
+
+Repeatable static checks
+
+After build.ps1, run:
+python tools/verify-build.py
+python tools/verify-java.py PATH_TO_THE_EXACT_ORIGINAL_Slinky.exe
+
+The latter uses pinned independent ASM to parse classfiles as data. It does not
+load any inspected class. Per-method flow outputs, metadata changes, resource
+checks and specimen/build hashes are saved in evidence/.

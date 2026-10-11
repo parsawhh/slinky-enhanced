@@ -1,0 +1,39 @@
+REA static IDA connection completed successfully.
+
+Original input: C:/Users/GigaZelensky/Downloads/slinkyinspect/Slinky.exe
+Original SHA256 verified after analysis:
+501d7c83e2010937350fee800e37631e1499ec9b2693a32493db71e5f40b0272
+
+Evidence: work/rea-native.json
+Evidence ID: ev_ca88bfc6883fcd95aa7e97c6d5468783b2bc855b142bdb5c038dda8bc4cbf63e
+Operation: REA analyze_function WinMain at 0x140001000.
+REA CLI: rea-agents@6.3.0, IDA adapter version 1, headless database-supervisor profile.
+IDA library version separately observed by idapro.get_library_version(): (9, 2, 250904).
+Upstream MCP source commit: c133c3853faa111a9b00ee615c013b720d0c4acd
+Upstream repository: https://github.com/mrexodia/ida-pro-mcp
+
+No global activation or Codex configuration changes were performed. Registration is
+work/rea-ida-mcp.json. Source is in work/ida-mcp-source. Libraries were installed only
+under work/rea-ida-deps. Current upstream package declares Python >=3.11, while the
+existing IDA installation uses Python 3.10. A local sitecustomize shim supplies
+typing_extensions TypedDict/NotRequired/Required/is_typeddict and tomli as tomllib.
+This is a local compatibility accommodation, not a claim of upstream supported
+Python 3.10 operation. Both worker imports and the actual analysis succeeded.
+
+The upstream worker tool profile permits only read-only static analysis operations.
+The unsafe tool flag was not set. No debugger or sample execution was requested.
+REA copied the original into its digest-verified private analysis directory,
+completed auto-analysis and Hex-Rays, then released the database without saving.
+After the command returned, no ida_pro_mcp Python supervisor/worker processes
+remained and its private rea-ida-* analysis directory had been removed.
+
+WinMain observation: extracts embedded RCDATA 200 into the process-specific temporary
+directory %TEMP%/slinky-<PID>/SlinkyNative.dll, enumerates candidate Minecraft
+processes using sub_140001490, calls sub_140001780 directly if exactly one candidate
+exists, otherwise shows the SlinkyLauncher process-selection UI. The error message
+requests Administrator rights and Minecraft 1.8.9. These are static code observations,
+not observed runtime effects.
+
+The REA evidence limitations explicitly state unsupported body ranges, direct callers
+in the modern profile, full CFG/typed references/source locals, and database revision.
+Empty unsupported evidence fields mean unknown rather than absence.

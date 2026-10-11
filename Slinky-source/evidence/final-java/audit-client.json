@@ -1,0 +1,2424 @@
+{
+  "scope": "dev/slinky/client plus dev/slinky/SlinkyMod, original/rebuilt101 before parent fixes",
+  "counts": {
+    "flow_equivalent": 158,
+    "reasoned_equivalent_under_supported_contract": 44,
+    "exact_body": 30,
+    "resource_cleanup_compiler_template": 20,
+    "added_bridge_same_inherited_comparison": 1,
+    "confirmed_floating_grouping_defect": 14,
+    "verified_scope_or_alias_flow": 4,
+    "synthetic_helper_renumbering": 10,
+    "inspected_unresolved": 3,
+    "corrected_evaluation_order_validated": 1
+  },
+  "raw_records": 285,
+  "changed_bodies": 241,
+  "strictfp_constructor_losses": 12,
+  "strictfp_note": "All12 default-constructor ACC_STRICT flags restored and verified against fresh rebuilt101; no remaining client constructor mismatch.",
+  "bridge_note": "Read-only javap of Minecraft named dependency confirms inherited bridge casts ICommand then invokes typed compareTo. Rebuilt bridge calls same typed superclass implementation with invokespecial.",
+  "arithmetic_examples": "work/client_examples.py independently evaluates trusted Python formulas with bytes read from NumericConstants.json; no Java sample classes loaded or executed. floor(-1.25): original -2 vs rebuilt -1.25; float 2^24+(1+1):16777218 vs (2^24+1)+1:16777216.",
+  "pending": "Only FontCff.run/FontRasterization.fill/rasterize await separate font-agent integration. All14 arithmetic corrections verified from fresh built bytecode; RenderAccess full main region and nested handler ranges match after compiler slot/offset shift; outer javac resource template reasoned equivalent.",
+  "limitations": "Static verification of supported sequential behavior; arbitrary concurrency, reflection metadata, NPE stack-trace wording and NaN payload provenance are not claimed identical. Three font cases await separate agent integration.",
+  "methods": [
+    {
+      "index": 0,
+      "class": "dev/slinky/SlinkyMod",
+      "method": "slinkyDirectory()Ljava/nio/file/Path;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 1,
+      "class": "dev/slinky/client/BindingInput",
+      "method": "dispatch(Ldev/slinky/module/ModuleManager;IZ)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 2,
+      "class": "dev/slinky/client/BindingInput",
+      "method": "update(III)Z",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Original local7 equals local6 at changed load (no intervening assignment); identical bitwise state transition and invalid-ID throw."
+    },
+    {
+      "index": 3,
+      "class": "dev/slinky/client/ClientEventBridge",
+      "method": "attachPipeline()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 4,
+      "class": "dev/slinky/client/ClientEventBridge",
+      "method": "clientTick(Z)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 5,
+      "class": "dev/slinky/client/ClientEventBridge",
+      "method": "disconnect()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 6,
+      "class": "dev/slinky/client/ClientEventBridge",
+      "method": "renderTick(Z)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 7,
+      "class": "dev/slinky/client/ClientEventBridge",
+      "method": "screenKeyInput(Lnet/minecraft/client/gui/GuiScreen;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 8,
+      "class": "dev/slinky/client/ClientEventBridge",
+      "method": "screenMouseInput(Lnet/minecraft/client/gui/GuiScreen;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 9,
+      "class": "dev/slinky/client/ClientEventBridge",
+      "method": "sendChatMessage(Ljava/lang/String;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 10,
+      "class": "dev/slinky/client/ClientEventBridge$1",
+      "method": "<init>(Ldev/slinky/client/ClientEventBridge;)V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 11,
+      "class": "dev/slinky/client/ClientEventBridge$2",
+      "method": "<init>(Ldev/slinky/client/ClientEventBridge;Lio/netty/channel/Channel;)V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 12,
+      "class": "dev/slinky/client/GuiMenuCommand",
+      "method": "handle(Lnet/minecraft/client/gui/GuiScreen;IZLdev/slinky/module/ModuleManager;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 13,
+      "class": "dev/slinky/client/GuiModuleList",
+      "method": "actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 14,
+      "class": "dev/slinky/client/InputQuery",
+      "method": "query(Ldev/slinky/client/InputQuery$Request;Ldev/slinky/client/InputQuery$Host;)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 15,
+      "class": "dev/slinky/client/InputRouter",
+      "method": "dispatch(Ldev/slinky/client/InputQuery$Request;Z)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 16,
+      "class": "dev/slinky/client/InputRouter",
+      "method": "profileBindings(IB)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 17,
+      "class": "dev/slinky/client/ItemPolicyService",
+      "method": "<clinit>()V",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 18,
+      "class": "dev/slinky/client/KeyState",
+      "method": "readNames()[Ljava/lang/String;",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 19,
+      "class": "dev/slinky/client/NativeKeyMap",
+      "method": "capturedId(I)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 20,
+      "class": "dev/slinky/client/RecoveredMath",
+      "method": "ceiling(F)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 21,
+      "class": "dev/slinky/client/RecoveredMath",
+      "method": "floatDistance(FF)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 22,
+      "class": "dev/slinky/client/RecoveredMath",
+      "method": "truncateInt(D)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 23,
+      "class": "dev/slinky/client/RecoveredMath",
+      "method": "truncateInt(F)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 24,
+      "class": "dev/slinky/client/RecoveredMath",
+      "method": "truncateLong(D)J",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 25,
+      "class": "dev/slinky/client/RecoveredMath",
+      "method": "truncateLong(F)J",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 26,
+      "class": "dev/slinky/client/SlinkyCommand",
+      "method": "compareTo(Ljava/lang/Object;)I",
+      "normalizer": null,
+      "classification": "added_bridge_same_inherited_comparison",
+      "evidence": "Added public synthetic bridge casts ICommand and calls CommandBase.compareTo(ICommand); original inherits Object bridge with same cast/typed implementation. SlinkyCommand is final and has no typed override; reflection declared method set differs."
+    },
+    {
+      "index": 27,
+      "class": "dev/slinky/client/SlinkyCommand",
+      "method": "importConfiguration(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Catch-only IOException temporary reuses slot3 instead of slot5; it is immediately stored then consumed without preserving live value."
+    },
+    {
+      "index": 28,
+      "class": "dev/slinky/client/SlinkyCommand",
+      "method": "processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 29,
+      "class": "dev/slinky/client/StatusText",
+      "method": "read()Ljava/util/Map;",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 30,
+      "class": "dev/slinky/client/action/ActionAccess",
+      "method": "hitKind(Lnet/minecraft/util/MovingObjectPosition;)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 31,
+      "class": "dev/slinky/client/action/ActionAccess$1",
+      "method": "emit(Ldev/slinky/client/ClientContext;IZ)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 32,
+      "class": "dev/slinky/client/action/ActionConstants",
+      "method": "<clinit>()V",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 33,
+      "class": "dev/slinky/client/hook/ForgeUiSurface",
+      "method": "close()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 34,
+      "class": "dev/slinky/client/hook/ForgeUiSurface",
+      "method": "createBuffer()Z",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 35,
+      "class": "dev/slinky/client/hook/ForgeUiSurface",
+      "method": "draw(F)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 36,
+      "class": "dev/slinky/client/hook/ForgeUiSurface",
+      "method": "end()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 37,
+      "class": "dev/slinky/client/hook/ForgeUiSurface",
+      "method": "open(Z)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 38,
+      "class": "dev/slinky/client/hook/ForgeUiSurface",
+      "method": "present(D)V",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 39,
+      "class": "dev/slinky/client/hook/ForgeUiSurface",
+      "method": "resize(II)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 40,
+      "class": "dev/slinky/client/hook/ForgeUiSurface",
+      "method": "update(F)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 41,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "afterEntities(Lnet/minecraft/world/World;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 42,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "afterFrameRender()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 43,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "afterInteraction(Z)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 44,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "afterMoveFlying(Lnet/minecraft/entity/Entity;Ldev/slinky/client/SemanticEvent;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 45,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "beforeDisplay()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 46,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "beforeDisplay(D)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 47,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "beforeEntities(Lnet/minecraft/world/World;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 48,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "beforeSend(Lnet/minecraft/network/NetworkManager;Lnet/minecraft/network/Packet;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 49,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "beginRay(F)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 50,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "preRender()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 51,
+      "class": "dev/slinky/client/hook/GameHooks",
+      "method": "updateController()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 52,
+      "class": "dev/slinky/client/hook/GlCacheResync",
+      "method": "run()V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "clear() owner changes from ByteBuffer/FloatBuffer to Buffer with identical descriptor; resolves inherited Buffer implementation."
+    },
+    {
+      "index": 53,
+      "class": "dev/slinky/client/hook/GlStateCacheSnapshot",
+      "method": "capture()Ldev/slinky/client/hook/GlStateCacheSnapshot;",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Return is moved inside catch range, but added load/return cannot throw ReflectiveOperationException; all throwing calls retain handler."
+    },
+    {
+      "index": 54,
+      "class": "dev/slinky/client/hook/GlStateCacheSnapshot",
+      "method": "captureObject(Ljava/lang/Object;Ljava/util/Set;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 55,
+      "class": "dev/slinky/client/hook/GlStateCacheSnapshot",
+      "method": "discover()Ljava/util/List;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 56,
+      "class": "dev/slinky/client/hook/GlStateScope",
+      "method": "<init>(Ldev/slinky/client/hook/GlStateScope$Attributes;Ljava/lang/Runnable;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 57,
+      "class": "dev/slinky/client/hook/GlStateScope",
+      "method": "close()V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Bound method-reference null guard changes discarded Object.getClass to discarded Objects.requireNonNull; same receiver/null outcome."
+    },
+    {
+      "index": 58,
+      "class": "dev/slinky/client/hook/GlStateScope",
+      "method": "open()Ldev/slinky/client/hook/GlStateScope;",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Bound method-reference null guard changes discarded Object.getClass to discarded Objects.requireNonNull; same receiver/null outcome."
+    },
+    {
+      "index": 59,
+      "class": "dev/slinky/client/hook/GlStateScope",
+      "method": "restore(Ljava/lang/Runnable;Ljava/lang/Throwable;)Ljava/lang/Throwable;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 60,
+      "class": "dev/slinky/client/hook/RayQueryAdapter",
+      "method": "choose(IDDD)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 61,
+      "class": "dev/slinky/client/hook/RayQueryAdapter",
+      "method": "update(Ldev/slinky/module/ModuleManager;Ldev/slinky/client/SemanticEvent;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 62,
+      "class": "dev/slinky/client/hook/RenderHooks",
+      "method": "beforeDisplay()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 63,
+      "class": "dev/slinky/client/hook/RenderHooks",
+      "method": "blockEvent(Lnet/minecraft/world/World;IIIII)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 64,
+      "class": "dev/slinky/client/hook/TargetCombatStatus",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 65,
+      "class": "dev/slinky/client/hook/TargetCombatStatus",
+      "method": "boxDistance(Lnet/minecraft/util/Vec3;Lnet/minecraft/entity/Entity;)D",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/hook/TargetCombatStatus",
+        "method": "boxDistance(Lnet/minecraft/util/Vec3;Lnet/minecraft/entity/Entity;)D",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 66,
+      "class": "dev/slinky/client/hook/TargetCombatStatus",
+      "method": "prepare(Ldev/slinky/client/ClientContext;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 67,
+      "class": "dev/slinky/client/hook/TargetCombatStatus",
+      "method": "sample(ZLnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;DDDFFFF)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 68,
+      "class": "dev/slinky/client/hook/TargetCombatStatus",
+      "method": "select(Ldev/slinky/client/ClientContext;Ldev/slinky/module/ModuleManager;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 69,
+      "class": "dev/slinky/client/hook/TargetCombatStatus",
+      "method": "squared(DDDLnet/minecraft/util/Vec3;)D",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/hook/TargetCombatStatus",
+        "method": "squared(DDDLnet/minecraft/util/Vec3;)D",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 70,
+      "class": "dev/slinky/client/inventory/ConsumableDelay",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 71,
+      "class": "dev/slinky/client/inventory/InventoryActions",
+      "method": "truncateDouble(D)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 72,
+      "class": "dev/slinky/client/inventory/InventoryActions",
+      "method": "truncateDoubleLong(D)J",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 73,
+      "class": "dev/slinky/client/inventory/InventoryActions",
+      "method": "type(Lnet/minecraft/item/ItemStack;)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 74,
+      "class": "dev/slinky/client/inventory/InventorySelection",
+      "method": "armor(Ldev/slinky/client/inventory/InventorySelection$Stack;I)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 75,
+      "class": "dev/slinky/client/inventory/InventorySelection",
+      "method": "category(ILdev/slinky/client/inventory/InventorySelection$Stack;)I",
+      "normalizer": "unresolved",
+      "classification": "verified_scope_or_alias_flow",
+      "evidence": "Full conservative instruction-flow and handler graph equivalent after explicitly justified per-scope local renaming or established alias substitution. See work/client_manual_maps.py and client-manual-map-results.json. Potion branch indices95..153 swaps score/effect slots4/5. Material branch216+ renames packed classifier/kind/tier/preference/material locals, independent of returning switch cases."
+    },
+    {
+      "index": 76,
+      "class": "dev/slinky/client/inventory/InventorySelection",
+      "method": "material(I)J",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 77,
+      "class": "dev/slinky/client/inventory/InventorySelection",
+      "method": "planHotbar([Ldev/slinky/client/inventory/InventorySelection$Stack;IIZJ)Ldev/slinky/client/inventory/InventorySelection$Action;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 78,
+      "class": "dev/slinky/client/inventory/InventorySelection",
+      "method": "weighted([[II)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 79,
+      "class": "dev/slinky/client/inventory/InventorySelection$Stack",
+      "method": "sameTags(Ldev/slinky/client/inventory/InventorySelection$Stack;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 80,
+      "class": "dev/slinky/client/inventory/RefillSelection",
+      "method": "choose([BIFLdev/slinky/client/inventory/RefillSelection$Gates;)Ldev/slinky/client/inventory/RefillSelection$Result;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 81,
+      "class": "dev/slinky/client/inventory/RefillSelection",
+      "method": "classify(IIZZZ)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 82,
+      "class": "dev/slinky/client/numeric/DoubleNumeric",
+      "method": "floor(D)D",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/numeric/DoubleNumeric",
+        "method": "floor(D)D",
+        "exact_body": false,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 83,
+      "class": "dev/slinky/client/numeric/DoubleNumeric",
+      "method": "remainder(DD)D",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 84,
+      "class": "dev/slinky/client/numeric/DoubleNumeric",
+      "method": "sqrt(D)D",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Long multiplication is regrouped; Java long arithmetic is modulo 2^64, so reassociation is exact. DUP2 replacing store/reload preserves value."
+    },
+    {
+      "index": 85,
+      "class": "dev/slinky/client/numeric/DoubleTrigonometry",
+      "method": "reduce(D[D)I",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Explicit zero initialization matches new double-array default values. Changed loads refer to established aliases22=11 and27=11 at each use."
+    },
+    {
+      "index": 86,
+      "class": "dev/slinky/client/numeric/FloatNumeric",
+      "method": "log(F)F",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Log polynomial uses new slots and collapses input alias; same per-operation polynomial expressions, with t1/t2 final addition commuted on finite positive-domain path."
+    },
+    {
+      "index": 87,
+      "class": "dev/slinky/client/numeric/FloatNumeric",
+      "method": "remainder(FF)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 88,
+      "class": "dev/slinky/client/numeric/FloatTrigonometry",
+      "method": "cosine(F)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 89,
+      "class": "dev/slinky/client/numeric/FloatTrigonometry",
+      "method": "sine(F)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 90,
+      "class": "dev/slinky/client/numeric/LargeReduction",
+      "method": "convolution([D[DII)D",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Convolution swaps sum and single product as operands to one DADD; no reassociation of three terms."
+    },
+    {
+      "index": 91,
+      "class": "dev/slinky/client/numeric/LargeReduction",
+      "method": "reduce([D[DIII)I",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Repeated chunk-index arithmetic replaces DUP2; same array/index values. Finite coefficient/product addition order commuted without regrouping."
+    },
+    {
+      "index": 92,
+      "class": "dev/slinky/client/numeric/NumericConstants",
+      "method": "<clinit>()V",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 93,
+      "class": "dev/slinky/client/packet/NetworkSendAdapter",
+      "method": "consumeDirect(Lnet/minecraft/network/NetworkManager;Lnet/minecraft/network/Packet;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 94,
+      "class": "dev/slinky/client/packet/NetworkSendAdapter",
+      "method": "sendDirect(Lnet/minecraft/network/NetworkManager;Lnet/minecraft/network/Packet;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 95,
+      "class": "dev/slinky/client/packet/PacketPipeline",
+      "method": "accept(Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/channel/ChannelPromise;Z)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 96,
+      "class": "dev/slinky/client/packet/PacketPipeline",
+      "method": "releaseAll(Z)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 97,
+      "class": "dev/slinky/client/packet/PacketPipeline$2",
+      "method": "<init>(Ldev/slinky/module/ModuleManager;)V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 98,
+      "class": "dev/slinky/client/packet/PacketPipeline$3",
+      "method": "<init>(ZLio/netty/channel/ChannelHandlerContext;Ldev/slinky/client/packet/PacketPipeline;)V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 99,
+      "class": "dev/slinky/client/packet/TimingAccess",
+      "method": "facingPlayer(Ldev/slinky/client/ClientContext;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 100,
+      "class": "dev/slinky/client/packet/TimingAccess",
+      "method": "squared(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)D",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/packet/TimingAccess",
+        "method": "squared(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)D",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 101,
+      "class": "dev/slinky/client/placement/PlacementGeometry",
+      "method": "rayPoint([DLnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)Lnet/minecraft/util/Vec3;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 102,
+      "class": "dev/slinky/client/placement/PlacementGeometry",
+      "method": "squared(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)D",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/placement/PlacementGeometry",
+        "method": "squared(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)D",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 103,
+      "class": "dev/slinky/client/placement/PlacementSelection",
+      "method": "blockInRank(I)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 104,
+      "class": "dev/slinky/client/placement/PlacementSelection",
+      "method": "capture(Ldev/slinky/client/placement/PlacementSelection$Inventory;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 105,
+      "class": "dev/slinky/client/placement/PlacementSelection",
+      "method": "choose([IIIZLjava/util/function/IntUnaryOperator;)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 106,
+      "class": "dev/slinky/client/placement/PlacementSelection",
+      "method": "consume(Ldev/slinky/client/placement/PlacementSelection$Inventory;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 107,
+      "class": "dev/slinky/client/placement/PlacementSelection",
+      "method": "reset()V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "DUP of null/zero assignments becomes repeated constants; field-store order and values identical."
+    },
+    {
+      "index": 108,
+      "class": "dev/slinky/client/placement/PlacementSelection",
+      "method": "select(Ldev/slinky/client/ClientContext;Ljava/lang/Object;ZZ)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 109,
+      "class": "dev/slinky/client/placement/PlacementSelection",
+      "method": "select(Ldev/slinky/client/placement/PlacementSelection$Inventory;Ljava/lang/Object;ZZ)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 110,
+      "class": "dev/slinky/client/placement/PlacementSelection$1",
+      "method": "<init>(Lnet/minecraft/entity/player/InventoryPlayer;)V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 111,
+      "class": "dev/slinky/client/render/BundledGuiFonts",
+      "method": "load(I)Ldev/slinky/client/render/CanvasFonts$Engine;",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 112,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "access$400()[F",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 113,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "access$600()Z",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 114,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "access$600()[F",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 115,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "access$602(Z)Z",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 116,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "access$800()Z",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 117,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "access$802(Z)Z",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 118,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "bindGuiEngine(Ldev/slinky/client/render/CanvasFonts$Engine;)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Duplicate argument reference becomes second ALOAD; field-store order/value identical."
+    },
+    {
+      "index": 119,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "current(I)Ldev/slinky/client/render/CanvasFonts$Engine;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 120,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "draw(Ldev/slinky/client/render/CanvasFonts$Text;IF)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "flip() owner changes ByteBuffer to Buffer with same descriptor and inherited implementation."
+    },
+    {
+      "index": 121,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "release()V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "DUP null assignments become repeated ACONST_NULL; field/store/cleanup order identical."
+    },
+    {
+      "index": 122,
+      "class": "dev/slinky/client/render/CanvasFonts",
+      "method": "render(Ldev/slinky/client/render/CanvasFonts$Text;IF)V",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 123,
+      "class": "dev/slinky/client/render/CanvasFonts$Batch",
+      "method": "<init>(III[B[ILjava/util/List;)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Additional CHECKCAST [F after float[].clone always succeeds; clone preserves array runtime type."
+    },
+    {
+      "index": 124,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "access$100(Ldev/slinky/client/render/CanvasFonts$Engine;)Ljava/util/Map;",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 125,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "access$200(Ldev/slinky/client/render/CanvasFonts$Engine;)Ldev/slinky/client/render/GameFontProvider;",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 126,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "access$200(Ldev/slinky/client/render/CanvasFonts$Engine;)Ljava/util/Map;",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 127,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "access$300(Ldev/slinky/client/render/CanvasFonts$Engine;)Ljava/util/Map;",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 128,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "access$400(Ldev/slinky/client/render/CanvasFonts$Engine;)Ljava/util/Map;",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 129,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "access$500(Ldev/slinky/client/render/CanvasFonts$Engine;)Ldev/slinky/client/render/FontAtlasService$Canvas;",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 130,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "access$500(Ldev/slinky/client/render/CanvasFonts$Engine;)Ljava/util/Map;",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 131,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "access$700(Ldev/slinky/client/render/CanvasFonts$Engine;)Ldev/slinky/client/render/FontAtlasService$Canvas;",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 132,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "access$800(Ldev/slinky/client/render/CanvasFonts$Engine;)Ldev/slinky/client/render/GameFontProvider;",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 133,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "bounds(Ljava/lang/String;FFFI[F)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 134,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine",
+      "method": "text(Ljava/lang/String;FFFI[F)Ldev/slinky/client/render/CanvasFonts$Text;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 135,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine$1",
+      "method": "create(IIII[B)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 136,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine$1",
+      "method": "dimensions(I[I)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 137,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine$1",
+      "method": "upload(IIIII[B)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 138,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine$2",
+      "method": "<init>(Ldev/slinky/client/render/CanvasFonts$Engine;Ldev/slinky/client/render/FontServices$Iterator;Ljava/util/List;)V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 139,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine$2",
+      "method": "allocateTextAtlas()Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 140,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine$2",
+      "method": "draw(Ljava/util/List;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 141,
+      "class": "dev/slinky/client/render/CanvasFonts$Engine$2",
+      "method": "uploadDirtyTexture()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 142,
+      "class": "dev/slinky/client/render/CanvasFonts$GuiFaceScope",
+      "method": "<init>()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 143,
+      "class": "dev/slinky/client/render/CanvasFonts$GuiFaceScope",
+      "method": "close()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 144,
+      "class": "dev/slinky/client/render/CanvasPath",
+      "method": "bezier(Ldev/slinky/client/render/CanvasPath$Path;FFFFFFFFII)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 145,
+      "class": "dev/slinky/client/render/CanvasPath",
+      "method": "expandFill(F)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 146,
+      "class": "dev/slinky/client/render/CanvasPath",
+      "method": "expandStroke(FFIIF)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 147,
+      "class": "dev/slinky/client/render/CanvasPath",
+      "method": "flatten()V",
+      "normalizer": "unresolved",
+      "classification": "verified_scope_or_alias_flow",
+      "evidence": "Full conservative instruction-flow and handler graph equivalent after explicitly justified per-scope local renaming or established alias substitution. See work/client_manual_maps.py and client-manual-map-results.json. Post-command phase170+ shifts locals>=2 by one after command index/kind expire; subsequent bounds, winding, edge lengths and directions preserve exact FP operation order."
+    },
+    {
+      "index": 148,
+      "class": "dev/slinky/client/render/CanvasPath",
+      "method": "joins(FIF)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Point mx/my compound assignments use DUP receiver instead of repeated same local reference; identical products and stores."
+    },
+    {
+      "index": 149,
+      "class": "dev/slinky/client/render/CanvasPath",
+      "method": "roundCap(Ljava/util/List;Ldev/slinky/client/render/CanvasPath$Point;FFFIFFZ)V",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/render/CanvasPath",
+        "method": "roundCap(Ljava/util/List;Ldev/slinky/client/render/CanvasPath$Point;FFFIFFZ)V",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 150,
+      "class": "dev/slinky/client/render/CanvasPath",
+      "method": "transform([F)Ldev/slinky/client/render/CanvasPath;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 151,
+      "class": "dev/slinky/client/render/CanvasShader",
+      "method": "available()Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 152,
+      "class": "dev/slinky/client/render/DrawPlan",
+      "method": "push()Ldev/slinky/client/render/DrawPlan;",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Additional CHECKCAST [F after float[].clone always succeeds."
+    },
+    {
+      "index": 153,
+      "class": "dev/slinky/client/render/DrawPlan",
+      "method": "scale(FFF)Ldev/slinky/client/render/DrawPlan;",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Array compound multiply replaced DUP2 with repeated final local field/index expression; no intervening call/write within expression."
+    },
+    {
+      "index": 154,
+      "class": "dev/slinky/client/render/FontCff",
+      "method": "integer(Ldev/slinky/client/render/FontCff$Buffer;)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 155,
+      "class": "dev/slinky/client/render/FontCff",
+      "method": "line(Ldev/slinky/client/render/FontCff$Context;FF)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Context compound assignment uses DUP receiver instead of repeated local; identical add/store."
+    },
+    {
+      "index": 156,
+      "class": "dev/slinky/client/render/FontCff",
+      "method": "move(Ldev/slinky/client/render/FontCff$Context;FF)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Context x/y compound assignment commutes two finite add operands and uses DUP receiver; preserves both field-store targets."
+    },
+    {
+      "index": 157,
+      "class": "dev/slinky/client/render/FontCff",
+      "method": "privateSubroutines(Ldev/slinky/client/render/FontCff$Buffer;Ldev/slinky/client/render/FontCff$Buffer;)Ldev/slinky/client/render/FontCff$Buffer;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 158,
+      "class": "dev/slinky/client/render/FontCff",
+      "method": "run(Ldev/slinky/client/render/FontCff$Info;ILdev/slinky/client/render/FontCff$Context;)Z",
+      "normalizer": "unresolved",
+      "classification": "inspected_unresolved",
+      "evidence": "Full large CFF opcode-switch diffs inspected; reordered opcode blocks and temporaries. Formal per-opcode/local-scope mapping not completed."
+    },
+    {
+      "index": 159,
+      "class": "dev/slinky/client/render/FontCff",
+      "method": "subroutine(Ldev/slinky/client/render/FontCff$Buffer;I)Ldev/slinky/client/render/FontCff$Buffer;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 160,
+      "class": "dev/slinky/client/render/FontCff$Buffer",
+      "method": "byteValue()I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 161,
+      "class": "dev/slinky/client/render/FontCff$Buffer",
+      "method": "range(II)Ldev/slinky/client/render/FontCff$Buffer;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 162,
+      "class": "dev/slinky/client/render/FontCff$Buffer",
+      "method": "seek(I)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 163,
+      "class": "dev/slinky/client/render/FontGeometry",
+      "method": "cubic(Ljava/util/List;FFFFFFFFFI)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 164,
+      "class": "dev/slinky/client/render/FontGeometry",
+      "method": "quadratic(Ljava/util/List;FFFFFFFI)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 165,
+      "class": "dev/slinky/client/render/FontGeometry",
+      "method": "quickSort([Ldev/slinky/client/render/FontGeometry$Edge;II)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 166,
+      "class": "dev/slinky/client/render/FontGlyphCache",
+      "method": "glyph(IISI)Ldev/slinky/client/render/FontServices$Glyph;",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Integer three-term addition regroup is exact modulo 2^32. Moved early-return block retains predicate."
+    },
+    {
+      "index": 167,
+      "class": "dev/slinky/client/render/FontGlyphCache",
+      "method": "makeBitmap(Ldev/slinky/client/render/FontTables$Font;[BIIIIFFFFI)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 168,
+      "class": "dev/slinky/client/render/FontRasterization",
+      "method": "clipped([FILdev/slinky/client/render/FontRasterization$Active;FFFF)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Scan array compound adds use DUP2 instead of repeated reference/index; finite add operands commuted without reassociation."
+    },
+    {
+      "index": 169,
+      "class": "dev/slinky/client/render/FontRasterization",
+      "method": "fill([F[FLjava/util/List;FF)V",
+      "normalizer": "unresolved",
+      "classification": "inspected_unresolved",
+      "evidence": "Full fill clipping/scan diffs inspected; block movement and local aliases dominate. Formal branch/local-state mapping not completed."
+    },
+    {
+      "index": 170,
+      "class": "dev/slinky/client/render/FontRasterization",
+      "method": "rasterize([BIIIIFLjava/util/List;FFFFIIZLdev/slinky/client/render/FontRasterization$Scratch;)V",
+      "normalizer": "unresolved",
+      "classification": "inspected_unresolved",
+      "evidence": "Rasterize guards/local scopes reordered, edge/scan instructions inspected. Formal slot mapping across all scopes not completed."
+    },
+    {
+      "index": 171,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 172,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "access$000(I)F",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 173,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "access$000(I)I",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 174,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "access$100(I)F",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 175,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "access$100(Ldev/slinky/client/render/FontServices$Face;ZIFIIIIZ)F",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 176,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "access$200(I)I",
+      "normalizer": null,
+      "classification": "synthetic_helper_renumbering",
+      "evidence": "Compiler-generated helper matched by descriptor and exact body (the calling helper references change consistently)."
+    },
+    {
+      "index": 177,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "access$200(Ldev/slinky/client/render/FontServices$Face;ZIFIIIIZ)F",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 178,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "bounds(Ldev/slinky/client/render/FontServices$Face;FF[BIFFFIZFF[F)F",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Initial x alias removed; x/y bound temporaries renumbered consistently, loop update and final output positions retained."
+    },
+    {
+      "index": 179,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "drawText(Ldev/slinky/client/render/FontServices$Iterator;FF[FLdev/slinky/client/render/FontServices$TextBackend;Ldev/slinky/client/render/FontServices$TextStats;)F",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Triangle-stat update uses repeated receiver local instead of DUP; identical read/arithmetic/write."
+    },
+    {
+      "index": 180,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "quad(Ldev/slinky/client/render/FontServices$Face;Ldev/slinky/client/render/FontServices$Glyph;IFFLdev/slinky/client/render/FontServices$Cursor;ZFF)Ldev/slinky/client/render/FontServices$Quad;",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Cursor x compound updates use DUP receiver and commute single two-operand FADD; no three-term regroup."
+    },
+    {
+      "index": 181,
+      "class": "dev/slinky/client/render/FontServices",
+      "method": "vertical(Ldev/slinky/client/render/FontServices$Face;ZIFIIIIZ)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 182,
+      "class": "dev/slinky/client/render/FontServices$Atlas",
+      "method": "add(II)[I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 183,
+      "class": "dev/slinky/client/render/FontServices$Glyph",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 184,
+      "class": "dev/slinky/client/render/FontServices$Iterator",
+      "method": "<init>(Ldev/slinky/client/render/FontServices$Face;FF[BFFFIIZFF)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 185,
+      "class": "dev/slinky/client/render/FontServices$Quad",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 186,
+      "class": "dev/slinky/client/render/FontServices$TextStats",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 187,
+      "class": "dev/slinky/client/render/FontServices$Utf8",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 188,
+      "class": "dev/slinky/client/render/FontServices$Utf8",
+      "method": "next(I)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 189,
+      "class": "dev/slinky/client/render/FontTables",
+      "method": "coverage([BII)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 190,
+      "class": "dev/slinky/client/render/FontTables",
+      "method": "glyphClass([BII)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 191,
+      "class": "dev/slinky/client/render/FontTables",
+      "method": "kerning(Ldev/slinky/client/render/FontTables$Font;II)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 192,
+      "class": "dev/slinky/client/render/FontTables",
+      "method": "map(Ldev/slinky/client/render/FontTables$Font;I)I",
+      "normalizer": "unresolved",
+      "classification": "verified_scope_or_alias_flow",
+      "evidence": "Full conservative instruction-flow and handler graph equivalent after explicitly justified per-scope local renaming or established alias substitution. See work/client_manual_maps.py and client-manual-map-results.json. Original10=9 at114/115 proves aliases at changed loads118/125. All later search-base mutations retain slot10, including range-search branch and return predicates."
+    },
+    {
+      "index": 193,
+      "class": "dev/slinky/client/render/FontTables",
+      "method": "offset(Ldev/slinky/client/render/FontTables$Font;I)I",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 194,
+      "class": "dev/slinky/client/render/FontTables",
+      "method": "shape(Ldev/slinky/client/render/FontTables$Font;I)Ljava/util/List;",
+      "normalizer": "unresolved",
+      "classification": "verified_scope_or_alias_flow",
+      "evidence": "Full conservative instruction-flow and handler graph equivalent after explicitly justified per-scope local renaming or established alias substitution. See work/client_manual_maps.py and client-manual-map-results.json. Compound glyph branch473+ renames flag7->9,unit8->7,fraction9->8. All three are initialized within branch before use; exact recursive transformation operations retained."
+    },
+    {
+      "index": 195,
+      "class": "dev/slinky/client/render/GameFontProvider",
+      "method": "<init>(Lnet/minecraft/client/Minecraft;Z)V",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 196,
+      "class": "dev/slinky/client/render/GameFontProvider",
+      "method": "image(Ljava/lang/String;)Ljava/awt/image/BufferedImage;",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 197,
+      "class": "dev/slinky/client/render/GameFontProvider",
+      "method": "shape(I)Ljava/util/List;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 198,
+      "class": "dev/slinky/client/render/GlCanvasBackend",
+      "method": "coverageTriangles(ILjava/util/List;F)Ljava/util/List;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 199,
+      "class": "dev/slinky/client/render/GlCanvasBackend",
+      "method": "draw(ILjava/util/List;Ldev/slinky/client/render/GuiCanvasState$Paint;FZ)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 200,
+      "class": "dev/slinky/client/render/GlCanvasBackend",
+      "method": "triangle(Ljava/util/List;[F[F[FFI)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 201,
+      "class": "dev/slinky/client/render/GuiAppearance",
+      "method": "configureMissing(Ldev/slinky/module/Module;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 202,
+      "class": "dev/slinky/client/render/GuiAppearance",
+      "method": "description(Ldev/slinky/module/Module;)Ljava/lang/String;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 203,
+      "class": "dev/slinky/client/render/GuiCanvasState",
+      "method": "fill(Ldev/slinky/client/render/CanvasPath;Ldev/slinky/client/render/GuiCanvasState$Backend;Ldev/slinky/client/render/GuiCanvasState$Stats;Z)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Stats receiver DUP changes to repeated ALOAD, identical fillTriangles read/write."
+    },
+    {
+      "index": 204,
+      "class": "dev/slinky/client/render/GuiCanvasState",
+      "method": "save()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 205,
+      "class": "dev/slinky/client/render/GuiCanvasState",
+      "method": "stroke(Ldev/slinky/client/render/CanvasPath;Ldev/slinky/client/render/GuiCanvasState$Backend;Ldev/slinky/client/render/GuiCanvasState$Stats;Z)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Stats receiver DUP changes to repeated ALOAD, identical strokeTriangles read/write."
+    },
+    {
+      "index": 206,
+      "class": "dev/slinky/client/render/GuiPresentation",
+      "method": "binding(Ldev/slinky/client/render/RecoveredGui$Runtime;Ldev/slinky/client/render/DrawPlan;Ldev/slinky/client/render/GuiPresentation$Binding;Ldev/slinky/client/render/RenderMath$Rect;[FZ)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 207,
+      "class": "dev/slinky/client/render/GuiPresentation",
+      "method": "tooltip(Ldev/slinky/client/render/DrawPlan;Ldev/slinky/client/render/GuiPresentation$Tooltip;F)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 208,
+      "class": "dev/slinky/client/render/HoldActivation",
+      "method": "update(Ljava/lang/Object;ZZZZD)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 209,
+      "class": "dev/slinky/client/render/InlineModuleSettings",
+      "method": "draw(Ldev/slinky/module/Module;Ldev/slinky/setting/Setting;Ldev/slinky/client/render/RecoveredGui$Runtime;Ldev/slinky/client/render/DrawPlan;Ldev/slinky/client/render/RecoveredGui$Layout;[FD)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "DUP constant assignment split into two constants; same local13/14 values."
+    },
+    {
+      "index": 210,
+      "class": "dev/slinky/client/render/InlineModuleSettings",
+      "method": "filter(Ldev/slinky/module/Module;Ldev/slinky/setting/Setting;)Ldev/slinky/client/render/RecoveredGui$Filter;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 211,
+      "class": "dev/slinky/client/render/InlineModuleSettings",
+      "method": "readItems(Z)Ljava/util/List;",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 212,
+      "class": "dev/slinky/client/render/InlineModuleSettings",
+      "method": "readMetadata()Lcom/google/gson/JsonObject;",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 213,
+      "class": "dev/slinky/client/render/InlineModuleSettings",
+      "method": "readOrder()Ljava/util/Map;",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 214,
+      "class": "dev/slinky/client/render/InlineModuleSettings",
+      "method": "render(Ldev/slinky/module/Module;Ldev/slinky/client/render/RecoveredGui$Runtime;Ldev/slinky/client/render/DrawPlan;Ldev/slinky/client/render/RecoveredGui$Layout;[FD)Ljava/util/List;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 215,
+      "class": "dev/slinky/client/render/InlineModuleSettings",
+      "method": "text(Lcom/google/gson/JsonObject;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 216,
+      "class": "dev/slinky/client/render/InlineModuleSettings$1",
+      "method": "<init>(Ldev/slinky/client/render/InlineModuleSettings;Ldev/slinky/setting/Setting;Ldev/slinky/module/Module;)V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 217,
+      "class": "dev/slinky/client/render/NotificationQueue",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 218,
+      "class": "dev/slinky/client/render/NotificationQueue",
+      "method": "advance(FIZ)I",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Message-age update uses DUP receiver rather than repeated ALOAD; same float operations."
+    },
+    {
+      "index": 219,
+      "class": "dev/slinky/client/render/ProfileIcons",
+      "method": "coverage()[B",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 220,
+      "class": "dev/slinky/client/render/ProfileMath",
+      "method": "ageSeconds(JJ)J",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 221,
+      "class": "dev/slinky/client/render/ProfileMath",
+      "method": "labels()Ljava/util/Map;",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 222,
+      "class": "dev/slinky/client/render/ProfileServices$FilesHost",
+      "method": "bind(Ljava/lang/String;I)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 223,
+      "class": "dev/slinky/client/render/ProfileServices$FilesHost",
+      "method": "ensure(Ljava/nio/file/Path;)V",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 224,
+      "class": "dev/slinky/client/render/ProfileServices$FilesHost",
+      "method": "path(Ljava/lang/String;)Ljava/nio/file/Path;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 225,
+      "class": "dev/slinky/client/render/ProfileServices$FilesHost",
+      "method": "scanDirectory(Ljava/nio/file/Path;Ljava/util/function/LongSupplier;Ldev/slinky/client/render/ProfileServices$RecordReceiver;)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "DirectoryStream local4 aliases local3 throughout changed loads; original cleanup template retained and same close receiver."
+    },
+    {
+      "index": 226,
+      "class": "dev/slinky/client/render/RecoveredGui",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 227,
+      "class": "dev/slinky/client/render/RecoveredGui",
+      "method": "channel(FFF)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 228,
+      "class": "dev/slinky/client/render/RecoveredGui",
+      "method": "floor(F)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 229,
+      "class": "dev/slinky/client/render/RecoveredGui",
+      "method": "hexFilter(Ljava/lang/StringBuilder;I)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 230,
+      "class": "dev/slinky/client/render/RecoveredGui",
+      "method": "numericFilter(Ljava/lang/StringBuilder;I)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 231,
+      "class": "dev/slinky/client/render/RecoveredGui",
+      "method": "profileNameFilter(Ljava/lang/StringBuilder;I)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 232,
+      "class": "dev/slinky/client/render/RecoveredGui",
+      "method": "rgbToHsl([FZZ)[F",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Initial extreme values local6/local7 alias local5 when changed loads occur; subsequent max/min assignments unchanged."
+    },
+    {
+      "index": 233,
+      "class": "dev/slinky/client/render/RecoveredGui$Layout",
+      "method": "flush(F)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 234,
+      "class": "dev/slinky/client/render/RecoveredGui$Layout",
+      "method": "next(F)Ldev/slinky/client/render/RenderMath$Rect;",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/render/RecoveredGui$Layout",
+        "method": "next(F)Ldev/slinky/client/render/RenderMath$Rect;",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 235,
+      "class": "dev/slinky/client/render/RecoveredGui$Runtime",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 236,
+      "class": "dev/slinky/client/render/RecoveredGui$Runtime",
+      "method": "activateText(Ljava/lang/Object;Ldev/slinky/client/render/RecoveredGui$Filter;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 237,
+      "class": "dev/slinky/client/render/RecoveredGui$Runtime",
+      "method": "click(Ldev/slinky/client/render/RenderMath$Rect;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 238,
+      "class": "dev/slinky/client/render/RecoveredGui$Runtime",
+      "method": "colorSlider(Ldev/slinky/client/render/RenderMath$Rect;IF)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 239,
+      "class": "dev/slinky/client/render/RecoveredGui$Runtime",
+      "method": "filterOptions(D)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 240,
+      "class": "dev/slinky/client/render/RecoveredGui$Runtime",
+      "method": "input(IIIIFZ[B)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 241,
+      "class": "dev/slinky/client/render/RecoveredGui$Runtime",
+      "method": "lambda$beginColor$1(Ljava/util/function/Consumer;)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Additional CHECKCAST [F after float[].clone always succeeds."
+    },
+    {
+      "index": 242,
+      "class": "dev/slinky/client/render/RecoveredGui$Runtime",
+      "method": "push(Ldev/slinky/client/render/RenderMath$Rect;FFZ)Ldev/slinky/client/render/RecoveredGui$Layout;",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Input rectangle aliases local5/local1 throughout changed field reads; no assignment changes alias before reads."
+    },
+    {
+      "index": 243,
+      "class": "dev/slinky/client/render/RecoveredGui$Runtime",
+      "method": "takeText()Ljava/lang/String;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 244,
+      "class": "dev/slinky/client/render/RecoveredGui$Slider",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 245,
+      "class": "dev/slinky/client/render/RecoveredGui$Toggle",
+      "method": "<init>()V",
+      "normalizer": "exact_body",
+      "classification": "exact_body",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 246,
+      "class": "dev/slinky/client/render/RecoveredGuiScreen",
+      "method": "buildFramePlan(IIFFFD)Ldev/slinky/client/render/DrawPlan;",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/render/RecoveredGuiScreen",
+        "method": "buildFramePlan(IIFFFD)Ldev/slinky/client/render/DrawPlan;",
+        "exact_body": false,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": {
+          "established_assignment": 537,
+          "live_until": 568,
+          "changed_load_indices": [
+            539,
+            547,
+            550,
+            561,
+            565
+          ],
+          "rule": "ALOAD23->ALOAD12 while23=12 and neither alias reassigned",
+          "body_exact_after_alias_substitution": true
+        }
+      }
+    },
+    {
+      "index": 247,
+      "class": "dev/slinky/client/render/RecoveredGuiScreen",
+      "method": "framePlan(IIFFFD)Ldev/slinky/client/render/DrawPlan;",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 248,
+      "class": "dev/slinky/client/render/RecoveredGuiScreen",
+      "method": "keyTyped(CI)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 249,
+      "class": "dev/slinky/client/render/RecoveredGuiScreen",
+      "method": "renderCategory(Ldev/slinky/client/render/DrawPlan;Ldev/slinky/client/render/RecoveredGui$Layout;DFFF)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 250,
+      "class": "dev/slinky/client/render/RecoveredGuiScreen",
+      "method": "renderProfiles(Ldev/slinky/client/render/DrawPlan;Ldev/slinky/client/render/RecoveredGui$Layout;DFF)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Icon-index local copy removed; loop index not changed until after all current-iteration uses. Other locals renumbered."
+    },
+    {
+      "index": 251,
+      "class": "dev/slinky/client/render/RecoveredText",
+      "method": "append(Ljava/lang/String;)Z",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 252,
+      "class": "dev/slinky/client/render/RenderAccess",
+      "method": "capability(IZ)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 253,
+      "class": "dev/slinky/client/render/RenderAccess",
+      "method": "clearProjection()V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "DUP null assignment split into two null constants; store order identical."
+    },
+    {
+      "index": 254,
+      "class": "dev/slinky/client/render/RenderAccess",
+      "method": "execute(Ldev/slinky/client/render/DrawPlan;)V",
+      "normalizer": "unresolved",
+      "classification": "corrected_evaluation_order_validated",
+      "evidence": "Cleanup template equivalent; source caches/reorders Minecraft getter and checked cast values in text/item branches. Formal whole-method side-effect/exception equivalence not established.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/render/RenderAccess",
+        "method": "execute(Ldev/slinky/client/render/DrawPlan;)V",
+        "supported_body_operation_order_restored": true,
+        "principal_exception_handlers_exact_after_offset_shift": true,
+        "evidence": "Original main region instructions4..830 equals rebuilt2..828 after removal of older compiler primary-Throwable initialization and every live main local>=3 shifted-1. All branch targets shift-2; first8 nested try/finally handler ranges/targets shift-2 and match exactly. Therefore text and item getter/cast sequences and all main operations/normal exception cleanup are restored. Remaining outer resource-close template differs only by documented older/newer javac suppression layout.",
+        "ordinary_supported_behavior_reconciled": true
+      }
+    },
+    {
+      "index": 255,
+      "class": "dev/slinky/client/render/RenderAccess",
+      "method": "frame(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)Ldev/slinky/client/render/RenderAccess$Frame;",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 256,
+      "class": "dev/slinky/client/render/RenderAccess",
+      "method": "pillGradient([F[FF)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 257,
+      "class": "dev/slinky/client/render/RenderConstants",
+      "method": "<clinit>()V",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 258,
+      "class": "dev/slinky/client/render/RenderConstants",
+      "method": "captureBase()J",
+      "normalizer": "unresolved",
+      "classification": "resource_cleanup_compiler_template",
+      "evidence": "Older javac resource template uses primary Throwable local plus catch/finally; newer javac duplicates normal/exception close paths directly. Both preserve body throwable and suppress close throwable, including null guards where resource may be null."
+    },
+    {
+      "index": 259,
+      "class": "dev/slinky/client/render/RenderMath",
+      "method": "distanceSquared([D[D)D",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/render/RenderMath",
+        "method": "distanceSquared([D[D)D",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 260,
+      "class": "dev/slinky/client/render/RenderMath",
+      "method": "model([FIFFF)F",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/render/RenderMath",
+        "method": "model([FIFFF)F",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 261,
+      "class": "dev/slinky/client/render/RenderMath",
+      "method": "project([D[F[FFF)Ldev/slinky/client/render/RenderMath$Projection;",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/render/RenderMath",
+        "method": "project([D[F[FFF)Ldev/slinky/client/render/RenderMath$Projection;",
+        "exact_body": false,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 262,
+      "class": "dev/slinky/client/render/RenderMath",
+      "method": "row([FIFFFF)F",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/render/RenderMath",
+        "method": "row([FIFFFF)F",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 263,
+      "class": "dev/slinky/client/render/TrajectoryPrediction",
+      "method": "charge(I)F",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/render/TrajectoryPrediction",
+        "method": "charge(I)F",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 264,
+      "class": "dev/slinky/client/rotation/RecoveredRandom$Segment",
+      "method": "sample(FFDDLdev/slinky/client/rotation/RecoveredRandom;)F",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Elapsed compound update uses DUP receiver and commutes one DADD; no reassociation."
+    },
+    {
+      "index": 265,
+      "class": "dev/slinky/client/rotation/RecoveredRandom$Smooth",
+      "method": "sample(FFDDLdev/slinky/client/rotation/RecoveredRandom;)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 266,
+      "class": "dev/slinky/client/rotation/RotationMath",
+      "method": "distance(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)D",
+      "normalizer": "unresolved",
+      "classification": "confirmed_floating_grouping_defect",
+      "evidence": "Missing source parentheses changed association of three or more floating operations; exact original bytecode requires original nesting. Parent notified/applied copied-source fixes, rebuild confirmation belongs to parent.",
+      "fresh_fix_validation": {
+        "class": "dev/slinky/client/rotation/RotationMath",
+        "method": "distance(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)D",
+        "exact_body": true,
+        "full_flow_equivalent": true,
+        "justified_alias_normalization": null
+      }
+    },
+    {
+      "index": 267,
+      "class": "dev/slinky/client/rotation/RotationMath",
+      "method": "tieHash(IJ)I",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Final integer result temporary store/load removed; direct return same value."
+    },
+    {
+      "index": 268,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "add(FF)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Compound pendingYaw/Pitch updates commute single FADD operands; field-store order retained."
+    },
+    {
+      "index": 269,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "afterDisplay(Ldev/slinky/client/ClientContext;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 270,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "applyPending(Ldev/slinky/client/ClientContext;Z)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 271,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "beforeDisplay(Ldev/slinky/client/ClientContext;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 272,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "beginCamera(Ldev/slinky/client/ClientContext;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 273,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "beginFrame(Ldev/slinky/client/ClientContext;DF)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "DUP zero assignments split into constants; predicates/field-store order retained."
+    },
+    {
+      "index": 274,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "beginMovement(Ldev/slinky/client/ClientContext;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 275,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "clearManual()V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "DUP zero assignments split into constants; field-store order retained."
+    },
+    {
+      "index": 276,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "endMovement(Ldev/slinky/client/ClientContext;)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Early return layout negated; DUP zero assignments split into constants preserving store order."
+    },
+    {
+      "index": 277,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "finishFrame(Ldev/slinky/client/ClientContext;Ldev/slinky/client/SemanticEvent;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 278,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "finishMouse(Lnet/minecraft/entity/Entity;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 279,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "manualDelta(FF)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "Compound manualYaw/Pitch updates commute single FADD operands; field-store order retained."
+    },
+    {
+      "index": 280,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "prepareMouse(Ldev/slinky/client/ClientContext;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 281,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "quantize(FF)F",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 282,
+      "class": "dev/slinky/client/rotation/RotationService",
+      "method": "reset(Ldev/slinky/client/ClientContext;)V",
+      "normalizer": "unresolved",
+      "classification": "reasoned_equivalent_under_supported_contract",
+      "evidence": "DUP null/zero assignments split into constants; all reset field values/store order retained."
+    },
+    {
+      "index": 283,
+      "class": "dev/slinky/client/rotation/RotationService$RotationSnapshot",
+      "method": "capture(Lnet/minecraft/entity/Entity;)V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    },
+    {
+      "index": 284,
+      "class": "dev/slinky/client/rotation/RotationService$RotationSnapshot",
+      "method": "restore()V",
+      "normalizer": "flow_equivalent",
+      "classification": "flow_equivalent",
+      "evidence": "Parent conservative CFG comparison: exact instructions/handlers or branch-layout equivalence with pinned parameter slots and unique exact-body synthetic helper matching."
+    }
+  ],
+  "fresh_validation_report": "work/audit-client-fixes.json"
+}

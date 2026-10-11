@@ -1,0 +1,32 @@
+Starting Slinky in game PID 1231...
+Log: /tmp/slinky-7973036113806531493/slinky-native.log
+[2026-10-10 07:24:31] SlinkyNative loaded into PID 1231
+[2026-10-10 07:24:31] detected Minecraft 1.8.9 with named names
+[2026-10-10 07:24:31] payload named copied to /tmp/slinky-7973036113806531493/slinky-named-wso2EA.jar
+[2026-10-10 07:24:31] system classpath copy: /tmp/slinky-classpath-mQiiGq/payload.jar
+[2026-10-10 07:24:31] payload appended to the system class loader search
+[2026-10-10 07:24:31] [java] fixture unicode: Привет Linux 🐧; payload=/tmp/slinky-7973036113806531493/slinky-named-wso2EA.jar
+[2026-10-10 07:24:31] [java] fixture started 1; value=42
+[2026-10-10 07:24:31] Slinky is running
+[2026-10-10 07:24:31] FINAL STATUS: RUNNING
+Slinky is running. Press Right Shift in the game to open the menu.
+Starting Slinky in game PID 1231...
+Log: /tmp/slinky-8509941730062885583/slinky-native.log
+[2026-10-10 07:24:31] SlinkyNative loaded into PID 1231
+[2026-10-10 07:24:31] detected Minecraft 1.8.9 with named names
+[2026-10-10 07:24:31] Slinky is already active; no classes or native methods were replaced
+[2026-10-10 07:24:31] FINAL STATUS: ALREADY_RUNNING
+Slinky is already running. Press Right Shift to open the menu.
+Starting Slinky in game PID 1231...
+Log: /tmp/slinky-10822698041418102356/slinky-native.log
+[2026-10-10 07:24:31] SlinkyNative loaded into PID 1231
+[2026-10-10 07:24:31] detected Minecraft 1.8.9 with named names
+[2026-10-10 07:24:31] payload named copied to /tmp/slinky-10822698041418102356/slinky-named-nfX4ns.jar
+[2026-10-10 07:24:31] defined 13 new payload classes in the game class loader; 0 unresolved
+[2026-10-10 07:24:31] constructor modifier compatibility: 0 ACC_STRICT flags preserved in memory
+[2026-10-10 07:24:31] replaced 43 payload classes atomically; Minecraft patches retained
+[2026-10-10 07:24:31] [java] fixture unicode: Привет Linux 🐧; payload=/tmp/slinky-10822698041418102356/slinky-named-nfX4ns.jar
+[2026-10-10 07:24:31] [java] fixture started 2; value=84
+[2026-10-10 07:24:31] Slinky is running
+[2026-10-10 07:24:31] FINAL STATUS: RELOADED
+Slinky is running. Press Right Shift in the game to open the menu.

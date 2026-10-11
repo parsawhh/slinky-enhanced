@@ -1,0 +1,13 @@
+CMake is re-running because C:/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/outputs/Slinky-source/build/native/CMakeFiles/generate.stamp is out-of-date.
+  the file 'C:/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/outputs/Slinky-source/native/CMakeLists.txt'
+  is newer than 'C:/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/outputs/Slinky-source/build/native/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/GigaZelensky/Documents/Codex/2026-10-10/conmt/outputs/Slinky-source/build/native
+MSBuild version 18.0.5+e22287bf1 for .NET Framework
+
+  payload.cpp
+  SlinkyNative.vcxproj -> C:\Users\GigaZelensky\Documents\Codex\2026-10-10\conmt\outputs\Slinky-source\build\native\Release\SlinkyNative.dll
+  Slinky.vcxproj -> C:\Users\GigaZelensky\Documents\Codex\2026-10-10\conmt\outputs\Slinky-source\build\native\Release\Slinky.exe

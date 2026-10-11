@@ -1,0 +1,4 @@
+C:/Users/Mohamed/Desktop/Slinky-cross-platform-source/Slinky-source/build/native/CMakeFiles/SlinkyNative.dir
+C:/Users/Mohamed/Desktop/Slinky-cross-platform-source/Slinky-source/build/native/CMakeFiles/Slinky.dir
+C:/Users/Mohamed/Desktop/Slinky-cross-platform-source/Slinky-source/build/native/CMakeFiles/ALL_BUILD.dir
+C:/Users/Mohamed/Desktop/Slinky-cross-platform-source/Slinky-source/build/native/CMakeFiles/ZERO_CHECK.dir
