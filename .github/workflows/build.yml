@@ -1,0 +1,71 @@
+name: Build slinky-enhanced
+
+on:
+  push:
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    name: Build Windows (Native & Java)
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up MSVC
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: Run Windows Build Script
+        working-directory: Slinky-source
+        shell: powershell
+        run: |
+          .uild.ps1 -RestoreDependencies
+
+      - name: Upload Windows Binaries & Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Slinky-windows-dist
+          path: |
+            Slinky-source/dist/Slinky.exe
+            Slinky-source/dist/SlinkyNative.dll
+            Slinky-source/dist/payload-*.jar
+
+  build-linux:
+    name: Build Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Make scripts executable
+        run: |
+          chmod +x Slinky-source/build-linux.sh
+          chmod +x Slinky-source/tools/*.py || true
+
+      - name: Run Linux Build Script
+        working-directory: Slinky-source
+        run: |
+          ./build-linux.sh --restore-dependencies
+
+      - name: Upload Linux Dist
+        uses: actions/upload-artifact@v4
+        with:
+          name: Slinky-linux-dist
+          path: |
+            Slinky-source/dist/linux-x86_64.zip
+            Slinky-source/dist/linux-x86_64/
