@@ -24,6 +24,13 @@ jobs:
       - name: Set up MSVC
         uses: ilammy/msvc-dev-cmd@v1
 
+      - name: Clean stale build cache
+        shell: powershell
+        run: |
+          if (Test-Path Slinky-source/build) {
+            Remove-Item -Recurse -Force Slinky-source/build
+          }
+
       - name: Run Windows Build Script
         working-directory: Slinky-source
         shell: powershell
