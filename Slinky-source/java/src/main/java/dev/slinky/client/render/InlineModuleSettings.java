@@ -178,6 +178,11 @@ public final class InlineModuleSettings {
 
    public List<String> render(Module module, RecoveredGui.Runtime state, DrawPlan plan, RecoveredGui.Layout layout, float[] accent, double now) {
       List<String> drawn = new ArrayList<>();
+      if (!ORDER.containsKey(module.getName())) {
+         // Plugin modules have no recovered inline widget schema; their settings
+         // remain available through the dedicated settings screen.
+         return drawn;
+      }
 
       for (String token : ORDER.get(module.getName())) {
          RecoveredUiLayout.Control next = null;

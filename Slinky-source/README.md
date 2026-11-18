@@ -24,6 +24,44 @@ This project reconstructs the inspected `Slinky.exe` with SHA-256 `501d7c83e2010
 
 The input identifies itself as **Slinky Semantic 0.5.0-settings**. Its readable class names and reconstruction metadata made source recovery unusually direct. This is a reconstruction of that particular artifact; it does not establish vendor provenance or recover the author's original comments, formatting, or project files.
 
+## Plugin modules
+
+Modules can be added without editing the payload. Build them into a jar and drop it into `~/.slinky/plugins` (the directory next to the payload is scanned too). Nothing is compiled at runtime, so the client needs no JDK and works the same from the launcher, Fabric, or OneClient.
+
+A plugin implements `dev.slinky.api.SlinkyPlugin` and registers one or more modules extending `dev.slinky.api.PluginModule`:
+
+```java
+public final class ExamplePlugin implements SlinkyPlugin {
+   @Override
+   public void onLoad(PluginContext context) {
+      context.register(new ExampleModule());
+   }
+}
+```
+
+A plugin jar must contain `META-INF/services/dev.slinky.api.SlinkyPlugin` listing its provider classes. Pick the jar variant that matches the runtime namespace in one of two ways:
+
+- Name it with a namespace suffix: `myplugin-101.jar` (named), `-102.jar` (SRG), or `-103.jar` (official).
+- Add `Slinky-Namespace: named|srg|official` to the jar manifest.
+
+Jars with neither marker are loaded in every namespace, so build them against the namespace you actually run.
+
+Plugin modules run with the same class loader as the built-in modules and therefore have identical access to `ClientContext`, `SemanticEvent`, the player/world, packets, the `NativeBridge` natives, and every other payload class. `PluginModule` adds typed setting helpers (`bool`, `number`, `choice`, `list`, `colorSetting`) and sensible GUI defaults; the recovered evidence catalogue is not required. `examples/plugins/ExamplePlugin.java` is a complete example.
+
+### Building a plugin jar
+
+Compile against the named Minecraft jar and the named payload (Java 8 or newer), then add the service file:
+
+```sh
+javac -cp build/linux/minecraft-1.8.9-named.jar:build/linux/payload-101.jar \
+      -d out ExamplePlugin.java
+mkdir -p out/META-INF/services
+echo com.example.ExamplePlugin > out/META-INF/services/dev.slinky.api.SlinkyPlugin
+jar --create --file ExamplePlugin-101.jar -C out .
+```
+
+For SRG or official runtimes, remap the compiled jar with `tools/RemapJar.java` (ASM is in `deps/tooling/`), or build directly against that namespace's payload. `tools/PluginBuilder.java` remains available as an optional developer helper that compiles a source directory and emits all three variants; it is not part of the client runtime.
+
 ## Structure
 
 | Path | Purpose |

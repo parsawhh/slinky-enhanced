@@ -10,6 +10,7 @@ import dev.slinky.config.InitialSettings;
 import dev.slinky.inject.ReloadState;
 import dev.slinky.module.CoreModules;
 import dev.slinky.module.ModuleManager;
+import dev.slinky.plugin.PluginLoader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -30,6 +31,7 @@ public final class SlinkyMod {
    public void preInitialize() {
       this.modules = new ModuleManager();
       CoreModules.register(this.modules);
+      PluginLoader.load(this.modules);
       GuiAppearance.configureMissing(this.modules.find("GUI"));
       InitialSettings.applyMissing(this.modules);
       GameHooks.install(this.modules);

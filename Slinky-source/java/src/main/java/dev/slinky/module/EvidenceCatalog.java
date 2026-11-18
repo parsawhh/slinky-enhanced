@@ -51,14 +51,28 @@ public final class EvidenceCatalog {
       }
    }
 
+   public static boolean known(String name) {
+      return MODULES.containsKey(name);
+   }
+
    public static int descriptorFlags(String name) {
-      JsonArray observations = DESCRIPTORS.get(name).getAsJsonArray("observations");
-      return observations.size() == 0 ? 0 : observations.get(0).getAsJsonObject().get("flags").getAsInt();
+      JsonObject descriptor = DESCRIPTORS.get(name);
+      if (descriptor == null) {
+         return 0;
+      } else {
+         JsonArray observations = descriptor.getAsJsonArray("observations");
+         return observations.size() == 0 ? 0 : observations.get(0).getAsJsonObject().get("flags").getAsInt();
+      }
    }
 
    public static int descriptorCategory(String name) {
-      JsonArray observations = DESCRIPTORS.get(name).getAsJsonArray("observations");
-      return observations.size() == 0 ? -1 : observations.get(0).getAsJsonObject().get("category").getAsInt();
+      JsonObject descriptor = DESCRIPTORS.get(name);
+      if (descriptor == null) {
+         return -1;
+      } else {
+         JsonArray observations = descriptor.getAsJsonArray("observations");
+         return observations.size() == 0 ? -1 : observations.get(0).getAsJsonObject().get("category").getAsInt();
+      }
    }
 
    private static Map<String, JsonObject> read() {
@@ -160,6 +174,10 @@ public final class EvidenceCatalog {
    }
 
    public static int priority(String name, int event) {
+      if (!MODULES.containsKey(name)) {
+         return 0;
+      }
+
       for (JsonElement descriptor : module(name).getAsJsonArray("descriptor_observations")) {
          for (JsonElement callback : descriptor.getAsJsonObject().getAsJsonArray("callbacks")) {
             JsonObject c = callback.getAsJsonObject();

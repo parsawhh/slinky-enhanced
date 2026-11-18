@@ -59,3 +59,13 @@ def find_resource(resources, kind, ident):
     matches = [v for k, v in resources.items() if k[:2] == (kind, ident)]
     assert len(matches) == 1, (kind, ident)
     return matches[0]
+
+if __name__ == '__main__':
+    import sys
+    executable = pathlib.Path(sys.argv[1])
+    outer = pe_resources(executable.read_bytes())
+    library = find_resource(outer, 10, 200)
+    inner = pe_resources(library)
+    payloads = [find_resource(inner, 10, item) for item in (101, 102, 103)]
+    assert all(payload[:2] == b'PK' for payload in payloads), 'embedded payload is not a jar'
+    print('single executable embeds the native DLL and payloads 101-103')

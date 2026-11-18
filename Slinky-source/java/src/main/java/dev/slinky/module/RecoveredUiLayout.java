@@ -51,7 +51,17 @@ public final class RecoveredUiLayout {
    public static List<RecoveredUiLayout.Control> controls(Module module) {
       JsonObject layout = LAYOUTS.get(module.getName());
       if (layout == null) {
-         throw new IllegalStateException("Missing module UI " + module.getName());
+         // Modules supplied by plugins do not ship recovered UI layouts, so expose
+         // their settings as a flat list instead of failing the whole GUI.
+         List<RecoveredUiLayout.Control> flat = new ArrayList<>();
+
+         for (Setting<?> setting : module.getSettings()) {
+            if (module.settingVisible(setting.getKey())) {
+               flat.add(new RecoveredUiLayout.Control(null, setting));
+            }
+         }
+
+         return Collections.unmodifiableList(flat);
       } else {
          JsonArray gates = layout.getAsJsonArray("gates");
 

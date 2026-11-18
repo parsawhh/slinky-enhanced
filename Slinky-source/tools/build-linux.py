@@ -28,8 +28,8 @@ def main():
                         help='Download only missing/invalid pinned dependencies using HTTPS')
     parser.add_argument('--java-only', action='store_true', help='Build Java payloads and launcher only')
     options = parser.parse_args()
-    if platform.system() != 'Linux':
-        parser.error('Run this build on Linux (WSL also works).')
+    if platform.system() not in ('Linux', 'Android'):
+        parser.error('Run this build on Linux or Android/Termux (WSL also works).')
     javac_path = Path(os.environ['JAVA_HOME']) / 'bin/javac' if os.environ.get('JAVA_HOME') else Path(shutil.which('javac') or '')
     if not javac_path.is_file():
         parser.error('A full JDK 11 or newer is required; set JAVA_HOME or put javac on PATH.')
@@ -102,12 +102,16 @@ def main():
         # RemapJar removes the input manifest, so restore it together with runtime mappings.
         call(jar, 'ufm', payload, manifest, '-C', mapping_root, 'dev/slinky/inject/mappings.txt')
     launcher_classes = build / 'launcher-classes'
-    launcher_classes.mkdir(exist_ok=True)
+    if launcher_classes.exists():
+        shutil.rmtree(launcher_classes)
+    launcher_classes.mkdir()
     call(javac, '--release', '11', '--add-modules', 'jdk.attach', '-encoding', 'UTF-8',
-         '-d', launcher_classes, ROOT / 'linux/SlinkyLauncher.java')
+         '-d', launcher_classes,
+         ROOT / 'linux/SlinkyLauncher.java')
     launcher_manifest = build / 'LAUNCHER.MF'
     launcher_manifest.write_text('Manifest-Version: 1.0\nMain-Class: SlinkyLauncher\n\n', encoding='utf-8')
-    call(jar, 'cfm', build / 'slinky-launcher.jar', launcher_manifest, '-C', launcher_classes, '.')
+    call(jar, 'cfm', build / 'slinky-launcher.jar', launcher_manifest,
+         '-C', launcher_classes, '.')
     machine = platform.machine()
     if machine not in ('x86_64', 'aarch64'):
         raise RuntimeError('Unsupported Linux architecture: ' + machine)

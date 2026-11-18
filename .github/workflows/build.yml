@@ -1,77 +1,105 @@
-name: Build slinky-enhanced
+name: build
 
 on:
   push:
-    branches: [ "master", "main" ]
+    branches: [master]
+    tags: ['v*']
   pull_request:
-    branches: [ "master", "main" ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  build-windows:
-    name: Build Windows (Native & Java)
+  windows:
+    name: Windows x64 single executable
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: Slinky-source
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
+      - uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
+          distribution: temurin
           java-version: '17'
 
-      - name: Set up MSVC
-        uses: ilammy/msvc-dev-cmd@v1
+      - name: Clean stale build output
+        shell: pwsh
+        run: if (Test-Path build) { Remove-Item -Recurse -Force build }
 
-      - name: Clean stale build cache
-        shell: powershell
-        run: |
-          if (Test-Path Slinky-source/build) {
-            Remove-Item -Recurse -Force Slinky-source/build
-          }
+      - name: Build payloads and native launcher
+        shell: pwsh
+        run: ./build.ps1
 
-      - name: Run Windows Build Script
-        working-directory: Slinky-source
-        shell: powershell
-        run: powershell -File ./build.ps1 -RestoreDependencies
+      - name: Verify the executable is self-contained
+        shell: pwsh
+        run: python tools/pe_resources.py build/native/Release/Slinky.exe
 
-      - name: Upload Windows Binaries & Artifacts
+      - name: Upload single executable
         uses: actions/upload-artifact@v4
         with:
-          name: Slinky-windows-dist
-          path: |
-            Slinky-source/dist/Slinky.exe
-            Slinky-source/dist/SlinkyNative.dll
-            Slinky-source/dist/payload-*.jar
+          name: Slinky-windows-x64
+          path: Slinky-source/build/native/Release/Slinky.exe
+          if-no-files-found: error
 
-  build-linux:
-    name: Build Linux
+  linux:
+    name: Linux x64 and example plugin
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Slinky-source
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
+      - uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
+          distribution: temurin
           java-version: '17'
 
-      - name: Make scripts executable
-        run: |
-          chmod +x Slinky-source/build-linux.sh
-          chmod +x Slinky-source/tools/*.py || true
+      - name: Clean stale build output
+        run: rm -rf build dist
 
-      - name: Run Linux Build Script
-        working-directory: Slinky-source
-        run: |
-          ./build-linux.sh --restore-dependencies
+      - name: Build payloads and native launcher
+        run: ./build-linux.sh
 
-      - name: Upload Linux Dist
+      - name: Compile the example plugin on CI
+        run: |
+          mkdir -p "$HOME/.slinky/plugins" build/plugin-tool dist/plugins
+          cp examples/plugins/ExamplePlugin.java "$HOME/.slinky/plugins/"
+          javac -cp 'deps/tooling/*' -d build/plugin-tool tools/PluginBuilder.java tools/RemapJar.java
+          java -cp 'build/plugin-tool:deps/tooling/*' PluginBuilder build/linux dist/plugins
+
+      - name: Upload Linux distribution
         uses: actions/upload-artifact@v4
         with:
-          name: Slinky-linux-dist
-          path: |
-            Slinky-source/dist/linux-x86_64.zip
-            Slinky-source/dist/linux-x86_64/
+          name: Slinky-linux-x64
+          path: Slinky-source/dist/linux-x86_64
+          if-no-files-found: error
+
+      - name: Upload example plugin jars
+        uses: actions/upload-artifact@v4
+        with:
+          name: Slinky-example-plugins
+          path: Slinky-source/dist/plugins
+          if-no-files-found: error
+
+  release:
+    name: Attach single executable
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [windows]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: Slinky-windows-x64
+          path: release
+
+      - name: Publish release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/Slinky.exe
+          fail_on_unmatched_files: true
