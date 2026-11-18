@@ -62,7 +62,7 @@ jobs:
         run: rm -rf build dist
 
       - name: Build payloads and native launcher
-        run: ./build-linux.sh
+        run: bash ./build-linux.sh
 
       - name: Compile the example plugin on CI
         run: |
